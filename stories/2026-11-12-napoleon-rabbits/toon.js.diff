@@ -1,0 +1,24 @@
+--- engine/render/lib/toon.js	2026-11-12 07:08:18.370151089 +0000
++++ /home/claude/work/2026-11-12-napoleon-rabbits/render/lib/toon.js	2026-11-12 07:14:06.994144442 +0000
+@@ -576,6 +576,21 @@
+         const [bx, by] = R([[cx, yb + 1 * u]])[0];
+         p.ell(bx, by, 0.45 * W, 0.05 * HH, "#1d1b22", ow, 0, 360, (a * 180) / Math.PI);
+     }
++    else if (o.hat === "bicorne") {
++        // Napoleonic bicorne worn side to side: a black crescent with two horns, gold edge and a tricolour cockade
++        const yb = crown + 0.3 * HH, deg = (a * 180) / Math.PI, col = o.cap ?? "#1d1b24", hw = 0.78 * W, ht = 0.5 * HH;
++        const pts = [];
++        for (let i = 0; i <= 16; i++) { const t = i / 16, x = cx + hw * (2 * t - 1); pts.push([x, yb - 0.07 * HH * Math.sin(Math.PI * t) - (Math.abs(2 * t - 1) > 0.92 ? 0.03 * HH : 0)]); }
++        for (let i = 16; i >= 0; i--) { const t = i / 16, e = Math.sin(Math.PI * t); pts.push([cx + hw * (2 * t - 1) * (0.98 - 0.08 * e), yb - 0.07 * HH - ht * Math.pow(e, 0.8)]); }
++        const body = R(pts);
++        p.shadedFill(body, col, mul(col, SH_FELT), light, hw, 0.4);
++        p.poly(body, null, ow);
++        const top = R(pts.slice(17));
++        p.stroke(top, 2.6 * u, o.trim ?? "#d9b450");
++        if (o.plume) p.stroke(R([[cx - 0.6 * hw, yb - 0.12 * HH - 0.5 * ht], [cx, yb - 0.1 * HH - ht * 0.98], [cx + 0.6 * hw, yb - 0.12 * HH - 0.5 * ht]]), 7 * u, "#fbf7ee");
++        const s = side ? 1 : (facing || 1), [kx, ky] = R([[cx + s * 0.18 * W, yb - 0.07 * HH - 0.55 * ht]])[0];
++        p.ell(kx, ky, 10 * u, 10 * u, "#d8333a", 2 * u); p.ell(kx, ky, 6.6 * u, 6.6 * u, "#fbf7ee", 0); p.ell(kx, ky, 3.4 * u, 3.4 * u, "#2a4fa8", 0);
++    }
+     else if (o.hat === "fedora") {
+         const col = o.cap ?? "#3a3640", deg = (a * 180) / Math.PI, yb = crown + 0.24 * HH, ht = 0.42 * HH, wb = 0.36 * W, wt = 0.3 * W;
+         const body = R([[cx - wb, yb], [cx - wt, yb - ht], [cx - 0.08 * W, yb - ht + 0.08 * HH], [cx + 0.08 * W, yb - ht + 0.08 * HH], [cx + wt, yb - ht], [cx + wb, yb]]);

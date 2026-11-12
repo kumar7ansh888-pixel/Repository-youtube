@@ -21,10 +21,10 @@ What we've learned so far making cartoon true-story shorts.
 - Ghost Army (long video): very low views — focus on Shorts.
 
 ## Topics done
-Ghost Army, Eiffel Tower sale, Lemon juice robber, Mona Lisa theft, Hitler's nephew (user disliked), Great Emu War, Kentucky meat shower (40 s re-cut with hook), Mike the Headless Chicken (43.6 s, hook + loop format, Nov 2026).
+Ghost Army, Eiffel Tower sale, Lemon juice robber, Mona Lisa theft, Hitler's nephew (user disliked), Great Emu War, Kentucky meat shower (40 s re-cut with hook), Mike the Headless Chicken (43.6 s, hook + loop format, Nov 2026), Napoleon attacked by rabbits (43.1 s, first fully automated daily run, 2026-11-12).
 
 ## Topic ideas not yet used
-Pig War (1859), 1904 Olympic marathon, Napoleon attacked by rabbits, pigeon-guided missiles, Bosco the dog mayor, CIA spy cat (Acoustic Kitty), man who mailed himself, dancing plague of 1518.
+Pig War (1859), 1904 Olympic marathon, pigeon-guided missiles, Bosco the dog mayor, CIA spy cat (Acoustic Kitty), man who mailed himself, dancing plague of 1518.
 
 ## Production notes
 - When cutting narration, cut only at measured silences and never split sentences that run together — a clipped word sounds like the voice "cracking".
@@ -36,3 +36,5 @@ Pig War (1859), 1904 Olympic marathon, Napoleon attacked by rabbits, pigeon-guid
 - World layout pitfall: keep big scenery (mountains, mesas) well away from every set; a desert mountain cone once swallowed the festival set.
 - Display fonts (Rye, Alfa Slab One, Bangers) are in engine/render/fonts.
 - Remotion can't run in the cloud (npm blocked).
+- Napoleon set (`NAP` in world.js, x −3500 z 3000): meadow, château, lunch tent, six hutches at z = NAP, hunters' line z +9, coach on the poplar drive x −12. New rig hat `bicorne` (+ `plume`, `trim`), new vehicle `coach` (mat "coach"). Bunnies/horses are canvas cards (drawBunny / drawHorse in that story.js) — reuse them for any animal story.
+- Render speed in the cloud: ~2.3 s/frame at 1080×1920 on 2 CPUs (≈50 min for 43 s).

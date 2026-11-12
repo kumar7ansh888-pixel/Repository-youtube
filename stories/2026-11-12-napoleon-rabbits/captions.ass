@@ -1,0 +1,49 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Bangers,200,&H00FFFFFF,&H00FFFFFF,&H00101010,&H96000000,0,0,0,0,100,100,3,0,1,12,8,8,40,40,190,1
+Style: Cap,Poppins,112,&H0000D4FF,&H00FFFFFF,&H00111111,&H64000000,1,0,0,0,100,100,0,0,1,8,5,2,60,60,470,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:02.55,Hook,,0,0,0,,{\fscx60\fscy60\t(0,180,\fscx100\fscy100)}{\c&H3AE8FF&}NAPOLEON\N{\c&H3A48F0&\fs224}LOST TO BUNNIES!
+Dialogue: 0,0:00:00.32,0:00:02.03,Cap,,0,0,0,,{\k2}{\k64}Napoleon {\k64}conquered {\k21}half {\k19}of
+Dialogue: 0,0:00:02.03,0:00:02.74,Cap,,0,0,0,,{\k2}{\k69}Europe…
+Dialogue: 0,0:00:02.74,0:00:04.19,Cap,,0,0,0,,{\k2}{\k21}then {\k43}bunnies {\k21}beat {\k58}him.
+Dialogue: 0,0:00:04.19,0:00:06.12,Cap,,0,0,0,,{\k2}{\k59}July {\k131}1807.
+Dialogue: 0,0:00:06.12,0:00:07.02,Cap,,0,0,0,,{\k2}{\k22}He {\k22}just {\k23}made {\k21}peace
+Dialogue: 0,0:00:07.02,0:00:08.06,Cap,,0,0,0,,{\k2}{\k22}with {\k79}Russia.
+Dialogue: 0,0:00:08.06,0:00:09.20,Cap,,0,0,0,,{\k2}{\k29}So {\k29}his {\k29}chief {\k27}of
+Dialogue: 0,0:00:09.20,0:00:09.48,Cap,,0,0,0,,{\k2}{\k26}staff,
+Dialogue: 0,0:00:09.48,0:00:10.05,Cap,,0,0,0,,{\k2}{\k55}Berthier,
+Dialogue: 0,0:00:10.05,0:00:11.53,Cap,,0,0,0,,{\k2}{\k29}plans {\k29}a {\k89}party.
+Dialogue: 0,0:00:11.53,0:00:12.81,Cap,,0,0,0,,{\k2}{\k24}A {\k48}rabbit {\k54}hunt.
+Dialogue: 0,0:00:12.81,0:00:14.19,Cap,,0,0,0,,{\k2}{\k46}Hundreds {\k23}of {\k46}rabbits {\k21}wait
+Dialogue: 0,0:00:14.19,0:00:15.12,Cap,,0,0,0,,{\k2}{\k23}in {\k68}cages.
+Dialogue: 0,0:00:15.12,0:00:16.77,Cap,,0,0,0,,{\k2}{\k19}But {\k39}there's {\k19}one {\k86}problem.
+Dialogue: 0,0:00:16.77,0:00:18.36,Cap,,0,0,0,,{\k2}{\k64}Berthier {\k32}didn't {\k32}catch {\k30}wild
+Dialogue: 0,0:00:18.36,0:00:19.18,Cap,,0,0,0,,{\k2}{\k79}rabbits.
+Dialogue: 0,0:00:19.18,0:00:20.35,Cap,,0,0,0,,{\k2}{\k23}He {\k23}bought {\k23}tame {\k45}ones…
+Dialogue: 0,0:00:20.35,0:00:21.93,Cap,,0,0,0,,{\k2}{\k23}from {\k47}local {\k87}farmers.
+Dialogue: 0,0:00:21.93,0:00:23.70,Cap,,0,0,0,,{\k2}{\k20}The {\k41}cages {\k114}open.
+Dialogue: 0,0:00:24.03,0:00:25.41,Cap,,0,0,0,,{\k2}{\k28}The {\k55}hunters {\k28}raise {\k26}their
+Dialogue: 0,0:00:25.41,0:00:26.03,Cap,,0,0,0,,{\k2}{\k60}guns.
+Dialogue: 0,0:00:26.03,0:00:27.07,Cap,,0,0,0,,{\k2}{\k26}And {\k26}the {\k50}rabbits…
+Dialogue: 0,0:00:27.07,0:00:27.33,Cap,,0,0,0,,{\k2}{\k24}charge.
+Dialogue: 0,0:00:27.33,0:00:28.87,Cap,,0,0,0,,{\k2}{\k26}Straight {\k26}at {\k101}Napoleon.
+Dialogue: 0,0:00:28.87,0:00:29.67,Cap,,0,0,0,,{\k2}{\k20}They {\k20}think {\k20}he {\k18}brought
+Dialogue: 0,0:00:29.67,0:00:30.48,Cap,,0,0,0,,{\k2}{\k80}dinner.
+Dialogue: 0,0:00:30.48,0:00:31.77,Cap,,0,0,0,,{\k2}{\k32}They {\k32}swarm {\k32}his {\k30}boots.
+Dialogue: 0,0:00:31.77,0:00:33.12,Cap,,0,0,0,,{\k2}{\k32}Climb {\k32}his {\k69}legs.
+Dialogue: 0,0:00:33.12,0:00:34.70,Cap,,0,0,0,,{\k2}{\k32}His {\k32}men {\k32}swing {\k61}riding
+Dialogue: 0,0:00:34.70,0:00:35.81,Cap,,0,0,0,,{\k2}{\k32}crops {\k32}and {\k46}sticks.
+Dialogue: 0,0:00:35.81,0:00:37.43,Cap,,0,0,0,,{\k2}{\k20}The {\k40}bunnies {\k20}keep {\k79}coming.
+Dialogue: 0,0:00:37.43,0:00:38.64,Cap,,0,0,0,,{\k2}{\k20}So {\k20}the {\k61}emperor {\k18}runs…
+Dialogue: 0,0:00:38.64,0:00:39.69,Cap,,0,0,0,,{\k2}{\k20}to {\k20}his {\k62}carriage.
+Dialogue: 0,0:00:39.69,0:00:41.07,Cap,,0,0,0,,{\k2}{\k23}And {\k45}drives {\k69}away.
+Dialogue: 0,0:00:41.07,0:00:41.96,Cap,,0,0,0,,{\k2}{\k86}Defeated.
+Dialogue: 0,0:00:41.96,0:00:43.54,Cap,,0,0,0,,{\k2}{\k21}So {\k136}remember…
