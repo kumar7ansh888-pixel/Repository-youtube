@@ -21,14 +21,22 @@ Read `docs/channel-playbook.md`, `docs/youtube-voice.md`, `stories/LOG.md` and t
 `stories/2026-11-11-mike-headless-chicken/` (its `story.js` shows every engine feature). If this repo is not
 attached to the session, attach it with push access first.
 
-## 1. Topic
+## 1. Topic (owner, 2026-11-13: "views get stuck — make every video more interesting, shocking and funny")
 
-- A funny-weird **true** story with one "wait, what?" moment that works as a hook (see the unused ideas in the
-  playbook, then find new ones). Never repeat a topic in `stories/LOG.md`.
+- First read the stats (Windsor.ai, connector `youtube`, account `85601`, `date_preset: "last_29dT"`, fields
+  `video_title, views, engaged_views, average_view_percentage, shares`) and update the results table in the playbook.
+  `engaged_views / views` = how many did NOT swipe away in the first seconds; that is the number to beat.
+- Brainstorm **8 candidates**, then score each 0–3 on four tests and pick one scoring **≥ 10 / 12**:
+  1. **WTF in 7 words** — the premise fits in ≤ 7 plain words and a stranger says "wait, WHAT?"
+     ("A bridge is being eaten by spit", "He robbed banks wearing lemon juice").
+  2. **Funny / gross / absurd** — dumb criminals, gross-but-true, animal chaos, absurd laws, grown-ups doing
+     something ridiculous on purpose. Not a history lesson.
+  3. **One crazy picture** — the craziest moment can be drawn in a single frame (that frame is shot 1).
+  4. **Send-to-a-friend** — would a 20-year-old forward it with "bro 😂"? (Shares are ~0 so far: fix this.)
+  Write the scores in SCRIPT.md. Low scorers so far: wars, treaties, troop counts, dates (Emu War, Pig War).
+- A funny-weird **true** story. Never repeat a topic in `stories/LOG.md`.
 - Avoid: gore, tragedies played for laughs, living private individuals, current politics, anything made for kids.
 - Verify the key facts with at least two web sources. No invented numbers, quotes or causes.
-- Optional: read last days' stats with the Windsor.ai connector (connector `youtube`, account `85601`) and note in
-  the log which topics did best.
 
 ## 2. Script → `$P/SCRIPT.md`
 
@@ -36,13 +44,17 @@ attached to the session, attach it with push access first.
 # <Title>
 
 ## Script
-<95–110 words>
+<70–85 words>
 
 ## Shot ideas
 ```
 
-- Line 1 is the hook: the craziest fact, stated flat ("A chicken that lived eighteen months… without a head.").
-- Short sentences, one beat each, "…" for a dramatic pause, a twist line on its own.
+- Line 1 is the hook, **≤ 8 words**: the craziest fact or a hard question, mid-action ("This bridge is being eaten… by spit.").
+  No date, place or full name in the first two lines (if a date matters, say it later, once).
+- **No context-only lines.** Every 3–4 s there is a new escalation, joke or gross/absurd detail; if a line would not
+  make a friend react, cut it. At most 2 numbers in the whole script.
+- One "wait, it gets worse" twist in the last third; end on a punchline, never a summary.
+- Short sentences, one beat each, "…" for a dramatic pause.
 - **Loop ending:** the last words hand back to the first line ("…All for" → "A chicken that…").
 - Also write the on-screen hook title, two short lines (e.g. `LIVED 18 MONTHS|WITH NO HEAD!`).
 
@@ -51,7 +63,7 @@ attached to the session, attach it with push access first.
 ```bash
 sed -n '/## Script/,/## Shot ideas/p' $P/SCRIPT.md | sed '1d;$d' > $P/voice/script.txt
 python3 $P/tools/tts.py /home/claude/models/kokoro-en-v0_19 /home/claude/models/cmudict/cmudict.dict \
-    $P/voice/script.txt $P/voice/tts.wav --voice am_michael --speed 1.05 [--lex $P/voice/lex.txt]
+    $P/voice/script.txt $P/voice/tts.wav --voice am_michael --speed 1.12 [--lex $P/voice/lex.txt]
 ffmpeg -y -i $P/voice/tts.wav -ar 48000 -ac 1 $P/voice/voice.wav
 ffmpeg -y -i $P/voice/voice.wav -ar 16000 -ac 1 -c:a pcm_s16le $P/voice/v16.wav
 python3 $P/tools/asr.py /home/claude/models/sherpa-onnx-whisper-base.en/base.en $P/voice/v16.wav $P/voice/transcript.txt
@@ -59,7 +71,7 @@ python3 $P/tools/asr.py /home/claude/models/sherpa-onnx-whisper-base.en/base.en 
 
 The transcript must match the script word for word (numbers may come back as digits). A mispronounced name: add a
 line `name IPA` to `lex.txt` (stress mark `ˈ` before the stressed vowel, same symbols as `tts.py --print`) and redo.
-Aim for 32–45 s.
+Aim for **25–35 s** (shorter = higher % viewed = more reach). Over 36 s: cut words, do not speed up past 1.15.
 
 ## 4. Word timings
 
@@ -71,9 +83,11 @@ python3 $P/tools/snapwords.py $P/voice/voice.wav $P/voice/words.json
 ## 5. Animate: `render/src/story.js` (+ new sets in `render/src/world.js`)
 
 - Copy the structure of the Mike `story.js`: `shot({ at: S("phrase"), light, cam: push(...), stage(t, out) {...} })`,
-  one shot per beat, a cut every ~1.5–2 s, 20–26 shots. Phrase lookups match the first occurrence after `a`: use
+  one shot per beat, a cut every ~1.0–1.5 s, 22–28 shots, something moving in every shot. Phrase lookups match the first occurrence after `a`: use
   two-word phrases when a word repeats ("His name", not "His").
-- Shot 1 is the hook moment (no establishing shot). The last shot visually matches shot 1 so the loop is seamless.
+- Shot 1 is the hook moment, **already in motion on frame 0** (no establishing shot, no slow push-in), with a big
+  reaction face. The on-screen hook title is ≤ 6 words, a claim or question (e.g. `EATEN BY SPIT?!`).
+- A visual gag on every beat (reaction faces, SFX words, sight jokes); no static shot longer than 2 s. The last shot visually matches shot 1 so the loop is seamless.
 - Characters: `pl(i, outfit, x, y, z, { expr, arms, extra, mode, dir/view/phase })`. Rig: expressions in
   `lib/toon.js` FACE (incl. talk_o/e/m, barker_o/e, gasp, sleep, sad), arm poses `arms: { l: [pose, k], r: [pose, k] }`
   (up, overhead, shoulder, chop, out, point, hips, head, shrug, hold, face, feed, low), overalls `bib`, squash `sq`.
@@ -125,8 +139,8 @@ The URL must return 200 and the file's exact size. Then Metricool `createSchedul
 
 - `blogId` `8029273`, `date` `<YYYY-MM-DD>T23:00:00+05:30` (if that time has passed, the next free half hour),
 - `info`: `autoPublish: true`, `providers: [{network: "youtube"}]`, `media: [<raw URL>]`,
-  `publicationDate: {dateTime, timezone: "Asia/Calcutta"}`, `text` = description (2 lines of story + `#shorts` and 5
-  topic hashtags), `youtubeData: {title (≤ 60 chars, a number/name, one emoji), type: "short", privacy: "public",
+  `publicationDate: {dateTime, timezone: "Asia/Calcutta"}`, `firstCommentText` = a one-line question that invites an opinion (e.g. "Would you have paid the $100? 🐷"), `text` = description (2 lines of story + `#shorts` and 5
+  topic hashtags), `youtubeData: {title (≤ 50 chars: the absurd premise in plain words + one emoji, no "True Story", no dates — like "This bridge is being eaten by Spit 🤢"), type: "short", privacy: "public",
   tags (6–8), category: "FILM_ANIMATION", madeForKids: false, isAiGeneratedContent: false}`.
 
 ## 10. Record and report

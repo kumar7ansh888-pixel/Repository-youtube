@@ -4,7 +4,7 @@ What we've learned so far making cartoon true-story shorts.
 
 ## Format that works
 - **Hook first (0–2 s):** open on the craziest moment, not a date or an establishing shot. Add a big bold on-screen title for the first ~2.5 s (e.g. "IT RAINED MEAT… and they ATE it", "LIVED 18 MONTHS / WITH NO HEAD!").
-- **Length:** 30–45 s. Narration ~90–110 words. Long (60 s) versions lose viewers.
+- **Length:** 25–35 s. Narration 70–85 words (from 2026-11-13; 43 s versions plateaued under 1K). Long (60 s) versions lose viewers.
 - **Loop ending:** last line should flow back into the first line; no fade to black at the end. (Mike: "…All for" → "A chicken that lived eighteen months…"; last shot = Mike's statue facing right, first shot = real Mike walking right.)
 - **Pacing:** a cut every ~2 s, yellow word-by-word captions, music + SFX.
 - **Audience setting:** "No, it's not made for kids"; no 18+ restriction.
@@ -13,6 +13,21 @@ What we've learned so far making cartoon true-story shorts.
 - One Short a day, published automatically at **23:00 India time** via Metricool (brand 8029273, YouTube channel UCUaVL00Y35TENRYg2h6-1lw), no review step (owner's choice).
 - Narration: free Kokoro v0.19 voice `am_michael` made in the cloud (owner's choice; ElevenLabs Ace Adams was used up to Mike).
 - Videos hosted in the `videos` branch of github.com/kumar7ansh888-pixel/Repository-youtube; engine on the `engine` branch; procedure in `PIPELINE.md`.
+
+## What the numbers say (Windsor, last 29 days, read 2026-11-13)
+| Short | views | engaged (not swiped) | avg % viewed | shares |
+| --- | --- | --- | --- | --- |
+| This bridge is being eaten by Spit 🤢 (1:39) | 3,034 | 71% | 55% | 2 |
+| He Robbed a Bank Wearing Lemon Juice 🍋 (1:11) | 2,438 | 60% | 70% | 0 |
+| The Man Who Stole the Mona Lisa 🖼️ (0:58) | 2,130 | 63% | 62% | 1 |
+| The Man Who Sold the Eiffel Tower (1:31) | 1,489 | 61% | 59% | 0 |
+| Australia Declared War on Birds… and LOST 🐦 (0:52) | 1,358 | 60% | 52% | 0 |
+| The Day It Rained MEAT 🥩 (0:42) | 1,293 | 43% | 71% | 0 |
+| India Disguised the Taj Mahal… 🤯 (1:55) | 1,170 | 57% | 50% | 0 |
+| Napoleon Lost a Battle… to BUNNIES 🐰 (0:43) | 873 in 15 h, flat | – | – | – |
+Lessons: 30–57% swipe away in the first seconds, so the first second decides everything; gross/absurd + modern
+(spit bridge) and dumb crime (lemon juice) beat war/history-lesson topics; shares are ~0, so pick send-to-a-friend
+stories. Owner's direction (2026-11-13): more interesting, shocking and funny; see PIPELINE step 1 scoring.
 
 ## Results so far (views)
 - Eiffel Tower con: ~1.2K in 48 h, 44 likes on 835 views
@@ -23,7 +38,7 @@ What we've learned so far making cartoon true-story shorts.
 ## Topics done
 Ghost Army, Eiffel Tower sale, Lemon juice robber, Mona Lisa theft, Hitler's nephew (user disliked), Great Emu War, Kentucky meat shower (40 s re-cut with hook), Mike the Headless Chicken (43.6 s, hook + loop format, Nov 2026), Napoleon attacked by rabbits (43.1 s, first fully automated daily run, 2026-11-12), Pig War 1859 (43.3 s, 2026-11-13).
 
-## Topic ideas not yet used
+## Topic ideas not yet used (re-score with the 4 tests before using; prefer funny/gross/absurd)
 1904 Olympic marathon, pigeon-guided missiles, Bosco the dog mayor, CIA spy cat (Acoustic Kitty), man who mailed himself, dancing plague of 1518.
 
 ## Production notes

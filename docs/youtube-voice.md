@@ -22,8 +22,9 @@ Dates and places said flat ("Colorado, 1945."), real names, exact numbers, a twi
 No invented numbers, quotes or causes. Disputed details are dropped or told as "the most popular answer". Nothing gory (cartoon, no blood), nothing made-for-kids.
 
 ## My format
-- Vertical 1080×1920 Short, 30–45 s, ~100–110 words.
-- Hook first: open on the craziest moment, big on-screen title for the first ~2.5 s.
+- Vertical 1080×1920 Short, 25–35 s, 70–85 words.
+- Hook first: ≤ 8 spoken words, open mid-action on the craziest moment, on-screen title ≤ 6 words for the first ~2.5 s.
+- Funny, gross or absurd beat every 3–4 s; no context-only lines; end on a punchline.
 - A cut every ~2 s, yellow word-by-word captions, original music + SFX.
 - Loop ending, no fade to black. No face on camera; Hindi/English (Hinglish) creator, English narration.
 - Results so far: most Shorts plateau at 1–2K views; best was 1.7K with 67% stayed-to-watch. The current fix being tested: stronger hook, shorter, loop.
