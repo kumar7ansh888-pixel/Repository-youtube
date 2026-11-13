@@ -21,10 +21,10 @@ What we've learned so far making cartoon true-story shorts.
 - Ghost Army (long video): very low views — focus on Shorts.
 
 ## Topics done
-Ghost Army, Eiffel Tower sale, Lemon juice robber, Mona Lisa theft, Hitler's nephew (user disliked), Great Emu War, Kentucky meat shower (40 s re-cut with hook), Mike the Headless Chicken (43.6 s, hook + loop format, Nov 2026), Napoleon attacked by rabbits (43.1 s, first fully automated daily run, 2026-11-12).
+Ghost Army, Eiffel Tower sale, Lemon juice robber, Mona Lisa theft, Hitler's nephew (user disliked), Great Emu War, Kentucky meat shower (40 s re-cut with hook), Mike the Headless Chicken (43.6 s, hook + loop format, Nov 2026), Napoleon attacked by rabbits (43.1 s, first fully automated daily run, 2026-11-12), Pig War 1859 (43.3 s, 2026-11-13).
 
 ## Topic ideas not yet used
-Pig War (1859), 1904 Olympic marathon, pigeon-guided missiles, Bosco the dog mayor, CIA spy cat (Acoustic Kitty), man who mailed himself, dancing plague of 1518.
+1904 Olympic marathon, pigeon-guided missiles, Bosco the dog mayor, CIA spy cat (Acoustic Kitty), man who mailed himself, dancing plague of 1518.
 
 ## Production notes
 - When cutting narration, cut only at measured silences and never split sentences that run together — a clipped word sounds like the voice "cracking".
@@ -38,3 +38,5 @@ Pig War (1859), 1904 Olympic marathon, pigeon-guided missiles, Bosco the dog may
 - Remotion can't run in the cloud (npm blocked).
 - Napoleon set (`NAP` in world.js, x −3500 z 3000): meadow, château, lunch tent, six hutches at z = NAP, hunters' line z +9, coach on the poplar drive x −12. New rig hat `bicorne` (+ `plume`, `trim`), new vehicle `coach` (mat "coach"). Bunnies/horses are canvas cards (drawBunny / drawHorse in that story.js) — reuse them for any animal story.
 - Render speed in the cloud: ~2.3 s/frame at 1080×1920 on 2 CPUs (≈50 min for 43 s).
+- Pig War set (`PIG` in world.js, x −5600 z 5600): Cutlar's log cabin + potato patch at the origin, American tents x +10..+23 and redoubt with 7 cannons at x +30 z +6, British tents x −28..−14, beach z +33..+43, the strait (water plane) beyond +z with Vancouver Island hills. Pig / 1859 man-of-war / waving US + Union flags are canvas cards (drawPig, drawShip, drawFlag in that story.js). New rig options: bicorne `cockade` (plain colour instead of the French tricolour), helmet `spike` (pickelhaube).
+- Kokoro at speed 1.1 kept a 102-word script at 43.7 s (1.05 gave 45.2 s).

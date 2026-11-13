@@ -26,6 +26,7 @@ export const MOTEL = [3940, 0, -2622];
 export const TOUR = [6100, 0, -2600];        // 1946 fairground sideshow
 export const FEST = [5000, 0, -3500];        // Fruita today: Mike the Headless Chicken Festival         // the Crouch farm in Kentucky (meat shower)        // railway along x at z = 0 near TRAIN
 export const NAP = [-3500, 0, 3000];        // 1807: Berthier's estate outside Paris, the rabbit hunt (Napoleon vs the bunnies)
+export const PIG = [-5600, 0, 5600];       // 1859: San Juan Island, the Pig War (Cutlar's farm at the origin, the strait to +z from z = +40)
 export const OCEAN = [8000, 0, 0];        // sea starts at x = 8000; New York skyline at x = 12500
 const RY = 2000;
 export const ROOM = { office: [0, RY, 0], bank: [200, RY, 0], living: [400, RY, 0], interro: [600, RY, 0], showroom: [800, RY, 0], oval: [1000, RY, 0], motel: [1200, RY, 0] };
@@ -550,6 +551,55 @@ export class World {
       // low hills far off
       for (let i = 0; i < 8; i++) { const h = 40 + (i % 3) * 18, m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); m.scale(260 + (i % 2) * 120, h, 120); m.translate(nx - 1300 + i * 380, -2, nz - 700 - (i % 2) * 150); b.add(m, L("napHill" + (i % 2), i % 2 ? "#8fae62" : "#7d9c58")); }
     }
+    // ---- 1859, San Juan Island (PIG): Cutlar's log cabin and potato patch at the origin, the American camp with an earthwork
+    //      redoubt and cannons at x +30, the British camp at x -36, Douglas firs all round, a beach at z +36..+42 and the strait
+    //      beyond (+z, water plane in buildWater), Vancouver Island's blue hills far across it
+    {
+      const [px, , pz] = PIG, L = (k, c) => lam(k, () => ({ color: c }));
+      const fld = lam("sjField", () => ({ map: GT.fieldTex("sjField", "#a8bf62") })); fld.polygonOffset = true; fld.polygonOffsetFactor = -2; fld.polygonOffsetUnits = -6;
+      b.add(quadUp(px - 600, px + 600, pz - 500, pz + 40, 0.05, 30), fld);
+      const sand = L("sjSand", "#e2cfa0"); sand.polygonOffset = true; sand.polygonOffsetFactor = -3; sand.polygonOffsetUnits = -9;
+      b.add(quadUp(px - 600, px + 600, pz + 33, pz + 43, 0.1, 10), sand);
+      // log cabin
+      const logs = L("sjLog", "#8a5e3a"), logD = L("sjLogD", "#5a3a22"), roof = L("sjRoof", "#5a4a3e");
+      const hx = px - 7, hz = pz - 7;
+      b.add(boxGeo(hx - 3, 0, hz - 2.5, hx + 3, 2.6, hz + 2.5, 2), logs);
+      for (let y = 0.3; y < 2.6; y += 0.38) b.add(boxGeo(hx - 3.08, y, hz + 2.5, hx + 3.08, y + 0.06, hz + 2.56, 1), logD);
+      b.add(prism([[-3.0, 2.6], [3.0, 2.6], [0, 4.2]], 6.8, hx).translate(0, 0, hz), roof);
+      b.add(boxGeo(hx - 0.5, 0, hz + 2.5, hx + 0.5, 1.9, hz + 2.6, 1), L("sjDoor", "#4a2e1c"));
+      b.add(boxGeo(hx + 1.4, 1.0, hz + 2.5, hx + 2.3, 1.8, hz + 2.6, 1), L("kyWin", "#2f3e52"));
+      b.add(boxGeo(hx + 2.2, 2.6, hz - 1.0, hx + 2.9, 5.0, hz - 0.3, 1), L("chimney", "#8a6a5a"));
+      // the potato patch: ridged rows with leafy plants, x -1..+7, z -2..+4
+      const soil = L("sjSoil", "#7a5a3a"), leaf = [L("potLeaf0", "#4f8a3a"), L("potLeaf1", "#65a046")];
+      for (let r = 0; r < 6; r++) { const z = pz - 2 + r * 1.1; const m = new THREE.CylinderGeometry(0.28, 0.28, 8, 8, 1, false, 0, Math.PI); m.rotateZ(Math.PI / 2); m.rotateX(Math.PI / 2); m.scale(1, 0.7, 1); m.translate(px + 3, 0.05, z); b.add(m, soil);
+        for (let k = 0; k < 9; k++) { const c = new THREE.IcosahedronGeometry(0.17 + hh(r * 9 + k, 1) * 0.05, 1); c.scale(1, 0.75, 1); c.translate(px - 0.6 + k * 0.92, 0.26, z + (hh(k, r) - 0.5) * 0.1); b.add(c, leaf[(r + k) % 2]); } }
+      // split-rail fence round the patch
+      const rail = L("sjRail", "#8a6a4a");
+      const fence = (x0, z0, x1, z1) => { const n = Math.max(1, Math.round(Math.hypot(x1 - x0, z1 - z0) / 2.4)); for (let k = 0; k <= n; k++) { const x = x0 + (x1 - x0) * k / n, z = z0 + (z1 - z0) * k / n; b.add(boxGeo(x - 0.06, 0, z - 0.06, x + 0.06, 1.05, z + 0.06, 1), rail); } for (const y of [0.45, 0.9]) b.add(beam(V(x0, y, z0), V(x1, y, z1), 0.05, 0.05), rail); };
+      fence(px - 1.6, pz - 3, px + 7.8, pz - 3); fence(px + 7.8, pz - 3, px + 7.8, pz + 5); fence(px - 1.6, pz - 3, px - 1.6, pz + 5);
+      // the American camp (x +30): white A-tents in rows, an earthwork redoubt facing the water, a flagpole, cannons
+      const canvas = L("sjCanvas", "#f2ecdc"), earth = L("sjEarth", "#9a7a52"), grassTop = L("sjTurf", "#8aa858");
+      const tent = (x, z, s = 1, m = canvas) => { b.add(prism([[-1.2 * s, 0], [1.2 * s, 0], [0, 1.7 * s]], 2.2 * s, x).translate(0, 0, z), m); b.add(cyl(0.03, 0.03, 0.3, 5, x - 1.15 * s, 1.75 * s, z), L("tentPoleN", "#e8e2d2")); b.add(cyl(0.03, 0.03, 0.3, 5, x + 1.15 * s, 1.75 * s, z), L("tentPoleN", "#e8e2d2")); };
+      for (let r = 0; r < 3; r++) for (let k = 0; k < 5; k++) tent(px + 10 + k * 3.2, pz - 14 - r * 4, 1);
+      const ax = px + 30, az = pz + 6;
+      b.add(prism([[-2.2, 0], [1.6, 0], [0.6, 1.2], [-1.0, 1.2]], 24, ax).translate(0, 0, az), earth);
+      b.add(boxGeo(ax - 12, 1.2, az - 1.0, ax + 12, 1.26, az + 0.6, 1), grassTop);
+      const bronze = L("sjIron", "#34343c"), wheel = L("sjWheel", "#8a3a2a");
+      for (let k = 0; k < 7; k++) { const x = ax - 9 + k * 3; b.add(cyl(0.16, 0.22, 2.0, 12, x, 1.75, az + 0.3, Math.PI / 2 - 0.12), bronze); for (const s of [-1, 1]) b.add(cyl(0.5, 0.5, 0.1, 14, x + s * 0.35, 1.7, az - 0.3, 0, Math.PI / 2), wheel); b.add(boxGeo(x - 0.25, 1.26, az - 1.4, x + 0.25, 1.5, az - 0.2, 1), wheel); }
+      b.add(cyl(0.07, 0.09, 9, 6, ax + 13, 4.5, az - 3), L("flagPole", "#e8e2d2")); b.add(cyl(0.07, 0.09, 9, 6, px + 16.4, 4.5, pz - 9), L("flagPole", "#e8e2d2"));
+      // the British camp (x -36): tents with red trim, a flagpole
+      const redT = L("sjRedTent", "#e9d8c4");
+      for (let r = 0; r < 2; r++) for (let k = 0; k < 5; k++) tent(px - 28 + k * 3.4, pz - 10 - r * 4.4, 1.05, redT);
+      b.add(cyl(0.07, 0.09, 9, 6, px - 15, 4.5, pz - 6), L("flagPole", "#e8e2d2"));
+      // Douglas firs
+      const fir = (x, z, s) => { b.add(cyl(0.2 * s, 0.3 * s, 2 * s, 6, x, s, z), M.trunk); for (let k = 0; k < 3; k++) { const c = new THREE.ConeGeometry((2.4 - k * 0.6) * s, 3.4 * s, 8); c.translate(x, (2.6 + k * 1.9) * s, z); b.add(c, M.pine); } };
+      for (let k = 0; k < 40; k++) { const x = px - 120 + k * 6 + hh(k, 3) * 4, z = pz - 34 - hh(k, 4) * 30; fir(x, z, 1.2 + hh(k, 5) * 0.8); }
+      for (let k = 0; k < 10; k++) fir(px - 70 - hh(k, 6) * 40, pz - 20 + k * 5, 1.1 + hh(k, 7) * 0.6);
+      for (let k = 0; k < 10; k++) fir(px + 60 + hh(k, 8) * 40, pz - 20 + k * 5, 1.1 + hh(k, 9) * 0.6);
+      for (const [x, z, s] of [[px - 22, pz + 4, 1.1], [px + 2, pz - 18, 1.3]]) fir(x, z, s);
+      // Vancouver Island: low blue hills far across the strait
+      for (let i = 0; i < 9; i++) { const h = 90 + (i % 3) * 50, m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); m.scale(420 + (i % 2) * 160, h, 160); m.translate(px - 2200 + i * 550, -2, pz + 2300 + (i % 2) * 200); b.add(m, L("sjHill" + (i % 2), i % 2 ? "#6f8aa0" : "#7f98aa")); }
+    }
     b.build(R, true, true);
     // New York skyline far across the ocean (flat painted card)
     const sk = new THREE.Mesh(new THREE.PlaneGeometry(3200, 800), new THREE.MeshBasicMaterial({ map: PT.skylineTex(), transparent: true, fog: true, depthWrite: false }));
@@ -605,7 +655,8 @@ export class World {
     m.customProgramCacheKey = () => "river1";
     const river = new THREE.PlaneGeometry(12000, SEINE[1] - SEINE[0] + 20); river.rotateX(-Math.PI / 2); river.translate(0, -2, (SEINE[0] + SEINE[1]) / 2);
     const sea = new THREE.PlaneGeometry(8000, 8000); sea.rotateX(-Math.PI / 2); sea.translate(OCEAN[0] + 3500, -0.5, OCEAN[2]);
-    for (const g of [river, sea]) { const w = new THREE.Mesh(g, m); w.receiveShadow = true; this.root.add(w); }
+    const strait = new THREE.PlaneGeometry(6000, 3000); strait.rotateX(-Math.PI / 2); strait.translate(PIG[0], 0.07, PIG[2] + 38 + 1500);
+    for (const g of [river, sea, strait]) { const w = new THREE.Mesh(g, m); w.receiveShadow = true; this.root.add(w); }
   }
 
   // ---------------- indoor sets (no ceilings; walls never cast shadows so the sun lights the floor) ----------------

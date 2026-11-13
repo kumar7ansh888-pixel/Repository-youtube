@@ -1,0 +1,614 @@
+[
+{
+"word": "The",
+"raw": "The",
+"start": 0.362,
+"end": 0.58
+},
+{
+"word": "only",
+"raw": "only",
+"start": 0.58,
+"end": 1.016
+},
+{
+"word": "casualty",
+"raw": "casualty",
+"start": 1.016,
+"end": 1.669
+},
+{
+"word": "of",
+"raw": "of",
+"start": 1.669,
+"end": 1.887
+},
+{
+"word": "this",
+"raw": "this",
+"start": 1.887,
+"end": 2.105
+},
+{
+"word": "war",
+"raw": "war\u2026",
+"start": 2.105,
+"end": 2.323
+},
+{
+"word": "was",
+"raw": "was",
+"start": 2.323,
+"end": 2.541
+},
+{
+"word": "a",
+"raw": "a",
+"start": 2.541,
+"end": 2.759
+},
+{
+"word": "pig",
+"raw": "pig.",
+"start": 2.759,
+"end": 2.977
+},
+{
+"word": "June",
+"raw": "June",
+"start": 3.391,
+"end": 3.748
+},
+{
+"word": "1859",
+"raw": "1859.",
+"start": 3.748,
+"end": 4.822
+},
+{
+"word": "A",
+"raw": "A",
+"start": 5.232,
+"end": 5.439
+},
+{
+"word": "tiny",
+"raw": "tiny",
+"start": 5.439,
+"end": 5.852
+},
+{
+"word": "island",
+"raw": "island",
+"start": 5.852,
+"end": 6.265
+},
+{
+"word": "America",
+"raw": "America",
+"start": 6.265,
+"end": 7.091
+},
+{
+"word": "and",
+"raw": "and",
+"start": 7.091,
+"end": 7.298
+},
+{
+"word": "Britain",
+"raw": "Britain",
+"start": 7.298,
+"end": 7.711
+},
+{
+"word": "both",
+"raw": "both",
+"start": 7.711,
+"end": 7.917
+},
+{
+"word": "claim",
+"raw": "claim.",
+"start": 7.917,
+"end": 8.124
+},
+{
+"word": "Farmer",
+"raw": "Farmer",
+"start": 8.588,
+"end": 9.054
+},
+{
+"word": "Lyman",
+"raw": "Lyman",
+"start": 9.054,
+"end": 9.521
+},
+{
+"word": "Cutlar",
+"raw": "Cutlar",
+"start": 9.521,
+"end": 9.988
+},
+{
+"word": "finds",
+"raw": "finds",
+"start": 9.988,
+"end": 10.221
+},
+{
+"word": "a",
+"raw": "a",
+"start": 10.221,
+"end": 10.455
+},
+{
+"word": "pig",
+"raw": "pig",
+"start": 10.455,
+"end": 10.688
+},
+{
+"word": "eating",
+"raw": "eating",
+"start": 10.688,
+"end": 11.155
+},
+{
+"word": "his",
+"raw": "his",
+"start": 11.155,
+"end": 11.388
+},
+{
+"word": "potatoes",
+"raw": "potatoes.",
+"start": 11.388,
+"end": 12.088
+},
+{
+"word": "He",
+"raw": "He",
+"start": 12.341,
+"end": 12.52
+},
+{
+"word": "shoots",
+"raw": "shoots",
+"start": 12.52,
+"end": 12.698
+},
+{
+"word": "it",
+"raw": "it.",
+"start": 12.698,
+"end": 12.877
+},
+{
+"word": "Problem",
+"raw": "Problem\u2026",
+"start": 13.237,
+"end": 13.722
+},
+{
+"word": "the",
+"raw": "the",
+"start": 13.722,
+"end": 13.964
+},
+{
+"word": "pig",
+"raw": "pig",
+"start": 13.964,
+"end": 14.207
+},
+{
+"word": "is",
+"raw": "is",
+"start": 14.207,
+"end": 14.449
+},
+{
+"word": "British",
+"raw": "British.",
+"start": 14.449,
+"end": 14.933
+},
+{
+"word": "Cutlar",
+"raw": "Cutlar",
+"start": 15.312,
+"end": 15.825
+},
+{
+"word": "offers",
+"raw": "offers",
+"start": 15.825,
+"end": 16.338
+},
+{
+"word": "ten",
+"raw": "ten",
+"start": 16.338,
+"end": 16.594
+},
+{
+"word": "dollars",
+"raw": "dollars.",
+"start": 16.594,
+"end": 17.107
+},
+{
+"word": "The",
+"raw": "The",
+"start": 17.461,
+"end": 17.651
+},
+{
+"word": "owner",
+"raw": "owner",
+"start": 17.651,
+"end": 18.032
+},
+{
+"word": "wants",
+"raw": "wants",
+"start": 18.032,
+"end": 18.223
+},
+{
+"word": "a",
+"raw": "a",
+"start": 18.223,
+"end": 18.413
+},
+{
+"word": "hundred",
+"raw": "hundred.",
+"start": 18.413,
+"end": 18.794
+},
+{
+"word": "Then",
+"raw": "Then",
+"start": 19.244,
+"end": 19.482
+},
+{
+"word": "America",
+"raw": "America",
+"start": 19.482,
+"end": 20.435
+},
+{
+"word": "sends",
+"raw": "sends",
+"start": 20.435,
+"end": 20.673
+},
+{
+"word": "four",
+"raw": "four",
+"start": 20.673,
+"end": 20.911
+},
+{
+"word": "hundred",
+"raw": "hundred",
+"start": 20.911,
+"end": 21.387
+},
+{
+"word": "sixty-one",
+"raw": "sixty-one",
+"start": 21.387,
+"end": 21.863
+},
+{
+"word": "soldiers",
+"raw": "soldiers\u2026",
+"start": 21.863,
+"end": 22.34
+},
+{
+"word": "and",
+"raw": "and",
+"start": 22.34,
+"end": 22.578
+},
+{
+"word": "fourteen",
+"raw": "fourteen",
+"start": 22.578,
+"end": 23.054
+},
+{
+"word": "cannons",
+"raw": "cannons.",
+"start": 23.054,
+"end": 23.53
+},
+{
+"word": "Britain",
+"raw": "Britain",
+"start": 24.566,
+"end": 25.087
+},
+{
+"word": "sends",
+"raw": "sends",
+"start": 25.087,
+"end": 25.347
+},
+{
+"word": "five",
+"raw": "five",
+"start": 25.347,
+"end": 25.608
+},
+{
+"word": "warships",
+"raw": "warships\u2026",
+"start": 25.608,
+"end": 26.129
+},
+{
+"word": "and",
+"raw": "and",
+"start": 26.129,
+"end": 26.389
+},
+{
+"word": "over",
+"raw": "over",
+"start": 26.389,
+"end": 26.91
+},
+{
+"word": "two",
+"raw": "two",
+"start": 26.91,
+"end": 27.171
+},
+{
+"word": "thousand",
+"raw": "thousand",
+"start": 27.171,
+"end": 27.692
+},
+{
+"word": "troops",
+"raw": "troops.",
+"start": 27.692,
+"end": 27.952
+},
+{
+"word": "But",
+"raw": "But",
+"start": 28.408,
+"end": 28.605
+},
+{
+"word": "the",
+"raw": "the",
+"start": 28.605,
+"end": 28.802
+},
+{
+"word": "British",
+"raw": "British",
+"start": 28.802,
+"end": 29.196
+},
+{
+"word": "admiral",
+"raw": "admiral",
+"start": 29.196,
+"end": 29.787
+},
+{
+"word": "won't",
+"raw": "won't",
+"start": 29.787,
+"end": 29.984
+},
+{
+"word": "start",
+"raw": "start",
+"start": 29.984,
+"end": 30.182
+},
+{
+"word": "a",
+"raw": "a",
+"start": 30.182,
+"end": 30.379
+},
+{
+"word": "war",
+"raw": "war\u2026",
+"start": 30.379,
+"end": 30.576
+},
+{
+"word": "over",
+"raw": "over",
+"start": 30.576,
+"end": 30.97
+},
+{
+"word": "a",
+"raw": "a",
+"start": 30.97,
+"end": 31.167
+},
+{
+"word": "pig",
+"raw": "pig.",
+"start": 31.167,
+"end": 31.364
+},
+{
+"word": "So",
+"raw": "So",
+"start": 31.83,
+"end": 32.132
+},
+{
+"word": "both",
+"raw": "both",
+"start": 32.132,
+"end": 32.435
+},
+{
+"word": "armies",
+"raw": "armies",
+"start": 32.435,
+"end": 33.039
+},
+{
+"word": "camp",
+"raw": "camp",
+"start": 33.039,
+"end": 33.341
+},
+{
+"word": "there",
+"raw": "there\u2026",
+"start": 33.341,
+"end": 33.643
+},
+{
+"word": "for",
+"raw": "for",
+"start": 33.643,
+"end": 33.945
+},
+{
+"word": "twelve",
+"raw": "twelve",
+"start": 33.945,
+"end": 34.247
+},
+{
+"word": "years",
+"raw": "years.",
+"start": 34.247,
+"end": 34.549
+},
+{
+"word": "Until",
+"raw": "Until",
+"start": 34.923,
+"end": 35.327
+},
+{
+"word": "Germany's",
+"raw": "Germany's",
+"start": 35.327,
+"end": 35.934
+},
+{
+"word": "Kaiser",
+"raw": "Kaiser",
+"start": 35.934,
+"end": 36.338
+},
+{
+"word": "settles",
+"raw": "settles",
+"start": 36.338,
+"end": 36.742
+},
+{
+"word": "it",
+"raw": "it.",
+"start": 36.742,
+"end": 36.944
+},
+{
+"word": "America",
+"raw": "America",
+"start": 37.436,
+"end": 38.174
+},
+{
+"word": "gets",
+"raw": "gets",
+"start": 38.174,
+"end": 38.359
+},
+{
+"word": "the",
+"raw": "the",
+"start": 38.359,
+"end": 38.543
+},
+{
+"word": "island",
+"raw": "island.",
+"start": 38.543,
+"end": 38.913
+},
+{
+"word": "Nobody",
+"raw": "Nobody",
+"start": 39.258,
+"end": 39.846
+},
+{
+"word": "fires",
+"raw": "fires",
+"start": 39.846,
+"end": 40.238
+},
+{
+"word": "a",
+"raw": "a",
+"start": 40.238,
+"end": 40.434
+},
+{
+"word": "shot",
+"raw": "shot.",
+"start": 40.434,
+"end": 40.63
+},
+{
+"word": "So",
+"raw": "So",
+"start": 41.057,
+"end": 41.306
+},
+{
+"word": "when",
+"raw": "when",
+"start": 41.306,
+"end": 41.555
+},
+{
+"word": "the",
+"raw": "the",
+"start": 41.555,
+"end": 41.804
+},
+{
+"word": "war",
+"raw": "war",
+"start": 41.804,
+"end": 42.053
+},
+{
+"word": "finally",
+"raw": "finally",
+"start": 42.053,
+"end": 42.8
+},
+{
+"word": "ends",
+"raw": "ends\u2026",
+"start": 42.8,
+"end": 43.049
+}
+]

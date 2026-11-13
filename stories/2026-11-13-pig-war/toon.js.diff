@@ -1,0 +1,24 @@
+--- engine/render/lib/toon.js	2026-11-13 08:26:43.028790734 +0000
++++ /home/claude/work/2026-11-13-pig-war/render/lib/toon.js	2026-11-13 07:28:56.247423537 +0000
+@@ -543,6 +543,11 @@
+         p.ell(bx, by, 0.64 * W, 0.065 * HH, shade(col, 0.82), ow, 0, 360, deg);
+         const [rx, ry] = R([[cx, crown + 0.02 * HH]])[0];
+         p.ell(rx, ry, 0.07 * W, 0.05 * HH, shade(col, 0.9), 2 * u, 0, 360, deg);
++        if (o.spike) { // Prussian pickelhaube: a brass spike on the crown, brass front plate
++            p.poly(R([[cx - 9 * u, crown - 0.06 * HH], [cx, crown - 0.36 * HH], [cx + 9 * u, crown - 0.06 * HH]]), o.spike, 2.5 * u);
++            const [fx, fy] = R([[cx, crown + 0.2 * HH]])[0];
++            p.ell(fx, fy, 0.16 * W, 0.12 * HH, o.spike, 2.2 * u, 0, 360, deg);
++        }
+     }
+     else if (o.hat === "turban") {
+         const col = o.cap ?? "#f2e6c8", deg = (a * 180) / Math.PI, [bx, by] = R([[cx, crown + 0.26 * HH]])[0];
+@@ -589,7 +594,8 @@
+         p.stroke(top, 2.6 * u, o.trim ?? "#d9b450");
+         if (o.plume) p.stroke(R([[cx - 0.6 * hw, yb - 0.12 * HH - 0.5 * ht], [cx, yb - 0.1 * HH - ht * 0.98], [cx + 0.6 * hw, yb - 0.12 * HH - 0.5 * ht]]), 7 * u, "#fbf7ee");
+         const s = side ? 1 : (facing || 1), [kx, ky] = R([[cx + s * 0.18 * W, yb - 0.07 * HH - 0.55 * ht]])[0];
+-        p.ell(kx, ky, 10 * u, 10 * u, "#d8333a", 2 * u); p.ell(kx, ky, 6.6 * u, 6.6 * u, "#fbf7ee", 0); p.ell(kx, ky, 3.4 * u, 3.4 * u, "#2a4fa8", 0);
++        if (o.cockade) { p.ell(kx, ky, 10 * u, 10 * u, o.cockade, 2 * u); p.ell(kx, ky, 3.4 * u, 3.4 * u, o.trim ?? "#d9b450", 0); } // plain cockade (e.g. British black)
++        else { p.ell(kx, ky, 10 * u, 10 * u, "#d8333a", 2 * u); p.ell(kx, ky, 6.6 * u, 6.6 * u, "#fbf7ee", 0); p.ell(kx, ky, 3.4 * u, 3.4 * u, "#2a4fa8", 0); }
+     }
+     else if (o.hat === "fedora") {
+         const col = o.cap ?? "#3a3640", deg = (a * 180) / Math.PI, yb = crown + 0.24 * HH, ht = 0.42 * HH, wb = 0.36 * W, wt = 0.3 * W;
