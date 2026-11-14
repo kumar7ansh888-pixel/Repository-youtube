@@ -1,0 +1,857 @@
+[
+{
+"word": "Usne",
+"start": 0.38,
+"end": 0.69
+},
+{
+"word": "Olympic",
+"start": 0.69,
+"end": 1.19
+},
+{
+"word": "gold",
+"start": 1.19,
+"end": 1.56
+},
+{
+"word": "jeeta...",
+"start": 1.56,
+"end": 1.88
+},
+{
+"word": "chuhe",
+"start": 1.88,
+"end": 2.24
+},
+{
+"word": "maarne",
+"start": 2.24,
+"end": 2.61
+},
+{
+"word": "wala",
+"start": 2.61,
+"end": 2.92
+},
+{
+"word": "zeher",
+"start": 2.92,
+"end": 3.24
+},
+{
+"word": "peekar.",
+"start": 3.24,
+"end": 3.65
+},
+{
+"word": "Ye",
+"start": 3.948,
+"end": 4.148
+},
+{
+"word": "itihaas",
+"start": 4.148,
+"end": 4.598
+},
+{
+"word": "ki",
+"start": 4.598,
+"end": 4.828
+},
+{
+"word": "sabse",
+"start": 4.828,
+"end": 5.158
+},
+{
+"word": "bekaar",
+"start": 5.158,
+"end": 5.538
+},
+{
+"word": "marathon",
+"start": 5.538,
+"end": 5.978
+},
+{
+"word": "thi.",
+"start": 5.978,
+"end": 6.238
+},
+{
+"word": "Unnees",
+"start": 6.539,
+"end": 6.919
+},
+{
+"word": "sau",
+"start": 6.919,
+"end": 7.119
+},
+{
+"word": "chaar,",
+"start": 7.119,
+"end": 7.359
+},
+{
+"word": "America",
+"start": 7.359,
+"end": 8.019
+},
+{
+"word": "ka",
+"start": 8.019,
+"end": 8.219
+},
+{
+"word": "Saint",
+"start": 8.219,
+"end": 8.499
+},
+{
+"word": "Louis.",
+"start": 8.499,
+"end": 8.839
+},
+{
+"word": "Bhayanak",
+"start": 9.11,
+"end": 9.49
+},
+{
+"word": "garmi.",
+"start": 9.49,
+"end": 10.01
+},
+{
+"word": "Sadkon",
+"start": 10.01,
+"end": 10.84
+},
+{
+"word": "par",
+"start": 10.84,
+"end": 11.04
+},
+{
+"word": "dhool",
+"start": 11.04,
+"end": 11.31
+},
+{
+"word": "hi",
+"start": 11.31,
+"end": 11.51
+},
+{
+"word": "dhool.",
+"start": 11.51,
+"end": 11.83
+},
+{
+"word": "Aur",
+"start": 12.133,
+"end": 12.283
+},
+{
+"word": "poore",
+"start": 12.283,
+"end": 12.573
+},
+{
+"word": "raaste",
+"start": 12.573,
+"end": 12.953
+},
+{
+"word": "mein",
+"start": 12.953,
+"end": 13.193
+},
+{
+"word": "paani",
+"start": 13.193,
+"end": 13.433
+},
+{
+"word": "sirf",
+"start": 13.433,
+"end": 13.883
+},
+{
+"word": "ek",
+"start": 13.883,
+"end": 14.133
+},
+{
+"word": "kuen",
+"start": 14.133,
+"end": 14.413
+},
+{
+"word": "par.",
+"start": 14.413,
+"end": 14.603
+},
+{
+"word": "Phir",
+"start": 14.906,
+"end": 15.116
+},
+{
+"word": "ek",
+"start": 15.116,
+"end": 15.276
+},
+{
+"word": "runner,",
+"start": 15.276,
+"end": 15.486
+},
+{
+"word": "Fred",
+"start": 15.486,
+"end": 16.116
+},
+{
+"word": "Lorz,",
+"start": 16.116,
+"end": 16.466
+},
+{
+"word": "ko",
+"start": 16.466,
+"end": 16.936
+},
+{
+"word": "cramp",
+"start": 16.936,
+"end": 17.346
+},
+{
+"word": "aa",
+"start": 17.346,
+"end": 17.456
+},
+{
+"word": "jaata",
+"start": 17.456,
+"end": 17.736
+},
+{
+"word": "hai.",
+"start": 17.736,
+"end": 17.946
+},
+{
+"word": "Toh",
+"start": 18.242,
+"end": 18.412
+},
+{
+"word": "woh",
+"start": 18.412,
+"end": 18.612
+},
+{
+"word": "kya",
+"start": 18.612,
+"end": 18.882
+},
+{
+"word": "karta",
+"start": 18.882,
+"end": 19.192
+},
+{
+"word": "hai?",
+"start": 19.192,
+"end": 19.712
+},
+{
+"word": "Seedha",
+"start": 19.712,
+"end": 19.982
+},
+{
+"word": "car",
+"start": 19.982,
+"end": 20.232
+},
+{
+"word": "mein",
+"start": 20.232,
+"end": 20.462
+},
+{
+"word": "baith",
+"start": 20.462,
+"end": 20.682
+},
+{
+"word": "jaata",
+"start": 20.682,
+"end": 20.962
+},
+{
+"word": "hai!",
+"start": 20.962,
+"end": 21.142
+},
+{
+"word": "Aur",
+"start": 21.444,
+"end": 21.614
+},
+{
+"word": "raaste",
+"start": 21.614,
+"end": 22.024
+},
+{
+"word": "mein",
+"start": 22.024,
+"end": 22.244
+},
+{
+"word": "baaki",
+"start": 22.244,
+"end": 22.534
+},
+{
+"word": "runners",
+"start": 22.534,
+"end": 22.894
+},
+{
+"word": "ko",
+"start": 22.894,
+"end": 23.064
+},
+{
+"word": "haath",
+"start": 23.064,
+"end": 23.304
+},
+{
+"word": "hilaakar",
+"start": 23.304,
+"end": 23.704
+},
+{
+"word": "bye",
+"start": 23.704,
+"end": 23.924
+},
+{
+"word": "karta",
+"start": 23.924,
+"end": 24.244
+},
+{
+"word": "hai.",
+"start": 24.244,
+"end": 24.464
+},
+{
+"word": "Car",
+"start": 24.763,
+"end": 24.973
+},
+{
+"word": "kharaab",
+"start": 24.973,
+"end": 25.243
+},
+{
+"word": "ho",
+"start": 25.243,
+"end": 25.413
+},
+{
+"word": "jaati",
+"start": 25.413,
+"end": 25.693
+},
+{
+"word": "hai...",
+"start": 25.693,
+"end": 25.863
+},
+{
+"word": "toh",
+"start": 25.863,
+"end": 26.033
+},
+{
+"word": "woh",
+"start": 26.033,
+"end": 26.203
+},
+{
+"word": "aaraam",
+"start": 26.203,
+"end": 26.463
+},
+{
+"word": "se",
+"start": 26.463,
+"end": 26.633
+},
+{
+"word": "daudkar",
+"start": 26.633,
+"end": 27.003
+},
+{
+"word": "finish",
+"start": 27.003,
+"end": 27.483
+},
+{
+"word": "line",
+"start": 27.483,
+"end": 27.753
+},
+{
+"word": "paar",
+"start": 27.753,
+"end": 27.993
+},
+{
+"word": "kar",
+"start": 27.993,
+"end": 28.173
+},
+{
+"word": "leta",
+"start": 28.173,
+"end": 28.453
+},
+{
+"word": "hai.",
+"start": 28.453,
+"end": 28.663
+},
+{
+"word": "Bheed",
+"start": 28.955,
+"end": 29.245
+},
+{
+"word": "paagal",
+"start": 29.245,
+"end": 29.595
+},
+{
+"word": "ho",
+"start": 29.595,
+"end": 29.785
+},
+{
+"word": "jaati",
+"start": 29.785,
+"end": 30.095
+},
+{
+"word": "hai.",
+"start": 30.095,
+"end": 30.685
+},
+{
+"word": "Rashtrapati",
+"start": 30.685,
+"end": 31.305
+},
+{
+"word": "ki",
+"start": 31.305,
+"end": 31.495
+},
+{
+"word": "beti",
+"start": 31.495,
+"end": 31.795
+},
+{
+"word": "use",
+"start": 31.795,
+"end": 32.035
+},
+{
+"word": "taaj",
+"start": 32.035,
+"end": 32.355
+},
+{
+"word": "pehnaati",
+"start": 32.355,
+"end": 32.805
+},
+{
+"word": "hai.",
+"start": 32.805,
+"end": 33.045
+},
+{
+"word": "Tabhi",
+"start": 33.344,
+"end": 33.564
+},
+{
+"word": "koi",
+"start": 33.564,
+"end": 33.814
+},
+{
+"word": "chugli",
+"start": 33.814,
+"end": 34.184
+},
+{
+"word": "kar",
+"start": 34.184,
+"end": 34.354
+},
+{
+"word": "deta",
+"start": 34.354,
+"end": 34.654
+},
+{
+"word": "hai.",
+"start": 34.654,
+"end": 35.224
+},
+{
+"word": "Pakda",
+"start": 35.224,
+"end": 35.574
+},
+{
+"word": "gaya!",
+"start": 35.574,
+"end": 35.794
+},
+{
+"word": "Udhar",
+"start": 36.091,
+"end": 36.311
+},
+{
+"word": "Cuba",
+"start": 36.311,
+"end": 36.731
+},
+{
+"word": "ka",
+"start": 36.731,
+"end": 36.931
+},
+{
+"word": "ek",
+"start": 36.931,
+"end": 37.101
+},
+{
+"word": "daakiya...",
+"start": 37.111,
+"end": 37.491
+},
+{
+"word": "raaste",
+"start": 37.491,
+"end": 37.901
+},
+{
+"word": "mein",
+"start": 37.901,
+"end": 38.121
+},
+{
+"word": "sade",
+"start": 38.121,
+"end": 38.391
+},
+{
+"word": "hue",
+"start": 38.391,
+"end": 38.611
+},
+{
+"word": "seb",
+"start": 38.611,
+"end": 38.841
+},
+{
+"word": "kha",
+"start": 38.841,
+"end": 39.031
+},
+{
+"word": "leta",
+"start": 39.031,
+"end": 39.311
+},
+{
+"word": "hai.",
+"start": 39.311,
+"end": 39.531
+},
+{
+"word": "Aur",
+"start": 39.832,
+"end": 40.062
+},
+{
+"word": "ped",
+"start": 40.062,
+"end": 40.342
+},
+{
+"word": "ke",
+"start": 40.342,
+"end": 40.512
+},
+{
+"word": "neeche",
+"start": 40.512,
+"end": 40.782
+},
+{
+"word": "so",
+"start": 40.782,
+"end": 40.962
+},
+{
+"word": "jaata",
+"start": 40.962,
+"end": 41.232
+},
+{
+"word": "hai.",
+"start": 41.232,
+"end": 41.772
+},
+{
+"word": "Phir",
+"start": 41.772,
+"end": 41.992
+},
+{
+"word": "bhi",
+"start": 41.992,
+"end": 42.212
+},
+{
+"word": "chauthe",
+"start": 42.212,
+"end": 42.502
+},
+{
+"word": "number",
+"start": 42.502,
+"end": 42.772
+},
+{
+"word": "par",
+"start": 42.772,
+"end": 42.952
+},
+{
+"word": "aata",
+"start": 42.952,
+"end": 43.192
+},
+{
+"word": "hai!",
+"start": 43.192,
+"end": 43.362
+},
+{
+"word": "Lekin",
+"start": 43.663,
+"end": 44.003
+},
+{
+"word": "asli",
+"start": 44.003,
+"end": 44.293
+},
+{
+"word": "vijeta?",
+"start": 44.293,
+"end": 44.693
+},
+{
+"word": "Thomas",
+"start": 44.693,
+"end": 45.303
+},
+{
+"word": "Hicks.",
+"start": 45.303,
+"end": 45.693
+},
+{
+"word": "Uske",
+"start": 45.994,
+"end": 46.264
+},
+{
+"word": "coach",
+"start": 46.264,
+"end": 46.504
+},
+{
+"word": "use",
+"start": 46.504,
+"end": 46.714
+},
+{
+"word": "pilaate",
+"start": 46.714,
+"end": 47.084
+},
+{
+"word": "rahe...",
+"start": 47.084,
+"end": 47.304
+},
+{
+"word": "brandy,",
+"start": 47.304,
+"end": 47.694
+},
+{
+"word": "anda...",
+"start": 47.694,
+"end": 48.254
+},
+{
+"word": "aur",
+"start": 48.254,
+"end": 48.424
+},
+{
+"word": "strychnine.",
+"start": 48.424,
+"end": 49.094
+},
+{
+"word": "Yaani",
+"start": 49.388,
+"end": 49.688
+},
+{
+"word": "chuhe",
+"start": 49.688,
+"end": 50.018
+},
+{
+"word": "maarne",
+"start": 50.018,
+"end": 50.378
+},
+{
+"word": "ka",
+"start": 50.378,
+"end": 50.578
+},
+{
+"word": "zeher.",
+"start": 50.578,
+"end": 50.928
+},
+{
+"word": "Use",
+"start": 51.232,
+"end": 51.462
+},
+{
+"word": "ajeeb",
+"start": 51.462,
+"end": 51.752
+},
+{
+"word": "cheezein",
+"start": 51.762,
+"end": 52.182
+},
+{
+"word": "dikhne",
+"start": 52.182,
+"end": 52.542
+},
+{
+"word": "lagin.",
+"start": 52.542,
+"end": 52.882
+},
+{
+"word": "Coach",
+"start": 52.882,
+"end": 53.412
+},
+{
+"word": "use",
+"start": 53.412,
+"end": 53.732
+},
+{
+"word": "pakadkar",
+"start": 53.732,
+"end": 54.192
+},
+{
+"word": "line",
+"start": 54.192,
+"end": 54.482
+},
+{
+"word": "tak",
+"start": 54.482,
+"end": 54.672
+},
+{
+"word": "le",
+"start": 54.672,
+"end": 54.862
+},
+{
+"word": "gaye...",
+"start": 54.862,
+"end": 55.042
+},
+{
+"word": "aur",
+"start": 55.042,
+"end": 55.232
+},
+{
+"word": "woh",
+"start": 55.232,
+"end": 55.412
+},
+{
+"word": "jeet",
+"start": 55.422,
+"end": 55.652
+},
+{
+"word": "gaya.",
+"start": 55.652,
+"end": 55.962
+},
+{
+"word": "Toh",
+"start": 56.259,
+"end": 56.449
+},
+{
+"word": "haan...",
+"start": 56.449,
+"end": 56.699
+}
+]

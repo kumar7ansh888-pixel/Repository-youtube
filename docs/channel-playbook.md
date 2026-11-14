@@ -9,6 +9,9 @@ What we've learned so far making cartoon true-story shorts.
 - **Pacing:** a cut every ~2 s, yellow word-by-word captions, music + SFX.
 - **Audience setting:** "No, it's not made for kids"; no 18+ restriction.
 
+## Format change (2026-11-14, owner)
+- From now on: ~1-minute videos narrated in **Hindi** (free Piper voice Pratham, owner's pick), captions/title in Hinglish. Procedure: `docs/HINDI.md`. (Note: 25–35 s English cuts had the better retention so far; watch whether 1-min Hindi does better in India.)
+
 ## Daily automation (from 2026-11-12)
 - One Short a day, published automatically at **23:00 India time** via Metricool (brand 8029273, YouTube channel UCUaVL00Y35TENRYg2h6-1lw), no review step (owner's choice).
 - Narration: free Kokoro v0.19 voice `am_michael` made in the cloud (owner's choice; ElevenLabs Ace Adams was used up to Mike).
@@ -37,7 +40,7 @@ stories. Owner's direction (2026-11-13): more interesting, shocking and funny; s
 - Ghost Army (long video): very low views — focus on Shorts.
 
 ## Topics done
-Ghost Army, Eiffel Tower sale, Lemon juice robber, Mona Lisa theft, Hitler's nephew (user disliked), Great Emu War, Kentucky meat shower (40 s re-cut with hook), Mike the Headless Chicken (43.6 s, hook + loop format, Nov 2026), Napoleon attacked by rabbits (43.1 s, first fully automated daily run, 2026-11-12), Pig War 1859 (43.3 s, 2026-11-13), 1904 Olympic marathon / gold on rat poison (34 s, first 4-test-scored topic, 12/12, 2026-11-14).
+Ghost Army, Eiffel Tower sale, Lemon juice robber, Mona Lisa theft, Hitler's nephew (user disliked), Great Emu War, Kentucky meat shower (40 s re-cut with hook), Mike the Headless Chicken (43.6 s, hook + loop format, Nov 2026), Napoleon attacked by rabbits (43.1 s, first fully automated daily run, 2026-11-12), Pig War 1859 (43.3 s, 2026-11-13), 1904 Olympic marathon / gold on rat poison (2026-11-14: English 34 s cut made, then replaced by the first Hindi 1-min cut, 57 s).
 
 ## Topic ideas not yet used (re-score with the 4 tests before using; prefer funny/gross/absurd)
 pigeon-guided missiles, Bosco the dog mayor, CIA spy cat (Acoustic Kitty), man who mailed himself, dancing plague of 1518.

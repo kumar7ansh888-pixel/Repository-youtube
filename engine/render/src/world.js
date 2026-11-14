@@ -607,10 +607,10 @@ export class World {
     //      an apple orchard at x +40..+70 z -8..-30, low dry hills far off
     {
       const [rx, , rz] = RACE, L = (k, c) => lam(k, () => ({ color: c }));
-      const dry = lam("rcField", () => ({ map: GT.fieldTex("rcField", "#c4b866") })); dry.polygonOffset = true; dry.polygonOffsetFactor = -2; dry.polygonOffsetUnits = -6;
-      b.add(quadUp(rx - 500, rx + 500, rz - 400, rz + 300, 0.05, 30), dry);
-      const road = lam("rcRoad", () => ({ map: GT.fieldTex("rcRoad", "#cfa874") })); road.polygonOffset = true; road.polygonOffsetFactor = -3; road.polygonOffsetUnits = -9;
-      b.add(quadUp(rx - 500, rx + 500, rz - 3, rz + 3, 0.07, 8), road);
+      const dry = lam("rcField", () => ({ map: GT.fieldTex("rcField", "#c4b866") })); dry.polygonOffset = true; dry.polygonOffsetFactor = 0; dry.polygonOffsetUnits = -6;
+      b.add(quadUp(rx - 500, rx + 500, rz - 400, rz + 300, 0.1, 30), dry);
+      const road = lam("rcRoad", () => ({ map: GT.fieldTex("rcRoad", "#cfa874") })); road.polygonOffset = true; road.polygonOffsetFactor = 0; road.polygonOffsetUnits = -9;
+      b.add(quadUp(rx - 500, rx + 500, rz - 3, rz + 3, 0.14, 8), road);
       // fences + telegraph poles (parallax for the running shots)
       const rail = L("rcRail", "#9a7a54"), pole = L("rcPole", "#6a4e36");
       for (const fz of [-5.2]) { for (let x = -300; x <= 300; x += 2.6) b.add(boxGeo(rx + x - 0.06, 0, rz + fz - 0.06, rx + x + 0.06, 1.0, rz + fz + 0.06, 1), rail);

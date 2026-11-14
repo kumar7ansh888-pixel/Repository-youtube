@@ -1,5 +1,7 @@
 # Daily Short pipeline — Beyond Normal Daily
 
+> **From 2026-11-14 videos are ~1 min and in Hindi: read `docs/HINDI.md` too — it overrides the voice, length and ASR steps below.**
+
 The procedure a scheduled Claude session follows every day: pick a weird true story, write it, voice it, animate it,
 check it, and schedule it on YouTube for **23:00 India time (Asia/Kolkata)**. The owner chose: free AI voice made
 here, auto-publish without review, videos hosted in this repo. Nothing in this file overrides the person's own

@@ -1,0 +1,72 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Bangers,200,&H00FFFFFF,&H00FFFFFF,&H00101010,&H96000000,0,0,0,0,100,100,3,0,1,12,8,8,40,40,190,1
+Style: Cap,Poppins,112,&H0000D4FF,&H00FFFFFF,&H00111111,&H64000000,1,0,0,0,100,100,0,0,1,8,5,2,60,60,470,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:02.55,Hook,,0,0,0,,{\fscx60\fscy60\t(0,180,\fscx100\fscy100)}{\c&H3AE8FF&}OLYMPIC GOLD\N{\c&H3A48F0&\fs224}ZEHER PEEKAR?!
+Dialogue: 0,0:00:00.33,0:00:01.83,Cap,,0,0,0,,{\k2}{\k31}Usne {\k50}Olympic {\k37}gold {\k30}jeeta...
+Dialogue: 0,0:00:01.83,0:00:03.19,Cap,,0,0,0,,{\k2}{\k36}chuhe {\k37}maarne {\k31}wala {\k30}zeher
+Dialogue: 0,0:00:03.19,0:00:03.90,Cap,,0,0,0,,{\k2}{\k69}peekar.
+Dialogue: 0,0:00:03.90,0:00:05.11,Cap,,0,0,0,,{\k2}{\k20}Ye {\k45}itihaas {\k23}ki {\k31}sabse
+Dialogue: 0,0:00:05.11,0:00:06.49,Cap,,0,0,0,,{\k2}{\k38}bekaar {\k44}marathon {\k54}thi.
+Dialogue: 0,0:00:06.49,0:00:07.31,Cap,,0,0,0,,{\k2}{\k38}Unnees {\k20}sau {\k22}chaar,
+Dialogue: 0,0:00:07.31,0:00:09.06,Cap,,0,0,0,,{\k2}{\k66}America {\k20}ka {\k28}Saint {\k59}Louis.
+Dialogue: 0,0:00:09.06,0:00:09.96,Cap,,0,0,0,,{\k2}{\k38}Bhayanak {\k50}garmi.
+Dialogue: 0,0:00:09.96,0:00:11.46,Cap,,0,0,0,,{\k2}{\k83}Sadkon {\k20}par {\k27}dhool {\k18}hi
+Dialogue: 0,0:00:11.46,0:00:12.08,Cap,,0,0,0,,{\k2}{\k60}dhool.
+Dialogue: 0,0:00:12.08,0:00:13.14,Cap,,0,0,0,,{\k2}{\k15}Aur {\k29}poore {\k38}raaste {\k22}mein
+Dialogue: 0,0:00:13.14,0:00:14.36,Cap,,0,0,0,,{\k2}{\k24}paani {\k45}sirf {\k25}ek {\k26}kuen
+Dialogue: 0,0:00:14.36,0:00:14.86,Cap,,0,0,0,,{\k2}{\k47}par.
+Dialogue: 0,0:00:14.86,0:00:15.44,Cap,,0,0,0,,{\k2}{\k21}Phir {\k16}ek {\k19}runner,
+Dialogue: 0,0:00:15.44,0:00:16.42,Cap,,0,0,0,,{\k2}{\k63}Fred {\k33}Lorz,
+Dialogue: 0,0:00:16.42,0:00:17.69,Cap,,0,0,0,,{\k2}{\k47}ko {\k41}cramp {\k11}aa {\k26}jaata
+Dialogue: 0,0:00:17.69,0:00:18.19,Cap,,0,0,0,,{\k2}{\k49}hai.
+Dialogue: 0,0:00:18.19,0:00:19.14,Cap,,0,0,0,,{\k2}{\k17}Toh {\k20}woh {\k27}kya {\k29}karta
+Dialogue: 0,0:00:19.14,0:00:19.66,Cap,,0,0,0,,{\k2}{\k50}hai?
+Dialogue: 0,0:00:19.66,0:00:20.63,Cap,,0,0,0,,{\k2}{\k27}Seedha {\k25}car {\k23}mein {\k20}baith
+Dialogue: 0,0:00:20.63,0:00:21.39,Cap,,0,0,0,,{\k2}{\k28}jaata {\k46}hai!
+Dialogue: 0,0:00:21.39,0:00:22.48,Cap,,0,0,0,,{\k2}{\k17}Aur {\k41}raaste {\k22}mein {\k27}baaki
+Dialogue: 0,0:00:22.48,0:00:23.65,Cap,,0,0,0,,{\k2}{\k36}runners {\k17}ko {\k24}haath {\k38}hilaakar
+Dialogue: 0,0:00:23.65,0:00:24.71,Cap,,0,0,0,,{\k2}{\k22}bye {\k32}karta {\k50}hai.
+Dialogue: 0,0:00:24.71,0:00:25.64,Cap,,0,0,0,,{\k2}{\k21}Car {\k27}kharaab {\k17}ho {\k26}jaati
+Dialogue: 0,0:00:25.64,0:00:25.81,Cap,,0,0,0,,{\k2}{\k15}hai...
+Dialogue: 0,0:00:25.81,0:00:26.58,Cap,,0,0,0,,{\k2}{\k17}toh {\k17}woh {\k26}aaraam {\k15}se
+Dialogue: 0,0:00:26.58,0:00:27.94,Cap,,0,0,0,,{\k2}{\k37}daudkar {\k48}finish {\k27}line {\k22}paar
+Dialogue: 0,0:00:27.94,0:00:28.90,Cap,,0,0,0,,{\k2}{\k18}kar {\k28}leta {\k48}hai.
+Dialogue: 0,0:00:28.90,0:00:30.04,Cap,,0,0,0,,{\k2}{\k29}Bheed {\k35}paagal {\k19}ho {\k29}jaati
+Dialogue: 0,0:00:30.04,0:00:30.63,Cap,,0,0,0,,{\k2}{\k57}hai.
+Dialogue: 0,0:00:30.63,0:00:31.98,Cap,,0,0,0,,{\k2}{\k62}Rashtrapati {\k19}ki {\k30}beti {\k22}use
+Dialogue: 0,0:00:31.98,0:00:33.29,Cap,,0,0,0,,{\k2}{\k32}taaj {\k45}pehnaati {\k52}hai.
+Dialogue: 0,0:00:33.29,0:00:34.30,Cap,,0,0,0,,{\k2}{\k22}Tabhi {\k25}koi {\k37}chugli {\k15}kar
+Dialogue: 0,0:00:34.30,0:00:35.17,Cap,,0,0,0,,{\k2}{\k30}deta {\k55}hai.
+Dialogue: 0,0:00:35.17,0:00:36.04,Cap,,0,0,0,,{\k2}{\k35}Pakda {\k50}gaya!
+Dialogue: 0,0:00:36.04,0:00:37.06,Cap,,0,0,0,,{\k2}{\k22}Udhar {\k42}Cuba {\k20}ka {\k16}ek
+Dialogue: 0,0:00:37.06,0:00:37.44,Cap,,0,0,0,,{\k2}{\k36}daakiya...
+Dialogue: 0,0:00:37.44,0:00:38.56,Cap,,0,0,0,,{\k2}{\k41}raaste {\k22}mein {\k27}sade {\k20}hue
+Dialogue: 0,0:00:38.56,0:00:39.78,Cap,,0,0,0,,{\k2}{\k23}seb {\k19}kha {\k28}leta {\k50}hai.
+Dialogue: 0,0:00:39.78,0:00:40.73,Cap,,0,0,0,,{\k2}{\k23}Aur {\k28}ped {\k17}ke {\k25}neeche
+Dialogue: 0,0:00:40.73,0:00:41.72,Cap,,0,0,0,,{\k2}{\k18}so {\k27}jaata {\k52}hai.
+Dialogue: 0,0:00:41.72,0:00:42.72,Cap,,0,0,0,,{\k2}{\k22}Phir {\k22}bhi {\k29}chauthe {\k25}number
+Dialogue: 0,0:00:42.72,0:00:43.61,Cap,,0,0,0,,{\k2}{\k18}par {\k24}aata {\k45}hai!
+Dialogue: 0,0:00:43.61,0:00:44.64,Cap,,0,0,0,,{\k2}{\k34}Lekin {\k29}asli {\k38}vijeta?
+Dialogue: 0,0:00:44.64,0:00:45.94,Cap,,0,0,0,,{\k2}{\k61}Thomas {\k67}Hicks.
+Dialogue: 0,0:00:45.94,0:00:47.03,Cap,,0,0,0,,{\k2}{\k27}Uske {\k24}coach {\k21}use {\k35}pilaate
+Dialogue: 0,0:00:47.03,0:00:47.25,Cap,,0,0,0,,{\k2}{\k20}rahe...
+Dialogue: 0,0:00:47.25,0:00:47.64,Cap,,0,0,0,,{\k2}{\k37}brandy,
+Dialogue: 0,0:00:47.64,0:00:48.20,Cap,,0,0,0,,{\k2}{\k54}anda...
+Dialogue: 0,0:00:48.20,0:00:49.34,Cap,,0,0,0,,{\k2}{\k17}aur {\k94}strychnine.
+Dialogue: 0,0:00:49.34,0:00:50.53,Cap,,0,0,0,,{\k2}{\k30}Yaani {\k33}chuhe {\k36}maarne {\k18}ka
+Dialogue: 0,0:00:50.53,0:00:51.18,Cap,,0,0,0,,{\k2}{\k63}zeher.
+Dialogue: 0,0:00:51.18,0:00:52.49,Cap,,0,0,0,,{\k2}{\k23}Use {\k30}ajeeb {\k42}cheezein {\k34}dikhne
+Dialogue: 0,0:00:52.49,0:00:52.83,Cap,,0,0,0,,{\k2}{\k32}lagin.
+Dialogue: 0,0:00:52.83,0:00:54.43,Cap,,0,0,0,,{\k2}{\k53}Coach {\k32}use {\k46}pakadkar {\k27}line
+Dialogue: 0,0:00:54.43,0:00:54.99,Cap,,0,0,0,,{\k2}{\k19}tak {\k19}le {\k16}gaye...
+Dialogue: 0,0:00:54.99,0:00:56.21,Cap,,0,0,0,,{\k2}{\k19}aur {\k19}woh {\k23}jeet {\k59}gaya.
+Dialogue: 0,0:00:56.21,0:00:57.40,Cap,,0,0,0,,{\k2}{\k19}Toh {\k98}haan...
