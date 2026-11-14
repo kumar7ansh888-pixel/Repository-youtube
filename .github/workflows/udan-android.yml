@@ -124,6 +124,30 @@ jobs:
           Demo mode until Firebase is connected: any number + OTP 123456 (student), 9999999999 (admin panel).
           This file is for testing only. Upload the signed .aab to the Play Store, not this APK."
 
+      # Install and launch the APK on an Android emulator to prove it works.
+      - name: Enable KVM for the emulator
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
+      - name: Install and launch on Android emulator
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          arch: x86_64
+          target: google_apis
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -no-snapshot
+          script: bash .github/scripts/udan-install-check.sh udan-coaching/app/build/app/outputs/flutter-apk/app-release.apk
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: emulator-screenshot
+          path: udan-screen.png
+          if-no-files-found: ignore
+
       - uses: actions/upload-artifact@v4
         with:
           name: udan-coaching-apk
