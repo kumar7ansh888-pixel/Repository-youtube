@@ -48,10 +48,14 @@ an admin). Prices are read on the server, so nobody can change them from the pho
 
 Until Firebase is connected the app runs on sample data, with fake payments.
 
-1. Open the repository on GitHub → **Actions** → **Udan Coaching app** → latest green run.
-2. Download **udan-coaching-apk** under *Artifacts*, unzip, copy `app-release.apk` to an Android phone and install it
-   (allow "install unknown apps").
+1. On your Android phone open the repository's
+   [**Udan Coaching - test build** release](https://github.com/kumar7ansh888-pixel/Repository-youtube/releases/tag/udan-test-build)
+   (GitHub → *Releases*).
+2. Tap **udan-coaching.apk** to download it, open it and install (allow "install unknown apps" for your browser).
 3. Log in with any number, OTP **123456**. Log in with **9999999999** to see the admin panel.
+
+Every push builds a fresh APK and replaces that release. The same file is also attached to each run under
+*Actions → Udan Coaching app → run → Artifacts* (as a zip).
 
 ## 2. Accounts you need
 

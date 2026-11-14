@@ -57,6 +57,8 @@ jobs:
   android:
     name: Android app
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # to publish the test APK as a GitHub Release
     defaults:
       run:
         working-directory: udan-coaching/app
@@ -101,6 +103,26 @@ jobs:
       - name: Build Play Store bundle
         if: env.SIGNED == 'true'
         run: flutter build appbundle --release
+
+      # Easiest download on a phone: Releases -> "Udan Coaching - test build"
+      # -> udan-coaching.apk (no zip). Replaced on every push.
+      - name: Publish test APK as a GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp build/app/outputs/flutter-apk/app-release.apk udan-coaching.apk
+          TAG="udan-test-build"
+          gh release delete "$TAG" --repo "$GITHUB_REPOSITORY" --yes --cleanup-tag || true
+          gh release create "$TAG" udan-coaching.apk \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --prerelease \
+            --title "Udan Coaching - test build" \
+            --notes "Test APK built from commit ${GITHUB_SHA::7} on ${GITHUB_REF_NAME}.
+
+          Install: download udan-coaching.apk on your Android phone and open it (allow installing apps from your browser).
+          Demo mode until Firebase is connected: any number + OTP 123456 (student), 9999999999 (admin panel).
+          This file is for testing only. Upload the signed .aab to the Play Store, not this APK."
 
       - uses: actions/upload-artifact@v4
         with:
