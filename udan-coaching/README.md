@@ -167,7 +167,8 @@ possible follow-up.
 ## Day-to-day: adding content (for Satyam Sir)
 
 1. **Profile → Admin panel → New batch**: name, class, description, what is included, plans with price,
-   MRP and number of days. Switch on **Published** when ready.
+   MRP and number of days. Switch on **Published** when ready. Switching it off later hides the batch from
+   new buyers; students who already paid keep their access.
 2. **Content → Add subject** (Maths, Science…). Open the subject → **Add content**:
    - **Video**: paste the YouTube link (upload the lecture to YouTube as *Unlisted*) or a video file link.
    - **PDF**: upload the PDF to Google Drive, *Share → Anyone with the link*, paste the link.
@@ -191,7 +192,7 @@ possible follow-up.
 cd app && flutter pub get && flutter analyze && flutter test       # app (12 tests)
 flutter run --dart-define=DEMO=true                                 # force demo mode
 cd ../firebase/functions && npm ci && npm test                      # payment logic (9 tests)
-cd ../rules-test && npm ci && npm test                              # security rules in the emulator (9 tests, needs Java)
+cd ../rules-test && npm ci && npm test                              # security rules in the emulator (10 tests, needs Java)
 cd ../../app && flutter test test_screenshots/screenshots_test.dart --dart-define=OUT=$PWD/screenshots   # Play Store screenshots
 ```
 

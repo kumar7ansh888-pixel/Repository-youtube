@@ -63,14 +63,17 @@ service cloud.firestore {
     }
 
     // Batches (courses). Published batches are visible to everyone so the
-    // store listing works before login.
+    // store listing works before login. Students who bought a batch keep
+    // access even after the admin hides (unpublishes) it.
     match /courses/{courseId} {
-      allow read: if resource.data.published == true || isAdmin();
+      allow read: if resource.data.published == true || isAdmin() || hasAccess(courseId);
       allow write: if isAdmin();
 
       match /subjects/{subjectId} {
         // Subject names are the public "curriculum" of a batch.
-        allow read: if isAdmin() || (signedIn() && coursePublished(courseId));
+        allow read: if isAdmin()
+          || hasAccess(courseId)
+          || (signedIn() && coursePublished(courseId));
         allow write: if isAdmin();
 
         match /items/{itemId} {

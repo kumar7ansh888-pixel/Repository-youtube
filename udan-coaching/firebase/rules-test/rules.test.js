@@ -49,6 +49,14 @@ test.beforeEach(async () => {
     await setDoc(doc(db, "courses/c10/subjects/maths/items/free1"), { title: "Demo", isFree: true });
     await setDoc(doc(db, "courses/c10/subjects/maths/items/paid1"), { title: "Paid", isFree: false });
     await setDoc(doc(db, "courses/draft/subjects/s/items/x"), { title: "x", isFree: true });
+    await setDoc(doc(db, "courses/hidden"), { title: "Old batch", published: false, plans: [] });
+    await setDoc(doc(db, "courses/hidden/subjects/s"), { name: "Maths" });
+    await setDoc(doc(db, "courses/hidden/subjects/s/items/paid"), { title: "Paid", isFree: false });
+    await setDoc(doc(db, "enrollments/paidstudent_hidden"), {
+      uid: "paidstudent",
+      courseId: "hidden",
+      expiresAt: Timestamp.fromMillis(Date.now() + 30 * DAY),
+    });
     await setDoc(doc(db, "users/riya"), { name: "Riya", phone: "+919876543210" });
     await setDoc(doc(db, "enrollments/paidstudent_c10"), {
       uid: "paidstudent",
@@ -98,6 +106,15 @@ test("an active enrollment unlocks everything, an expired one does not", async (
   await assertFails(getDocs(items(as("expiredstudent"))));
   await assertFails(getDoc(doc(as("expiredstudent"), "courses/c10/subjects/maths/items/paid1")));
   await assertSucceeds(getDocs(items(as("teacher"))));
+});
+
+test("students who paid keep access after the batch is hidden", async () => {
+  const db = as("paidstudent");
+  await assertSucceeds(getDoc(doc(db, "courses/hidden")));
+  await assertSucceeds(getDocs(collection(db, "courses/hidden/subjects")));
+  await assertSucceeds(getDocs(collection(db, "courses/hidden/subjects/s/items")));
+  await assertFails(getDoc(doc(as("riya"), "courses/hidden")));
+  await assertFails(getDocs(collection(as("riya"), "courses/hidden/subjects")));
 });
 
 test("subjects of published batches are visible to logged-in students", async () => {
