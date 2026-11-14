@@ -30,6 +30,7 @@ class VideoPlayerScreen extends StatelessWidget {
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
         titleTextStyle: const TextStyle(
+          fontFamily: 'Roboto',
           color: Colors.white,
           fontSize: 17,
           fontWeight: FontWeight.w700,

@@ -222,8 +222,11 @@ class _ItemEditorScreenState extends State<ItemEditorScreen> {
                 for (final t in ContentType.values)
                   ButtonSegment(
                     value: t,
-                    icon: Icon(iconFor(t)),
-                    label: Text(t.name == 'pdf' ? 'PDF' : _cap(t.name)),
+                    label: Text(
+                      t.name == 'pdf' ? 'PDF' : _cap(t.name),
+                      maxLines: 1,
+                      softWrap: false,
+                    ),
                   ),
               ],
               selected: {_type},

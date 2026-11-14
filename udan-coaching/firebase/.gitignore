@@ -3,3 +3,4 @@ node_modules/
 *.local
 firebase-debug.log*
 firestore-debug.log*
+functions/.env*

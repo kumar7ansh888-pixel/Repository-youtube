@@ -44,6 +44,7 @@ ThemeData buildTheme() {
       scrolledUnderElevation: 1,
       centerTitle: false,
       titleTextStyle: TextStyle(
+        fontFamily: 'Roboto',
         color: AppColors.indigoDark,
         fontSize: 19,
         fontWeight: FontWeight.w700,
@@ -68,7 +69,11 @@ ThemeData buildTheme() {
       style: FilledButton.styleFrom(
         minimumSize: const Size(64, 50),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-        textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
+        textStyle: const TextStyle(
+          fontFamily: 'Roboto',
+          fontSize: 16,
+          fontWeight: FontWeight.w700,
+        ),
       ),
     ),
     outlinedButtonTheme: OutlinedButtonThemeData(
@@ -81,7 +86,11 @@ ThemeData buildTheme() {
       backgroundColor: Colors.white,
       indicatorColor: AppColors.indigo.withValues(alpha: 0.12),
       labelTextStyle: WidgetStateProperty.all(
-        const TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
+        const TextStyle(
+          fontFamily: 'Roboto',
+          fontSize: 12,
+          fontWeight: FontWeight.w600,
+        ),
       ),
     ),
   );
