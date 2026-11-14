@@ -1,0 +1,104 @@
+rules_version = '2';
+
+// Security rules for the Udan Coaching app.
+//
+// The important promises these rules make:
+//  * Students can only read paid lectures/notes/tests of a batch while they
+//    hold an active (non-expired) enrollment for that batch.
+//  * Students can never create or extend an enrollment themselves. Paid
+//    enrollments are written only by the Cloud Functions (after Razorpay has
+//    confirmed the payment); manual enrollments are written by admins.
+//  * Only admins (users whose uid has a document in /admins) can create or
+//    change batches, subjects and content.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return signedIn()
+        && exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+
+    function enrollmentPath(courseId) {
+      return /databases/$(database)/documents/enrollments/$(request.auth.uid + '_' + courseId);
+    }
+
+    function hasAccess(courseId) {
+      return signedIn()
+        && exists(enrollmentPath(courseId))
+        && get(enrollmentPath(courseId)).data.expiresAt > request.time;
+    }
+
+    function coursePublished(courseId) {
+      return get(/databases/$(database)/documents/courses/$(courseId)).data.published == true;
+    }
+
+    // Admin list. Create these documents by hand in the Firebase console.
+    match /admins/{uid} {
+      allow read: if signedIn() && request.auth.uid == uid;
+      allow write: if false;
+    }
+
+    // Student profiles.
+    match /users/{uid} {
+      allow read: if signedIn() && (request.auth.uid == uid || isAdmin());
+      allow create, update: if signedIn()
+        && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(
+             ['name', 'phone', 'className', 'city', 'createdAt', 'updatedAt'])
+        && request.resource.data.name is string
+        && request.resource.data.name.size() > 0
+        && request.resource.data.name.size() <= 80;
+      allow delete: if false; // done by the deleteAccount function
+
+      // Test attempts (scores) of this student.
+      match /attempts/{attemptId} {
+        allow read: if signedIn() && (request.auth.uid == uid || isAdmin());
+        allow create: if signedIn() && request.auth.uid == uid;
+        allow update, delete: if false;
+      }
+    }
+
+    // Batches (courses). Published batches are visible to everyone so the
+    // store listing works before login.
+    match /courses/{courseId} {
+      allow read: if resource.data.published == true || isAdmin();
+      allow write: if isAdmin();
+
+      match /subjects/{subjectId} {
+        // Subject names are the public "curriculum" of a batch.
+        allow read: if isAdmin() || (signedIn() && coursePublished(courseId));
+        allow write: if isAdmin();
+
+        match /items/{itemId} {
+          // Free demo items are open to every signed-in student; everything
+          // else needs an active enrollment. The app queries with
+          // `where isFree == true` when the student has not bought the batch.
+          allow read: if isAdmin()
+            || hasAccess(courseId)
+            || (signedIn() && resource.data.isFree == true);
+          allow write: if isAdmin();
+        }
+      }
+    }
+
+    // Enrollment id format: <uid>_<courseId>
+    match /enrollments/{enrollmentId} {
+      allow get: if signedIn()
+        && (enrollmentId.split('_')[0] == request.auth.uid || isAdmin());
+      allow list: if signedIn()
+        && (resource.data.uid == request.auth.uid || isAdmin());
+      allow write: if isAdmin();
+    }
+
+    // Razorpay orders. Written only by Cloud Functions.
+    match /orders/{orderId} {
+      allow read: if signedIn()
+        && (resource.data.uid == request.auth.uid || isAdmin());
+      allow write: if false;
+    }
+  }
+}

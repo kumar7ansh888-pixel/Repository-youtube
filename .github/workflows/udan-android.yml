@@ -1,0 +1,98 @@
+# Builds the Udan Coaching Android app on GitHub's servers.
+#
+# Every push that touches udan-coaching/ runs the tests and produces:
+#   * udan-coaching-apk            - install directly on a phone to test
+#   * udan-coaching-play-store-aab - upload to Google Play Console
+#                                    (only when the signing secrets are set)
+# Download them from the run's "Artifacts" section on the Actions tab.
+name: Udan Coaching app
+
+on:
+  push:
+    paths:
+      - "udan-coaching/**"
+      - ".github/workflows/udan-android.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: udan-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  functions:
+    name: Payment functions tests
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: udan-coaching/firebase/functions
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: npm test
+
+  android:
+    name: Android app
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: udan-coaching/app
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 3.47.9
+          channel: stable
+          cache: true
+
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test
+
+      - name: Release signing key (from repository secrets)
+        env:
+          KEYSTORE_BASE64: ${{ secrets.UDAN_KEYSTORE_BASE64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.UDAN_KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.UDAN_KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.UDAN_KEY_PASSWORD }}
+        run: |
+          if [ -n "$KEYSTORE_BASE64" ]; then
+            echo "$KEYSTORE_BASE64" | base64 -d > android/app/upload-keystore.jks
+            printf 'storePassword=%s\nkeyPassword=%s\nkeyAlias=%s\nstoreFile=upload-keystore.jks\n' \
+              "$KEYSTORE_PASSWORD" "$KEY_PASSWORD" "$KEY_ALIAS" > android/key.properties
+            echo "SIGNED=true" >> "$GITHUB_ENV"
+            echo "Release key found: building a Play Store bundle too."
+          else
+            echo "No signing secrets: building a test APK signed with the debug key."
+          fi
+
+      - name: Build APK
+        run: flutter build apk --release
+
+      - name: Build Play Store bundle
+        if: env.SIGNED == 'true'
+        run: flutter build appbundle --release
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: udan-coaching-apk
+          path: udan-coaching/app/build/app/outputs/flutter-apk/app-release.apk
+          if-no-files-found: error
+
+      - uses: actions/upload-artifact@v4
+        if: env.SIGNED == 'true'
+        with:
+          name: udan-coaching-play-store-aab
+          path: udan-coaching/app/build/app/outputs/bundle/release/app-release.aab
+          if-no-files-found: error
