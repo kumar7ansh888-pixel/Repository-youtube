@@ -14,17 +14,18 @@ What we've learned so far making cartoon true-story shorts.
 - Narration: free Kokoro v0.19 voice `am_michael` made in the cloud (owner's choice; ElevenLabs Ace Adams was used up to Mike).
 - Videos hosted in the `videos` branch of github.com/kumar7ansh888-pixel/Repository-youtube; engine on the `engine` branch; procedure in `PIPELINE.md`.
 
-## What the numbers say (Windsor, last 29 days, read 2026-11-13)
+## What the numbers say (Windsor, last 29 days, read 2026-11-14)
 | Short | views | engaged (not swiped) | avg % viewed | shares |
 | --- | --- | --- | --- | --- |
-| This bridge is being eaten by Spit 🤢 (1:39) | 3,034 | 71% | 55% | 2 |
-| He Robbed a Bank Wearing Lemon Juice 🍋 (1:11) | 2,438 | 60% | 70% | 0 |
-| The Man Who Stole the Mona Lisa 🖼️ (0:58) | 2,130 | 63% | 62% | 1 |
-| The Man Who Sold the Eiffel Tower (1:31) | 1,489 | 61% | 59% | 0 |
-| Australia Declared War on Birds… and LOST 🐦 (0:52) | 1,358 | 60% | 52% | 0 |
-| The Day It Rained MEAT 🥩 (0:42) | 1,293 | 43% | 71% | 0 |
-| India Disguised the Taj Mahal… 🤯 (1:55) | 1,170 | 57% | 50% | 0 |
-| Napoleon Lost a Battle… to BUNNIES 🐰 (0:43) | 873 in 15 h, flat | – | – | – |
+| This bridge is being eaten by Spit 🤢 (1:39) | 3,037 | 71% | 55% | 2 |
+| The Man Who Stole the Mona Lisa 🖼️ (0:58) | 2,770 | 65% | 66% | 1 |
+| He Robbed a Bank Wearing Lemon Juice 🍋 (1:11) | 2,440 | 60% | 70% | 0 |
+| This Chicken Lived 18 MONTHS Without a Head 🐔 (0:44) | 2,140 | 57% | 67% | 0 |
+| The Man Who Sold the Eiffel Tower (1:31) | 1,491 | 61% | 59% | 0 |
+| Australia Declared War on Birds… and LOST 🐦 (0:52) | 1,458 | 59% | 52% | 0 |
+| The Day It Rained MEAT 🥩 (0:42) | 1,317 | 43% | 71% | 0 |
+| India Disguised the Taj Mahal… 🤯 (1:55) | 1,173 | 57% | 50% | 0 |
+| Napoleon (11-12) / Pig War (11-13) | not in Windsor yet | – | – | – |
 Lessons: 30–57% swipe away in the first seconds, so the first second decides everything; gross/absurd + modern
 (spit bridge) and dumb crime (lemon juice) beat war/history-lesson topics; shares are ~0, so pick send-to-a-friend
 stories. Owner's direction (2026-11-13): more interesting, shocking and funny; see PIPELINE step 1 scoring.
@@ -36,10 +37,10 @@ stories. Owner's direction (2026-11-13): more interesting, shocking and funny; s
 - Ghost Army (long video): very low views — focus on Shorts.
 
 ## Topics done
-Ghost Army, Eiffel Tower sale, Lemon juice robber, Mona Lisa theft, Hitler's nephew (user disliked), Great Emu War, Kentucky meat shower (40 s re-cut with hook), Mike the Headless Chicken (43.6 s, hook + loop format, Nov 2026), Napoleon attacked by rabbits (43.1 s, first fully automated daily run, 2026-11-12), Pig War 1859 (43.3 s, 2026-11-13).
+Ghost Army, Eiffel Tower sale, Lemon juice robber, Mona Lisa theft, Hitler's nephew (user disliked), Great Emu War, Kentucky meat shower (40 s re-cut with hook), Mike the Headless Chicken (43.6 s, hook + loop format, Nov 2026), Napoleon attacked by rabbits (43.1 s, first fully automated daily run, 2026-11-12), Pig War 1859 (43.3 s, 2026-11-13), 1904 Olympic marathon / gold on rat poison (34 s, first 4-test-scored topic, 12/12, 2026-11-14).
 
 ## Topic ideas not yet used (re-score with the 4 tests before using; prefer funny/gross/absurd)
-1904 Olympic marathon, pigeon-guided missiles, Bosco the dog mayor, CIA spy cat (Acoustic Kitty), man who mailed himself, dancing plague of 1518.
+pigeon-guided missiles, Bosco the dog mayor, CIA spy cat (Acoustic Kitty), man who mailed himself, dancing plague of 1518.
 
 ## Production notes
 - When cutting narration, cut only at measured silences and never split sentences that run together — a clipped word sounds like the voice "cracking".
@@ -54,4 +55,6 @@ Ghost Army, Eiffel Tower sale, Lemon juice robber, Mona Lisa theft, Hitler's nep
 - Napoleon set (`NAP` in world.js, x −3500 z 3000): meadow, château, lunch tent, six hutches at z = NAP, hunters' line z +9, coach on the poplar drive x −12. New rig hat `bicorne` (+ `plume`, `trim`), new vehicle `coach` (mat "coach"). Bunnies/horses are canvas cards (drawBunny / drawHorse in that story.js) — reuse them for any animal story.
 - Render speed in the cloud: ~2.3 s/frame at 1080×1920 on 2 CPUs (≈50 min for 43 s).
 - Pig War set (`PIG` in world.js, x −5600 z 5600): Cutlar's log cabin + potato patch at the origin, American tents x +10..+23 and redoubt with 7 cannons at x +30 z +6, British tents x −28..−14, beach z +33..+43, the strait (water plane) beyond +z with Vancouver Island hills. Pig / 1859 man-of-war / waving US + Union flags are canvas cards (drawPig, drawShip, drawFlag in that story.js). New rig options: bicorne `cockade` (plain colour instead of the French tricolour), helmet `spike` (pickelhaube).
-- Kokoro at speed 1.1 kept a 102-word script at 43.7 s (1.05 gave 45.2 s).
+- Kokoro at speed 1.1 kept a 102-word script at 43.7 s (1.05 gave 45.2 s); at 1.12 an 85-word script ran 34.5 s.
+- 1904 marathon set (`RACE` in world.js, x −1800 z 5600): dirt road along x (z ±3), back fence z −5.2 + telegraph poles z −7.5, finish grandstand + arch at x −40, apple orchard x +42..+70 z −10..−28. The 1904 motor car is a canvas card (drawCar + a separate seat-back card so a seated passenger sits between them), plus drawBottle (skull label, `flip` for drinking poses), drawRat, angry sun, recipe insert — all in that story.js. Card extras are cached by o + opts only, so give `o` an `xk` key when a prop changes (medal swing, falling wreath).
+- Don't put a camera behind a fence: the near fence blocked a shot until it was removed.

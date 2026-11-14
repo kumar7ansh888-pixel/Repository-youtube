@@ -1,0 +1,43 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Bangers,200,&H00FFFFFF,&H00FFFFFF,&H00101010,&H96000000,0,0,0,0,100,100,3,0,1,12,8,8,40,40,190,1
+Style: Cap,Poppins,112,&H0000D4FF,&H00FFFFFF,&H00111111,&H64000000,1,0,0,0,100,100,0,0,1,8,5,2,60,60,470,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:02.55,Hook,,0,0,0,,{\fscx60\fscy60\t(0,180,\fscx100\fscy100)}{\c&H3AE8FF&}OLYMPIC GOLD\N{\c&H3A48F0&\fs224}ON RAT POISON?!
+Dialogue: 0,0:00:00.30,0:00:01.88,Cap,,0,0,0,,{\k2}{\k26}He {\k26}won {\k79}Olympic {\k24}gold…
+Dialogue: 0,0:00:01.88,0:00:03.36,Cap,,0,0,0,,{\k2}{\k26}on {\k26}rat {\k94}poison.
+Dialogue: 0,0:00:03.36,0:00:04.99,Cap,,0,0,0,,{\k2}{\k20}The {\k20}worst {\k59}marathon {\k62}ever.
+Dialogue: 0,0:00:04.99,0:00:06.02,Cap,,0,0,0,,{\k2}{\k52}Boiling {\k49}heat.
+Dialogue: 0,0:00:06.02,0:00:07.21,Cap,,0,0,0,,{\k2}{\k59}Choking {\k58}dust.
+Dialogue: 0,0:00:07.21,0:00:08.34,Cap,,0,0,0,,{\k2}{\k23}A {\k45}runner {\k23}gets {\k21}cramps…
+Dialogue: 0,0:00:08.34,0:00:09.24,Cap,,0,0,0,,{\k2}{\k22}so {\k23}he {\k23}hops {\k20}in
+Dialogue: 0,0:00:09.24,0:00:09.90,Cap,,0,0,0,,{\k2}{\k23}a {\k42}car.
+Dialogue: 0,0:00:09.90,0:00:11.27,Cap,,0,0,0,,{\k2}{\k23}He {\k46}waves {\k23}at {\k44}runners
+Dialogue: 0,0:00:11.27,0:00:12.78,Cap,,0,0,0,,{\k2}{\k23}as {\k23}he {\k46}drives {\k58}past.
+Dialogue: 0,0:00:12.78,0:00:13.79,Cap,,0,0,0,,{\k2}{\k25}The {\k25}car {\k25}breaks {\k23}down,
+Dialogue: 0,0:00:13.79,0:00:15.21,Cap,,0,0,0,,{\k2}{\k25}so {\k25}he {\k25}jogs {\k64}in.
+Dialogue: 0,0:00:15.21,0:00:16.58,Cap,,0,0,0,,{\k2}{\k20}The {\k59}President's {\k39}daughter {\k18}crowns
+Dialogue: 0,0:00:16.58,0:00:17.19,Cap,,0,0,0,,{\k2}{\k59}him.
+Dialogue: 0,0:00:17.19,0:00:18.94,Cap,,0,0,0,,{\k2}{\k19}Then {\k77}somebody {\k76}snitches.
+Dialogue: 0,0:00:18.94,0:00:19.39,Cap,,0,0,0,,{\k2}{\k43}Meanwhile,
+Dialogue: 0,0:00:19.39,0:00:20.73,Cap,,0,0,0,,{\k2}{\k22}a {\k45}Cuban {\k45}mailman {\k20}eats
+Dialogue: 0,0:00:20.73,0:00:21.62,Cap,,0,0,0,,{\k2}{\k45}rotten {\k43}apples…
+Dialogue: 0,0:00:21.62,0:00:23.71,Cap,,0,0,0,,{\k2}{\k46}and {\k42}takes {\k22}a {\k95}nap.
+Dialogue: 0,0:00:23.95,0:00:25.28,Cap,,0,0,0,,{\k2}{\k18}But {\k18}the {\k18}real {\k78}winner?
+Dialogue: 0,0:00:25.28,0:00:26.75,Cap,,0,0,0,,{\k2}{\k25}His {\k49}coaches {\k25}kept {\k47}feeding
+Dialogue: 0,0:00:26.75,0:00:27.48,Cap,,0,0,0,,{\k2}{\k25}him {\k47}brandy,
+Dialogue: 0,0:00:27.48,0:00:27.73,Cap,,0,0,0,,{\k2}{\k22}egg…
+Dialogue: 0,0:00:27.73,0:00:28.83,Cap,,0,0,0,,{\k2}{\k25}and {\k84}strychnine.
+Dialogue: 0,0:00:28.83,0:00:30.01,Cap,,0,0,0,,{\k2}{\k26}Rat {\k89}poison.
+Dialogue: 0,0:00:30.01,0:00:31.05,Cap,,0,0,0,,{\k2}{\k102}Hallucinating,
+Dialogue: 0,0:00:31.05,0:00:31.89,Cap,,0,0,0,,{\k2}{\k21}held {\k21}up {\k21}by {\k19}his
+Dialogue: 0,0:00:31.89,0:00:32.31,Cap,,0,0,0,,{\k2}{\k40}coaches…
+Dialogue: 0,0:00:32.31,0:00:33.00,Cap,,0,0,0,,{\k2}{\k21}he {\k47}wins.
+Dialogue: 0,0:00:33.00,0:00:34.44,Cap,,0,0,0,,{\k2}{\k34}So {\k108}yes…

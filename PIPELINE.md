@@ -96,7 +96,7 @@ python3 $P/tools/snapwords.py $P/voice/voice.wav $P/voice/words.json
 - Hook title space: keep the top ~30 % of the first 2.5 s clear; captions sit at ~70 % from the top.
 - New sets go in a NEW area of `world.js`, at least 2 km from everything else. Used areas: Paris x −600..600 z −700..400
   (river z 230–330 across x ±6000), TRAIN x 1500–6000 z 0..1600, FARM/DESERT/TOUR/FEST x 1300–8000 z −6000..−300,
-  OCEAN x ≥ 8000, NAP x −3900..−3100 z 2600..3300, PIG (San Juan Island) x −6200..−5000 z 5100..8600 (strait + hills to z ≈ 8000), indoor rooms at y 2000 (x 0–1200; next free x 1400). Free: x −6000..−1500, z 1000..6000.
+  OCEAN x ≥ 8000, NAP x −3900..−3100 z 2600..3300, PIG (San Juan Island) x −6200..−5000 z 5100..8600 (strait + hills to z ≈ 8000), RACE (1904 marathon road) x −2300..−1300 z 5200..5900 (dry field quad x ±500 z −400..+300 around [−1800, 5600], hills to z ≈ 4700), indoor rooms at y 2000 (x 0–1200; next free x 1400). Free: x −6000..−1500, z 1000..4500 (keep 2 km from NAP and RACE).
   Keep big scenery (mountains) far from every set.
 - Contact sheet after every round of fixes, and look at it:
   `cd $P/render && node render.cjs contact ../out/qa/c/s "" 540 960 && python3 ../tools/sheet.py ../out/qa/c ../out/qa/sheet.jpg`

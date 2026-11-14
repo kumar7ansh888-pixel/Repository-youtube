@@ -26,6 +26,7 @@ export const MOTEL = [3940, 0, -2622];
 export const TOUR = [6100, 0, -2600];        // 1946 fairground sideshow
 export const FEST = [5000, 0, -3500];        // Fruita today: Mike the Headless Chicken Festival         // the Crouch farm in Kentucky (meat shower)        // railway along x at z = 0 near TRAIN
 export const NAP = [-3500, 0, 3000];        // 1807: Berthier's estate outside Paris, the rabbit hunt (Napoleon vs the bunnies)
+export const RACE = [-1800, 0, 5600];     // 1904: the St. Louis Olympic marathon (dirt road along x at z 0, finish arch + grandstand at x -40, apple orchard x +40..+70)
 export const PIG = [-5600, 0, 5600];       // 1859: San Juan Island, the Pig War (Cutlar's farm at the origin, the strait to +z from z = +40)
 export const OCEAN = [8000, 0, 0];        // sea starts at x = 8000; New York skyline at x = 12500
 const RY = 2000;
@@ -599,6 +600,39 @@ export class World {
       for (const [x, z, s] of [[px - 22, pz + 4, 1.1], [px + 2, pz - 18, 1.3]]) fir(x, z, s);
       // Vancouver Island: low blue hills far across the strait
       for (let i = 0; i < 9; i++) { const h = 90 + (i % 3) * 50, m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); m.scale(420 + (i % 2) * 160, h, 160); m.translate(px - 2200 + i * 550, -2, pz + 2300 + (i % 2) * 200); b.add(m, L("sjHill" + (i % 2), i % 2 ? "#6f8aa0" : "#7f98aa")); }
+    }
+
+    // ---- 1904, the St. Louis Olympic marathon (RACE): a dusty dirt road along x (z -3..+3) through dry summer fields,
+    //      split-rail fences and telegraph poles beside it, a finish arch + wooden grandstand at x -40 (behind the road, -z),
+    //      an apple orchard at x +40..+70 z -8..-30, low dry hills far off
+    {
+      const [rx, , rz] = RACE, L = (k, c) => lam(k, () => ({ color: c }));
+      const dry = lam("rcField", () => ({ map: GT.fieldTex("rcField", "#c4b866") })); dry.polygonOffset = true; dry.polygonOffsetFactor = -2; dry.polygonOffsetUnits = -6;
+      b.add(quadUp(rx - 500, rx + 500, rz - 400, rz + 300, 0.05, 30), dry);
+      const road = lam("rcRoad", () => ({ map: GT.fieldTex("rcRoad", "#cfa874") })); road.polygonOffset = true; road.polygonOffsetFactor = -3; road.polygonOffsetUnits = -9;
+      b.add(quadUp(rx - 500, rx + 500, rz - 3, rz + 3, 0.07, 8), road);
+      // fences + telegraph poles (parallax for the running shots)
+      const rail = L("rcRail", "#9a7a54"), pole = L("rcPole", "#6a4e36");
+      for (const fz of [-5.2]) { for (let x = -300; x <= 300; x += 2.6) b.add(boxGeo(rx + x - 0.06, 0, rz + fz - 0.06, rx + x + 0.06, 1.0, rz + fz + 0.06, 1), rail);
+        for (const y of [0.45, 0.85]) b.add(boxGeo(rx - 300, y - 0.04, rz + fz - 0.03, rx + 300, y + 0.04, rz + fz + 0.03, 40), rail); }
+      for (let x = -300; x <= 300; x += 14) { b.add(cyl(0.09, 0.11, 7, 6, rx + x, 3.5, rz - 7.5), pole); b.add(boxGeo(rx + x - 0.7, 6.4, rz - 7.56, rx + x + 0.7, 6.52, rz - 7.44, 1), pole); }
+      // finish: grandstand (wooden steps under a striped roof) behind the road at x -40, an arch over the road
+      const wood = L("rcStand", "#b08a5a"), woodD = L("rcStandD", "#7a5a3a");
+      const gx = rx - 40, gz = rz - 6;
+      for (let k = 0; k < 6; k++) b.add(boxGeo(gx - 14, 0, gz - 1 - k * 0.9, gx + 14, 0.45 + k * 0.45, gz - k * 0.9, 4), k % 2 ? wood : woodD);
+      for (const sx of [-14, -7, 0, 7, 14]) b.add(boxGeo(gx + sx - 0.12, 0, gz - 6.4, gx + sx + 0.12, 5.6, gz - 6.1, 1), woodD);
+      const stripe = lam("rcAwning", () => ({ map: ctex("rcAwning", 512, 64, (g) => { for (let i = 0; i < 16; i++) { g.fillStyle = i % 2 ? "#c8302e" : "#f4efe2"; g.fillRect(i * 32, 0, 32, 64); } }), side: THREE.DoubleSide }));
+      b.add(quad(V(gx - 15, 5.6, gz - 6.6), V(gx + 15, 5.6, gz - 6.6), V(gx + 15, 4.4, gz + 0.6), V(gx - 15, 4.4, gz + 0.6)), stripe);
+      for (const sz of [-3.6, 3.6]) b.add(cyl(0.13, 0.15, 4.6, 8, gx, 2.3, rz + sz), L("rcArch", "#f2ece0"));
+      // the orchard: round apple trees with red apples
+      const apple = L("rcApple", "#d23a2a"), aleaf = [L("rcLeaf0", "#5a8a36"), L("rcLeaf1", "#6e9e40")];
+      const atree = (x, z, s) => { b.add(cyl(0.18 * s, 0.28 * s, 2.4 * s, 7, x, 1.2 * s, z), M.trunk); for (let k = 0; k < 3; k++) { const c = new THREE.IcosahedronGeometry(1.5 * s, 1); c.translate(x + Math.cos(k * 2.1) * 0.8 * s, (2.9 + (k % 2) * 0.5) * s, z + Math.sin(k * 2.1) * 0.8 * s); b.add(c, aleaf[k % 2]); }
+        for (let k = 0; k < 9; k++) { const a = k * 2.4, e = 0.3 + (k % 3) * 0.35, r = 1.75 * s; const c = new THREE.IcosahedronGeometry(0.14 * s, 1); c.translate(x + Math.cos(a) * Math.cos(e) * r, 3.0 * s + Math.sin(e) * r * 0.8, z + Math.sin(a) * Math.cos(e) * r); b.add(c, apple); } };
+      for (let i = 0; i < 4; i++) for (let j = 0; j < 4; j++) atree(rx + 42 + i * 7 + (j % 2) * 3, rz - 10 - j * 6, 1 + hh(i * 4 + j, 3) * 0.25);
+      // shady oaks dotted along the road
+      for (let k = 0; k < 14; k++) { const x = rx - 250 + k * 38 + hh(k, 2) * 10, z = rz + (k % 2 ? -14 - hh(k, 5) * 10 : 13 + hh(k, 6) * 10); if (Math.abs(x - rx - 55) < 25 || Math.abs(x - rx + 40) < 20) continue; b.add(cyl(0.3, 0.45, 4.2, 7, x, 2.1, z), M.trunk); for (let q = 0; q < 4; q++) { const c = new THREE.IcosahedronGeometry(2.3, 1); c.translate(x + Math.cos(q * 1.7) * 1.4, 5.0 + (q % 2), z + Math.sin(q * 1.7) * 1.4); b.add(c, M.leaf[q % 3]); } }
+      // low dry hills far off
+      for (let i = 0; i < 8; i++) { const h = 50 + (i % 3) * 20, m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); m.scale(300 + (i % 2) * 120, h, 140); m.translate(rx - 1400 + i * 400, -2, rz - 750 - (i % 2) * 150); b.add(m, L("rcHill" + (i % 2), i % 2 ? "#b8a86a" : "#a8a060")); }
     }
     b.build(R, true, true);
     // New York skyline far across the ocean (flat painted card)

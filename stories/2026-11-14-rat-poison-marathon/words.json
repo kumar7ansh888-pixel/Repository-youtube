@@ -1,0 +1,512 @@
+[
+{
+"word": "He",
+"raw": "He",
+"start": 0.352,
+"end": 0.615
+},
+{
+"word": "won",
+"raw": "won",
+"start": 0.615,
+"end": 0.877
+},
+{
+"word": "Olympic",
+"raw": "Olympic",
+"start": 0.877,
+"end": 1.664
+},
+{
+"word": "gold",
+"raw": "gold\u2026",
+"start": 1.664,
+"end": 1.927
+},
+{
+"word": "on",
+"raw": "on",
+"start": 1.927,
+"end": 2.189
+},
+{
+"word": "rat",
+"raw": "rat",
+"start": 2.189,
+"end": 2.451
+},
+{
+"word": "poison",
+"raw": "poison.",
+"start": 2.451,
+"end": 2.976
+},
+{
+"word": "The",
+"raw": "The",
+"start": 3.412,
+"end": 3.609
+},
+{
+"word": "worst",
+"raw": "worst",
+"start": 3.609,
+"end": 3.806
+},
+{
+"word": "marathon",
+"raw": "marathon",
+"start": 3.806,
+"end": 4.397
+},
+{
+"word": "ever",
+"raw": "ever.",
+"start": 4.397,
+"end": 4.791
+},
+{
+"word": "Boiling",
+"raw": "Boiling",
+"start": 5.04,
+"end": 5.561
+},
+{
+"word": "heat",
+"raw": "heat.",
+"start": 5.561,
+"end": 5.821
+},
+{
+"word": "Choking",
+"raw": "Choking",
+"start": 6.068,
+"end": 6.661
+},
+{
+"word": "dust",
+"raw": "dust.",
+"start": 6.661,
+"end": 6.958
+},
+{
+"word": "A",
+"raw": "A",
+"start": 7.263,
+"end": 7.488
+},
+{
+"word": "runner",
+"raw": "runner",
+"start": 7.488,
+"end": 7.939
+},
+{
+"word": "gets",
+"raw": "gets",
+"start": 7.939,
+"end": 8.165
+},
+{
+"word": "cramps",
+"raw": "cramps\u2026",
+"start": 8.165,
+"end": 8.39
+},
+{
+"word": "so",
+"raw": "so",
+"start": 8.39,
+"end": 8.615
+},
+{
+"word": "he",
+"raw": "he",
+"start": 8.615,
+"end": 8.841
+},
+{
+"word": "hops",
+"raw": "hops",
+"start": 8.841,
+"end": 9.066
+},
+{
+"word": "in",
+"raw": "in",
+"start": 9.066,
+"end": 9.291
+},
+{
+"word": "a",
+"raw": "a",
+"start": 9.291,
+"end": 9.517
+},
+{
+"word": "car",
+"raw": "car.",
+"start": 9.517,
+"end": 9.742
+},
+{
+"word": "He",
+"raw": "He",
+"start": 9.953,
+"end": 10.181
+},
+{
+"word": "waves",
+"raw": "waves",
+"start": 10.181,
+"end": 10.637
+},
+{
+"word": "at",
+"raw": "at",
+"start": 10.637,
+"end": 10.865
+},
+{
+"word": "runners",
+"raw": "runners",
+"start": 10.865,
+"end": 11.321
+},
+{
+"word": "as",
+"raw": "as",
+"start": 11.321,
+"end": 11.549
+},
+{
+"word": "he",
+"raw": "he",
+"start": 11.549,
+"end": 11.777
+},
+{
+"word": "drives",
+"raw": "drives",
+"start": 11.777,
+"end": 12.233
+},
+{
+"word": "past",
+"raw": "past.",
+"start": 12.233,
+"end": 12.461
+},
+{
+"word": "The",
+"raw": "The",
+"start": 12.834,
+"end": 13.086
+},
+{
+"word": "car",
+"raw": "car",
+"start": 13.086,
+"end": 13.339
+},
+{
+"word": "breaks",
+"raw": "breaks",
+"start": 13.339,
+"end": 13.592
+},
+{
+"word": "down",
+"raw": "down,",
+"start": 13.592,
+"end": 13.844
+},
+{
+"word": "so",
+"raw": "so",
+"start": 13.844,
+"end": 14.097
+},
+{
+"word": "he",
+"raw": "he",
+"start": 14.097,
+"end": 14.349
+},
+{
+"word": "jogs",
+"raw": "jogs",
+"start": 14.349,
+"end": 14.602
+},
+{
+"word": "in",
+"raw": "in.",
+"start": 14.602,
+"end": 14.854
+},
+{
+"word": "The",
+"raw": "The",
+"start": 15.262,
+"end": 15.458
+},
+{
+"word": "President's",
+"raw": "President's",
+"start": 15.458,
+"end": 16.047
+},
+{
+"word": "daughter",
+"raw": "daughter",
+"start": 16.047,
+"end": 16.439
+},
+{
+"word": "crowns",
+"raw": "crowns",
+"start": 16.439,
+"end": 16.634
+},
+{
+"word": "him",
+"raw": "him.",
+"start": 16.634,
+"end": 16.831
+},
+{
+"word": "Then",
+"raw": "Then",
+"start": 17.244,
+"end": 17.437
+},
+{
+"word": "somebody",
+"raw": "somebody",
+"start": 17.437,
+"end": 18.208
+},
+{
+"word": "snitches",
+"raw": "snitches.",
+"start": 18.208,
+"end": 18.594
+},
+{
+"word": "Meanwhile",
+"raw": "Meanwhile,",
+"start": 18.99,
+"end": 19.438
+},
+{
+"word": "a",
+"raw": "a",
+"start": 19.438,
+"end": 19.662
+},
+{
+"word": "Cuban",
+"raw": "Cuban",
+"start": 19.662,
+"end": 20.109
+},
+{
+"word": "mailman",
+"raw": "mailman",
+"start": 20.109,
+"end": 20.556
+},
+{
+"word": "eats",
+"raw": "eats",
+"start": 20.556,
+"end": 20.78
+},
+{
+"word": "rotten",
+"raw": "rotten",
+"start": 20.78,
+"end": 21.228
+},
+{
+"word": "apples",
+"raw": "apples\u2026",
+"start": 21.228,
+"end": 21.675
+},
+{
+"word": "and",
+"raw": "and",
+"start": 21.675,
+"end": 21.899
+},
+{
+"word": "takes",
+"raw": "takes",
+"start": 22.138,
+"end": 22.559
+},
+{
+"word": "a",
+"raw": "a",
+"start": 22.559,
+"end": 22.782
+},
+{
+"word": "nap",
+"raw": "nap.",
+"start": 22.782,
+"end": 23.006
+},
+{
+"word": "But",
+"raw": "But",
+"start": 23.999,
+"end": 24.176
+},
+{
+"word": "the",
+"raw": "the",
+"start": 24.176,
+"end": 24.353
+},
+{
+"word": "real",
+"raw": "real",
+"start": 24.353,
+"end": 24.53
+},
+{
+"word": "winner",
+"raw": "winner?",
+"start": 24.53,
+"end": 24.884
+},
+{
+"word": "His",
+"raw": "His",
+"start": 25.328,
+"end": 25.573
+},
+{
+"word": "coaches",
+"raw": "coaches",
+"start": 25.573,
+"end": 26.063
+},
+{
+"word": "kept",
+"raw": "kept",
+"start": 26.063,
+"end": 26.308
+},
+{
+"word": "feeding",
+"raw": "feeding",
+"start": 26.308,
+"end": 26.798
+},
+{
+"word": "him",
+"raw": "him",
+"start": 26.798,
+"end": 27.043
+},
+{
+"word": "brandy",
+"raw": "brandy,",
+"start": 27.043,
+"end": 27.533
+},
+{
+"word": "egg",
+"raw": "egg\u2026",
+"start": 27.533,
+"end": 27.778
+},
+{
+"word": "and",
+"raw": "and",
+"start": 27.778,
+"end": 28.023
+},
+{
+"word": "strychnine",
+"raw": "strychnine.",
+"start": 28.023,
+"end": 28.513
+},
+{
+"word": "Rat",
+"raw": "Rat",
+"start": 28.882,
+"end": 29.146
+},
+{
+"word": "poison",
+"raw": "poison.",
+"start": 29.146,
+"end": 29.674
+},
+{
+"word": "Hallucinating",
+"raw": "Hallucinating,",
+"start": 30.06,
+"end": 31.104
+},
+{
+"word": "held",
+"raw": "held",
+"start": 31.104,
+"end": 31.313
+},
+{
+"word": "up",
+"raw": "up",
+"start": 31.313,
+"end": 31.522
+},
+{
+"word": "by",
+"raw": "by",
+"start": 31.522,
+"end": 31.731
+},
+{
+"word": "his",
+"raw": "his",
+"start": 31.731,
+"end": 31.94
+},
+{
+"word": "coaches",
+"raw": "coaches\u2026",
+"start": 31.94,
+"end": 32.357
+},
+{
+"word": "he",
+"raw": "he",
+"start": 32.357,
+"end": 32.566
+},
+{
+"word": "wins",
+"raw": "wins.",
+"start": 32.566,
+"end": 32.775
+},
+{
+"word": "So",
+"raw": "So",
+"start": 33.052,
+"end": 33.397
+},
+{
+"word": "yes",
+"raw": "yes\u2026",
+"start": 33.397,
+"end": 33.743
+}
+]
