@@ -4,13 +4,16 @@ What we've learned so far making cartoon true-story shorts.
 
 ## Format that works
 - **Hook first (0–2 s):** open on the craziest moment, not a date or an establishing shot. Add a big bold on-screen title for the first ~2.5 s (e.g. "IT RAINED MEAT… and they ATE it", "LIVED 18 MONTHS / WITH NO HEAD!").
-- **Length:** 25–35 s. Narration 70–85 words (from 2026-11-13; 43 s versions plateaued under 1K). Long (60 s) versions lose viewers.
+- **Length:** ~1 minute (55–60 s), English narration 140–150 words (owner, 2026-11-15). History: 25–35 s / 70–85 words from 2026-11-13; 1-minute Hindi on 2026-11-14.
 - **Loop ending:** last line should flow back into the first line; no fade to black at the end. (Mike: "…All for" → "A chicken that lived eighteen months…"; last shot = Mike's statue facing right, first shot = real Mike walking right.)
 - **Pacing:** a cut every ~2 s, yellow word-by-word captions, music + SFX.
 - **Audience setting:** "No, it's not made for kids"; no 18+ restriction.
 
-## Format change (2026-11-14, owner)
-- From now on: ~1-minute videos narrated in **Hindi** (free Piper voice Pratham, owner's pick), captions/title in Hinglish. Procedure: `docs/HINDI.md`. (Note: 25–35 s English cuts had the better retention so far; watch whether 1-min Hindi does better in India.)
+## Format change (2026-11-15, owner)
+- Back to **English** for everything: narration (Kokoro `am_michael`), captions, hook title, YouTube title/description/first comment, and the daily message. Keep the ~1-minute length. `docs/HINDI.md` is retired.
+
+## Format change (2026-11-14, owner; superseded 2026-11-15)
+- From then: ~1-minute videos narrated in **Hindi** (free Piper voice Pratham, owner's pick), captions/title in Hinglish. Procedure: `docs/HINDI.md`. (Note: 25–35 s English cuts had the better retention so far; watch whether 1-min Hindi does better in India.)
 
 ## Daily automation (from 2026-11-12)
 - One Short a day, published automatically at **23:00 India time** via Metricool (brand 8029273, YouTube channel UCUaVL00Y35TENRYg2h6-1lw), no review step (owner's choice).

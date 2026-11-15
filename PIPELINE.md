@@ -1,6 +1,7 @@
 # Daily Short pipeline — Beyond Normal Daily
 
-> **From 2026-11-14 videos are ~1 min and in Hindi: read `docs/HINDI.md` too — it overrides the voice, length and ASR steps below.**
+> **Owner, 2026-11-15: everything in ENGLISH again (narration, captions, hook title, YouTube title/description/first comment,
+> the daily message), and keep the ~1-minute length from the Hindi trial. `docs/HINDI.md` is retired; this file is the procedure.**
 
 The procedure a scheduled Claude session follows every day: pick a weird true story, write it, voice it, animate it,
 check it, and schedule it on YouTube for **23:00 India time (Asia/Kolkata)**. The owner chose: free AI voice made
@@ -46,7 +47,7 @@ attached to the session, attach it with push access first.
 # <Title>
 
 ## Script
-<70–85 words>
+<140–150 words, 17–19 short lines>
 
 ## Shot ideas
 ```
@@ -73,7 +74,8 @@ python3 $P/tools/asr.py /home/claude/models/sherpa-onnx-whisper-base.en/base.en 
 
 The transcript must match the script word for word (numbers may come back as digits). A mispronounced name: add a
 line `name IPA` to `lex.txt` (stress mark `ˈ` before the stressed vowel, same symbols as `tts.py --print`) and redo.
-Aim for **25–35 s** (shorter = higher % viewed = more reach). Over 36 s: cut words, do not speed up past 1.15.
+Aim for **55–60 s** (85 words at speed 1.12 came out at 34 s, so ~2.5 words/s). Over 61 s: cut words, do not speed up past 1.15.
+A 1-minute script needs more escalation, not more context: a new joke, gross detail or twist every 3–4 s.
 
 ## 4. Word timings
 
@@ -85,7 +87,7 @@ python3 $P/tools/snapwords.py $P/voice/voice.wav $P/voice/words.json
 ## 5. Animate: `render/src/story.js` (+ new sets in `render/src/world.js`)
 
 - Copy the structure of the Mike `story.js`: `shot({ at: S("phrase"), light, cam: push(...), stage(t, out) {...} })`,
-  one shot per beat, a cut every ~1.0–1.5 s, 22–28 shots, something moving in every shot. Phrase lookups match the first occurrence after `a`: use
+  one shot per beat, a cut every ~1.5–2 s, about 30–34 shots, something moving in every shot. Phrase lookups match the first occurrence after `a`: use
   two-word phrases when a word repeats ("His name", not "His").
 - Shot 1 is the hook moment, **already in motion on frame 0** (no establishing shot, no slow push-in), with a big
   reaction face. The on-screen hook title is ≤ 6 words, a claim or question (e.g. `EATEN BY SPIT?!`).
@@ -100,6 +102,9 @@ python3 $P/tools/snapwords.py $P/voice/voice.wav $P/voice/words.json
   (river z 230–330 across x ±6000), TRAIN x 1500–6000 z 0..1600, FARM/DESERT/TOUR/FEST x 1300–8000 z −6000..−300,
   OCEAN x ≥ 8000, NAP x −3900..−3100 z 2600..3300, PIG (San Juan Island) x −6200..−5000 z 5100..8600 (strait + hills to z ≈ 8000), RACE (1904 marathon road) x −2300..−1300 z 5200..5900 (dry field quad x ±500 z −400..+300 around [−1800, 5600], hills to z ≈ 4700), indoor rooms at y 2000 (x 0–1200; next free x 1400). Free: x −6000..−1500, z 1000..4500 (keep 2 km from NAP and RACE).
   Keep big scenery (mountains) far from every set.
+- Low cameras over a set's own ground quad: do not give it a negative polygonOffsetFactor (the near ground slips past the
+  near plane and the global green grass shows through, looks like flicker). Use factor 0 and lift the set ground to
+  y ≈ 0.10 (roads 0.14, characters stand on it), as the RACE set does.
 - Contact sheet after every round of fixes, and look at it:
   `cd $P/render && node render.cjs contact ../out/qa/c/s "" 540 960 && python3 ../tools/sheet.py ../out/qa/c ../out/qa/sheet.jpg`
   Every shot must read at a glance: subject in frame, nothing cut off, no walls blocking the camera.
@@ -111,7 +116,7 @@ cd $P/render && until node render.cjs segments ../out/segs 150 1080 1920 x 16 >>
   && [ "$(ls ../out/segs/seg_*.mp4 | grep -v part | wc -l)" -ge <ceil(TOTAL/150)> ]; do sleep 5; done
 ```
 
-Then join and scan: `python3 $P/tools/flicker.py $P/out/video_raw.mp4`. Camera kicks show up on purpose; fix real
+~1800 frames take ~75–80 min on 2 CPUs: start the render at least 5 h before 23:00 IST. Then join and scan: `python3 $P/tools/flicker.py $P/out/video_raw.mp4`. Camera kicks show up on purpose; fix real
 one-frame pops by blending the neighbour frames of that segment and re-encoding it (crf 16).
 
 ## 7. Sound
@@ -150,6 +155,6 @@ The URL must return 200 and the file's exact size. Then Metricool `createSchedul
 - Add a row to `stories/LOG.md`; copy `SCRIPT.md`, `story.js`, the world.js diff, `words.json`, `captions.ass` and the
   soundtrack script to `stories/<date>-<slug>/`; move the topic in `docs/channel-playbook.md` from ideas to done.
   Commit and push to `engine`.
-- Send the person the finished video file and a short message in Hinglish: topic, title, publish time, the Metricool
+- Send the person the finished video file and a short message in English: topic, title, publish time, the Metricool
   planner link.
 - Keep the `videos` branch lean: when it holds more than 7 videos, `git rm` the oldest ones.

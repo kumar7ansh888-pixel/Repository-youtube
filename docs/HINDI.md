@@ -1,4 +1,7 @@
-# Hindi 1-minute Shorts (owner's choice, 2026-11-14)
+# Hindi 1-minute Shorts (owner's choice, 2026-11-14) — RETIRED 2026-11-15
+
+> The owner switched back to English for everything on 2026-11-15 (keeping the ~1-minute length). Do not use this
+> file for new videos; it is kept as a record of the Hindi trial and its tools.
 
 From 2026-11-14 every daily video is **about 1 minute, narrated in Hindi**. This file overrides the English-only parts of
 `PIPELINE.md`; everything else there (topic scoring, facts, renderer, contact sheets, render, sound, publish, record)

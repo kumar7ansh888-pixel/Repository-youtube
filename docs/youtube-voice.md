@@ -22,7 +22,7 @@ Dates and places said flat ("Colorado, 1945."), real names, exact numbers, a twi
 No invented numbers, quotes or causes. Disputed details are dropped or told as "the most popular answer". Nothing gory (cartoon, no blood), nothing made-for-kids.
 
 ## My format
-- Vertical 1080×1920 Short, 25–35 s, 70–85 words.
+- Vertical 1080×1920 Short, about 1 minute (55–60 s), 140–150 words, English.
 - Hook first: ≤ 8 spoken words, open mid-action on the craziest moment, on-screen title ≤ 6 words for the first ~2.5 s.
 - Funny, gross or absurd beat every 3–4 s; no context-only lines; end on a punchline.
 - A cut every ~2 s, yellow word-by-word captions, original music + SFX.
