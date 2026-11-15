@@ -20,18 +20,19 @@ What we've learned so far making cartoon true-story shorts.
 - Narration: free Kokoro v0.19 voice `am_michael` made in the cloud (owner's choice; ElevenLabs Ace Adams was used up to Mike).
 - Videos hosted in the `videos` branch of github.com/kumar7ansh888-pixel/Repository-youtube; engine on the `engine` branch; procedure in `PIPELINE.md`.
 
-## What the numbers say (Windsor, last 29 days, read 2026-11-14)
+## What the numbers say (Windsor, last 29 days, read 2026-11-15)
 | Short | views | engaged (not swiped) | avg % viewed | shares |
 | --- | --- | --- | --- | --- |
-| This bridge is being eaten by Spit 🤢 (1:39) | 3,037 | 71% | 55% | 2 |
-| The Man Who Stole the Mona Lisa 🖼️ (0:58) | 2,770 | 65% | 66% | 1 |
-| He Robbed a Bank Wearing Lemon Juice 🍋 (1:11) | 2,440 | 60% | 70% | 0 |
-| This Chicken Lived 18 MONTHS Without a Head 🐔 (0:44) | 2,140 | 57% | 67% | 0 |
+| This bridge is being eaten by Spit 🤢 (1:39) | 3,039 | 71% | 55% | 2 |
+| The Man Who Stole the Mona Lisa 🖼️ (0:58) | 2,866 | 65% | 67% | 1 |
+| This Chicken Lived 18 MONTHS Without a Head 🐔 (0:44) | 2,497 | 57% | 68% | 0 |
+| He Robbed a Bank Wearing Lemon Juice 🍋 (1:11) | 2,442 | 60% | 70% | 0 |
+| The Day It Rained MEAT 🥩 (0:42) | 1,615 | 47% | 70% | 0 |
 | The Man Who Sold the Eiffel Tower (1:31) | 1,491 | 61% | 59% | 0 |
-| Australia Declared War on Birds… and LOST 🐦 (0:52) | 1,458 | 59% | 52% | 0 |
-| The Day It Rained MEAT 🥩 (0:42) | 1,317 | 43% | 71% | 0 |
+| Australia Declared War on Birds… and LOST 🐦 (0:52) | 1,459 | 59% | 52% | 0 |
 | India Disguised the Taj Mahal… 🤯 (1:55) | 1,173 | 57% | 50% | 0 |
-| Napoleon (11-12) / Pig War (11-13) | not in Windsor yet | – | – | – |
+| Napoleon Lost a Battle… to BUNNIES 🐰 (0:43) | 871 | 42% | 62% | 1 |
+| Pig War (11-13) / rat poison (11-14) | not in Windsor yet | – | – | – |
 Lessons: 30–57% swipe away in the first seconds, so the first second decides everything; gross/absurd + modern
 (spit bridge) and dumb crime (lemon juice) beat war/history-lesson topics; shares are ~0, so pick send-to-a-friend
 stories. Owner's direction (2026-11-13): more interesting, shocking and funny; see PIPELINE step 1 scoring.
@@ -43,7 +44,7 @@ stories. Owner's direction (2026-11-13): more interesting, shocking and funny; s
 - Ghost Army (long video): very low views — focus on Shorts.
 
 ## Topics done
-Ghost Army, Eiffel Tower sale, Lemon juice robber, Mona Lisa theft, Hitler's nephew (user disliked), Great Emu War, Kentucky meat shower (40 s re-cut with hook), Mike the Headless Chicken (43.6 s, hook + loop format, Nov 2026), Napoleon attacked by rabbits (43.1 s, first fully automated daily run, 2026-11-12), Pig War 1859 (43.3 s, 2026-11-13), 1904 Olympic marathon / gold on rat poison (2026-11-14: English 34 s cut made, then replaced by the first Hindi 1-min cut, 57 s).
+Ghost Army, Eiffel Tower sale, Lemon juice robber, Mona Lisa theft, Hitler's nephew (user disliked), Great Emu War, Kentucky meat shower (40 s re-cut with hook), Mike the Headless Chicken (43.6 s, hook + loop format, Nov 2026), Napoleon attacked by rabbits (43.1 s, first fully automated daily run, 2026-11-12), Pig War 1859 (43.3 s, 2026-11-13), 1904 Olympic marathon / gold on rat poison (2026-11-14: English 34 s cut made, then replaced by the first Hindi 1-min cut, 57 s), Oregon exploding whale 1970 (2026-11-15, English 1-min, 56.8 s).
 
 ## Topic ideas not yet used (re-score with the 4 tests before using; prefer funny/gross/absurd)
 pigeon-guided missiles, Bosco the dog mayor, CIA spy cat (Acoustic Kitty), man who mailed himself, dancing plague of 1518.
@@ -66,3 +67,6 @@ pigeon-guided missiles, Bosco the dog mayor, CIA spy cat (Acoustic Kitty), man w
 - Don't put a camera behind a fence: the near fence blocked a shot until it was removed.
 - Rat-poison render: 8 single frames flashed the bright-green global grass through the dry field/road quads (low road-level cameras). flicker.py only caught some; a per-frame green-pixel mask (count frames greener than both neighbours) found them all; fixed by blending neighbours. Consider raising set ground quads (field 0.05 / road 0.07) further above the global grass.
 - A name ribbon must face the camera (`tag(..., nrm)`): with the camera looking along x the default [0,0,1] shows it edge-on.
+- Exploding-whale set (`BEACH` in world.js, x −4800 z 1400): sand quad y 0.10 (no polygon offset), the sea plane (y 0.08) to −z from z −8 with foam strips, a dune ridge z 14..32 with a flat crest y ≈ 2.7 at z 20..26 (`crest(z)` in that story.js), a parking lot z 34..62, pines z 72+, headlands far out. The whale, TNT crate pile, plunger, seagulls, blubber lumps/splats, the 1970 sedan (crushed variant) and the park / "whale of a deal" signs are canvas cards in that story.js; `blast(out, e)` draws a whole explosion from seconds-since-detonation (soft round burst, fire→smoke puffs, sand column, ballistic chunks), and the loop shot counts up to the blast so the cut into shot 1 lands mid-explosion.
+- A sign card faces +z by default: a camera on the beach looking at the dune (+z) sees it mirrored; give it `normal [0, 0, -1]`.
+- `DR.burst` is a hard-edged square: for a big flash use a radially masked burst (`DR3.boom` in the whale story.js).

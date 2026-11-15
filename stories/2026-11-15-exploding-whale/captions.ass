@@ -1,0 +1,66 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Bangers,200,&H00FFFFFF,&H00FFFFFF,&H00101010,&H96000000,0,0,0,0,100,100,3,0,1,12,8,8,40,40,190,1
+Style: Cap,Poppins,112,&H0000D4FF,&H00FFFFFF,&H00111111,&H64000000,1,0,0,0,100,100,0,0,1,8,5,2,60,60,470,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:02.55,Hook,,0,0,0,,{\fscx60\fscy60\t(0,180,\fscx100\fscy100)}{\c&H3AE8FF&}THEY BLEW UP\N{\c&H3A48F0&\fs224}A WHALE?!
+Dialogue: 0,0:00:00.32,0:00:01.18,Cap,,0,0,0,,{\k2}{\k21}They {\k21}blew {\k21}up {\k19}a
+Dialogue: 0,0:00:01.18,0:00:01.61,Cap,,0,0,0,,{\k2}{\k21}dead {\k19}whale…
+Dialogue: 0,0:00:01.61,0:00:02.83,Cap,,0,0,0,,{\k2}{\k21}with {\k100}dynamite.
+Dialogue: 0,0:00:02.83,0:00:04.07,Cap,,0,0,0,,{\k2}{\k25}A {\k25}giant {\k25}whale {\k47}washed
+Dialogue: 0,0:00:04.07,0:00:05.05,Cap,,0,0,0,,{\k2}{\k25}up {\k25}on {\k25}the {\k23}beach…
+Dialogue: 0,0:00:05.05,0:00:06.21,Cap,,0,0,0,,{\k2}{\k25}and {\k25}it {\k65}stank.
+Dialogue: 0,0:00:06.21,0:00:07.36,Cap,,0,0,0,,{\k2}{\k23}So {\k23}the {\k46}highway {\k21}guys
+Dialogue: 0,0:00:07.36,0:00:08.71,Cap,,0,0,0,,{\k2}{\k23}had {\k23}a {\k46}brilliant {\k41}plan.
+Dialogue: 0,0:00:08.71,0:00:09.65,Cap,,0,0,0,,{\k2}{\k24}Blow {\k24}it {\k24}to {\k22}bits…
+Dialogue: 0,0:00:09.65,0:00:10.83,Cap,,0,0,0,,{\k2}{\k24}and {\k24}let {\k24}the {\k45}seagulls
+Dialogue: 0,0:00:10.83,0:00:11.78,Cap,,0,0,0,,{\k2}{\k24}eat {\k24}the {\k46}rest.
+Dialogue: 0,0:00:11.78,0:00:12.83,Cap,,0,0,0,,{\k2}{\k21}One {\k21}man {\k21}with {\k40}army
+Dialogue: 0,0:00:12.83,0:00:15.05,Cap,,0,0,0,,{\k2}{\k84}demolition {\k42}training {\k42}warned {\k52}them.
+Dialogue: 0,0:00:15.05,0:00:16.21,Cap,,0,0,0,,{\k2}{\k25}Bad {\k90}idea.
+Dialogue: 0,0:00:16.21,0:00:16.99,Cap,,0,0,0,,{\k2}{\k16}They {\k31}used {\k16}half {\k14}a
+Dialogue: 0,0:00:16.99,0:00:18.04,Cap,,0,0,0,,{\k2}{\k16}ton {\k88}anyway.
+Dialogue: 0,0:00:18.04,0:00:18.69,Cap,,0,0,0,,{\k2}{\k62}Oregon,
+Dialogue: 0,0:00:18.69,0:00:20.08,Cap,,0,0,0,,{\k2}{\k138}1970.
+Dialogue: 0,0:00:20.08,0:00:21.63,Cap,,0,0,0,,{\k2}{\k26}Crowds {\k52}lined {\k26}the {\k50}dunes
+Dialogue: 0,0:00:21.63,0:00:23.24,Cap,,0,0,0,,{\k2}{\k59}to {\k99}watch.
+Dialogue: 0,0:00:23.53,0:00:23.73,Cap,,0,0,0,,{\k2}{\k18}Then…
+Dialogue: 0,0:00:23.73,0:00:24.33,Cap,,0,0,0,,{\k2}{\k59}BOOM.
+Dialogue: 0,0:00:24.33,0:00:25.37,Cap,,0,0,0,,{\k2}{\k26}The {\k26}sand {\k26}flew {\k24}sky
+Dialogue: 0,0:00:25.37,0:00:25.63,Cap,,0,0,0,,{\k2}{\k24}high…
+Dialogue: 0,0:00:25.63,0:00:26.92,Cap,,0,0,0,,{\k2}{\k26}and {\k26}then {\k26}it {\k50}rained
+Dialogue: 0,0:00:26.92,0:00:27.61,Cap,,0,0,0,,{\k2}{\k67}whale.
+Dialogue: 0,0:00:27.61,0:00:29.71,Cap,,0,0,0,,{\k2}{\k35}Rotten {\k35}blubber {\k53}splattered {\k85}everyone.
+Dialogue: 0,0:00:29.71,0:00:31.26,Cap,,0,0,0,,{\k2}{\k28}People {\k28}ran {\k98}screaming.
+Dialogue: 0,0:00:31.26,0:00:32.12,Cap,,0,0,0,,{\k2}{\k21}And {\k21}the {\k41}seagulls?
+Dialogue: 0,0:00:32.12,0:00:33.41,Cap,,0,0,0,,{\k2}{\k43}Scared {\k43}away {\k21}by {\k20}the
+Dialogue: 0,0:00:33.41,0:00:33.91,Cap,,0,0,0,,{\k2}{\k48}boom.
+Dialogue: 0,0:00:33.91,0:00:34.83,Cap,,0,0,0,,{\k2}{\k23}Most {\k23}of {\k23}the {\k21}whale…
+Dialogue: 0,0:00:34.83,0:00:36.19,Cap,,0,0,0,,{\k2}{\k23}was {\k23}still {\k23}lying {\k66}there.
+Dialogue: 0,0:00:36.19,0:00:36.72,Cap,,0,0,0,,{\k2}{\k26}But {\k24}wait,
+Dialogue: 0,0:00:36.72,0:00:37.94,Cap,,0,0,0,,{\k2}{\k26}it {\k26}gets {\k68}worse.
+Dialogue: 0,0:00:37.94,0:00:38.78,Cap,,0,0,0,,{\k2}{\k21}One {\k21}huge {\k21}chunk {\k19}flew
+Dialogue: 0,0:00:38.78,0:00:39.84,Cap,,0,0,0,,{\k2}{\k42}over {\k21}the {\k40}dunes…
+Dialogue: 0,0:00:39.84,0:00:41.32,Cap,,0,0,0,,{\k2}{\k21}and {\k64}flattened {\k21}a {\k40}brand-new
+Dialogue: 0,0:00:41.32,0:00:41.84,Cap,,0,0,0,,{\k2}{\k50}car.
+Dialogue: 0,0:00:41.84,0:00:42.76,Cap,,0,0,0,,{\k2}{\k32}Whose {\k58}car?
+Dialogue: 0,0:00:42.76,0:00:43.73,Cap,,0,0,0,,{\k2}{\k19}The {\k19}guy {\k19}who {\k37}warned
+Dialogue: 0,0:00:43.73,0:00:44.67,Cap,,0,0,0,,{\k2}{\k92}them.
+Dialogue: 0,0:00:44.93,0:00:45.48,Cap,,0,0,0,,{\k2}{\k14}He {\k14}had {\k14}just {\k12}bought
+Dialogue: 0,0:00:45.48,0:00:46.02,Cap,,0,0,0,,{\k2}{\k14}it {\k14}at {\k14}a {\k12}sale
+Dialogue: 0,0:00:46.02,0:00:46.30,Cap,,0,0,0,,{\k2}{\k25}called…
+Dialogue: 0,0:00:46.30,0:00:46.84,Cap,,0,0,0,,{\k2}{\k14}a {\k14}whale {\k14}of {\k12}a
+Dialogue: 0,0:00:46.84,0:00:47.32,Cap,,0,0,0,,{\k2}{\k46}deal.
+Dialogue: 0,0:00:47.32,0:00:48.86,Cap,,0,0,0,,{\k2}{\k34}Years {\k118}later,
+Dialogue: 0,0:00:48.86,0:00:50.19,Cap,,0,0,0,,{\k2}{\k27}the {\k27}town {\k53}named {\k25}a
+Dialogue: 0,0:00:50.19,0:00:51.72,Cap,,0,0,0,,{\k2}{\k27}park {\k53}after {\k71}it…
+Dialogue: 0,0:00:51.72,0:00:54.19,Cap,,0,0,0,,{\k2}{\k66}Exploding {\k27}Whale {\k80}Memorial {\k72}Park.
+Dialogue: 0,0:00:54.19,0:00:55.70,Cap,,0,0,0,,{\k2}{\k38}Because {\k57}nobody {\k19}will {\k36}ever
+Dialogue: 0,0:00:55.70,0:00:57.20,Cap,,0,0,0,,{\k2}{\k38}forget {\k19}the {\k92}day…

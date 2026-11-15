@@ -1,0 +1,62 @@
+--- engine/render/src/world.js	2026-11-15 08:20:15.196167018 +0000
++++ /home/claude/work/2026-11-15-exploding-whale/render/src/world.js	2026-11-15 07:15:07.832008789 +0000
+@@ -28,6 +28,7 @@
+ export const NAP = [-3500, 0, 3000];        // 1807: Berthier's estate outside Paris, the rabbit hunt (Napoleon vs the bunnies)
+ export const RACE = [-1800, 0, 5600];     // 1904: the St. Louis Olympic marathon (dirt road along x at z 0, finish arch + grandstand at x -40, apple orchard x +40..+70)
+ export const PIG = [-5600, 0, 5600];       // 1859: San Juan Island, the Pig War (Cutlar's farm at the origin, the strait to +z from z = +40)
++export const BEACH = [-4800, 0, 1400];    // 1970: Florence, Oregon, the exploding whale (whale at the origin along x, sea to -z from z -8, dunes z 14..32 with a flat crest y 2.7, parking lot behind z 36..60)
+ export const OCEAN = [8000, 0, 0];        // sea starts at x = 8000; New York skyline at x = 12500
+ const RY = 2000;
+ export const ROOM = { office: [0, RY, 0], bank: [200, RY, 0], living: [400, RY, 0], interro: [600, RY, 0], showroom: [800, RY, 0], oval: [1000, RY, 0], motel: [1200, RY, 0] };
+@@ -634,6 +635,41 @@
+       // low dry hills far off
+       for (let i = 0; i < 8; i++) { const h = 50 + (i % 3) * 20, m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); m.scale(300 + (i % 2) * 120, h, 140); m.translate(rx - 1400 + i * 400, -2, rz - 750 - (i % 2) * 150); b.add(m, L("rcHill" + (i % 2), i % 2 ? "#b8a86a" : "#a8a060")); }
+     }
++
++    // ---- 1970, Florence, Oregon (BEACH): a wide sand beach along x, the Pacific to -z (water plane in buildWater), a dune ridge
++    //      z 14..32 with a flat crest (y 2.7, z 20..26) where the crowd stands, a parking lot behind it (z 36..60), a dark pine
++    //      forest behind that, and rocky headlands far off
++    {
++      const [wx, , wz] = BEACH, L = (k, c) => lam(k, () => ({ color: c }));
++      const sand = lam("bwSand", () => ({ map: GT.fieldTex("bwSand", "#e8d4a4") }));
++      b.add(quadUp(wx - 1500, wx + 1500, wz - 10, wz + 300, 0.10, 10), sand);
++      const wet = L("bwWet", "#c8b07e"); b.add(quadUp(wx - 1500, wx + 1500, wz - 10, wz - 5, 0.115, 10), wet);
++      const foam = L("bwFoam", "#f4f6f2"); for (let i = 0; i < 3; i++) b.add(quadUp(wx - 1500, wx + 1500, wz - 13.5 - i * 4.5, wz - 12.6 - i * 4.5 + (i ? 0 : 0.3), 0.095, 10), foam);
++      // the dune ridge (profile in z, y), extruded along x
++      const dune = lam("bwDune", () => ({ map: GT.fieldTex("bwDune", "#dcc492") }));
++      const ridge = (pts, x0, x1) => { const sh = new THREE.Shape(pts.map(([z, y]) => new THREE.Vector2(z, y))); const g = new THREE.ExtrudeGeometry(sh, { depth: x1 - x0, bevelEnabled: false });
++        g.rotateY(-Math.PI / 2); g.translate(x1, 0, 0); const uv = g.attributes.uv; for (let i = 0; i < uv.count; i++) uv.setXY(i, uv.getX(i) / 6, uv.getY(i) / 6); return g; };
++      const rg = ridge([[14, 0.05], [17, 1.2], [20, 2.6], [23, 2.75], [26, 2.6], [29, 1.3], [32, 0.05]], -300, 300);
++      // ExtrudeGeometry shape x -> world z after the rotation: rotateY(-90) maps shape (x, y, depth) to (depth, y, x); flip so z grows +z
++      rg.translate(wx, 0, wz); b.add(rg, dune);
++      // beach grass tufts on the dune
++      const grass = [L("bwGrass0", "#9aa860"), L("bwGrass1", "#b0b46a")];
++      for (let k = 0; k < 160; k++) { const x = wx - 150 + hh(k, 1) * 300, z = wz + 15 + hh(k, 2) * 16, y = z - wz < 20 ? (z - wz - 14) * 0.43 : z - wz > 26 ? (32 - (z - wz)) * 0.43 : 2.7; if (Math.abs(x - wx) < 8 && z - wz < 26) continue;
++        const c = new THREE.ConeGeometry(0.35 + hh(k, 3) * 0.3, 0.9 + hh(k, 4) * 0.6, 5); c.translate(x, y + 0.4, z); b.add(c, grass[k % 2]); }
++      // the parking lot behind the dune, with white bays, and a little wooden fence
++      const asph = L("bwAsph", "#6e6c6a"); b.add(quadUp(wx - 40, wx + 40, wz + 34, wz + 62, 0.13, 8), asph);
++      const line = L("bwLine", "#f2f0e8"); for (let x = -36; x <= 36; x += 4) b.add(quadUp(wx + x - 0.07, wx + x + 0.07, wz + 40, wz + 45, 0.135, 4), line);
++      for (let x = -36; x <= 36; x += 4) b.add(quadUp(wx + x - 0.07, wx + x + 0.07, wz + 51, wz + 56, 0.135, 4), line);
++      const post = L("bwPost", "#8a6a48"); for (let x = -40; x <= 40; x += 2.5) b.add(boxGeo(wx + x - 0.06, 0, wz + 62.5, wx + x + 0.06, 0.9, wz + 62.62, 1), post);
++      b.add(boxGeo(wx - 40, 0.62, wz + 62.5, wx + 40, 0.74, wz + 62.6, 20), post);
++      // a pine forest behind
++      const pine = [L("bwPine0", "#2f5a44"), L("bwPine1", "#3a6a4c")], trunk = L("bwTrunk", "#5a4030");
++      for (let k = 0; k < 90; k++) { const x = wx - 260 + k * 6 + hh(k, 7) * 4, z = wz + 72 + hh(k, 8) * 30, s = 1 + hh(k, 9) * 0.6; b.add(cyl(0.25 * s, 0.35 * s, 3 * s, 6, x, 1.5 * s, z), trunk);
++        for (let q = 0; q < 3; q++) { const c = new THREE.ConeGeometry((2.6 - q * 0.7) * s, 3.4 * s, 7); c.translate(x, (3.4 + q * 2.0) * s, z); b.add(c, pine[(k + q) % 2]); } }
++      // rocky headlands far off in the sea, and a long forested hill line behind
++      for (const [hx, hz, sx, sy, sz] of [[-700, -260, 260, 70, 140], [820, -320, 300, 90, 160], [-1300, -120, 220, 60, 200]]) { const m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); m.scale(sx, sy, sz); m.translate(wx + hx, -2, wz + hz); b.add(m, L("bwHead", "#6f7a6a")); }
++      for (let i = 0; i < 7; i++) { const m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); m.scale(320 + (i % 2) * 140, 60 + (i % 3) * 25, 140); m.translate(wx - 1200 + i * 400, -2, wz + 520 + (i % 2) * 120); b.add(m, L("bwHill" + (i % 2), i % 2 ? "#3f6a50" : "#4a7658")); }
++    }
+     b.build(R, true, true);
+     // New York skyline far across the ocean (flat painted card)
+     const sk = new THREE.Mesh(new THREE.PlaneGeometry(3200, 800), new THREE.MeshBasicMaterial({ map: PT.skylineTex(), transparent: true, fog: true, depthWrite: false }));
+@@ -690,7 +726,8 @@
+     const river = new THREE.PlaneGeometry(12000, SEINE[1] - SEINE[0] + 20); river.rotateX(-Math.PI / 2); river.translate(0, -2, (SEINE[0] + SEINE[1]) / 2);
+     const sea = new THREE.PlaneGeometry(8000, 8000); sea.rotateX(-Math.PI / 2); sea.translate(OCEAN[0] + 3500, -0.5, OCEAN[2]);
+     const strait = new THREE.PlaneGeometry(6000, 3000); strait.rotateX(-Math.PI / 2); strait.translate(PIG[0], 0.07, PIG[2] + 38 + 1500);
+-    for (const g of [river, sea, strait]) { const w = new THREE.Mesh(g, m); w.receiveShadow = true; this.root.add(w); }
++    const bsea = new THREE.PlaneGeometry(6000, 3000); bsea.rotateX(-Math.PI / 2); bsea.translate(BEACH[0], 0.08, BEACH[2] - 8 - 1500);
++    for (const g of [river, sea, strait, bsea]) { const w = new THREE.Mesh(g, m); w.receiveShadow = true; this.root.add(w); }
+   }
+ 
+   // ---------------- indoor sets (no ceilings; walls never cast shadows so the sun lights the floor) ----------------
