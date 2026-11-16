@@ -1,0 +1,48 @@
+--- engine/render/src/world.js	2026-11-16 07:06:30.341026956 +0000
++++ /home/claude/work/2026-11-16-man-ate-airplane/render/src/world.js	2026-11-16 05:19:29.538473952 +0000
+@@ -29,6 +29,7 @@
+ export const RACE = [-1800, 0, 5600];     // 1904: the St. Louis Olympic marathon (dirt road along x at z 0, finish arch + grandstand at x -40, apple orchard x +40..+70)
+ export const PIG = [-5600, 0, 5600];       // 1859: San Juan Island, the Pig War (Cutlar's farm at the origin, the strait to +z from z = +40)
+ export const BEACH = [-4800, 0, 1400];    // 1970: Florence, Oregon, the exploding whale (whale at the origin along x, sea to -z from z -8, dunes z 14..32 with a flat crest y 2.7, parking lot behind z 36..60)
++export const AIR = [-7200, 0, -2000];     // ~1978: Monsieur Mangetout eats a Cessna (banquet table at the origin, runway along x at z -15..-5, hangar at x -24 z -42)
+ export const OCEAN = [8000, 0, 0];        // sea starts at x = 8000; New York skyline at x = 12500
+ const RY = 2000;
+ export const ROOM = { office: [0, RY, 0], bank: [200, RY, 0], living: [400, RY, 0], interro: [600, RY, 0], showroom: [800, RY, 0], oval: [1000, RY, 0], motel: [1200, RY, 0] };
+@@ -670,6 +671,37 @@
+       for (const [hx, hz, sx, sy, sz] of [[-700, -260, 260, 70, 140], [820, -320, 300, 90, 160], [-1300, -120, 220, 60, 200]]) { const m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); m.scale(sx, sy, sz); m.translate(wx + hx, -2, wz + hz); b.add(m, L("bwHead", "#6f7a6a")); }
+       for (let i = 0; i < 7; i++) { const m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); m.scale(320 + (i % 2) * 140, 60 + (i % 3) * 25, 140); m.translate(wx - 1200 + i * 400, -2, wz + 520 + (i % 2) * 120); b.add(m, L("bwHill" + (i % 2), i % 2 ? "#3f6a50" : "#4a7658")); }
+     }
++
++    // ---- the airplane-eater (AIR): a little grass airfield. Runway along x (z -15..-5, y 0.10), a banquet table at the origin
++    //      (white cloth, top y 1.0), a red hangar behind-left, a windsock, a white picket fence, poplars and soft hills far off
++    {
++      const [ax, , az] = AIR, L = (k, c) => lam(k, () => ({ color: c }));
++      b.add(quadUp(ax - 400, ax + 400, az - 15, az - 5, 0.10, 20), L("apRun", "#7a7c80"));
++      const dash = L("apDash", "#f4f2ea"); for (let x = -396; x < 396; x += 8) b.add(quadUp(ax + x, ax + x + 4, az - 10.2, az - 9.8, 0.105, 2), dash);
++      // banquet table: cloth box + a top, legs hidden by the cloth
++      b.add(boxGeo(ax - 1.7, 0.0, az - 0.55, ax + 1.7, 0.72, az + 0.55, 2), L("apCloth", "#f6f2ea"));
++      b.add(boxGeo(ax - 1.72, 0.72, az - 0.57, ax + 1.72, 0.75, az + 0.57, 2), L("apClothTop", "#ffffff"));
++      b.add(boxGeo(ax - 1.71, 0.50, az + 0.551, ax + 1.71, 0.56, az + 0.556, 2), L("apClothRed", "#c8302e"));
++      // the hangar: red walls, grey roof slab, a dark open door
++      const hx = ax - 24, hz = az - 42;
++      b.add(boxGeo(hx - 12, 0, hz - 8, hx + 12, 8, hz + 8, 4), L("apHangar", "#b8433a"));
++      b.add(boxGeo(hx - 12.5, 8, hz - 8.5, hx + 12.5, 8.6, hz + 8.5, 4), L("apRoof", "#8a8e96"));
++      b.add(boxGeo(hx - 8, 0.02, hz + 8, hx + 8, 6.4, hz + 8.06, 2), L("apDoor", "#3a3236"));
++      b.add(boxGeo(hx - 9, 6.6, hz + 8.02, hx + 9, 7.6, hz + 8.1, 2), L("apSignBand", "#f4f2ea"));
++      // windsock pole + striped sock
++      const wx = ax + 16, wz = az - 20;
++      b.add(cyl(0.08, 0.1, 6, 8, wx, 3, wz), L("apPole", "#d8d8dc"));
++      for (let i = 0; i < 4; i++) b.add(cyl(0.42 - i * 0.07, 0.35 - i * 0.07, 0.55, 10, wx + 0.35 + i * 0.55, 5.6, wz, 0, Math.PI / 2), L("apSock" + (i % 2), i % 2 ? "#ffffff" : "#e8742a"));
++      // white picket fence along the front of the runway behind the table (gap at the table)
++      const pick = L("apPicket", "#f4f2ea");
++      for (let x = -40; x <= 40; x += 0.5) { if (Math.abs(x) < 3.5) continue; b.add(boxGeo(ax + x - 0.05, 0, az - 3.6, ax + x + 0.05, 0.8, az - 3.55, 1), pick); }
++      b.add(boxGeo(ax - 40, 0.55, az - 3.62, ax - 3.5, 0.62, az - 3.54, 6), pick); b.add(boxGeo(ax + 3.5, 0.55, az - 3.62, ax + 40, 0.62, az - 3.54, 6), pick);
++      // poplars along the far side of the runway, soft hills far off
++      const pop = [L("apPop0", "#4f8a3a"), L("apPop1", "#5f9a44")], trk = L("apTrunk", "#6a4e36");
++      for (let k = 0; k < 40; k++) { const x = ax - 200 + k * 10 + hh(k, 3) * 4, z = az - 60 - hh(k, 4) * 12, s = 1 + hh(k, 5) * 0.5; if (Math.abs(x - hx) < 16) continue;
++        b.add(cyl(0.2 * s, 0.3 * s, 2.4 * s, 6, x, 1.2 * s, z), trk); const c = new THREE.SphereGeometry(1, 10, 8); c.scale(1.6 * s, 4.2 * s, 1.6 * s); c.translate(x, 5.5 * s, z); b.add(c, pop[k % 2]); }
++      for (let i = 0; i < 7; i++) { const m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); m.scale(300 + (i % 2) * 140, 50 + (i % 3) * 25, 120); m.translate(ax - 1200 + i * 400, -2, az - 520 - (i % 2) * 120); b.add(m, L("apHill" + (i % 2), i % 2 ? "#6f9a58" : "#7aa860")); }
++    }
+     b.build(R, true, true);
+     // New York skyline far across the ocean (flat painted card)
+     const sk = new THREE.Mesh(new THREE.PlaneGeometry(3200, 800), new THREE.MeshBasicMaterial({ map: PT.skylineTex(), transparent: true, fog: true, depthWrite: false }));

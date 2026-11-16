@@ -23,19 +23,20 @@ What we've learned so far making cartoon true-story shorts.
 - Narration: free Kokoro v0.19 voice `am_michael` made in the cloud (owner's choice; ElevenLabs Ace Adams was used up to Mike).
 - Videos hosted in the `videos` branch of github.com/kumar7ansh888-pixel/Repository-youtube; engine on the `engine` branch; procedure in `PIPELINE.md`.
 
-## What the numbers say (Windsor, last 29 days, read 2026-11-15)
+## What the numbers say (Windsor, last 29 days, read 2026-11-16)
 | Short | views | engaged (not swiped) | avg % viewed | shares |
 | --- | --- | --- | --- | --- |
-| This bridge is being eaten by Spit 🤢 (1:39) | 3,039 | 71% | 55% | 2 |
+| This bridge is being eaten by Spit 🤢 (1:39) | 3,041 | 71% | 55% | 2 |
 | The Man Who Stole the Mona Lisa 🖼️ (0:58) | 2,866 | 65% | 67% | 1 |
-| This Chicken Lived 18 MONTHS Without a Head 🐔 (0:44) | 2,497 | 57% | 68% | 0 |
+| This Chicken Lived 18 MONTHS Without a Head 🐔 (0:44) | 2,566 | 57% | 68% | 0 |
 | He Robbed a Bank Wearing Lemon Juice 🍋 (1:11) | 2,442 | 60% | 70% | 0 |
-| The Day It Rained MEAT 🥩 (0:42) | 1,615 | 47% | 70% | 0 |
-| The Man Who Sold the Eiffel Tower (1:31) | 1,491 | 61% | 59% | 0 |
+| The Day It Rained MEAT 🥩 (0:42) | 1,622 | 47% | 70% | 0 |
+| The Man Who Sold the Eiffel Tower (1:31) | 1,493 | 61% | 59% | 0 |
 | Australia Declared War on Birds… and LOST 🐦 (0:52) | 1,459 | 59% | 52% | 0 |
-| India Disguised the Taj Mahal… 🤯 (1:55) | 1,173 | 57% | 50% | 0 |
-| Napoleon Lost a Battle… to BUNNIES 🐰 (0:43) | 871 | 42% | 62% | 1 |
-| Pig War (11-13) / rat poison (11-14) | not in Windsor yet | – | – | – |
+| India Disguised the Taj Mahal… 🤯 (1:55) | 1,177 | 57% | 50% | 0 |
+| The Pig War: 461 Soldiers vs 5 Warships… Over a PIG 🐷 (0:43) | 1,043 | 48% | 56% | 0 |
+| Napoleon Lost a Battle… to BUNNIES 🐰 (0:43) | 904 | 42% | 68% | 1 |
+| Hindi rat poison (11-14) / exploding whale (11-15) | not in Windsor yet | – | – | – |
 Lessons: 30–57% swipe away in the first seconds, so the first second decides everything; gross/absurd + modern
 (spit bridge) and dumb crime (lemon juice) beat war/history-lesson topics; shares are ~0, so pick send-to-a-friend
 stories. Owner's direction (2026-11-13): more interesting, shocking and funny; see PIPELINE step 1 scoring.
@@ -47,12 +48,18 @@ stories. Owner's direction (2026-11-13): more interesting, shocking and funny; s
 - Ghost Army (long video): very low views — focus on Shorts.
 
 ## Topics done
-Ghost Army, Eiffel Tower sale, Lemon juice robber, Mona Lisa theft, Hitler's nephew (user disliked), Great Emu War, Kentucky meat shower (40 s re-cut with hook), Mike the Headless Chicken (43.6 s, hook + loop format, Nov 2026), Napoleon attacked by rabbits (43.1 s, first fully automated daily run, 2026-11-12), Pig War 1859 (43.3 s, 2026-11-13), 1904 Olympic marathon / gold on rat poison (2026-11-14: English 34 s cut made, then replaced by the first Hindi 1-min cut, 57 s), Oregon exploding whale 1970 (2026-11-15, English 1-min, 56.8 s).
+Ghost Army, Eiffel Tower sale, Lemon juice robber, Mona Lisa theft, Hitler's nephew (user disliked), Great Emu War, Kentucky meat shower (40 s re-cut with hook), Mike the Headless Chicken (43.6 s, hook + loop format, Nov 2026), Napoleon attacked by rabbits (43.1 s, first fully automated daily run, 2026-11-12), Pig War 1859 (43.3 s, 2026-11-13), 1904 Olympic marathon / gold on rat poison (2026-11-14: English 34 s cut made, then replaced by the first Hindi 1-min cut, 57 s), Oregon exploding whale 1970 (2026-11-15, English 1-min, 56.8 s), Monsieur Mangetout / the man who ate an airplane (2026-11-16, English 1-min, 56.0 s).
 
 ## Topic ideas not yet used (re-score with the 4 tests before using; prefer funny/gross/absurd)
 pigeon-guided missiles, Bosco the dog mayor, CIA spy cat (Acoustic Kitty), man who mailed himself, dancing plague of 1518.
 
 ## Production notes
+- Airplane-eater set (`AIR` in world.js, x −7200 z −2000; the global grass ends at x −8000): banquet table at the origin (cloth box, top y 0.75, front z +0.55),
+  the eater stands behind it at z −0.9 (only his upper body shows, so use raised arm poses: face, shoulder, point, up), runway quad y 0.10 at z −15..−5,
+  plane card at z −9.5, white picket fence z −3.6 (gap at the table), red hangar at x −24 z −42, windsock x +16 z −20. Plane (drawPlane with `eat` /
+  `bite`), plate, saw, oil bottle, bike, cart, TV (cake stand), skis, chandelier, coffin (handles count), plaque (bite), banana, egg, menu, x-ray, marquee,
+  warning sign and record book are canvas cards in that story.js; `biteCut` / `biteAt` carve scalloped bites with destination-out.
+- Props on a table: a card's lower half sinks into the table box — use `sink` ≈ 0.2 for plates, not 0.5.
 - When cutting narration, cut only at measured silences and never split sentences that run together — a clipped word sounds like the voice "cracking".
 - Don't stack SFX/music hits on the first spoken word.
 - Word timings: after align.py, snap words that straddle a "…" pause to the pause end (`snapwords.py`), and split caption chunks at "…" too.

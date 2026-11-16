@@ -1,0 +1,70 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Bangers,200,&H00FFFFFF,&H00FFFFFF,&H00101010,&H96000000,0,0,0,0,100,100,3,0,1,12,8,8,40,40,190,1
+Style: Cap,Poppins,112,&H0000D4FF,&H00FFFFFF,&H00111111,&H64000000,1,0,0,0,100,100,0,0,1,8,5,2,60,60,470,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:02.55,Hook,,0,0,0,,{\fscx60\fscy60\t(0,180,\fscx100\fscy100)}{\c&H3AE8FF&}HE ATE A\N{\c&H3A48F0&\fs224}WHOLE PLANE?!
+Dialogue: 0,0:00:00.34,0:00:01.32,Cap,,0,0,0,,{\k2}{\k24}A {\k24}whole {\k47}airplane…
+Dialogue: 0,0:00:01.32,0:00:02.59,Cap,,0,0,0,,{\k2}{\k24}this {\k24}man {\k25}ate {\k51}it.
+Dialogue: 0,0:00:02.59,0:00:03.63,Cap,,0,0,0,,{\k2}{\k23}Not {\k23}a {\k57}toy.
+Dialogue: 0,0:00:03.63,0:00:04.75,Cap,,0,0,0,,{\k2}{\k30}A {\k30}real {\k50}plane.
+Dialogue: 0,0:00:04.75,0:00:06.62,Cap,,0,0,0,,{\k2}{\k74}Guinness {\k37}says {\k74}so.
+Dialogue: 0,0:00:06.62,0:00:07.43,Cap,,0,0,0,,{\k2}{\k16}He {\k32}sawed {\k16}it {\k14}up…
+Dialogue: 0,0:00:07.43,0:00:08.56,Cap,,0,0,0,,{\k2}{\k33}into {\k65}bite-sized {\k14}chunks…
+Dialogue: 0,0:00:08.56,0:00:09.37,Cap,,0,0,0,,{\k2}{\k16}drank {\k49}mineral {\k14}oil…
+Dialogue: 0,0:00:09.37,0:00:10.67,Cap,,0,0,0,,{\k2}{\k16}and {\k49}swallowed {\k49}every {\k14}piece
+Dialogue: 0,0:00:10.67,0:00:11.30,Cap,,0,0,0,,{\k2}{\k61}whole.
+Dialogue: 0,0:00:11.30,0:00:12.26,Cap,,0,0,0,,{\k2}{\k19}It {\k19}took {\k19}him {\k36}about
+Dialogue: 0,0:00:12.26,0:00:13.06,Cap,,0,0,0,,{\k2}{\k19}two {\k59}years.
+Dialogue: 0,0:00:13.06,0:00:13.97,Cap,,0,0,0,,{\k2}{\k23}His {\k23}stage {\k23}name {\k21}meant…
+Dialogue: 0,0:00:13.97,0:00:14.43,Cap,,0,0,0,,{\k2}{\k44}Mister…
+Dialogue: 0,0:00:14.43,0:00:14.66,Cap,,0,0,0,,{\k2}{\k21}Eat…
+Dialogue: 0,0:00:14.66,0:00:14.89,Cap,,0,0,0,,{\k2}{\k21}All.
+Dialogue: 0,0:00:14.89,0:00:16.11,Cap,,0,0,0,,{\k2}{\k23}And {\k23}he {\k23}meant {\k51}it.
+Dialogue: 0,0:00:16.11,0:00:16.81,Cap,,0,0,0,,{\k2}{\k24}For {\k45}starters?
+Dialogue: 0,0:00:16.81,0:00:17.86,Cap,,0,0,0,,{\k2}{\k103}Bicycles.
+Dialogue: 0,0:00:17.86,0:00:19.20,Cap,,0,0,0,,{\k2}{\k21}Lots {\k21}of {\k90}bicycles.
+Dialogue: 0,0:00:19.20,0:00:19.95,Cap,,0,0,0,,{\k2}{\k37}Main {\k35}course?
+Dialogue: 0,0:00:19.95,0:00:21.34,Cap,,0,0,0,,{\k2}{\k74}Shopping {\k63}carts.
+Dialogue: 0,0:00:21.34,0:00:22.47,Cap,,0,0,0,,{\k2}{\k111}Dessert?
+Dialogue: 0,0:00:22.79,0:00:24.48,Cap,,0,0,0,,{\k2}{\k34}A {\k34}few {\k34}TV {\k66}sets.
+Dialogue: 0,0:00:24.48,0:00:24.76,Cap,,0,0,0,,{\k2}{\k25}Yum…
+Dialogue: 0,0:00:24.76,0:00:25.71,Cap,,0,0,0,,{\k2}{\k93}crunchy.
+Dialogue: 0,0:00:25.71,0:00:26.53,Cap,,0,0,0,,{\k2}{\k21}Plus {\k20}a {\k20}pair {\k18}of
+Dialogue: 0,0:00:26.53,0:00:26.73,Cap,,0,0,0,,{\k2}{\k18}skis…
+Dialogue: 0,0:00:26.73,0:00:27.55,Cap,,0,0,0,,{\k2}{\k21}a {\k59}chandelier…
+Dialogue: 0,0:00:27.55,0:00:28.71,Cap,,0,0,0,,{\k2}{\k20}and {\k21}a {\k72}coffin.
+Dialogue: 0,0:00:28.71,0:00:30.09,Cap,,0,0,0,,{\k2}{\k40}Handles {\k96}included.
+Dialogue: 0,0:00:30.09,0:00:31.23,Cap,,0,0,0,,{\k2}{\k38}Doctors {\k38}checked {\k19}him {\k17}out…
+Dialogue: 0,0:00:31.23,0:00:32.64,Cap,,0,0,0,,{\k2}{\k57}totally {\k82}confused.
+Dialogue: 0,0:00:32.64,0:00:33.41,Cap,,0,0,0,,{\k2}{\k19}He {\k19}had {\k19}a {\k17}real
+Dialogue: 0,0:00:33.41,0:00:35.17,Cap,,0,0,0,,{\k2}{\k58}condition {\k38}called {\k78}pica.
+Dialogue: 0,0:00:35.17,0:00:36.28,Cap,,0,0,0,,{\k2}{\k22}A {\k44}craving {\k22}for {\k20}things
+Dialogue: 0,0:00:36.28,0:00:37.48,Cap,,0,0,0,,{\k2}{\k22}that {\k22}are {\k22}not {\k51}food.
+Dialogue: 0,0:00:37.48,0:00:38.03,Cap,,0,0,0,,{\k2}{\k27}But {\k25}wait,
+Dialogue: 0,0:00:38.03,0:00:39.31,Cap,,0,0,0,,{\k2}{\k27}it {\k27}gets {\k71}worse.
+Dialogue: 0,0:00:39.31,0:00:40.37,Cap,,0,0,0,,{\k2}{\k43}Guinness {\k21}gave {\k21}him {\k19}a
+Dialogue: 0,0:00:40.37,0:00:41.65,Cap,,0,0,0,,{\k2}{\k42}record {\k21}for {\k21}the {\k41}strangest
+Dialogue: 0,0:00:41.65,0:00:41.86,Cap,,0,0,0,,{\k2}{\k19}diet…
+Dialogue: 0,0:00:41.86,0:00:42.92,Cap,,0,0,0,,{\k2}{\k21}and {\k21}a {\k42}shiny {\k19}brass
+Dialogue: 0,0:00:42.92,0:00:43.75,Cap,,0,0,0,,{\k2}{\k81}plaque.
+Dialogue: 0,0:00:43.75,0:00:43.97,Cap,,0,0,0,,{\k2}{\k20}So…
+Dialogue: 0,0:00:43.97,0:00:45.05,Cap,,0,0,0,,{\k2}{\k21}he {\k22}ate {\k22}the {\k41}plaque
+Dialogue: 0,0:00:45.05,0:00:46.01,Cap,,0,0,0,,{\k2}{\k95}too.
+Dialogue: 0,0:00:46.32,0:00:46.55,Cap,,0,0,0,,{\k2}{\k21}Please…
+Dialogue: 0,0:00:46.55,0:00:47.46,Cap,,0,0,0,,{\k2}{\k23}do {\k23}not {\k23}try {\k21}this
+Dialogue: 0,0:00:47.46,0:00:48.12,Cap,,0,0,0,,{\k2}{\k23}at {\k41}home.
+Dialogue: 0,0:00:48.12,0:00:49.23,Cap,,0,0,0,,{\k2}{\k109}Seriously.
+Dialogue: 0,0:00:49.23,0:00:50.79,Cap,,0,0,0,,{\k2}{\k25}Now {\k25}the {\k49}craziest {\k55}part.
+Dialogue: 0,0:00:50.79,0:00:52.30,Cap,,0,0,0,,{\k2}{\k63}Bananas {\k21}made {\k21}him {\k45}sick.
+Dialogue: 0,0:00:52.30,0:00:53.65,Cap,,0,0,0,,{\k2}{\k88}Hard-boiled {\k44}eggs?
+Dialogue: 0,0:00:53.65,0:00:54.80,Cap,,0,0,0,,{\k2}{\k51}Also {\k62}sick.
+Dialogue: 0,0:00:54.80,0:00:55.54,Cap,,0,0,0,,{\k2}{\k19}But {\k19}you {\k18}know {\k17}what
+Dialogue: 0,0:00:55.54,0:00:56.47,Cap,,0,0,0,,{\k2}{\k92}didn't?

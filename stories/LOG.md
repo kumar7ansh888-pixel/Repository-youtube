@@ -8,6 +8,7 @@
 | 2026-11-14 | rat-poison-marathon | He Won Olympic Gold… on RAT POISON 🐀 | Kokoro am_michael (free, speed 1.12) | not published (replaced same day by the Hindi cut) | first 4-test topic (12/12), 85 words, 34.0 s, 24 shots; facts: Wikipedia 1904 men's marathon, TheCollector |
 | 2026-11-14 | hindi-rat-poison | Usne Olympic Gold Jeeta… ZEHER Peekar 🐀 | Piper hi_IN-pratham-medium (free, length-scale 0.9) | 2026-11-14 23:00 (Metricool) | FIRST HINDI 1-min Short (owner request), 171 words, 57.0 s, 31 shots, Hinglish captions; same facts as rat-poison-marathon |
 | 2026-11-15 | exploding-whale | They Blew Up a Whale With Dynamite 🐋💥 | Kokoro am_michael (free, speed 1.12) | 2026-11-15 23:00 (Metricool) | back to English, 1-min: 150 words, 56.8 s, 33 shots, 4-test 12/12; facts: Wikipedia Exploding whale, Jalopnik (car), Audacy Connecting Vets, Eugene Weekly / Live Science (park) |
+| 2026-11-16 | man-ate-airplane | This Man Ate a Whole Airplane ✈️ | Kokoro am_michael (free, speed 1.12, lex: into ˈɪntuː) | 2026-11-16 18:30 (Metricool) | first 18:30 slot; 1-min: 148 words, 56.0 s, 37 shots, 4-test 12/12; facts: Guinness World Records 2022 article, Wikipedia Michel Lotito, Today I Found Out (Snopes could not verify the plane, so the script says "Guinness says so") |
 
 Earlier topics (before this log): Ghost Army, Eiffel Tower sale, Lemon juice robber, Mona Lisa theft, Hitler's nephew,
 Great Emu War, Kentucky meat shower.

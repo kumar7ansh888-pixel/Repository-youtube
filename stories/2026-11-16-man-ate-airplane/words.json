@@ -1,0 +1,890 @@
+[
+{
+"word": "A",
+"raw": "A",
+"start": 0.39,
+"end": 0.635
+},
+{
+"word": "whole",
+"raw": "whole",
+"start": 0.635,
+"end": 0.88
+},
+{
+"word": "airplane",
+"raw": "airplane\u2026",
+"start": 0.88,
+"end": 1.37
+},
+{
+"word": "this",
+"raw": "this",
+"start": 1.37,
+"end": 1.614
+},
+{
+"word": "man",
+"raw": "man",
+"start": 1.614,
+"end": 1.859
+},
+{
+"word": "ate",
+"raw": "ate",
+"start": 1.859,
+"end": 2.104
+},
+{
+"word": "it",
+"raw": "it.",
+"start": 2.104,
+"end": 2.349
+},
+{
+"word": "Not",
+"raw": "Not",
+"start": 2.636,
+"end": 2.861
+},
+{
+"word": "a",
+"raw": "a",
+"start": 2.861,
+"end": 3.087
+},
+{
+"word": "toy",
+"raw": "toy.",
+"start": 3.087,
+"end": 3.312
+},
+{
+"word": "A",
+"raw": "A",
+"start": 3.68,
+"end": 3.98
+},
+{
+"word": "real",
+"raw": "real",
+"start": 3.98,
+"end": 4.28
+},
+{
+"word": "plane",
+"raw": "plane.",
+"start": 4.28,
+"end": 4.58
+},
+{
+"word": "Guinness",
+"raw": "Guinness",
+"start": 4.798,
+"end": 5.537
+},
+{
+"word": "says",
+"raw": "says",
+"start": 5.537,
+"end": 5.906
+},
+{
+"word": "so",
+"raw": "so.",
+"start": 5.906,
+"end": 6.275
+},
+{
+"word": "He",
+"raw": "He",
+"start": 6.668,
+"end": 6.83
+},
+{
+"word": "sawed",
+"raw": "sawed",
+"start": 6.83,
+"end": 7.154
+},
+{
+"word": "it",
+"raw": "it",
+"start": 7.154,
+"end": 7.316
+},
+{
+"word": "up",
+"raw": "up\u2026",
+"start": 7.316,
+"end": 7.478
+},
+{
+"word": "into",
+"raw": "into",
+"start": 7.478,
+"end": 7.803
+},
+{
+"word": "bite-sized",
+"raw": "bite-sized",
+"start": 7.803,
+"end": 8.451
+},
+{
+"word": "chunks",
+"raw": "chunks\u2026",
+"start": 8.451,
+"end": 8.614
+},
+{
+"word": "drank",
+"raw": "drank",
+"start": 8.614,
+"end": 8.776
+},
+{
+"word": "mineral",
+"raw": "mineral",
+"start": 8.776,
+"end": 9.262
+},
+{
+"word": "oil",
+"raw": "oil\u2026",
+"start": 9.262,
+"end": 9.424
+},
+{
+"word": "and",
+"raw": "and",
+"start": 9.424,
+"end": 9.587
+},
+{
+"word": "swallowed",
+"raw": "swallowed",
+"start": 9.587,
+"end": 10.073
+},
+{
+"word": "every",
+"raw": "every",
+"start": 10.073,
+"end": 10.559
+},
+{
+"word": "piece",
+"raw": "piece",
+"start": 10.559,
+"end": 10.722
+},
+{
+"word": "whole",
+"raw": "whole.",
+"start": 10.722,
+"end": 10.884
+},
+{
+"word": "It",
+"raw": "It",
+"start": 11.351,
+"end": 11.543
+},
+{
+"word": "took",
+"raw": "took",
+"start": 11.543,
+"end": 11.734
+},
+{
+"word": "him",
+"raw": "him",
+"start": 11.734,
+"end": 11.926
+},
+{
+"word": "about",
+"raw": "about",
+"start": 11.926,
+"end": 12.309
+},
+{
+"word": "two",
+"raw": "two",
+"start": 12.309,
+"end": 12.501
+},
+{
+"word": "years",
+"raw": "years.",
+"start": 12.501,
+"end": 12.693
+},
+{
+"word": "His",
+"raw": "His",
+"start": 13.111,
+"end": 13.339
+},
+{
+"word": "stage",
+"raw": "stage",
+"start": 13.339,
+"end": 13.568
+},
+{
+"word": "name",
+"raw": "name",
+"start": 13.568,
+"end": 13.796
+},
+{
+"word": "meant",
+"raw": "meant\u2026",
+"start": 13.796,
+"end": 14.024
+},
+{
+"word": "Mister",
+"raw": "Mister\u2026",
+"start": 14.024,
+"end": 14.481
+},
+{
+"word": "Eat",
+"raw": "Eat\u2026",
+"start": 14.481,
+"end": 14.71
+},
+{
+"word": "All",
+"raw": "All.",
+"start": 14.71,
+"end": 14.938
+},
+{
+"word": "And",
+"raw": "And",
+"start": 14.938,
+"end": 15.167
+},
+{
+"word": "he",
+"raw": "he",
+"start": 15.167,
+"end": 15.395
+},
+{
+"word": "meant",
+"raw": "meant",
+"start": 15.395,
+"end": 15.624
+},
+{
+"word": "it",
+"raw": "it.",
+"start": 15.624,
+"end": 15.852
+},
+{
+"word": "For",
+"raw": "For",
+"start": 16.156,
+"end": 16.392
+},
+{
+"word": "starters",
+"raw": "starters?",
+"start": 16.392,
+"end": 16.865
+},
+{
+"word": "Bicycles",
+"raw": "Bicycles.",
+"start": 16.865,
+"end": 17.574
+},
+{
+"word": "Lots",
+"raw": "Lots",
+"start": 17.915,
+"end": 18.126
+},
+{
+"word": "of",
+"raw": "of",
+"start": 18.126,
+"end": 18.337
+},
+{
+"word": "bicycles",
+"raw": "bicycles.",
+"start": 18.337,
+"end": 18.97
+},
+{
+"word": "Main",
+"raw": "Main",
+"start": 19.253,
+"end": 19.624
+},
+{
+"word": "course",
+"raw": "course?",
+"start": 19.624,
+"end": 19.995
+},
+{
+"word": "Shopping",
+"raw": "Shopping",
+"start": 19.995,
+"end": 20.738
+},
+{
+"word": "carts",
+"raw": "carts.",
+"start": 20.738,
+"end": 21.109
+},
+{
+"word": "Dessert",
+"raw": "Dessert?",
+"start": 21.39,
+"end": 21.771
+},
+{
+"word": "A",
+"raw": "A",
+"start": 22.837,
+"end": 23.176
+},
+{
+"word": "few",
+"raw": "few",
+"start": 23.176,
+"end": 23.515
+},
+{
+"word": "TV",
+"raw": "TV",
+"start": 23.515,
+"end": 23.854
+},
+{
+"word": "sets",
+"raw": "sets.",
+"start": 23.854,
+"end": 24.192
+},
+{
+"word": "Yum",
+"raw": "Yum\u2026",
+"start": 24.532,
+"end": 24.806
+},
+{
+"word": "crunchy",
+"raw": "crunchy.",
+"start": 24.806,
+"end": 25.354
+},
+{
+"word": "Plus",
+"raw": "Plus",
+"start": 25.761,
+"end": 25.966
+},
+{
+"word": "a",
+"raw": "a",
+"start": 25.966,
+"end": 26.17
+},
+{
+"word": "pair",
+"raw": "pair",
+"start": 26.17,
+"end": 26.375
+},
+{
+"word": "of",
+"raw": "of",
+"start": 26.375,
+"end": 26.579
+},
+{
+"word": "skis",
+"raw": "skis\u2026",
+"start": 26.579,
+"end": 26.784
+},
+{
+"word": "a",
+"raw": "a",
+"start": 26.784,
+"end": 26.989
+},
+{
+"word": "chandelier",
+"raw": "chandelier\u2026",
+"start": 26.989,
+"end": 27.602
+},
+{
+"word": "and",
+"raw": "and",
+"start": 27.602,
+"end": 27.807
+},
+{
+"word": "a",
+"raw": "a",
+"start": 27.807,
+"end": 28.012
+},
+{
+"word": "coffin",
+"raw": "coffin.",
+"start": 28.012,
+"end": 28.421
+},
+{
+"word": "Handles",
+"raw": "Handles",
+"start": 28.756,
+"end": 29.16
+},
+{
+"word": "included",
+"raw": "included.",
+"start": 29.16,
+"end": 29.766
+},
+{
+"word": "Doctors",
+"raw": "Doctors",
+"start": 30.142,
+"end": 30.522
+},
+{
+"word": "checked",
+"raw": "checked",
+"start": 30.522,
+"end": 30.901
+},
+{
+"word": "him",
+"raw": "him",
+"start": 30.901,
+"end": 31.09
+},
+{
+"word": "out",
+"raw": "out\u2026",
+"start": 31.09,
+"end": 31.28
+},
+{
+"word": "totally",
+"raw": "totally",
+"start": 31.28,
+"end": 31.849
+},
+{
+"word": "confused",
+"raw": "confused.",
+"start": 31.849,
+"end": 32.417
+},
+{
+"word": "He",
+"raw": "He",
+"start": 32.69,
+"end": 32.882
+},
+{
+"word": "had",
+"raw": "had",
+"start": 32.882,
+"end": 33.075
+},
+{
+"word": "a",
+"raw": "a",
+"start": 33.075,
+"end": 33.267
+},
+{
+"word": "real",
+"raw": "real",
+"start": 33.267,
+"end": 33.46
+},
+{
+"word": "condition",
+"raw": "condition",
+"start": 33.46,
+"end": 34.037
+},
+{
+"word": "called",
+"raw": "called",
+"start": 34.037,
+"end": 34.422
+},
+{
+"word": "pica",
+"raw": "pica.",
+"start": 34.422,
+"end": 34.807
+},
+{
+"word": "A",
+"raw": "A",
+"start": 35.222,
+"end": 35.444
+},
+{
+"word": "craving",
+"raw": "craving",
+"start": 35.444,
+"end": 35.888
+},
+{
+"word": "for",
+"raw": "for",
+"start": 35.888,
+"end": 36.11
+},
+{
+"word": "things",
+"raw": "things",
+"start": 36.11,
+"end": 36.331
+},
+{
+"word": "that",
+"raw": "that",
+"start": 36.331,
+"end": 36.553
+},
+{
+"word": "are",
+"raw": "are",
+"start": 36.553,
+"end": 36.775
+},
+{
+"word": "not",
+"raw": "not",
+"start": 36.775,
+"end": 36.997
+},
+{
+"word": "food",
+"raw": "food.",
+"start": 36.997,
+"end": 37.218
+},
+{
+"word": "But",
+"raw": "But",
+"start": 37.529,
+"end": 37.803
+},
+{
+"word": "wait",
+"raw": "wait,",
+"start": 37.803,
+"end": 38.077
+},
+{
+"word": "it",
+"raw": "it",
+"start": 38.077,
+"end": 38.351
+},
+{
+"word": "gets",
+"raw": "gets",
+"start": 38.351,
+"end": 38.625
+},
+{
+"word": "worse",
+"raw": "worse.",
+"start": 38.625,
+"end": 38.899
+},
+{
+"word": "Guinness",
+"raw": "Guinness",
+"start": 39.358,
+"end": 39.783
+},
+{
+"word": "gave",
+"raw": "gave",
+"start": 39.783,
+"end": 39.996
+},
+{
+"word": "him",
+"raw": "him",
+"start": 39.996,
+"end": 40.208
+},
+{
+"word": "a",
+"raw": "a",
+"start": 40.208,
+"end": 40.421
+},
+{
+"word": "record",
+"raw": "record",
+"start": 40.421,
+"end": 40.846
+},
+{
+"word": "for",
+"raw": "for",
+"start": 40.846,
+"end": 41.059
+},
+{
+"word": "the",
+"raw": "the",
+"start": 41.059,
+"end": 41.271
+},
+{
+"word": "strangest",
+"raw": "strangest",
+"start": 41.271,
+"end": 41.696
+},
+{
+"word": "diet",
+"raw": "diet\u2026",
+"start": 41.696,
+"end": 41.909
+},
+{
+"word": "and",
+"raw": "and",
+"start": 41.909,
+"end": 42.122
+},
+{
+"word": "a",
+"raw": "a",
+"start": 42.122,
+"end": 42.334
+},
+{
+"word": "shiny",
+"raw": "shiny",
+"start": 42.334,
+"end": 42.759
+},
+{
+"word": "brass",
+"raw": "brass",
+"start": 42.759,
+"end": 42.972
+},
+{
+"word": "plaque",
+"raw": "plaque.",
+"start": 42.972,
+"end": 43.397
+},
+{
+"word": "So",
+"raw": "So\u2026",
+"start": 43.802,
+"end": 44.018
+},
+{
+"word": "he",
+"raw": "he",
+"start": 44.018,
+"end": 44.233
+},
+{
+"word": "ate",
+"raw": "ate",
+"start": 44.233,
+"end": 44.449
+},
+{
+"word": "the",
+"raw": "the",
+"start": 44.449,
+"end": 44.665
+},
+{
+"word": "plaque",
+"raw": "plaque",
+"start": 44.665,
+"end": 45.097
+},
+{
+"word": "too",
+"raw": "too.",
+"start": 45.097,
+"end": 45.313
+},
+{
+"word": "Please",
+"raw": "Please\u2026",
+"start": 46.369,
+"end": 46.597
+},
+{
+"word": "do",
+"raw": "do",
+"start": 46.597,
+"end": 46.826
+},
+{
+"word": "not",
+"raw": "not",
+"start": 46.826,
+"end": 47.054
+},
+{
+"word": "try",
+"raw": "try",
+"start": 47.054,
+"end": 47.283
+},
+{
+"word": "this",
+"raw": "this",
+"start": 47.283,
+"end": 47.512
+},
+{
+"word": "at",
+"raw": "at",
+"start": 47.512,
+"end": 47.74
+},
+{
+"word": "home",
+"raw": "home.",
+"start": 47.74,
+"end": 47.969
+},
+{
+"word": "Seriously",
+"raw": "Seriously.",
+"start": 48.169,
+"end": 48.883
+},
+{
+"word": "Now",
+"raw": "Now",
+"start": 49.282,
+"end": 49.529
+},
+{
+"word": "the",
+"raw": "the",
+"start": 49.529,
+"end": 49.775
+},
+{
+"word": "craziest",
+"raw": "craziest",
+"start": 49.775,
+"end": 50.267
+},
+{
+"word": "part",
+"raw": "part.",
+"start": 50.267,
+"end": 50.513
+},
+{
+"word": "Bananas",
+"raw": "Bananas",
+"start": 50.835,
+"end": 51.465
+},
+{
+"word": "made",
+"raw": "made",
+"start": 51.465,
+"end": 51.674
+},
+{
+"word": "him",
+"raw": "him",
+"start": 51.674,
+"end": 51.884
+},
+{
+"word": "sick",
+"raw": "sick.",
+"start": 51.884,
+"end": 52.094
+},
+{
+"word": "Hard-boiled",
+"raw": "Hard-boiled",
+"start": 52.349,
+"end": 53.233
+},
+{
+"word": "eggs",
+"raw": "eggs?",
+"start": 53.233,
+"end": 53.528
+},
+{
+"word": "Also",
+"raw": "Also",
+"start": 53.695,
+"end": 54.209
+},
+{
+"word": "sick",
+"raw": "sick.",
+"start": 54.209,
+"end": 54.466
+},
+{
+"word": "But",
+"raw": "But",
+"start": 54.846,
+"end": 55.031
+},
+{
+"word": "you",
+"raw": "you",
+"start": 55.031,
+"end": 55.216
+},
+{
+"word": "know",
+"raw": "know",
+"start": 55.216,
+"end": 55.4
+},
+{
+"word": "what",
+"raw": "what",
+"start": 55.4,
+"end": 55.585
+},
+{
+"word": "didn't",
+"raw": "didn't?",
+"start": 55.585,
+"end": 55.77
+}
+]
