@@ -4,7 +4,8 @@
 > the daily message), and keep the ~1-minute length from the Hindi trial. `docs/HINDI.md` is retired; this file is the procedure.**
 
 The procedure a scheduled Claude session follows every day: pick a weird true story, write it, voice it, animate it,
-check it, and schedule it on YouTube for **23:00 India time (Asia/Kolkata)**. The owner chose: free AI voice made
+check it, and schedule it on YouTube for **18:30 India time (Asia/Kolkata)** (owner, 2026-11-16: their viewers peak
+18:00–22:00 IST in YouTube Studio's "When your viewers are on YouTube"; 23:00 was already past the peak). The owner chose: free AI voice made
 here, auto-publish without review, videos hosted in this repo. Nothing in this file overrides the person's own
 instructions in chat.
 
@@ -116,7 +117,7 @@ cd $P/render && until node render.cjs segments ../out/segs 150 1080 1920 x 16 >>
   && [ "$(ls ../out/segs/seg_*.mp4 | grep -v part | wc -l)" -ge <ceil(TOTAL/150)> ]; do sleep 5; done
 ```
 
-~1800 frames take ~75–80 min on 2 CPUs: start the render at least 5 h before 23:00 IST. Then join and scan: `python3 $P/tools/flicker.py $P/out/video_raw.mp4`. Camera kicks show up on purpose; fix real
+~1800 frames take ~75–80 min on 2 CPUs: start the render by 14:00 IST at the latest (publish is 18:30). Then join and scan: `python3 $P/tools/flicker.py $P/out/video_raw.mp4`. Camera kicks show up on purpose; fix real
 one-frame pops by blending the neighbour frames of that segment and re-encoding it (crf 16).
 
 ## 7. Sound
@@ -144,7 +145,7 @@ curl -sSL -o /dev/null -w "%{http_code} %{size_download}\n" https://raw.githubus
 
 The URL must return 200 and the file's exact size. Then Metricool `createScheduledPost`:
 
-- `blogId` `8029273`, `date` `<YYYY-MM-DD>T23:00:00+05:30` (if that time has passed, the next free half hour),
+- `blogId` `8029273`, `date` `<YYYY-MM-DD>T18:30:00+05:30` (if that time has passed, the next free half hour),
 - `info`: `autoPublish: true`, `providers: [{network: "youtube"}]`, `media: [<raw URL>]`,
   `publicationDate: {dateTime, timezone: "Asia/Calcutta"}`, `firstCommentText` = a one-line question that invites an opinion (e.g. "Would you have paid the $100? 🐷"), `text` = description (2 lines of story + `#shorts` and 5
   topic hashtags), `youtubeData: {title (≤ 50 chars: the absurd premise in plain words + one emoji, no "True Story", no dates — like "This bridge is being eaten by Spit 🤢"), type: "short", privacy: "public",

@@ -9,6 +9,9 @@ What we've learned so far making cartoon true-story shorts.
 - **Pacing:** a cut every ~2 s, yellow word-by-word captions, music + SFX.
 - **Audience setting:** "No, it's not made for kids"; no 18+ restriction.
 
+## Publish time (2026-11-16, owner)
+- YouTube Studio, "When your viewers are on YouTube" (last 28 days, IST): viewers peak **18:00–22:00** every day (brightest Sun 18–22, Mon 19:00, Wed 20:00, Thu/Sat 19:00), are moderate 08:00–18:00, fade after 22:00 and are near zero 00:00–06:00. So publish at **18:30**, just before the peak; the daily run starts at 10:37.
+
 ## Format change (2026-11-15, owner)
 - Back to **English** for everything: narration (Kokoro `am_michael`), captions, hook title, YouTube title/description/first comment, and the daily message. Keep the ~1-minute length. `docs/HINDI.md` is retired.
 
@@ -16,7 +19,7 @@ What we've learned so far making cartoon true-story shorts.
 - From then: ~1-minute videos narrated in **Hindi** (free Piper voice Pratham, owner's pick), captions/title in Hinglish. Procedure: `docs/HINDI.md`. (Note: 25–35 s English cuts had the better retention so far; watch whether 1-min Hindi does better in India.)
 
 ## Daily automation (from 2026-11-12)
-- One Short a day, published automatically at **23:00 India time** via Metricool (brand 8029273, YouTube channel UCUaVL00Y35TENRYg2h6-1lw), no review step (owner's choice).
+- One Short a day, published automatically at **18:30 India time** (from 2026-11-16; was 23:00) via Metricool (brand 8029273, YouTube channel UCUaVL00Y35TENRYg2h6-1lw), no review step (owner's choice).
 - Narration: free Kokoro v0.19 voice `am_michael` made in the cloud (owner's choice; ElevenLabs Ace Adams was used up to Mike).
 - Videos hosted in the `videos` branch of github.com/kumar7ansh888-pixel/Repository-youtube; engine on the `engine` branch; procedure in `PIPELINE.md`.
 
