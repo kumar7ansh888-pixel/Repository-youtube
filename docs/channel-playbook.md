@@ -9,6 +9,11 @@ What we've learned so far making cartoon true-story shorts.
 - **Pacing:** a cut every ~2 s, yellow word-by-word captions, music + SFX.
 - **Audience setting:** "No, it's not made for kids"; no 18+ restriction.
 
+## Format change (2026-11-17, owner): Hindu mythology from 2026-11-18
+- Every Short is now a **Hindu mythology** story, **dramatic / epic** and respectful, still in **English** (voice am_michael), 18:30 IST, original
+  phonk-style beats. Rules are in PIPELINE.md "Hindu mythology format". Last true-story Short: Paul the Octopus (2026-11-17).
+- Watch whether mythology lifts the engaged-view rate and shares (Indian audience peaks 18–22 IST).
+
 ## Music (2026-11-17, owner)
 - Owner asked for trending songs. Real ones are copyrighted (Content ID claims/mutes/blocks auto-posted Shorts; licensed trending sounds only work in the YouTube app), so every video now gets an ORIGINAL trending-style beat from `engine/audio/trend.py`: phonk (default), Brazilian funk, or sneaky comedy. Narration stays fully intelligible over phonk at voice − 11 LU with −5 dB ducking (ASR checked).
 

@@ -1,5 +1,8 @@
 # Daily Short pipeline — Beyond Normal Daily
 
+> **Owner, 2026-11-17: from 2026-11-18 every Short is about HINDU MYTHOLOGY, told DRAMATIC / EPIC, still in English.** Read the
+> "Hindu mythology format" section below first; where it differs from steps 1–2 and 7, it wins.
+
 > **Owner, 2026-11-15: everything in ENGLISH again (narration, captions, hook title, YouTube title/description/first comment,
 > the daily message), and keep the ~1-minute length from the Hindi trial. `docs/HINDI.md` is retired; this file is the procedure.**
 
@@ -41,6 +44,34 @@ attached to the session, attach it with push access first.
 - A funny-weird **true** story. Never repeat a topic in `stories/LOG.md`.
 - Avoid: gore, tragedies played for laughs, living private individuals, current politics, anything made for kids.
 - Verify the key facts with at least two web sources. No invented numbers, quotes or causes.
+
+## Hindu mythology format (owner, 2026-11-17; from 2026-11-18)
+
+- **Topic:** one story or moment from Hindu mythology (Ramayana, Mahabharata, the Puranas, the Vedas/Upanishads), e.g. Hanuman leaping to swallow the
+  sun, Ganesha's elephant head, Shiva drinking the poison at the churning of the ocean, Bhishma on the bed of arrows, Ravana lifting Mount Kailash,
+  Abhimanyu in the chakravyuha, Narasimha at twilight, Kumbhakarna's six-month sleep. Never repeat a topic in `stories/LOG.md`.
+- **Score 8 candidates** 0–3 on four tests, pick ≥ 10 / 12 and write the table in SCRIPT.md: (1) **epic hook in 7 words** ("A child god tried to eat the sun");
+  (2) **jaw-drop / drama**: a power, a curse, a sacrifice, a twist most viewers don't know; (3) **one epic picture** (that frame is shot 1);
+  (4) **send-to-a-friend** ("bro, I never knew this").
+- **Tone: dramatic and epic, always respectful.** No jokes, gags or comic SFX about gods, goddesses, sages or sacred objects; no "funny" reaction
+  faces on deities (awe, calm, fierce and determined are fine). No comic word bursts (CHOMP!, BOOO!): use big serif title cards instead
+  (Rye / AlfaSlab), slow push-ins, light rays, glows, dust and fire. No gore (no blood, severed heads shown on screen; imply with light, shadow and a cut).
+  No modern politics, caste or communal angles, no comparisons between religions.
+- **Sources instead of "facts":** check the version of the story against at least two good sources (e.g. Valmiki Ramayana / Vyasa Mahabharata
+  translations, Britannica, the Puranas via sacred-texts.com or wisdomlib.org, reputable articles). Stories differ between texts: tell the most widely
+  known version and, if a key detail differs, say "in one version…" or "the Puranas say…". Never invent dialogue, numbers or events.
+- **Script:** still 140–150 English words, 55–60 s, hook ≤ 8 words first, a new escalation every 3–4 s (power, danger, stakes), a twist in the last
+  third, an awe-ending that loops back to line 1. Sanskrit names: check pronunciation in the transcript and add IPA lines to `lex.txt`
+  (e.g. Hanuman, Kumbhakarna, Bhishma, Abhimanyu).
+- **Look:** characters drawn with traditional iconography and colours (Hanuman: orange-red, mace/gada; Shiva: blue skin, trident, crescent moon,
+  snake, matted hair; Vishnu: blue, four arms, conch/discus/mace/lotus; Ganesha: elephant head, one broken tusk, modak; Rama: blue-green skin, bow;
+  Krishna: blue skin, peacock feather, flute), on canvas cards like Paul / Mike, with halos and glows. Big sets: forests, Himalaya, the ocean, palaces,
+  battlefields (Kurukshetra) in new areas of world.js.
+- **Music:** `phonk` is the default (dramatic/epic); you may add slow original drones, bells, conch-like brass swells and tabla-like hits from
+  `instruments.py` / the SFX library. Still original only, no real songs or real bhajans/mantras recordings.
+- **YouTube:** title ≤ 50 chars, the epic premise + one emoji ("Hanuman Tried to EAT the Sun ☀️"), description 2 lines + `#shorts #hindumythology`
+  + 4 topic hashtags, first comment = a question inviting an opinion ("Which story should we tell next? 🙏"), category ENTERTAINMENT,
+  madeForKids false.
 
 ## 2. Script → `$P/SCRIPT.md`
 
