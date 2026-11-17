@@ -1,0 +1,66 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Bangers,200,&H00FFFFFF,&H00FFFFFF,&H00101010,&H96000000,0,0,0,0,100,100,3,0,1,12,8,8,40,40,190,1
+Style: Cap,Poppins,112,&H0000D4FF,&H00FFFFFF,&H00111111,&H64000000,1,0,0,0,100,100,0,0,1,8,5,2,60,60,470,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:02.55,Hook,,0,0,0,,{\fscx60\fscy60\t(0,180,\fscx100\fscy100)}{\c&H3AE8FF&}OCTOPUS PREDICTED\N{\c&H3A48F0&\fs224}THE WORLD CUP?!
+Dialogue: 0,0:00:00.32,0:00:01.57,Cap,,0,0,0,,{\k2}{\k16}An {\k47}octopus {\k47}predicted {\k14}the
+Dialogue: 0,0:00:01.57,0:00:01.88,Cap,,0,0,0,,{\k2}{\k16}World {\k14}Cup…
+Dialogue: 0,0:00:01.88,0:00:02.58,Cap,,0,0,0,,{\k2}{\k68}perfectly.
+Dialogue: 0,0:00:02.58,0:00:03.56,Cap,,0,0,0,,{\k2}{\k14}His {\k14}name {\k14}was {\k53}Paul.
+Dialogue: 0,0:00:03.56,0:00:04.98,Cap,,0,0,0,,{\k2}{\k28}He {\k57}lived {\k28}in {\k26}a
+Dialogue: 0,0:00:04.98,0:00:05.26,Cap,,0,0,0,,{\k2}{\k26}tank.
+Dialogue: 0,0:00:05.26,0:00:06.23,Cap,,0,0,0,,{\k2}{\k28}Each {\k67}game,
+Dialogue: 0,0:00:06.23,0:00:08.04,Cap,,0,0,0,,{\k2}{\k26}his {\k52}keepers {\k78}lowered {\k24}two
+Dialogue: 0,0:00:08.04,0:00:08.56,Cap,,0,0,0,,{\k2}{\k50}boxes.
+Dialogue: 0,0:00:08.56,0:00:09.60,Cap,,0,0,0,,{\k2}{\k26}Each {\k26}box {\k26}had {\k24}a
+Dialogue: 0,0:00:09.60,0:00:10.12,Cap,,0,0,0,,{\k2}{\k50}mussel…
+Dialogue: 0,0:00:10.12,0:00:11.46,Cap,,0,0,0,,{\k2}{\k26}and {\k26}a {\k26}team's {\k54}flag.
+Dialogue: 0,0:00:11.46,0:00:13.08,Cap,,0,0,0,,{\k2}{\k61}Whichever {\k20}box {\k20}he {\k59}opened
+Dialogue: 0,0:00:13.08,0:00:13.28,Cap,,0,0,0,,{\k2}{\k18}first…
+Dialogue: 0,0:00:13.28,0:00:14.11,Cap,,0,0,0,,{\k2}{\k20}would {\k61}win.
+Dialogue: 0,0:00:14.11,0:00:15.47,Cap,,0,0,0,,{\k2}{\k17}Paul {\k34}picked {\k82}Germany.
+Dialogue: 0,0:00:15.47,0:00:16.69,Cap,,0,0,0,,{\k2}{\k61}Germany {\k60}won.
+Dialogue: 0,0:00:16.69,0:00:18.22,Cap,,0,0,0,,{\k2}{\k21}Then {\k21}he {\k42}picked {\k66}Serbia…
+Dialogue: 0,0:00:18.22,0:00:19.45,Cap,,0,0,0,,{\k2}{\k64}Germany {\k57}lost!
+Dialogue: 0,0:00:19.45,0:00:20.55,Cap,,0,0,0,,{\k2}{\k28}TV {\k27}crews {\k28}came {\k25}to
+Dialogue: 0,0:00:20.55,0:00:22.20,Cap,,0,0,0,,{\k2}{\k27}watch {\k28}an {\k83}octopus {\k26}eat
+Dialogue: 0,0:00:22.20,0:00:23.23,Cap,,0,0,0,,{\k2}{\k100}lunch.
+Dialogue: 0,0:00:23.48,0:00:24.85,Cap,,0,0,0,,{\k2}{\k16}Then {\k16}the {\k103}semifinal.
+Dialogue: 0,0:00:24.85,0:00:26.55,Cap,,0,0,0,,{\k2}{\k67}Germany {\k45}against {\k56}Spain.
+Dialogue: 0,0:00:26.55,0:00:26.81,Cap,,0,0,0,,{\k2}{\k24}Paul…
+Dialogue: 0,0:00:26.81,0:00:27.80,Cap,,0,0,0,,{\k2}{\k52}picked {\k44}Spain.
+Dialogue: 0,0:00:27.80,0:00:28.82,Cap,,0,0,0,,{\k2}{\k37}Spain {\k63}won.
+Dialogue: 0,0:00:28.82,0:00:30.14,Cap,,0,0,0,,{\k2}{\k22}And {\k44}German {\k22}fans {\k42}turned
+Dialogue: 0,0:00:30.14,0:00:30.99,Cap,,0,0,0,,{\k2}{\k22}on {\k62}him.
+Dialogue: 0,0:00:30.99,0:00:32.49,Cap,,0,0,0,,{\k2}{\k25}People {\k75}suggested {\k25}frying {\k23}him…
+Dialogue: 0,0:00:32.49,0:00:33.73,Cap,,0,0,0,,{\k2}{\k25}or {\k50}feeding {\k25}him {\k23}to
+Dialogue: 0,0:00:33.73,0:00:34.31,Cap,,0,0,0,,{\k2}{\k56}sharks.
+Dialogue: 0,0:00:34.31,0:00:34.60,Cap,,0,0,0,,{\k2}{\k27}Wait,
+Dialogue: 0,0:00:34.60,0:00:35.86,Cap,,0,0,0,,{\k2}{\k29}it {\k29}gets {\k65}worse.
+Dialogue: 0,0:00:35.86,0:00:37.28,Cap,,0,0,0,,{\k2}{\k24}Spain's {\k24}Prime {\k71}Minister {\k22}got
+Dialogue: 0,0:00:37.28,0:00:38.25,Cap,,0,0,0,,{\k2}{\k95}involved.
+Dialogue: 0,0:00:38.25,0:00:38.96,Cap,,0,0,0,,{\k2}{\k18}He {\k18}said {\k18}he {\k16}was
+Dialogue: 0,0:00:38.96,0:00:39.32,Cap,,0,0,0,,{\k2}{\k34}worried…
+Dialogue: 0,0:00:39.32,0:00:40.39,Cap,,0,0,0,,{\k2}{\k18}and {\k18}thought {\k36}about {\k34}sending
+Dialogue: 0,0:00:40.39,0:00:41.34,Cap,,0,0,0,,{\k2}{\k18}him {\k75}protection.
+Dialogue: 0,0:00:41.34,0:00:42.43,Cap,,0,0,0,,{\k2}{\k22}Then {\k22}Paul {\k44}picked {\k20}Spain
+Dialogue: 0,0:00:42.43,0:00:43.88,Cap,,0,0,0,,{\k2}{\k22}to {\k22}win {\k22}the {\k77}final.
+Dialogue: 0,0:00:43.88,0:00:45.40,Cap,,0,0,0,,{\k2}{\k38}Spain {\k111}won.
+Dialogue: 0,0:00:45.73,0:00:46.88,Cap,,0,0,0,,{\k2}{\k17}Eight {\k17}out {\k17}of {\k62}eight.
+Dialogue: 0,0:00:46.88,0:00:49.12,Cap,,0,0,0,,{\k2}{\k41}Spanish {\k81}businessmen {\k61}offered {\k39}thirty
+Dialogue: 0,0:00:49.12,0:00:50.58,Cap,,0,0,0,,{\k2}{\k41}thousand {\k41}euros {\k20}for {\k42}him.
+Dialogue: 0,0:00:50.58,0:00:51.38,Cap,,0,0,0,,{\k2}{\k20}To {\k20}star {\k20}at {\k18}their
+Dialogue: 0,0:00:51.38,0:00:53.03,Cap,,0,0,0,,{\k2}{\k60}octopus {\k104}festival.
+Dialogue: 0,0:00:53.03,0:00:54.95,Cap,,0,0,0,,{\k2}{\k26}Where {\k26}people {\k26}eat {\k111}octopus.
+Dialogue: 0,0:00:54.95,0:00:56.45,Cap,,0,0,0,,{\k2}{\k66}Germany {\k22}said {\k60}no.
+Dialogue: 0,0:00:56.45,0:00:58.23,Cap,,0,0,0,,{\k2}{\k25}The {\k51}smartest {\k51}football {\k49}expert
+Dialogue: 0,0:00:58.23,0:00:58.73,Cap,,0,0,0,,{\k2}{\k25}on {\k23}Earth…
+Dialogue: 0,0:00:58.73,0:00:59.74,Cap,,0,0,0,,{\k2}{\k98}was

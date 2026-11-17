@@ -1,0 +1,48 @@
+--- /home/claude/repository-youtube/engine/render/src/world.js	2026-11-17 05:08:15.094180105 +0000
++++ /home/claude/work/2026-11-17-octopus-oracle/render/src/world.js	2026-11-17 05:25:00.776580496 +0000
+@@ -31,7 +31,7 @@
+ export const BEACH = [-4800, 0, 1400];    // 1970: Florence, Oregon, the exploding whale (whale at the origin along x, sea to -z from z -8, dunes z 14..32 with a flat crest y 2.7, parking lot behind z 36..60)
+ export const OCEAN = [8000, 0, 0];        // sea starts at x = 8000; New York skyline at x = 12500
+ const RY = 2000;
+-export const ROOM = { office: [0, RY, 0], bank: [200, RY, 0], living: [400, RY, 0], interro: [600, RY, 0], showroom: [800, RY, 0], oval: [1000, RY, 0], motel: [1200, RY, 0] };
++export const ROOM = { office: [0, RY, 0], bank: [200, RY, 0], living: [400, RY, 0], interro: [600, RY, 0], showroom: [800, RY, 0], oval: [1000, RY, 0], motel: [1200, RY, 0], aqua: [1400, RY, 0], press: [1600, RY, 0], fiesta: [1800, RY, 0] };  // aqua/press/fiesta: 2010 Paul the Octopus (Sea Life hall, Madrid press room, Galician octopus fair)
+ 
+ // ---------------- night preset (moonlight) ----------------
+ LIGHTS.night = {
+@@ -827,6 +827,36 @@
+       b.add(boxGeo(bx - 0.28, y + 0.04, bz - 0.2, bx + 0.28, y + 0.09, bz + 0.2, 1), lam("straw", () => ({ color: "#e2c46a" })));
+       b.add(boxGeo(x + 1.6, y, z + 0.9, x + 2.3, y + 0.45, z + 1.15, 1), lam("suitcase", () => ({ color: "#7a4a2a" })));
+     });
++    // ---- 2010, Paul the Octopus. aqua: a dark-blue aquarium hall, glowing wall tanks on the back wall, Paul's tank pedestal at the origin
++    //      (top y 1.0; the tank itself is a canvas card in story.js), a velvet rope line at z +1.6 and a keeper's step ladder.
++    room("aqua", 14, 10, 4.5, lam("aquaWall", () => ({ color: "#1d2e52" })), lam("aquaFloor", () => ({ color: "#2a3a5a" })), (b, x, y, z) => {
++      const glow = lam("aquaGlow", () => ({ color: "#3a9ad8", emissive: "#1f6aa8", emissiveIntensity: 1.0 })), frame = lam("aquaFrame", () => ({ color: "#0e1628" }));
++      for (const wx of [-4.6, 0, 4.6]) { b.add(boxGeo(x + wx - 1.9, y + 0.7, z - 4.98, x + wx + 1.9, y + 3.5, z - 4.9, 1), frame); b.add(quad(V(x + wx - 1.75, y + 0.85, z - 4.88), V(x + wx + 1.75, y + 0.85, z - 4.88), V(x + wx + 1.75, y + 3.35, z - 4.88), V(x + wx - 1.75, y + 3.35, z - 4.88)), glow); }
++      for (const sx of [-1, 1]) { b.add(boxGeo(x + sx * 6.98 - 0.02, y + 0.8, z - 3.5, x + sx * 6.98 + 0.02, y + 3.2, z + 1.5, 1), frame); }
++      b.add(boxGeo(x - 0.62, y, z - 0.42, x + 0.62, y + 1.0, z + 0.42, 1), lam("pedestal", () => ({ color: "#d8d2c4" })));
++      b.add(boxGeo(x - 0.66, y + 0.96, z - 0.46, x + 0.66, y + 1.02, z + 0.46, 1), lam("pedTop", () => ({ color: "#3a4a6a" })));
++      const brass = lam("ropeBrass", () => ({ color: "#d8b04a" })), rope = lam("rope", () => ({ color: "#b0242e" }));
++      for (const px of [-3.2, -1.6, 1.6, 3.2]) { b.add(cyl(0.04, 0.05, 0.95, 8, x + px, y + 0.48, z + 1.6), brass); b.add(cyl(0.16, 0.18, 0.05, 12, x + px, y + 0.03, z + 1.6), brass); }
++      for (const [a, c] of [[-3.2, -1.6], [1.6, 3.2]]) b.add(beam(V(x + a, y + 0.88, z + 1.6), V(x + c, y + 0.82, z + 1.6), 0.04, 0.04), rope);
++      for (let k = 0; k < 6; k++) b.add(boxGeo(x + 1.05 + k * 0.0, y + k * 0.32, z - 0.75 - k * 0.1, x + 1.45, y + k * 0.32 + 0.05, z - 0.55 - k * 0.1, 1), lam("ladder", () => ({ color: "#c9cdd4" })));
++    });
++    // press: a press-conference room: a red and yellow backdrop, a wooden podium at the origin (top y 1.15), chairs for the press
++    room("press", 12, 9, 4, lam("pressWall", () => ({ color: "#efe6d2" })), lam("pressCarpet", () => ({ color: "#6a2a2e" })), (b, x, y, z) => {
++      const red = lam("esRed", () => ({ color: "#c8202e" })), yel = lam("esYel", () => ({ color: "#f2c230" }));
++      b.add(boxGeo(x - 3.5, y + 0.4, z - 4.45, x + 3.5, y + 1.15, z - 4.4, 1), red); b.add(boxGeo(x - 3.5, y + 1.15, z - 4.45, x + 3.5, y + 2.65, z - 4.4, 1), yel); b.add(boxGeo(x - 3.5, y + 2.65, z - 4.45, x + 3.5, y + 3.4, z - 4.4, 1), red);
++      b.add(boxGeo(x - 0.45, y, z - 0.3, x + 0.45, y + 0.9, z + 0.3, 1), wood); b.add(boxGeo(x - 0.55, y + 0.9, z - 0.38, x + 0.55, y + 0.96, z + 0.36, 1), dark);
++      for (let k = 0; k < 4; k++) { const mx = x - 0.3 + k * 0.2; b.add(beam(V(mx, y + 0.96, z + 0.2), V(x - 0.15 + k * 0.1, y + 1.08, z + 0.32), 0.015, 0.015), steel); b.add(cyl(0.035, 0.035, 0.08, 8, x - 0.15 + k * 0.1, y + 1.11, z + 0.33), lam("mic" + (k % 2), () => ({ color: k % 2 ? "#2a2a30" : "#3a5ad8" }))); }
++      for (const fx of [-2.8, 2.8]) b.add(cyl(0.025, 0.025, 2.8, 6, x + fx, y + 1.4, z - 3.9), lam("brass", () => ({ color: "#c9a24a" })));
++    });
++    // fiesta: a Galician octopus fair under string flags: wooden tables, big copper cauldrons on the left, warm plaster walls
++    room("fiesta", 14, 10, 4.5, lam("fiestaWall", () => ({ color: "#e8c89a" })), lam("fiestaFloor", () => ({ color: "#b89a74" })), (b, x, y, z) => {
++      const copper = lam("copper", () => ({ color: "#c8743a" }));
++      for (const [cx, cz] of [[-3.6, -2.6], [-5.2, -1.4]]) { b.add(cyl(0.55, 0.42, 0.75, 18, x + cx, y + 0.55, z + cz), copper); b.add(cyl(0.45, 0.45, 0.2, 10, x + cx, y + 0.1, z + cz), lam("stoneRing", () => ({ color: "#6a6460" }))); }
++      table(b, x + 1.2, y, z - 1.2, 3.4, 1.0, 0.76, lam("fiestaTable", () => ({ color: "#a8784a" })));
++      table(b, x + 1.2, y, z - 3.2, 3.4, 1.0, 0.76, lam("fiestaTable", () => ({ color: "#a8784a" })));
++      const C = ["#d8333a", "#f2c230", "#3a8ad8", "#4aa84a", "#ffffff"];
++      for (let r = 0; r < 3; r++) for (let k = 0; k < 28; k++) { const fx = x - 6.8 + k * 0.5, fz = z - 4.6 + r * 2.2, sag = 0.35 * Math.sin((k / 27) * Math.PI); b.add(boxGeo(fx - 0.12, y + 3.6 - sag - 0.3, fz - 0.01, fx + 0.12, y + 3.6 - sag, fz + 0.01, 1), lam("bunt" + ((k + r) % 5), () => ({ color: C[(k + r) % 5] }))); }
++    });
+   }
+ 
+   // ---------------- pooled vehicles ----------------
