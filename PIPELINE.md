@@ -126,6 +126,26 @@ Copy `audio/soundtrack_template.py` to `audio/<slug>_soundtrack.py`; keep the SF
 and "SCORE" sections for this story (anchor events to words with `Wd("phrase")`), keep the mix block. Rules: nothing
 on the very first word, music ducked under speech, final −14 LUFS / −1 dBTP, end with a 0.04 s fade only (loop).
 
+**Trending-style beat (owner, 2026-11-17: "add trending songs from today").** Real trending songs cannot be used: they
+are copyrighted (Content ID claims, mutes or blocks an auto-posted Short) and YouTube's licensed trending sounds only work
+when posting from the YouTube app. Instead every video gets an ORIGINAL beat in a style that trends on Shorts, from
+`audio/trend.py`, as the main music bed:
+
+```python
+from trend import beat
+bed = beat("phonk", DUR, seed=<day number>, key=<38..45>, stops=[(gag_start, gag_end)])   # (2, N), peak 0.9
+music += bed          # then in the mix block use (Lv - 11.0) and -5.0 * duck for music
+```
+
+- `phonk` (drift phonk: cowbell riff, sliding 808, triplet hats): shocking, dramatic, crime, chaos. Default.
+- `funk` (Brazilian funk / montagem): hype, party, absurd crowds, sport.
+- `sneaky` (comedy tiptoe pizzicato + snaps): dumb criminals, sneaky plans, awkward moments.
+- One style per video; you may switch once at the twist (e.g. sneaky → phonk on "it gets worse"). Change seed and key
+  every day so no two videos sound the same.
+- The beat starts on frame 0 (it is part of the hook) and runs under the whole video; use `stops` for gag silences
+  (it mutes hard and comes back on the next bar). Keep the SFX; keep only a few melodic stingers from the old score.
+- Level: bed at voice − 11 LU, ducked −5 dB under speech. Check the final audio with asr.py: every word must survive.
+
 ## 8. Captions + finish
 
 ```bash

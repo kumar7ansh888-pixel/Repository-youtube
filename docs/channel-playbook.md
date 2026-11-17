@@ -9,6 +9,9 @@ What we've learned so far making cartoon true-story shorts.
 - **Pacing:** a cut every ~2 s, yellow word-by-word captions, music + SFX.
 - **Audience setting:** "No, it's not made for kids"; no 18+ restriction.
 
+## Music (2026-11-17, owner)
+- Owner asked for trending songs. Real ones are copyrighted (Content ID claims/mutes/blocks auto-posted Shorts; licensed trending sounds only work in the YouTube app), so every video now gets an ORIGINAL trending-style beat from `engine/audio/trend.py`: phonk (default), Brazilian funk, or sneaky comedy. Narration stays fully intelligible over phonk at voice − 11 LU with −5 dB ducking (ASR checked).
+
 ## Publish time (2026-11-16, owner)
 - YouTube Studio, "When your viewers are on YouTube" (last 28 days, IST): viewers peak **18:00–22:00** every day (brightest Sun 18–22, Mon 19:00, Wed 20:00, Thu/Sat 19:00), are moderate 08:00–18:00, fade after 22:00 and are near zero 00:00–06:00. So publish at **18:30**, just before the peak; the daily run starts at 10:37.
 
