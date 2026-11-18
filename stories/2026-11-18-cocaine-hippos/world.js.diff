@@ -1,0 +1,63 @@
+--- engine/render/src/world.js	2026-11-18 06:32:09.603411326 +0000
++++ /home/claude/work/2026-11-18-cocaine-hippos/render/src/world.js	2026-11-18 05:14:47.038647781 +0000
+@@ -29,6 +29,7 @@
+ export const RACE = [-1800, 0, 5600];     // 1904: the St. Louis Olympic marathon (dirt road along x at z 0, finish arch + grandstand at x -40, apple orchard x +40..+70)
+ export const PIG = [-5600, 0, 5600];       // 1859: San Juan Island, the Pig War (Cutlar's farm at the origin, the strait to +z from z = +40)
+ export const BEACH = [-4800, 0, 1400];    // 1970: Florence, Oregon, the exploding whale (whale at the origin along x, sea to -z from z -8, dunes z 14..32 with a flat crest y 2.7, parking lot behind z 36..60)
++export const HIPPO = [-11000, 0, 0];     // Colombia, the Magdalena-basin river by Escobar's old ranch (cocaine hippos): river along x, water z -48..-8 (y 0.08), bank z -8..-3 mud, lawn/ranch to +z (fence z +14, gate at x +18), far bank z < -48
+ export const OCEAN = [8000, 0, 0];        // sea starts at x = 8000; New York skyline at x = 12500
+ const RY = 2000;
+ export const ROOM = { office: [0, RY, 0], bank: [200, RY, 0], living: [400, RY, 0], interro: [600, RY, 0], showroom: [800, RY, 0], oval: [1000, RY, 0], motel: [1200, RY, 0] };
+@@ -670,6 +671,42 @@
+       for (const [hx, hz, sx, sy, sz] of [[-700, -260, 260, 70, 140], [820, -320, 300, 90, 160], [-1300, -120, 220, 60, 200]]) { const m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); m.scale(sx, sy, sz); m.translate(wx + hx, -2, wz + hz); b.add(m, L("bwHead", "#6f7a6a")); }
+       for (let i = 0; i < 7; i++) { const m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); m.scale(320 + (i % 2) * 140, 60 + (i % 3) * 25, 140); m.translate(wx - 1200 + i * 400, -2, wz + 520 + (i % 2) * 120); b.add(m, L("bwHill" + (i % 2), i % 2 ? "#3f6a50" : "#4a7658")); }
+     }
++    // ---- Colombia, the hippo river (HIPPO, x -11000, beyond the global grass): lush lawn to +z (y 0.10), a mud bank z -8..-3,
++    //      the river (water plane in buildWater) z -48..-8, the far bank z < -48 with jungle, Escobar's old ranch fence at z +14
++    //      with a white gate at x +18, palms and round canopy trees, blue-green hills far off
++    {
++      const [hx, , hz] = HIPPO, L = (k, c) => lam(k, () => ({ color: c }));
++      const lawn = lam("hpLawn", () => ({ map: GT.fieldTex("hpLawn", "#79a84a") }));
++      b.add(quadUp(hx - 1500, hx + 1500, hz - 3, hz + 1500, 0.10, 60), lawn);
++      b.add(quadUp(hx - 1500, hx + 1500, hz - 1500, hz - 48, 0.10, 60), lawn);
++      const mud = lam("hpMud", () => ({ map: GT.fieldTex("hpMud", "#8a6a48") })); b.add(quadUp(hx - 1500, hx + 1500, hz - 8.5, hz - 2.9, 0.105, 40), mud);
++      b.add(quadUp(hx - 1500, hx + 1500, hz - 48.6, hz - 46, 0.105, 40), mud);
++      // floor of the river under the water plane (so nothing shows through)
++      b.add(quadUp(hx - 1500, hx + 1500, hz - 49, hz - 8, -1.0, 40), L("hpBed", "#3a4a3a"));
++      // reeds along the near bank
++      const reed = [L("hpReed0", "#5a8a3a"), L("hpReed1", "#7aa04a")];
++      for (let k = 0; k < 220; k++) { const x = hx - 120 + hh(k, 11) * 240, z = hz - 7.5 + hh(k, 12) * 4.5; if (Math.abs(x - hx) < 9 && z > hz - 6) continue; const c = new THREE.ConeGeometry(0.12 + hh(k, 13) * 0.1, 0.8 + hh(k, 14) * 0.9, 4); c.translate(x, 0.5, z); b.add(c, reed[k % 2]); }
++      // ranch fence (white posts + two rails) at z +14 with a white gate at x +18
++      const wht = L("hpWhite", "#f2efe6"); for (let x = -60; x <= 60; x += 2.5) { if (x > 14 && x < 22) continue; b.add(boxGeo(hx + x - 0.07, 0, hz + 13.95, hx + x + 0.07, 1.2, hz + 14.07, 1), wht); }
++      for (const y of [0.55, 1.0]) { b.add(boxGeo(hx - 60, y, hz + 13.97, hx + 14.5, y + 0.1, hz + 14.05, 20), wht); b.add(boxGeo(hx + 21.5, y, hz + 13.97, hx + 60, y + 0.1, hz + 14.05, 20), wht); }
++      for (const gx of [14.4, 21.6]) b.add(boxGeo(hx + gx - 0.45, 0, hz + 13.6, hx + gx + 0.45, 4.2, hz + 14.4, 1), wht);
++      b.add(boxGeo(hx + 13.9, 4.2, hz + 13.7, hx + 22.1, 4.7, hz + 14.3, 4), wht);
++      // a ranch house (white walls, red tile roof) behind the fence
++      b.add(boxGeo(hx - 22, 0, hz + 30, hx - 4, 3.6, hz + 40, 4), wht);
++      const roof = L("hpRoof", "#b8503a"); { const g = new THREE.ConeGeometry(13.5, 3.2, 4); g.rotateY(Math.PI / 4); g.scale(1, 1, 0.58); g.translate(hx - 13, 5.2, hz + 35); b.add(g, roof); }
++      for (let i = 0; i < 4; i++) b.add(boxGeo(hx - 20 + i * 4.4, 0.9, hz + 29.9, hx - 18.6 + i * 4.4, 2.6, hz + 30, 1), L("hpWin", "#5a4030"));
++      // palms and round canopy trees on both banks
++      const trunk = L("hpTrunk", "#7a5a3a"), fr = [L("hpFrond0", "#3f8a3a"), L("hpFrond1", "#5aa040")], can = [L("hpCan0", "#3a7a34"), L("hpCan1", "#4f9040"), L("hpCan2", "#2f6a30")];
++      const palm = (x, z, s) => { b.add(cyl(0.18 * s, 0.26 * s, 6 * s, 6, x, 3 * s, z), trunk); for (let q = 0; q < 7; q++) { const a = (q / 7) * Math.PI * 2; const f = boxGeo(-0.35 * s, -0.04, 0, 0.35 * s, 0.04, 3.2 * s, 2); f.rotateX(0.5); f.rotateY(a); f.translate(x, 6 * s, z); b.add(f, fr[q % 2]); } };
++      const blob = (x, z, s, k) => { b.add(cyl(0.25 * s, 0.35 * s, 3 * s, 6, x, 1.5 * s, z), trunk); const g = new THREE.IcosahedronGeometry(2.6 * s, 1); g.scale(1, 0.8, 1); g.translate(x, 4.2 * s, z); b.add(g, can[k % 3]); };
++      for (let k = 0; k < 40; k++) { const x = hx - 200 + k * 10 + hh(k, 21) * 6, z = hz - 54 - hh(k, 22) * 30, s = 0.9 + hh(k, 23) * 0.7; k % 3 ? blob(x, z, s, k) : palm(x, z, s); }
++      for (let k = 0; k < 60; k++) { const x = hx - 300 + k * 10 + hh(k, 31) * 6, z = hz - 90 - hh(k, 32) * 60, s = 1.2 + hh(k, 33) * 0.9; blob(x, z, s, k + 1); }
++      for (const [x, z, s] of [[-14, 3, 1.0], [11, 5, 0.9], [-30, 8, 1.2], [34, 7, 1.1], [-46, 20, 1.3], [44, 22, 1.2], [-6, 46, 1.1], [28, 48, 1.3]]) palm(hx + x, hz + z, s);
++      for (const [x, z, s] of [[-24, 22, 1.2], [6, 26, 1.0], [40, 30, 1.4], [-40, 34, 1.3], [60, 12, 1.4], [-62, 10, 1.3]]) blob(hx + x, hz + z, s, Math.round(x));
++      // blue-green hills far off on both sides
++      for (let i = 0; i < 8; i++) { const m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); m.scale(300 + (i % 2) * 160, 70 + (i % 3) * 30, 160); m.translate(hx - 1400 + i * 400, -2, hz - 520 - (i % 2) * 140); b.add(m, L("hpHill" + (i % 2), i % 2 ? "#4f7a5a" : "#5d8a62")); }
++      for (let i = 0; i < 8; i++) { const m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); m.scale(320 + (i % 2) * 120, 60 + (i % 3) * 25, 160); m.translate(hx - 1400 + i * 400, -2, hz + 560 + (i % 2) * 120); b.add(m, L("hpHillB" + (i % 2), i % 2 ? "#5a845a" : "#6a945e")); }
++    }
+     b.build(R, true, true);
+     // New York skyline far across the ocean (flat painted card)
+     const sk = new THREE.Mesh(new THREE.PlaneGeometry(3200, 800), new THREE.MeshBasicMaterial({ map: PT.skylineTex(), transparent: true, fog: true, depthWrite: false }));
+@@ -727,7 +764,8 @@
+     const sea = new THREE.PlaneGeometry(8000, 8000); sea.rotateX(-Math.PI / 2); sea.translate(OCEAN[0] + 3500, -0.5, OCEAN[2]);
+     const strait = new THREE.PlaneGeometry(6000, 3000); strait.rotateX(-Math.PI / 2); strait.translate(PIG[0], 0.07, PIG[2] + 38 + 1500);
+     const bsea = new THREE.PlaneGeometry(6000, 3000); bsea.rotateX(-Math.PI / 2); bsea.translate(BEACH[0], 0.08, BEACH[2] - 8 - 1500);
+-    for (const g of [river, sea, strait, bsea]) { const w = new THREE.Mesh(g, m); w.receiveShadow = true; this.root.add(w); }
++    const hriv = new THREE.PlaneGeometry(3000, 40.5); hriv.rotateX(-Math.PI / 2); hriv.translate(HIPPO[0], 0.08, HIPPO[2] - 28.2);
++    for (const g of [river, sea, strait, bsea, hriv]) { const w = new THREE.Mesh(g, m); w.receiveShadow = true; this.root.add(w); }
+   }
+ 
+   // ---------------- indoor sets (no ceilings; walls never cast shadows so the sun lights the floor) ----------------

@@ -1,0 +1,68 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Bangers,200,&H00FFFFFF,&H00FFFFFF,&H00101010,&H96000000,0,0,0,0,100,100,3,0,1,12,8,8,40,40,190,1
+Style: Cap,Poppins,112,&H0000D4FF,&H00FFFFFF,&H00111111,&H64000000,1,0,0,0,100,100,0,0,1,8,5,2,60,60,470,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:02.55,Hook,,0,0,0,,{\fscx60\fscy60\t(0,180,\fscx100\fscy100)}{\c&H3AE8FF&}COCAINE HIPPOS\N{\c&H3A48F0&\fs224}WON'T STOP?!
+Dialogue: 0,0:00:00.32,0:00:01.43,Cap,,0,0,0,,{\k2}{\k28}A {\k28}drug {\k28}lord's {\k26}pet
+Dialogue: 0,0:00:01.43,0:00:01.98,Cap,,0,0,0,,{\k2}{\k53}hippos…
+Dialogue: 0,0:00:01.98,0:00:03.63,Cap,,0,0,0,,{\k2}{\k28}won't {\k28}stop {\k107}multiplying.
+Dialogue: 0,0:00:03.63,0:00:04.89,Cap,,0,0,0,,{\k2}{\k25}He {\k25}had {\k74}giraffes,
+Dialogue: 0,0:00:04.89,0:00:05.39,Cap,,0,0,0,,{\k2}{\k48}zebras…
+Dialogue: 0,0:00:05.39,0:00:06.78,Cap,,0,0,0,,{\k2}{\k25}and {\k25}four {\k87}hippos.
+Dialogue: 0,0:00:06.78,0:00:07.66,Cap,,0,0,0,,{\k2}{\k31}His {\k55}name?
+Dialogue: 0,0:00:07.66,0:00:08.97,Cap,,0,0,0,,{\k2}{\k45}Pablo {\k84}Escobar.
+Dialogue: 0,0:00:08.97,0:00:10.11,Cap,,0,0,0,,{\k2}{\k23}Then {\k23}he {\k66}died.
+Dialogue: 0,0:00:10.11,0:00:11.16,Cap,,0,0,0,,{\k2}{\k15}The {\k30}other {\k45}animals {\k13}were
+Dialogue: 0,0:00:11.16,0:00:12.14,Cap,,0,0,0,,{\k2}{\k30}taken {\k66}away.
+Dialogue: 0,0:00:12.14,0:00:13.01,Cap,,0,0,0,,{\k2}{\k22}But {\k22}the {\k42}hippos?
+Dialogue: 0,0:00:13.01,0:00:14.11,Cap,,0,0,0,,{\k2}{\k22}Too {\k44}heavy {\k22}to {\k20}move.
+Dialogue: 0,0:00:14.11,0:00:14.76,Cap,,0,0,0,,{\k2}{\k22}So {\k22}they {\k20}just…
+Dialogue: 0,0:00:14.76,0:00:15.72,Cap,,0,0,0,,{\k2}{\k22}left {\k22}them {\k50}there.
+Dialogue: 0,0:00:15.72,0:00:16.94,Cap,,0,0,0,,{\k2}{\k25}Big {\k95}mistake.
+Dialogue: 0,0:00:16.94,0:00:18.23,Cap,,0,0,0,,{\k2}{\k18}The {\k37}hippos {\k55}wandered {\k16}out…
+Dialogue: 0,0:00:18.23,0:00:18.96,Cap,,0,0,0,,{\k2}{\k18}found {\k18}a {\k35}river…
+Dialogue: 0,0:00:18.96,0:00:20.07,Cap,,0,0,0,,{\k2}{\k18}and {\k18}got {\k72}busy.
+Dialogue: 0,0:00:20.07,0:00:20.47,Cap,,0,0,0,,{\k2}{\k38}Today,
+Dialogue: 0,0:00:20.47,0:00:21.47,Cap,,0,0,0,,{\k2}{\k20}there {\k20}are {\k40}around {\k18}two
+Dialogue: 0,0:00:21.47,0:00:22.62,Cap,,0,0,0,,{\k2}{\k113}hundred.
+Dialogue: 0,0:00:22.88,0:00:24.31,Cap,,0,0,0,,{\k2}{\k54}Cocaine {\k87}hippos.
+Dialogue: 0,0:00:24.31,0:00:24.91,Cap,,0,0,0,,{\k2}{\k30}They're {\k28}huge…
+Dialogue: 0,0:00:24.91,0:00:25.52,Cap,,0,0,0,,{\k2}{\k58}grumpy…
+Dialogue: 0,0:00:25.52,0:00:26.72,Cap,,0,0,0,,{\k2}{\k30}and {\k30}they {\k30}spray {\k28}poop
+Dialogue: 0,0:00:26.72,0:00:28.00,Cap,,0,0,0,,{\k2}{\k30}with {\k30}their {\k66}tails.
+Dialogue: 0,0:00:28.00,0:00:28.93,Cap,,0,0,0,,{\k2}{\k31}Birth {\k60}control?
+Dialogue: 0,0:00:28.93,0:00:29.85,Cap,,0,0,0,,{\k2}{\k31}Didn't {\k59}work.
+Dialogue: 0,0:00:29.85,0:00:31.81,Cap,,0,0,0,,{\k2}{\k26}So {\k26}they {\k26}tried {\k116}castration.
+Dialogue: 0,0:00:31.81,0:00:32.10,Cap,,0,0,0,,{\k2}{\k27}Wait,
+Dialogue: 0,0:00:32.10,0:00:33.33,Cap,,0,0,0,,{\k2}{\k29}it {\k29}gets {\k64}worse.
+Dialogue: 0,0:00:33.33,0:00:34.92,Cap,,0,0,0,,{\k2}{\k23}A {\k23}male {\k45}hippo's {\k66}testicles…
+Dialogue: 0,0:00:34.92,0:00:36.05,Cap,,0,0,0,,{\k2}{\k23}can {\k23}hide {\k45}inside {\k21}his
+Dialogue: 0,0:00:36.05,0:00:36.81,Cap,,0,0,0,,{\k2}{\k74}body.
+Dialogue: 0,0:00:36.81,0:00:38.60,Cap,,0,0,0,,{\k2}{\k60}Scientists {\k60}tracked {\k30}one {\k28}male
+Dialogue: 0,0:00:38.60,0:00:39.54,Cap,,0,0,0,,{\k2}{\k30}for {\k62}months.
+Dialogue: 0,0:00:39.54,0:00:40.37,Cap,,0,0,0,,{\k2}{\k17}They {\k33}knocked {\k17}him {\k15}out
+Dialogue: 0,0:00:40.37,0:00:41.87,Cap,,0,0,0,,{\k2}{\k17}with {\k17}an {\k50}elephant {\k65}tranquilizer…
+Dialogue: 0,0:00:41.87,0:00:42.49,Cap,,0,0,0,,{\k2}{\k17}And {\k43}then…
+Dialogue: 0,0:00:42.49,0:00:43.31,Cap,,0,0,0,,{\k2}{\k16}had {\k17}to {\k17}go {\k31}looking
+Dialogue: 0,0:00:43.31,0:00:44.39,Cap,,0,0,0,,{\k2}{\k17}for {\k90}them.
+Dialogue: 0,0:00:44.70,0:00:46.01,Cap,,0,0,0,,{\k2}{\k22}One {\k44}expert {\k22}can {\k42}castrate
+Dialogue: 0,0:00:46.01,0:00:47.32,Cap,,0,0,0,,{\k2}{\k44}about {\k22}one {\k44}hippo {\k20}a
+Dialogue: 0,0:00:47.32,0:00:47.98,Cap,,0,0,0,,{\k2}{\k64}year.
+Dialogue: 0,0:00:47.98,0:00:48.98,Cap,,0,0,0,,{\k2}{\k22}The {\k76}hippos?
+Dialogue: 0,0:00:48.98,0:00:50.90,Cap,,0,0,0,,{\k2}{\k44}Making {\k44}babies {\k22}way {\k81}faster.
+Dialogue: 0,0:00:50.90,0:00:52.11,Cap,,0,0,0,,{\k2}{\k20}Now {\k20}a {\k60}billionaire {\k18}in
+Dialogue: 0,0:00:52.11,0:00:53.52,Cap,,0,0,0,,{\k2}{\k40}India {\k60}offered {\k20}to {\k18}take
+Dialogue: 0,0:00:53.52,0:00:54.16,Cap,,0,0,0,,{\k2}{\k62}some.
+Dialogue: 0,0:00:54.16,0:00:55.27,Cap,,0,0,0,,{\k2}{\k32}By {\k78}plane.
+Dialogue: 0,0:00:55.27,0:00:56.36,Cap,,0,0,0,,{\k2}{\k22}Turns {\k22}out {\k22}the {\k41}hardest
+Dialogue: 0,0:00:56.36,0:00:57.22,Cap,,0,0,0,,{\k2}{\k22}thing {\k22}to {\k22}smuggle {\k20}out
+Dialogue: 0,0:00:57.22,0:00:58.28,Cap,,0,0,0,,{\k2}{\k22}of {\k82}Colombia…
+Dialogue: 0,0:00:58.28,0:00:59.25,Cap,,0,0,0,,{\k2}{\k95}is
