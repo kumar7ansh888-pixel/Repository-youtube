@@ -10,7 +10,7 @@ What we've learned so far making cartoon true-story shorts.
 - **Audience setting:** "No, it's not made for kids"; no 18+ restriction.
 
 ## Format change (2026-11-17, owner): Hindu mythology from 2026-11-18
-- **Not applied on 2026-11-18:** the owner's scheduled-task prompt still says "a funny-weird TRUE story, facts checked against two web sources" and has no mythology instruction, so the 11-18 run followed the prompt (cocaine hippos) and asked the owner to confirm. If mythology is wanted, the scheduled task's prompt should say so.
+- **Not applied on 2026-11-18 or 2026-11-19:** the owner's scheduled-task prompt still says "a funny-weird TRUE story, facts checked against two web sources" and has no mythology instruction, so the 11-18 and 11-19 runs followed the prompt (cocaine hippos, pigeon-guided bomb) and asked the owner to confirm. If mythology is wanted, the scheduled task's prompt should say so.
 - Every Short is now a **Hindu mythology** story, **dramatic / epic** and respectful, still in **English** (voice am_michael), 18:30 IST, original
   phonk-style beats. Rules are in PIPELINE.md "Hindu mythology format". Last true-story Short: Paul the Octopus (2026-11-17).
 - Watch whether mythology lifts the engaged-view rate and shares (Indian audience peaks 18–22 IST).
@@ -32,21 +32,22 @@ What we've learned so far making cartoon true-story shorts.
 - Narration: free Kokoro v0.19 voice `am_michael` made in the cloud (owner's choice; ElevenLabs Ace Adams was used up to Mike).
 - Videos hosted in the `videos` branch of github.com/kumar7ansh888-pixel/Repository-youtube; engine on the `engine` branch; procedure in `PIPELINE.md`.
 
-## What the numbers say (Windsor, last 29 days, read 2026-11-18)
+## What the numbers say (Windsor, last 29 days, read 2026-11-19)
 | Short | views | engaged (not swiped) | avg % viewed | shares |
 | --- | --- | --- | --- | --- |
-| This bridge is being eaten by Spit 🤢 (1:39) | 3,049 | 71% | 54% | 2 |
-| The Man Who Stole the Mona Lisa 🖼️ (0:58) | 2,873 | 64% | 67% | 1 |
+| This bridge is being eaten by Spit 🤢 (1:39) | 3,050 | 71% | 54% | 2 |
+| The Man Who Stole the Mona Lisa 🖼️ (0:58) | 2,874 | 64% | 67% | 1 |
 | This Chicken Lived 18 MONTHS Without a Head 🐔 (0:44) | 2,587 | 57% | 68% | 0 |
 | He Robbed a Bank Wearing Lemon Juice 🍋 (1:11) | 2,443 | 60% | 70% | 0 |
 | The Day It Rained MEAT 🥩 (0:42) | 1,624 | 47% | 70% | 0 |
-| The Man Who Sold the Eiffel Tower (1:31) | 1,495 | 61% | 59% | 0 |
+| The Man Who Sold the Eiffel Tower (1:31) | 1,497 | 61% | 59% | 0 |
 | Australia Declared War on Birds… and LOST 🐦 (0:52) | 1,460 | 59% | 52% | 0 |
-| India Disguised the Taj Mahal… 🤯 (1:55) | 1,179 | 57% | 50% | 0 |
-| They Blew Up a Whale With Dynamite 🐋💥 (0:57) | 1,161 | 49% | 64% | 1 |
+| India Disguised the Taj Mahal… 🤯 (1:55) | 1,183 | 57% | 50% | 0 |
+| They Blew Up a Whale With Dynamite 🐋💥 (0:57) | 1,166 | 49% | 64% | 1 |
 | Napoleon Lost a Battle… to BUNNIES 🐰 (0:43) | 1,099 | 43% | 67% | 1 |
 | The Pig War: 461 Soldiers vs 5 Warships… Over a PIG 🐷 (0:43) | 1,088 | 48% | 55% | 0 |
-| Hindi rat poison (11-14) / airplane eater (11-16) / octopus (11-17) | not in Windsor yet | – | – | – |
+| This Man Ate a Whole Airplane ✈️ (0:56) | 1,041 | 52% | 60% | 0 |
+| Hindi rat poison (11-14) / octopus (11-17) / hippos (11-18) | not in Windsor yet | – | – | – |
 Lessons: 30–57% swipe away in the first seconds, so the first second decides everything; gross/absurd + modern
 (spit bridge) and dumb crime (lemon juice) beat war/history-lesson topics; shares are ~0, so pick send-to-a-friend
 stories. Owner's direction (2026-11-13): more interesting, shocking and funny; see PIPELINE step 1 scoring.
@@ -58,12 +59,13 @@ stories. Owner's direction (2026-11-13): more interesting, shocking and funny; s
 - Ghost Army (long video): very low views — focus on Shorts.
 
 ## Topics done
-Ghost Army, Eiffel Tower sale, Lemon juice robber, Mona Lisa theft, Hitler's nephew (user disliked), Great Emu War, Kentucky meat shower (40 s re-cut with hook), Mike the Headless Chicken (43.6 s, hook + loop format, Nov 2026), Napoleon attacked by rabbits (43.1 s, first fully automated daily run, 2026-11-12), Pig War 1859 (43.3 s, 2026-11-13), 1904 Olympic marathon / gold on rat poison (2026-11-14: English 34 s cut made, then replaced by the first Hindi 1-min cut, 57 s), Oregon exploding whale 1970 (2026-11-15, English 1-min, 56.8 s), Monsieur Mangetout / the man who ate an airplane (2026-11-16, English 1-min, 56.0 s), Paul the Octopus / World Cup oracle (2026-11-17, English 1-min, first trend.py beat: funk → phonk), Escobar's cocaine hippos (2026-11-18, English 1-min, 58.9 s, sneaky → phonk).
+Ghost Army, Eiffel Tower sale, Lemon juice robber, Mona Lisa theft, Hitler's nephew (user disliked), Great Emu War, Kentucky meat shower (40 s re-cut with hook), Mike the Headless Chicken (43.6 s, hook + loop format, Nov 2026), Napoleon attacked by rabbits (43.1 s, first fully automated daily run, 2026-11-12), Pig War 1859 (43.3 s, 2026-11-13), 1904 Olympic marathon / gold on rat poison (2026-11-14: English 34 s cut made, then replaced by the first Hindi 1-min cut, 57 s), Oregon exploding whale 1970 (2026-11-15, English 1-min, 56.8 s), Monsieur Mangetout / the man who ate an airplane (2026-11-16, English 1-min, 56.0 s), Paul the Octopus / World Cup oracle (2026-11-17, English 1-min, first trend.py beat: funk → phonk), Escobar's cocaine hippos (2026-11-18, English 1-min, 58.9 s, sneaky → phonk), Project Pigeon / pigeon-guided bomb (2026-11-19, English 1-min, 55.3 s, phonk).
 
 ## Topic ideas not yet used (re-score with the 4 tests before using; prefer funny/gross/absurd)
-pigeon-guided missiles, Bosco the dog mayor, CIA spy cat (Acoustic Kitty), man who mailed himself, dancing plague of 1518.
+Bosco the dog mayor, CIA spy cat (Acoustic Kitty), man who mailed himself, dancing plague of 1518.
 
 ## Production notes
+- Project Pigeon sets: new rooms `war` (x 1400, 1940s briefing room: table at the origin top y 0.78, z ±0.5, chairs behind at z −1.25..−0.85, map + chalk boards) and `stage` (x 1600: stage boards top y 0.5 from z −5 to +0.5, red curtain z −4.9, lectern x +1.35..+1.85 z −1.2..−0.8 top y 1.6, footlights). Lab = the existing `office` room (bench top y 0.92, front edge z −0.3). Flying shots need no set: an empty spot at [2400, 2000, 0] with a screen-filling painted sky card (`drawSky` via screenCard at d 6–9) behind the cards. Pigeon (`drawPigeon`: side view, peck, goggles/cap, sign, olive, fat; `drawPigeonFront`), glide bomb (`drawBomb`, glass nose with the pilot), the three-cockpit cut-away (`drawCockpits`, 768x1024, bays at card y +0.48 / 0 / −0.51 for h 1.6), target screen/photo, grain, stamp, medal, envelope are all in that story.js. A horizontal bomb is too wide for 9:16: rotate it ~±1 rad (diving / climbing) so it fits.
 - Cocaine-hippo set (`HIPPO` in world.js, x −11000 z 0, beyond the global grass so no green flicker): own lawn quad y 0.10, mud banks, river water plane z −48..−8 (y 0.08), ranch fence z +14 with a white gate at x +18, palms + canopy trees, hills. Hippo is a canvas card (`drawHippo` in that story.js: faces, hinged jaw/yawn, walk, tail-spin poop spray, sunglasses); in water set `vis` (fraction above the water plane). Also drawPlane (hippos in windows), drawCase, drawGiraffe, drawZebra, bottles, calendar, snail.
 - Framing rule for the 9:16 frame: visible half-width ≈ 0.27 × distance at fov 52 (≈ 1.9 m at 7 m). Keep side characters within that or they fall out of frame; the first contact sheet of 11-18 lost half the people this way.
 - Airplane-eater set (`AIR` in world.js, x −7200 z −2000; the global grass ends at x −8000): banquet table at the origin (cloth box, top y 0.75, front z +0.55),

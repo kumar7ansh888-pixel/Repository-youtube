@@ -1,0 +1,64 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Bangers,200,&H00FFFFFF,&H00FFFFFF,&H00101010,&H96000000,0,0,0,0,100,100,3,0,1,12,8,8,40,40,190,1
+Style: Cap,Poppins,112,&H0000D4FF,&H00FFFFFF,&H00111111,&H64000000,1,0,0,0,100,100,0,0,1,8,5,2,60,60,470,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:02.55,Hook,,0,0,0,,{\fscx60\fscy60\t(0,180,\fscx100\fscy100)}{\c&H3AE8FF&}PIGEONS FLEW\N{\c&H3A48F0&\fs224}THIS BOMB?!
+Dialogue: 0,0:00:00.34,0:00:01.48,Cap,,0,0,0,,{\k2}{\k23}This {\k23}bomb {\k23}was {\k44}steered…
+Dialogue: 0,0:00:01.48,0:00:02.77,Cap,,0,0,0,,{\k2}{\k23}by {\k23}a {\k81}pigeon.
+Dialogue: 0,0:00:02.77,0:00:03.55,Cap,,0,0,0,,{\k2}{\k26}Three {\k50}pigeons,
+Dialogue: 0,0:00:03.55,0:00:04.59,Cap,,0,0,0,,{\k2}{\k26}in {\k26}the {\k50}nose.
+Dialogue: 0,0:00:04.59,0:00:05.92,Cap,,0,0,0,,{\k2}{\k25}A {\k51}scientist {\k55}thought:
+Dialogue: 0,0:00:05.92,0:00:07.56,Cap,,0,0,0,,{\k2}{\k47}pigeons {\k23}have {\k70}amazing {\k22}eyes…
+Dialogue: 0,0:00:07.56,0:00:09.05,Cap,,0,0,0,,{\k2}{\k23}so {\k24}make {\k23}them {\k77}pilots!
+Dialogue: 0,0:00:09.05,0:00:09.82,Cap,,0,0,0,,{\k2}{\k15}He {\k31}showed {\k15}them {\k13}a
+Dialogue: 0,0:00:09.82,0:00:11.17,Cap,,0,0,0,,{\k2}{\k31}picture {\k15}of {\k15}the {\k71}target.
+Dialogue: 0,0:00:11.17,0:00:12.06,Cap,,0,0,0,,{\k2}{\k22}Peck {\k22}the {\k42}picture,
+Dialogue: 0,0:00:12.06,0:00:13.09,Cap,,0,0,0,,{\k2}{\k22}get {\k22}a {\k57}snack.
+Dialogue: 0,0:00:13.09,0:00:14.04,Cap,,0,0,0,,{\k2}{\k31}Peck {\k61}faster…
+Dialogue: 0,0:00:14.04,0:00:15.06,Cap,,0,0,0,,{\k2}{\k31}more {\k69}snacks.
+Dialogue: 0,0:00:15.06,0:00:16.46,Cap,,0,0,0,,{\k2}{\k23}One {\k46}greedy {\k23}bird {\k45}pecked
+Dialogue: 0,0:00:16.46,0:00:17.62,Cap,,0,0,0,,{\k2}{\k23}ten {\k46}thousand {\k45}times…
+Dialogue: 0,0:00:17.62,0:00:19.00,Cap,,0,0,0,,{\k2}{\k23}in {\k23}one {\k89}sitting.
+Dialogue: 0,0:00:19.00,0:00:19.97,Cap,,0,0,0,,{\k2}{\k20}Then {\k20}he {\k39}strapped {\k17}them
+Dialogue: 0,0:00:19.97,0:00:21.10,Cap,,0,0,0,,{\k2}{\k39}inside {\k20}a {\k53}bomb.
+Dialogue: 0,0:00:21.10,0:00:22.08,Cap,,0,0,0,,{\k2}{\k20}Each {\k20}got {\k20}a {\k37}tiny
+Dialogue: 0,0:00:22.08,0:00:23.22,Cap,,0,0,0,,{\k2}{\k112}cockpit.
+Dialogue: 0,0:00:23.49,0:00:24.43,Cap,,0,0,0,,{\k2}{\k23}A {\k23}screen {\k23}shows {\k21}the
+Dialogue: 0,0:00:24.43,0:00:25.27,Cap,,0,0,0,,{\k2}{\k82}target.
+Dialogue: 0,0:00:25.27,0:00:26.35,Cap,,0,0,0,,{\k2}{\k27}The {\k54}pigeon {\k25}pecks…
+Dialogue: 0,0:00:26.35,0:00:27.81,Cap,,0,0,0,,{\k2}{\k27}and {\k27}the {\k27}bomb {\k63}turns.
+Dialogue: 0,0:00:27.81,0:00:28.74,Cap,,0,0,0,,{\k2}{\k31}Why {\k31}three {\k29}birds?
+Dialogue: 0,0:00:28.74,0:00:30.34,Cap,,0,0,0,,{\k2}{\k31}So {\k31}they {\k31}could {\k65}vote.
+Dialogue: 0,0:00:30.34,0:00:31.17,Cap,,0,0,0,,{\k2}{\k21}Two {\k41}against {\k19}one…
+Dialogue: 0,0:00:31.17,0:00:32.85,Cap,,0,0,0,,{\k2}{\k21}the {\k41}loser {\k21}got {\k83}outvoted.
+Dialogue: 0,0:00:32.85,0:00:34.23,Cap,,0,0,0,,{\k2}{\k20}And {\k20}the {\k79}military {\k18}paid
+Dialogue: 0,0:00:34.23,0:00:34.63,Cap,,0,0,0,,{\k2}{\k20}for {\k18}this!
+Dialogue: 0,0:00:34.63,0:00:35.42,Cap,,0,0,0,,{\k2}{\k20}In {\k20}the {\k38}demo…
+Dialogue: 0,0:00:35.42,0:00:36.60,Cap,,0,0,0,,{\k2}{\k20}the {\k20}birds {\k40}nailed {\k37}it.
+Dialogue: 0,0:00:36.60,0:00:37.82,Cap,,0,0,0,,{\k2}{\k20}But {\k61}nobody {\k20}would {\k18}take
+Dialogue: 0,0:00:37.82,0:00:38.64,Cap,,0,0,0,,{\k2}{\k20}him {\k59}seriously.
+Dialogue: 0,0:00:38.64,0:00:39.56,Cap,,0,0,0,,{\k2}{\k91}Cancelled!
+Dialogue: 0,0:00:39.56,0:00:40.52,Cap,,0,0,0,,{\k2}{\k19}Then {\k19}the {\k38}Navy {\k17}brought
+Dialogue: 0,0:00:40.52,0:00:41.29,Cap,,0,0,0,,{\k2}{\k19}it {\k56}back.
+Dialogue: 0,0:00:41.29,0:00:41.57,Cap,,0,0,0,,{\k2}{\k26}Wait,
+Dialogue: 0,0:00:41.57,0:00:42.81,Cap,,0,0,0,,{\k2}{\k28}it {\k28}gets {\k65}worse.
+Dialogue: 0,0:00:42.81,0:00:43.85,Cap,,0,0,0,,{\k2}{\k62}Decades {\k40}later…
+Dialogue: 0,0:00:43.85,0:00:45.05,Cap,,0,0,0,,{\k2}{\k21}it {\k21}won {\k21}a {\k56}prize.
+Dialogue: 0,0:00:45.05,0:00:45.61,Cap,,0,0,0,,{\k2}{\k14}The {\k14}Ig {\k26}Nobel…
+Dialogue: 0,0:00:45.61,0:00:46.63,Cap,,0,0,0,,{\k2}{\k14}Peace {\k87}Prize.
+Dialogue: 0,0:00:46.98,0:00:47.24,Cap,,0,0,0,,{\k2}{\k24}Peace.
+Dialogue: 0,0:00:47.24,0:00:48.52,Cap,,0,0,0,,{\k2}{\k26}For {\k49}a {\k52}bomb.
+Dialogue: 0,0:00:48.52,0:00:49.84,Cap,,0,0,0,,{\k2}{\k33}Flown {\k33}by {\k64}pigeons.
+Dialogue: 0,0:00:49.84,0:00:51.45,Cap,,0,0,0,,{\k2}{\k33}And {\k33}the {\k93}pilots?
+Dialogue: 0,0:00:51.45,0:00:52.54,Cap,,0,0,0,,{\k2}{\k30}Paid {\k30}in {\k48}grain.
+Dialogue: 0,0:00:52.54,0:00:53.27,Cap,,0,0,0,,{\k2}{\k18}So {\k18}next {\k18}time {\k16}a
+Dialogue: 0,0:00:53.27,0:00:54.36,Cap,,0,0,0,,{\k2}{\k36}pigeon {\k36}stares {\k18}at {\k16}you…
+Dialogue: 0,0:00:54.36,0:00:55.66,Cap,,0,0,0,,{\k2}{\k128}remember:

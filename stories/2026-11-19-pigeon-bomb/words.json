@@ -1,0 +1,914 @@
+[
+{
+"word": "This",
+"raw": "This",
+"start": 0.388,
+"end": 0.617
+},
+{
+"word": "bomb",
+"raw": "bomb",
+"start": 0.617,
+"end": 0.847
+},
+{
+"word": "was",
+"raw": "was",
+"start": 0.847,
+"end": 1.076
+},
+{
+"word": "steered",
+"raw": "steered\u2026",
+"start": 1.076,
+"end": 1.534
+},
+{
+"word": "by",
+"raw": "by",
+"start": 1.534,
+"end": 1.763
+},
+{
+"word": "a",
+"raw": "a",
+"start": 1.763,
+"end": 1.993
+},
+{
+"word": "pigeon",
+"raw": "pigeon.",
+"start": 1.993,
+"end": 2.451
+},
+{
+"word": "Three",
+"raw": "Three",
+"start": 2.823,
+"end": 3.083
+},
+{
+"word": "pigeons",
+"raw": "pigeons,",
+"start": 3.083,
+"end": 3.603
+},
+{
+"word": "in",
+"raw": "in",
+"start": 3.603,
+"end": 3.863
+},
+{
+"word": "the",
+"raw": "the",
+"start": 3.863,
+"end": 4.122
+},
+{
+"word": "nose",
+"raw": "nose.",
+"start": 4.122,
+"end": 4.382
+},
+{
+"word": "A",
+"raw": "A",
+"start": 4.638,
+"end": 4.891
+},
+{
+"word": "scientist",
+"raw": "scientist",
+"start": 4.891,
+"end": 5.397
+},
+{
+"word": "thought",
+"raw": "thought:",
+"start": 5.397,
+"end": 5.65
+},
+{
+"word": "pigeons",
+"raw": "pigeons",
+"start": 5.967,
+"end": 6.437
+},
+{
+"word": "have",
+"raw": "have",
+"start": 6.437,
+"end": 6.672
+},
+{
+"word": "amazing",
+"raw": "amazing",
+"start": 6.672,
+"end": 7.377
+},
+{
+"word": "eyes",
+"raw": "eyes\u2026",
+"start": 7.377,
+"end": 7.613
+},
+{
+"word": "so",
+"raw": "so",
+"start": 7.613,
+"end": 7.848
+},
+{
+"word": "make",
+"raw": "make",
+"start": 7.848,
+"end": 8.083
+},
+{
+"word": "them",
+"raw": "them",
+"start": 8.083,
+"end": 8.318
+},
+{
+"word": "pilots",
+"raw": "pilots!",
+"start": 8.318,
+"end": 8.788
+},
+{
+"word": "He",
+"raw": "He",
+"start": 9.104,
+"end": 9.258
+},
+{
+"word": "showed",
+"raw": "showed",
+"start": 9.258,
+"end": 9.566
+},
+{
+"word": "them",
+"raw": "them",
+"start": 9.566,
+"end": 9.721
+},
+{
+"word": "a",
+"raw": "a",
+"start": 9.721,
+"end": 9.875
+},
+{
+"word": "picture",
+"raw": "picture",
+"start": 9.875,
+"end": 10.183
+},
+{
+"word": "of",
+"raw": "of",
+"start": 10.183,
+"end": 10.338
+},
+{
+"word": "the",
+"raw": "the",
+"start": 10.338,
+"end": 10.492
+},
+{
+"word": "target",
+"raw": "target.",
+"start": 10.492,
+"end": 10.8
+},
+{
+"word": "Peck",
+"raw": "Peck",
+"start": 11.221,
+"end": 11.443
+},
+{
+"word": "the",
+"raw": "the",
+"start": 11.443,
+"end": 11.665
+},
+{
+"word": "picture",
+"raw": "picture,",
+"start": 11.665,
+"end": 12.11
+},
+{
+"word": "get",
+"raw": "get",
+"start": 12.11,
+"end": 12.332
+},
+{
+"word": "a",
+"raw": "a",
+"start": 12.332,
+"end": 12.555
+},
+{
+"word": "snack",
+"raw": "snack.",
+"start": 12.555,
+"end": 12.777
+},
+{
+"word": "Peck",
+"raw": "Peck",
+"start": 13.145,
+"end": 13.459
+},
+{
+"word": "faster",
+"raw": "faster\u2026",
+"start": 13.459,
+"end": 14.089
+},
+{
+"word": "more",
+"raw": "more",
+"start": 14.089,
+"end": 14.403
+},
+{
+"word": "snacks",
+"raw": "snacks.",
+"start": 14.403,
+"end": 14.718
+},
+{
+"word": "One",
+"raw": "One",
+"start": 15.111,
+"end": 15.344
+},
+{
+"word": "greedy",
+"raw": "greedy",
+"start": 15.344,
+"end": 15.809
+},
+{
+"word": "bird",
+"raw": "bird",
+"start": 15.809,
+"end": 16.042
+},
+{
+"word": "pecked",
+"raw": "pecked",
+"start": 16.042,
+"end": 16.507
+},
+{
+"word": "ten",
+"raw": "ten",
+"start": 16.507,
+"end": 16.74
+},
+{
+"word": "thousand",
+"raw": "thousand",
+"start": 16.74,
+"end": 17.205
+},
+{
+"word": "times",
+"raw": "times\u2026",
+"start": 17.205,
+"end": 17.67
+},
+{
+"word": "in",
+"raw": "in",
+"start": 17.67,
+"end": 17.903
+},
+{
+"word": "one",
+"raw": "one",
+"start": 17.903,
+"end": 18.136
+},
+{
+"word": "sitting",
+"raw": "sitting.",
+"start": 18.136,
+"end": 18.601
+},
+{
+"word": "Then",
+"raw": "Then",
+"start": 19.05,
+"end": 19.245
+},
+{
+"word": "he",
+"raw": "he",
+"start": 19.245,
+"end": 19.44
+},
+{
+"word": "strapped",
+"raw": "strapped",
+"start": 19.44,
+"end": 19.829
+},
+{
+"word": "them",
+"raw": "them",
+"start": 19.829,
+"end": 20.023
+},
+{
+"word": "inside",
+"raw": "inside",
+"start": 20.023,
+"end": 20.412
+},
+{
+"word": "a",
+"raw": "a",
+"start": 20.412,
+"end": 20.607
+},
+{
+"word": "bomb",
+"raw": "bomb.",
+"start": 20.607,
+"end": 20.802
+},
+{
+"word": "Each",
+"raw": "Each",
+"start": 21.152,
+"end": 21.347
+},
+{
+"word": "got",
+"raw": "got",
+"start": 21.347,
+"end": 21.543
+},
+{
+"word": "a",
+"raw": "a",
+"start": 21.543,
+"end": 21.739
+},
+{
+"word": "tiny",
+"raw": "tiny",
+"start": 21.739,
+"end": 22.13
+},
+{
+"word": "cockpit",
+"raw": "cockpit.",
+"start": 22.13,
+"end": 22.521
+},
+{
+"word": "A",
+"raw": "A",
+"start": 23.543,
+"end": 23.777
+},
+{
+"word": "screen",
+"raw": "screen",
+"start": 23.777,
+"end": 24.01
+},
+{
+"word": "shows",
+"raw": "shows",
+"start": 24.01,
+"end": 24.244
+},
+{
+"word": "the",
+"raw": "the",
+"start": 24.244,
+"end": 24.478
+},
+{
+"word": "target",
+"raw": "target.",
+"start": 24.478,
+"end": 24.945
+},
+{
+"word": "The",
+"raw": "The",
+"start": 25.316,
+"end": 25.586
+},
+{
+"word": "pigeon",
+"raw": "pigeon",
+"start": 25.586,
+"end": 26.126
+},
+{
+"word": "pecks",
+"raw": "pecks\u2026",
+"start": 26.126,
+"end": 26.396
+},
+{
+"word": "and",
+"raw": "and",
+"start": 26.396,
+"end": 26.666
+},
+{
+"word": "the",
+"raw": "the",
+"start": 26.666,
+"end": 26.936
+},
+{
+"word": "bomb",
+"raw": "bomb",
+"start": 26.936,
+"end": 27.206
+},
+{
+"word": "turns",
+"raw": "turns.",
+"start": 27.206,
+"end": 27.476
+},
+{
+"word": "Why",
+"raw": "Why",
+"start": 27.859,
+"end": 28.17
+},
+{
+"word": "three",
+"raw": "three",
+"start": 28.17,
+"end": 28.482
+},
+{
+"word": "birds",
+"raw": "birds?",
+"start": 28.482,
+"end": 28.793
+},
+{
+"word": "So",
+"raw": "So",
+"start": 28.793,
+"end": 29.105
+},
+{
+"word": "they",
+"raw": "they",
+"start": 29.105,
+"end": 29.417
+},
+{
+"word": "could",
+"raw": "could",
+"start": 29.417,
+"end": 29.728
+},
+{
+"word": "vote",
+"raw": "vote.",
+"start": 29.728,
+"end": 30.04
+},
+{
+"word": "Two",
+"raw": "Two",
+"start": 30.394,
+"end": 30.6
+},
+{
+"word": "against",
+"raw": "against",
+"start": 30.6,
+"end": 31.013
+},
+{
+"word": "one",
+"raw": "one\u2026",
+"start": 31.013,
+"end": 31.22
+},
+{
+"word": "the",
+"raw": "the",
+"start": 31.22,
+"end": 31.426
+},
+{
+"word": "loser",
+"raw": "loser",
+"start": 31.426,
+"end": 31.839
+},
+{
+"word": "got",
+"raw": "got",
+"start": 31.839,
+"end": 32.045
+},
+{
+"word": "outvoted",
+"raw": "outvoted.",
+"start": 32.045,
+"end": 32.665
+},
+{
+"word": "And",
+"raw": "And",
+"start": 32.898,
+"end": 33.096
+},
+{
+"word": "the",
+"raw": "the",
+"start": 33.096,
+"end": 33.294
+},
+{
+"word": "military",
+"raw": "military",
+"start": 33.294,
+"end": 34.086
+},
+{
+"word": "paid",
+"raw": "paid",
+"start": 34.086,
+"end": 34.284
+},
+{
+"word": "for",
+"raw": "for",
+"start": 34.284,
+"end": 34.482
+},
+{
+"word": "this",
+"raw": "this!",
+"start": 34.482,
+"end": 34.68
+},
+{
+"word": "In",
+"raw": "In",
+"start": 34.68,
+"end": 34.878
+},
+{
+"word": "the",
+"raw": "the",
+"start": 34.878,
+"end": 35.076
+},
+{
+"word": "demo",
+"raw": "demo\u2026",
+"start": 35.076,
+"end": 35.472
+},
+{
+"word": "the",
+"raw": "the",
+"start": 35.472,
+"end": 35.67
+},
+{
+"word": "birds",
+"raw": "birds",
+"start": 35.67,
+"end": 35.868
+},
+{
+"word": "nailed",
+"raw": "nailed",
+"start": 35.868,
+"end": 36.265
+},
+{
+"word": "it",
+"raw": "it.",
+"start": 36.265,
+"end": 36.463
+},
+{
+"word": "But",
+"raw": "But",
+"start": 36.653,
+"end": 36.856
+},
+{
+"word": "nobody",
+"raw": "nobody",
+"start": 36.856,
+"end": 37.466
+},
+{
+"word": "would",
+"raw": "would",
+"start": 37.466,
+"end": 37.669
+},
+{
+"word": "take",
+"raw": "take",
+"start": 37.669,
+"end": 37.872
+},
+{
+"word": "him",
+"raw": "him",
+"start": 37.872,
+"end": 38.075
+},
+{
+"word": "seriously",
+"raw": "seriously.",
+"start": 38.075,
+"end": 38.685
+},
+{
+"word": "Cancelled",
+"raw": "Cancelled!",
+"start": 38.685,
+"end": 39.294
+},
+{
+"word": "Then",
+"raw": "Then",
+"start": 39.612,
+"end": 39.803
+},
+{
+"word": "the",
+"raw": "the",
+"start": 39.803,
+"end": 39.994
+},
+{
+"word": "Navy",
+"raw": "Navy",
+"start": 39.994,
+"end": 40.377
+},
+{
+"word": "brought",
+"raw": "brought",
+"start": 40.377,
+"end": 40.568
+},
+{
+"word": "it",
+"raw": "it",
+"start": 40.568,
+"end": 40.759
+},
+{
+"word": "back",
+"raw": "back.",
+"start": 40.759,
+"end": 40.95
+},
+{
+"word": "Wait",
+"raw": "Wait,",
+"start": 41.337,
+"end": 41.621
+},
+{
+"word": "it",
+"raw": "it",
+"start": 41.621,
+"end": 41.906
+},
+{
+"word": "gets",
+"raw": "gets",
+"start": 41.906,
+"end": 42.19
+},
+{
+"word": "worse",
+"raw": "worse.",
+"start": 42.19,
+"end": 42.474
+},
+{
+"word": "Decades",
+"raw": "Decades",
+"start": 42.863,
+"end": 43.486
+},
+{
+"word": "later",
+"raw": "later\u2026",
+"start": 43.486,
+"end": 43.902
+},
+{
+"word": "it",
+"raw": "it",
+"start": 43.902,
+"end": 44.11
+},
+{
+"word": "won",
+"raw": "won",
+"start": 44.11,
+"end": 44.318
+},
+{
+"word": "a",
+"raw": "a",
+"start": 44.318,
+"end": 44.526
+},
+{
+"word": "prize",
+"raw": "prize.",
+"start": 44.526,
+"end": 44.734
+},
+{
+"word": "The",
+"raw": "The",
+"start": 45.105,
+"end": 45.243
+},
+{
+"word": "Ig",
+"raw": "Ig",
+"start": 45.243,
+"end": 45.381
+},
+{
+"word": "Nobel",
+"raw": "Nobel\u2026",
+"start": 45.381,
+"end": 45.656
+},
+{
+"word": "Peace",
+"raw": "Peace",
+"start": 45.656,
+"end": 45.793
+},
+{
+"word": "Prize",
+"raw": "Prize.",
+"start": 45.793,
+"end": 45.931
+},
+{
+"word": "Peace",
+"raw": "Peace.",
+"start": 47.034,
+"end": 47.29
+},
+{
+"word": "For",
+"raw": "For",
+"start": 47.29,
+"end": 47.546
+},
+{
+"word": "a",
+"raw": "a",
+"start": 47.546,
+"end": 47.72
+},
+{
+"word": "bomb",
+"raw": "bomb.",
+"start": 48.033,
+"end": 48.289
+},
+{
+"word": "Flown",
+"raw": "Flown",
+"start": 48.571,
+"end": 48.901
+},
+{
+"word": "by",
+"raw": "by",
+"start": 48.901,
+"end": 49.232
+},
+{
+"word": "pigeons",
+"raw": "pigeons.",
+"start": 49.232,
+"end": 49.892
+},
+{
+"word": "And",
+"raw": "And",
+"start": 49.892,
+"end": 50.223
+},
+{
+"word": "the",
+"raw": "the",
+"start": 50.223,
+"end": 50.553
+},
+{
+"word": "pilots",
+"raw": "pilots?",
+"start": 50.553,
+"end": 51.214
+},
+{
+"word": "Paid",
+"raw": "Paid",
+"start": 51.5,
+"end": 51.797
+},
+{
+"word": "in",
+"raw": "in",
+"start": 51.797,
+"end": 52.094
+},
+{
+"word": "grain",
+"raw": "grain.",
+"start": 52.094,
+"end": 52.391
+},
+{
+"word": "So",
+"raw": "So",
+"start": 52.591,
+"end": 52.773
+},
+{
+"word": "next",
+"raw": "next",
+"start": 52.773,
+"end": 52.955
+},
+{
+"word": "time",
+"raw": "time",
+"start": 52.955,
+"end": 53.136
+},
+{
+"word": "a",
+"raw": "a",
+"start": 53.136,
+"end": 53.318
+},
+{
+"word": "pigeon",
+"raw": "pigeon",
+"start": 53.318,
+"end": 53.682
+},
+{
+"word": "stares",
+"raw": "stares",
+"start": 53.682,
+"end": 54.046
+},
+{
+"word": "at",
+"raw": "at",
+"start": 54.046,
+"end": 54.228
+},
+{
+"word": "you",
+"raw": "you\u2026",
+"start": 54.228,
+"end": 54.409
+},
+{
+"word": "remember",
+"raw": "remember:",
+"start": 54.409,
+"end": 54.955
+}
+]

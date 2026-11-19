@@ -1,0 +1,36 @@
+--- engine/render/src/world.js	2026-11-19 05:07:52.051647242 +0000
++++ /home/claude/work/2026-11-19-pigeon-bomb/render/src/world.js	2026-11-19 05:14:31.194045637 +0000
+@@ -31,7 +31,7 @@
+ export const BEACH = [-4800, 0, 1400];    // 1970: Florence, Oregon, the exploding whale (whale at the origin along x, sea to -z from z -8, dunes z 14..32 with a flat crest y 2.7, parking lot behind z 36..60)
+ export const OCEAN = [8000, 0, 0];        // sea starts at x = 8000; New York skyline at x = 12500
+ const RY = 2000;
+-export const ROOM = { office: [0, RY, 0], bank: [200, RY, 0], living: [400, RY, 0], interro: [600, RY, 0], showroom: [800, RY, 0], oval: [1000, RY, 0], motel: [1200, RY, 0] };
++export const ROOM = { office: [0, RY, 0], bank: [200, RY, 0], living: [400, RY, 0], interro: [600, RY, 0], showroom: [800, RY, 0], oval: [1000, RY, 0], motel: [1200, RY, 0], war: [1400, RY, 0], stage: [1600, RY, 0] };  // war/stage: Project Pigeon (1940s war-office briefing room, the Ig Nobel stage)
+ 
+ // ---------------- night preset (moonlight) ----------------
+ LIGHTS.night = {
+@@ -802,6 +802,24 @@
+       const g = new THREE.CircleGeometry(1.6, 32); g.rotateX(-Math.PI / 2); g.translate(x, y + 0.01, z + 0.4); b.add(g, lam("seal", () => ({ color: "#c9b27a" })));
+       for (const fx of [-3.6, 3.6]) b.add(cyl(0.025, 0.025, 2.6, 6, x + fx, y + 1.3, z - 3.1), lam("brass", () => ({ color: "#c9a24a" })));
+     });
++    // ---- Project Pigeon. war: a 1940s war-office briefing room: olive walls, a long table at the origin (top y 0.78, z -0.5..+0.5),
++    //      a map board and a chalk board on the back wall, a desk lamp. stage: a theatre stage: red curtains on the back wall, a raised
++    //      wooden stage floor (top y 0.5, z -4..+0.5), a lectern at x +1.6, glowing footlights along z +0.5.
++    room("war", 12, 9, 4, lam("warWall", () => ({ color: "#7a8060" })), lam("warFloor", () => ({ color: "#5a4a3a" })), (b, x, y, z) => {
++      table(b, x, y, z, 3.6, 1.0, 0.78, lam("warTable", () => ({ color: "#6a4a2e" })));
++      b.add(boxGeo(x - 3.2, y + 1.0, z - 4.48, x - 0.4, y + 2.8, z - 4.42, 1), lam("mapBoard", () => ({ color: "#c8d8b0" })));
++      b.add(boxGeo(x + 0.4, y + 1.0, z - 4.48, x + 3.2, y + 2.8, z - 4.42, 1), lam("chalk", () => ({ color: "#2a3a2e" })));
++      for (const fx of [-3.8, 3.8]) b.add(cyl(0.025, 0.025, 2.6, 6, x + fx, y + 1.3, z - 4.0), lam("brass", () => ({ color: "#c9a24a" })));
++      b.add(cyl(0.16, 0.08, 0.16, 12, x + 1.4, y + 2.6, z - 0.2), lam("lampShadeW", () => ({ color: "#3a4a30", emissive: "#2a2a10" })));
++      for (const cx of [-1.2, 0, 1.2]) { b.add(boxGeo(x + cx - 0.22, y, z - 1.25, x + cx + 0.22, y + 0.45, z - 0.85, 1), dark); b.add(boxGeo(x + cx - 0.22, y + 0.45, z - 1.3, x + cx + 0.22, y + 1.05, z - 1.22, 1), dark); }
++    });
++    room("stage", 14, 10, 5, lam("stageWall", () => ({ color: "#3a1a24" })), lam("stageFloor", () => ({ color: "#2a2228" })), (b, x, y, z) => {
++      b.add(boxGeo(x - 7, y, z - 5, x + 7, y + 0.5, z + 0.5, 1), lam("stageBoards", () => ({ color: "#a8784a" })));
++      const red = lam("curtain", () => ({ color: "#b0242e" })), red2 = lam("curtain2", () => ({ color: "#8a1a24" }));
++      for (let k = 0; k < 28; k++) b.add(boxGeo(x - 7 + k * 0.5, y + 0.5, z - 4.9 + (k % 2) * 0.12, x - 6.5 + k * 0.5, y + 4.8, z - 4.7 + (k % 2) * 0.12, 1), k % 2 ? red : red2);
++      b.add(boxGeo(x + 1.35, y + 0.5, z - 1.2, x + 1.85, y + 1.6, z - 0.8, 1), lam("lectern", () => ({ color: "#5a3a22" })));
++      for (let k = 0; k < 14; k++) b.add(boxGeo(x - 6.5 + k * 1.0, y + 0.5, z + 0.35, x - 6.2 + k * 1.0, y + 0.6, z + 0.48, 1), lam("footlight", () => ({ color: "#fff2c0", emissive: "#ffd070", emissiveIntensity: 1.4 })));
++    });
+     // a 1940s Phoenix motel room at night: knotty-pine walls, bed along the left wall, nightstand lamp, window with the neon outside, Mike's box
+     room("motel", 7, 6, 3, lam("pineWall", () => ({ map: PT.panelTex(2) })), lam("motelCarpet", () => ({ color: "#6a4a3a" })), (b, x, y, z) => {
+       const bedW = lam("bedWood", () => ({ color: "#5a3a26" })), sheet = lam("sheet", () => ({ color: "#efe8da" })), quilt = lam("quilt", () => ({ map: GT.canvasTex("quilt", "#3f7f7a") }));

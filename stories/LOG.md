@@ -14,3 +14,4 @@
 
 Earlier topics (before this log): Ghost Army, Eiffel Tower sale, Lemon juice robber, Mona Lisa theft, Hitler's nephew,
 Great Emu War, Kentucky meat shower.
+| 2026-11-19 | pigeon-bomb | They Trained Pigeons to Steer a Bomb 🐦 | Kokoro am_michael (free, speed 1.12) | 2026-11-19 18:30 (Metricool) | 1-min: 152 words, 55.3 s, 36 shots, 4-test 12/12; new war + stage rooms (diff), sky shots on a painted sky card; beat phonk (seed 1119, key 44); facts: Wikipedia Project Pigeon, Smithsonian Magazine, BBC Science Focus (Ig Nobel 2024), Mental Floss |
