@@ -1,0 +1,68 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Bangers,200,&H00FFFFFF,&H00FFFFFF,&H00101010,&H96000000,0,0,0,0,100,100,3,0,1,12,8,8,40,40,190,1
+Style: Cap,Poppins,112,&H0000D4FF,&H00FFFFFF,&H00111111,&H64000000,1,0,0,0,100,100,0,0,1,8,5,2,60,60,470,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:02.55,Hook,,0,0,0,,{\fscx60\fscy60\t(0,180,\fscx100\fscy100)}{\c&H3AE8FF&}WHO KEEPS\N{\c&H3A48F0&\fs224}BURNING THE GOAT?!
+Dialogue: 0,0:00:00.34,0:00:01.27,Cap,,0,0,0,,{\k2}{\k23}This {\k23}giant {\k23}goat {\k21}gets
+Dialogue: 0,0:00:01.27,0:00:01.73,Cap,,0,0,0,,{\k2}{\k44}burned…
+Dialogue: 0,0:00:01.73,0:00:03.41,Cap,,0,0,0,,{\k2}{\k46}almost {\k69}every {\k50}year.
+Dialogue: 0,0:00:03.41,0:00:04.74,Cap,,0,0,0,,{\k2}{\k25}It's {\k25}made {\k25}of {\k56}straw.
+Dialogue: 0,0:00:04.74,0:00:06.44,Cap,,0,0,0,,{\k2}{\k50}Thirteen {\k50}meters {\k68}tall.
+Dialogue: 0,0:00:06.44,0:00:07.48,Cap,,0,0,0,,{\k2}{\k21}A {\k42}Swedish {\k21}town {\k19}builds
+Dialogue: 0,0:00:07.48,0:00:09.06,Cap,,0,0,0,,{\k2}{\k21}it {\k62}every {\k73}Christmas.
+Dialogue: 0,0:00:09.06,0:00:09.83,Cap,,0,0,0,,{\k2}{\k15}And {\k15}the {\k31}very {\k13}first
+Dialogue: 0,0:00:09.83,0:00:09.98,Cap,,0,0,0,,{\k2}{\k13}year…
+Dialogue: 0,0:00:09.98,0:00:11.44,Cap,,0,0,0,,{\k2}{\k61}somebody {\k31}burned {\k52}it.
+Dialogue: 0,0:00:11.44,0:00:11.69,Cap,,0,0,0,,{\k2}{\k23}Guards?
+Dialogue: 0,0:00:11.69,0:00:12.18,Cap,,0,0,0,,{\k2}{\k47}Burned.
+Dialogue: 0,0:00:12.18,0:00:12.67,Cap,,0,0,0,,{\k2}{\k47}Fences?
+Dialogue: 0,0:00:12.67,0:00:13.34,Cap,,0,0,0,,{\k2}{\k65}Burned.
+Dialogue: 0,0:00:13.34,0:00:15.63,Cap,,0,0,0,,{\k2}{\k58}Soaked {\k29}in {\k29}fire {\k110}retardant?
+Dialogue: 0,0:00:15.63,0:00:16.99,Cap,,0,0,0,,{\k2}{\k37}Burned {\k97}anyway.
+Dialogue: 0,0:00:16.99,0:00:18.04,Cap,,0,0,0,,{\k2}{\k21}One {\k21}guy {\k42}rammed {\k19}it
+Dialogue: 0,0:00:18.04,0:00:19.36,Cap,,0,0,0,,{\k2}{\k21}with {\k21}his {\k88}Volvo.
+Dialogue: 0,0:00:19.36,0:00:20.87,Cap,,0,0,0,,{\k2}{\k17}An {\k67}American {\k34}tourist {\k32}torched
+Dialogue: 0,0:00:20.87,0:00:21.72,Cap,,0,0,0,,{\k2}{\k83}it…
+Dialogue: 0,0:00:22.01,0:00:22.85,Cap,,0,0,0,,{\k2}{\k17}and {\k17}told {\k34}police {\k15}he
+Dialogue: 0,0:00:22.85,0:00:23.53,Cap,,0,0,0,,{\k2}{\k17}thought {\k17}it {\k17}was {\k15}a
+Dialogue: 0,0:00:23.53,0:00:24.79,Cap,,0,0,0,,{\k2}{\k34}legal {\k90}tradition.
+Dialogue: 0,0:00:24.79,0:00:25.73,Cap,,0,0,0,,{\k2}{\k18}It {\k18}was {\k56}not.
+Dialogue: 0,0:00:25.73,0:00:27.00,Cap,,0,0,0,,{\k2}{\k25}He {\k25}got {\k51}eighteen {\k23}days
+Dialogue: 0,0:00:27.00,0:00:27.95,Cap,,0,0,0,,{\k2}{\k25}in {\k67}jail.
+Dialogue: 0,0:00:27.95,0:00:29.18,Cap,,0,0,0,,{\k2}{\k25}Two {\k25}guys {\k25}came {\k47}dressed
+Dialogue: 0,0:00:29.18,0:00:29.92,Cap,,0,0,0,,{\k2}{\k25}as {\k47}Santa…
+Dialogue: 0,0:00:29.92,0:00:31.72,Cap,,0,0,0,,{\k2}{\k25}and {\k25}a {\k74}gingerbread {\k55}man.
+Dialogue: 0,0:00:31.72,0:00:32.32,Cap,,0,0,0,,{\k2}{\k20}And {\k20}shot {\k18}it…
+Dialogue: 0,0:00:32.32,0:00:34.00,Cap,,0,0,0,,{\k2}{\k20}with {\k20}a {\k40}flaming {\k85}arrow.
+Dialogue: 0,0:00:34.00,0:00:35.36,Cap,,0,0,0,,{\k2}{\k39}Someone {\k58}offered {\k20}a {\k17}guard
+Dialogue: 0,0:00:35.36,0:00:35.75,Cap,,0,0,0,,{\k2}{\k37}money…
+Dialogue: 0,0:00:35.75,0:00:36.52,Cap,,0,0,0,,{\k2}{\k19}to {\k19}steal {\k19}the {\k17}goat
+Dialogue: 0,0:00:36.52,0:00:37.97,Cap,,0,0,0,,{\k2}{\k19}by {\k123}helicopter.
+Dialogue: 0,0:00:37.97,0:00:38.95,Cap,,0,0,0,,{\k2}{\k19}One {\k19}year {\k20}it {\k37}burned
+Dialogue: 0,0:00:38.95,0:00:40.73,Cap,,0,0,0,,{\k2}{\k20}hours {\k39}after {\k20}it {\k98}opened.
+Dialogue: 0,0:00:40.73,0:00:41.85,Cap,,0,0,0,,{\k2}{\k28}So {\k28}now {\k28}it {\k26}has
+Dialogue: 0,0:00:41.85,0:00:42.70,Cap,,0,0,0,,{\k2}{\k82}cameras,
+Dialogue: 0,0:00:42.70,0:00:43.73,Cap,,0,0,0,,{\k2}{\k28}double {\k73}fences,
+Dialogue: 0,0:00:43.73,0:00:45.47,Cap,,0,0,0,,{\k2}{\k20}and {\k20}a {\k20}live {\k113}webcam.
+Dialogue: 0,0:00:45.82,0:00:46.11,Cap,,0,0,0,,{\k2}{\k27}Wait,
+Dialogue: 0,0:00:46.11,0:00:47.38,Cap,,0,0,0,,{\k2}{\k29}it {\k29}gets {\k66}worse.
+Dialogue: 0,0:00:47.38,0:00:47.75,Cap,,0,0,0,,{\k2}{\k18}One {\k16}year…
+Dialogue: 0,0:00:47.75,0:00:49.17,Cap,,0,0,0,,{\k2}{\k55}nobody {\k37}burned {\k49}it.
+Dialogue: 0,0:00:49.17,0:00:50.17,Cap,,0,0,0,,{\k2}{\k22}birds {\k22}ate {\k53}it.
+Dialogue: 0,0:00:50.17,0:00:51.13,Cap,,0,0,0,,{\k2}{\k19}A {\k19}gang {\k19}of {\k37}jackdaws
+Dialogue: 0,0:00:51.13,0:00:52.09,Cap,,0,0,0,,{\k2}{\k38}pecked {\k19}it {\k19}down {\k17}to
+Dialogue: 0,0:00:52.09,0:00:53.03,Cap,,0,0,0,,{\k2}{\k19}the {\k73}bones.
+Dialogue: 0,0:00:53.03,0:00:53.97,Cap,,0,0,0,,{\k2}{\k19}Then {\k19}a {\k19}storm {\k36}knocked
+Dialogue: 0,0:00:53.97,0:00:54.82,Cap,,0,0,0,,{\k2}{\k19}it {\k64}over.
+Dialogue: 0,0:00:54.82,0:00:55.77,Cap,,0,0,0,,{\k2}{\k24}And {\k24}the {\k24}town {\k22}still
+Dialogue: 0,0:00:55.77,0:00:56.61,Cap,,0,0,0,,{\k2}{\k24}builds {\k59}it.
+Dialogue: 0,0:00:56.61,0:00:57.71,Cap,,0,0,0,,{\k2}{\k52}Every {\k55}year.
+Dialogue: 0,0:00:57.71,0:00:59.41,Cap,,0,0,0,,{\k2}{\k38}Because {\k130}somehow…

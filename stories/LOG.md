@@ -15,3 +15,4 @@
 Earlier topics (before this log): Ghost Army, Eiffel Tower sale, Lemon juice robber, Mona Lisa theft, Hitler's nephew,
 Great Emu War, Kentucky meat shower.
 | 2026-11-19 | pigeon-bomb | They Trained Pigeons to Steer a Bomb 🐦 | Kokoro am_michael (free, speed 1.12) | 2026-11-19 18:30 (Metricool) | 1-min: 152 words, 55.3 s, 36 shots, 4-test 12/12; new war + stage rooms (diff), sky shots on a painted sky card; beat phonk (seed 1119, key 44); facts: Wikipedia Project Pigeon, Smithsonian Magazine, BBC Science Focus (Ig Nobel 2024), Mental Floss |
+| 2026-11-20 | gavle-goat | This Giant Goat Gets Burned EVERY Year 🔥🐐 | Kokoro am_michael (free, speed 1.12, lex: eighteen) | 2026-11-20 18:30 (Metricool) | 1-min: 156 words, 59.0 s, 38 shots, 4-test 12/12, new GOAT town-square set (x -11000 z 9000); beat sneaky → phonk at the twist (seed 1120, key 41); facts: Wikipedia Gävle goat, NPR 2016, Amusing Planet 2016, The Local 2010 (helicopter), NPR / The Local 2023 (jackdaws) |
