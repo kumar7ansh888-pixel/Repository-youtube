@@ -1,5 +1,5 @@
---- world.js	2026-11-21 10:38:27.120660311 +0530
-+++ /home/claude/work/2026-11-21-acoustic-kitty/render/src/world.js	2026-11-21 10:48:26.436987356 +0530
+--- world.js	2026-11-21 12:44:24.957538065 +0530
++++ /home/claude/work/2026-11-21-acoustic-kitty/render/src/world.js	2026-11-21 11:51:38.917552241 +0530
 @@ -29,9 +29,10 @@
  export const RACE = [-1800, 0, 5600];     // 1904: the St. Louis Olympic marathon (dirt road along x at z 0, finish arch + grandstand at x -40, apple orchard x +40..+70)
  export const PIG = [-5600, 0, 5600];       // 1859: San Juan Island, the Pig War (Cutlar's farm at the origin, the strait to +z from z = +40)
@@ -18,16 +18,16 @@
      }
 +
 +    // ---- PARK (Acoustic Kitty, x -11000 z 18000, beyond the global grass): a 1960s Washington park by a street. Lawn y 0.10 (no polygon offset),
-+    //      gravel path along x (z -1.6..1.6, y 0.105), a park bench at the origin facing +z (seat top y 0.55, z -2.9..-2.4), lamp posts, round trees,
-+    //      sidewalk z 6..8 (y 0.13) + street z 8..16 (y 0.11) along x, brick/stone city blocks across the street (z 26..40) and behind the park (z -60).
++    //      gravel path along x (z -1.6..1.6, y 0.14), a park bench at the origin facing +z (seat top y 0.55, z -2.9..-2.4), lamp posts, round trees,
++    //      sidewalk z 6..8 (y 0.17) + street z 8..16 (y 0.14) along x, brick/stone city blocks across the street (z 26..40) and behind the park (z -60).
 +    {
 +      const [px, , pz] = PARK, L = (k, c) => lam(k, () => ({ color: c }));
 +      b.add(quadUp(px - 1500, px + 1500, pz - 1500, pz + 1500, 0.10, 60), lam("pkGrass", () => ({ map: GT.fieldTex("pkGrass", "#7fae4a") })));
-+      b.add(quadUp(px - 80, px + 80, pz - 1.6, pz + 1.6, 0.105, 20), lam("pkPath", () => ({ map: GT.fieldTex("pkPath", "#d8c49a") })));
-+      b.add(boxGeo(px - 200, 0, pz + 6, px + 200, 0.13, pz + 8, 8), L("pkWalk", "#c4c0b8"));
-+      b.add(quadUp(px - 200, px + 200, pz + 8, pz + 16, 0.11, 20), lam("pkRoad", () => ({ map: GT.fieldTex("pkRoad", "#4a4a52") })));
-+      for (let x = -200; x < 200; x += 6) b.add(boxGeo(px + x, 0.11, pz + 11.9, px + x + 3, 0.116, pz + 12.1, 1), L("pkDash", "#f0e0a0"));
-+      b.add(boxGeo(px - 200, 0, pz + 16, px + 200, 0.13, pz + 19, 8), L("pkWalk", "#c4c0b8"));
++      b.add(quadUp(px - 80, px + 80, pz - 1.6, pz + 1.6, 0.14, 20), lam("pkPath", () => ({ map: GT.fieldTex("pkPath", "#d8c49a") })));
++      b.add(boxGeo(px - 200, 0, pz + 6, px + 200, 0.17, pz + 8, 8), L("pkWalk", "#c4c0b8"));
++      b.add(quadUp(px - 200, px + 200, pz + 8, pz + 16, 0.14, 20), lam("pkRoad", () => ({ map: GT.fieldTex("pkRoad", "#4a4a52") })));
++      for (let x = -200; x < 200; x += 6) b.add(boxGeo(px + x, 0.14, pz + 11.9, px + x + 3, 0.147, pz + 12.1, 1), L("pkDash", "#f0e0a0"));
++      b.add(boxGeo(px - 200, 0, pz + 16, px + 200, 0.17, pz + 19, 8), L("pkWalk", "#c4c0b8"));
 +      // the bench (slats + cast-iron ends) at the origin, facing +z
 +      const slat = L("pkSlat", "#8a5a32"), iron = L("pkIron", "#2a2a30");
 +      for (let k = 0; k < 3; k++) b.add(boxGeo(px - 1.1, 0.48, pz - 2.9 + k * 0.17, px + 1.1, 0.55, pz - 2.9 + k * 0.17 + 0.14, 1), slat);

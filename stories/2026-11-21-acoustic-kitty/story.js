@@ -115,7 +115,7 @@ function buildShots() {
     ppl: (out, i, o, x, z, opt = {}, y = 0) => { const [X, Y, Z] = Af(x, y, z); out.places.push(pl(i, o, X, Y, Z, opt)); },
   });
   const A = at(p_), L = at(l_), W = at(w_), V = at(v_);
-  const G = 0.105, BY = 0.92;
+  const G = 0.14, BY = 0.92;
   const q = (v, n = 10) => Math.round((v ?? 0) * n);
   const mk = (H, out, s, x, y, z, u, size = 0.4, col) => { if (u <= 0) return; const k = smooth(u * 4); H.fx(out, "mark" + s + (col || ""), (p) => DR.mark(p, s, col), x, y, z, size * k, size * k, { cw: 256, ch: 256, kind: "basic" }); };
   const wd = (H, out, s, col, x, y, z, u, w = 1.0) => { if (u <= 0 || u > 1.6) return; const k = Math.round(Math.min(1, u) * 6); H.fx(out, "word" + s + k, (p) => DR.word(p, s, col, k / 6), x, y, z, w, w / 2, { cw: 512, ch: 256, kind: "basic" }); };
@@ -137,7 +137,7 @@ function buildShots() {
     const ex = kind === TECH ? (p) => { XL.phones(p); } : XL.shades;
     H.ppl(out, base + i, { ...o, xk: kind === TECH ? "ph" : "sh" }, x, z, { ...opt, extra: ex }, y); });
   const reds = (out, t, talk = true, o = {}) => [[-0.48, 0], [0.5, 1]].forEach(([x, i]) => A.ppl(out, 30 + i, { ...RED(i), xk: o.fish && i === 1 ? "f" : "" }, x, -2.62, { mode: "sit", keep: true, expr: talk ? (Math.floor(t * 6 + i * 3) % 2 ? "talk_o" : "talk_e") : (o.expr ?? "smile"), arms: o.fish && i === 1 ? { l: ["low", 1], r: ["hold", 1] } : { l: ["out", 0.6], r: ["low", 1] }, extra: o.fish && i === 1 ? XL.sandwich : undefined, headTilt: Math.sin(t * 4 + i) * 4 }, 0.55));
-  const van = (out, t, x, door = 0, moving = false) => { const k = moving ? Math.floor(t * 14) % 12 : 0, d = Math.round(door * 8) / 8; A.fx(out, "van" + k + "_" + d, (p) => K.drawVan(p.g, { k, door: d }), x, 0.11 + 1.25, 10.2, 5.0, 2.5, { cw: 1024, ch: 512, kind: "lit", normal: [0, 0, -1] }); };
+  const van = (out, t, x, door = 0, moving = false) => { const k = moving ? Math.floor(t * 14) % 12 : 0, d = Math.round(door * 8) / 8; A.fx(out, "van" + k + "_" + d, (p) => K.drawVan(p.g, { k, door: d }), x, 0.14 + 1.25, 10.2, 5.0, 2.5, { cw: 1024, ch: 512, kind: "lit", normal: [0, 0, -1] }); };
   const vanBack = (out, c, t, nosig = false) => { const k = Math.floor(t * 8) % 24; screenCard(out, c, "vin" + k + (nosig ? "n" : ""), (p) => K.drawVanIn(p.g, k, { nosig }), 3.2, 576, 1024, "basic"); };
   const memo = (H, out, x, y, z, w, o = {}) => { const su = q(o.su ?? 1, 8) / 8, key = "memo" + [o.stamp || "", su, o.subj || "", o.cat ? 1 : 0].join("_"); H.fx(out, key, (p) => K.drawMemo(p.g, { ...o, su }), x, y, z, w, w * 4 / 3, { cw: 576, ch: 768, kind: "lit", rot: o.rot ?? 0 }); };
   const xray = (out, t, stage, u = 1) => { const k = Math.floor(t * 8) % 8, uu = q(u, 12) / 12; L.fx(out, "xr" + stage + "_" + k + "_" + uu, (p) => K.drawXray(p.g, stage, k, uu), 0, BY + 0.56, -0.5, 0.72, 0.96, { cw: 576, ch: 768, kind: "basic" }); };
@@ -186,7 +186,7 @@ function buildShots() {
   // 10 …stroll up to enemy agents… and listen.: the park: the cat strolls toward the two men on the bench, sound waves
   const tLi = T("listen");
   shot({ at: S("stroll"), ...PK, cam: push(p_(-0.6, 1.05, 2.4), p_(-0.1, 0.65, -1.8), p_(-0.45, 1.0, 2.1), p_(-0.1, 0.65, -1.8), 50, 2.4), cInf: 1.0, focus: p_(0, 0.6, -1.4), shadowR: 8,
-    stage(t, out) { const l = clamp01((t - S("stroll")) / 2.2); cat(A, out, t, lerp(-1.1, -0.4, l), G, -1.25, 0.8, spy({ face: "sly", walk: l < 1, listen: t > tLi - 0.2 })); reds(out, t, true);
+    stage(t, out) { const l = clamp01((t - S("stroll")) / 2.2); cat(A, out, t, lerp(-0.8, -0.3, l), G, -1.25, 0.8, spy({ face: "sly", walk: l < 1, listen: t > tLi - 0.2 })); reds(out, t, true);
       wd(A, out, "SHHH...", "#3a8ad8", -0.6, 0.95, -1.1, (t - tLi) * 3, 0.7); } });
   // 11 Who suspects a cat?: the men smile down at the cat sitting innocently in front of them; MEOW?
   shot({ at: S("Who"), ...PK, cam: push(p_(0.05, 0.95, 0.45), p_(0, 0.75, -2.5), p_(0.05, 0.92, 0.25), p_(0, 0.75, -2.5), 48, 1.3), cInf: 1.6, focus: p_(0, 0.6, -2.2), shadowR: 6,
