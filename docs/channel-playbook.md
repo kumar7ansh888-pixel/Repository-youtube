@@ -10,7 +10,7 @@ What we've learned so far making cartoon true-story shorts.
 - **Audience setting:** "No, it's not made for kids"; no 18+ restriction.
 
 ## Format change (2026-11-17, owner): Hindu mythology from 2026-11-18
-- **Not applied on 2026-11-18, 2026-11-19 or 2026-11-20:** the owner's scheduled-task prompt still says "a funny-weird TRUE story, facts checked against two web sources" and has no mythology instruction, so the 11-18 and 11-19 runs followed the prompt (cocaine hippos, pigeon-guided bomb) and asked the owner to confirm. If mythology is wanted, the scheduled task's prompt should say so.
+- **Not applied on 2026-11-18, 2026-11-19 or 2026-11-20:** the owner's scheduled-task prompt still says "a funny-weird TRUE story, facts checked against two web sources" and has no mythology instruction, so the 11-18, 11-19, 11-20 and 11-21 runs followed the prompt (cocaine hippos, pigeon-guided bomb) and asked the owner to confirm. If mythology is wanted, the scheduled task's prompt should say so.
 - Every Short is now a **Hindu mythology** story, **dramatic / epic** and respectful, still in **English** (voice am_michael), 18:30 IST, original
   phonk-style beats. Rules are in PIPELINE.md "Hindu mythology format". Last true-story Short: Paul the Octopus (2026-11-17).
 - Watch whether mythology lifts the engaged-view rate and shares (Indian audience peaks 18–22 IST).
@@ -32,23 +32,24 @@ What we've learned so far making cartoon true-story shorts.
 - Narration: free Kokoro v0.19 voice `am_michael` made in the cloud (owner's choice; ElevenLabs Ace Adams was used up to Mike).
 - Videos hosted in the `videos` branch of github.com/kumar7ansh888-pixel/Repository-youtube; engine on the `engine` branch; procedure in `PIPELINE.md`.
 
-## What the numbers say (Windsor, last 29 days, read 2026-11-20)
+## What the numbers say (Windsor, last 29 days, read 2026-11-21)
 | Short | views | engaged (not swiped) | avg % viewed | shares |
 | --- | --- | --- | --- | --- |
 | This bridge is being eaten by Spit 🤢 (1:39) | 3,050 | 71% | 54% | 2 |
 | The Man Who Stole the Mona Lisa 🖼️ (0:58) | 2,874 | 64% | 67% | 1 |
-| This Chicken Lived 18 MONTHS Without a Head 🐔 (0:44) | 2,591 | 57% | 68% | 0 |
+| This Chicken Lived 18 MONTHS Without a Head 🐔 (0:44) | 2,592 | 57% | 68% | 0 |
 | He Robbed a Bank Wearing Lemon Juice 🍋 (1:11) | 2,443 | 60% | 70% | 0 |
 | The Day It Rained MEAT 🥩 (0:42) | 1,624 | 47% | 70% | 0 |
 | The Man Who Sold the Eiffel Tower (1:31) | 1,497 | 61% | 58% | 0 |
 | Australia Declared War on Birds… and LOST 🐦 (0:52) | 1,460 | 59% | 52% | 0 |
-| This Octopus Predicted the World Cup 🐙 (0:59) | 1,271 | 50% | 70% | 1 |
-| India Disguised the Taj Mahal… 🤯 (1:55) | 1,185 | 57% | 50% | 0 |
-| They Blew Up a Whale With Dynamite 🐋💥 (0:57) | 1,167 | 49% | 64% | 1 |
+| This Octopus Predicted the World Cup 🐙 (0:59) | 1,540 | 51% | 93% | 1 |
+| India Disguised the Taj Mahal… 🤯 (1:55) | 1,186 | 57% | 50% | 0 |
+| They Blew Up a Whale With Dynamite 🐋💥 (0:57) | 1,168 | 49% | 64% | 1 |
 | Napoleon Lost a Battle… to BUNNIES 🐰 (0:43) | 1,099 | 43% | 67% | 1 |
 | The Pig War: 461 Soldiers vs 5 Warships… Over a PIG 🐷 (0:43) | 1,088 | 48% | 55% | 0 |
-| This Man Ate a Whole Airplane ✈️ (0:56) | 1,044 | 52% | 60% | 0 |
-| Hindi rat poison (11-14) / hippos (11-18) / pigeons (11-19) | not in Windsor yet | – | – | – |
+| This Man Ate a Whole Airplane ✈️ (0:56) | 1,047 | 52% | 60% | 0 |
+| A Drug Lord's Hippos Won't Stop Multiplying 🦛 (0:59) | 913 | 49% | 60% | 0 |
+| Hindi rat poison (11-14) / pigeons (11-19) / Gävle goat (11-20) | not in Windsor yet | – | – | – |
 Lessons: 30–57% swipe away in the first seconds, so the first second decides everything; gross/absurd + modern
 (spit bridge) and dumb crime (lemon juice) beat war/history-lesson topics; shares are ~0, so pick send-to-a-friend
 stories. Owner's direction (2026-11-13): more interesting, shocking and funny; see PIPELINE step 1 scoring.
@@ -60,12 +61,15 @@ stories. Owner's direction (2026-11-13): more interesting, shocking and funny; s
 - Ghost Army (long video): very low views — focus on Shorts.
 
 ## Topics done
-Ghost Army, Eiffel Tower sale, Lemon juice robber, Mona Lisa theft, Hitler's nephew (user disliked), Great Emu War, Kentucky meat shower (40 s re-cut with hook), Mike the Headless Chicken (43.6 s, hook + loop format, Nov 2026), Napoleon attacked by rabbits (43.1 s, first fully automated daily run, 2026-11-12), Pig War 1859 (43.3 s, 2026-11-13), 1904 Olympic marathon / gold on rat poison (2026-11-14: English 34 s cut made, then replaced by the first Hindi 1-min cut, 57 s), Oregon exploding whale 1970 (2026-11-15, English 1-min, 56.8 s), Monsieur Mangetout / the man who ate an airplane (2026-11-16, English 1-min, 56.0 s), Paul the Octopus / World Cup oracle (2026-11-17, English 1-min, first trend.py beat: funk → phonk), Escobar's cocaine hippos (2026-11-18, English 1-min, 58.9 s, sneaky → phonk), Project Pigeon / pigeon-guided bomb (2026-11-19, English 1-min, 55.3 s, phonk), the Gävle goat / straw Christmas goat burned almost every year (2026-11-20, English 1-min, 59.0 s, sneaky → phonk).
+Ghost Army, Eiffel Tower sale, Lemon juice robber, Mona Lisa theft, Hitler's nephew (user disliked), Great Emu War, Kentucky meat shower (40 s re-cut with hook), Mike the Headless Chicken (43.6 s, hook + loop format, Nov 2026), Napoleon attacked by rabbits (43.1 s, first fully automated daily run, 2026-11-12), Pig War 1859 (43.3 s, 2026-11-13), 1904 Olympic marathon / gold on rat poison (2026-11-14: English 34 s cut made, then replaced by the first Hindi 1-min cut, 57 s), Oregon exploding whale 1970 (2026-11-15, English 1-min, 56.8 s), Monsieur Mangetout / the man who ate an airplane (2026-11-16, English 1-min, 56.0 s), Paul the Octopus / World Cup oracle (2026-11-17, English 1-min, first trend.py beat: funk → phonk), Escobar's cocaine hippos (2026-11-18, English 1-min, 58.9 s, sneaky → phonk), Project Pigeon / pigeon-guided bomb (2026-11-19, English 1-min, 55.3 s, phonk), the Gävle goat / straw Christmas goat burned almost every year (2026-11-20, English 1-min, 59.0 s, sneaky → phonk), Acoustic Kitty / the CIA spy cat (2026-11-21, English 1-min, 57.5 s, sneaky → phonk).
 
 ## Topic ideas not yet used (re-score with the 4 tests before using; prefer funny/gross/absurd)
-Bosco the dog mayor, CIA spy cat (Acoustic Kitty), man who mailed himself, dancing plague of 1518.
+Bosco the dog mayor, man who mailed himself (Reg Spears), Cadaver Synod, dancing plague of 1518.
 
 ## Production notes
+- Acoustic-Kitty sets: new outdoor `PARK` in world.js (x −11000 z 18000, beyond the global grass): lawn y 0.10, gravel path along x (z ±1.6), a park bench at the origin facing +z (seat top y 0.55, z −2.9..−2.4; sitting rig = `mode: "sit"` at y 0.55), lamp posts, round trees, sidewalk z 6..8 + street z 8..16 + city blocks z 26..40. The van is a card at z 10.2 with `normal [0,0,-1]` (drawVan, sliding door). Van interior = a screen-filling card (`drawVanIn`) at the empty spot [2600, 2000, 0]. Also reused the `office` lab and the pigeon `war` briefing room (diff applied again). All drawings are in `draw_kitty.js` (a separate module: drawCat side view 768x512 with poses stand/sit/lie/flip, faces, shades, ear mic, radio box, glowing antenna `wire`; drawXray, drawMemo with stamps, drawPlan, drawVan, drawVanIn, drawBino, drawCal, drawReceipt, drawPile, drawFish, drawFly, drawSign, drawFlagS, drawTrophy). `drawCat(..., {keep: true})` skips clearRect when drawn inside another card.
+- Lab flasks on the `office` bench stand at z −0.7..−1.0: put props/animals on the bench at z ≈ −0.4 (in front of them), and lightbox/x-ray cards at z −0.5.
+- render.cjs: the first grab of a browser session can come out with the previous camera framing (seen in stills/contact: the first frame was shifted). `segments` now renders two warm-up frames first.
 - Gävle-goat set (`GOAT` in world.js, x −11000 z 9000, beyond the global grass): snow quad y 0.10, cobbled plaza quad y 0.105 (x ±26, z −14..16), coloured town houses (row z −42..−34, sides x ±36..44) with lit windows, Christmas tree x +16 z −8, lamp posts, snowy pines r 70–120, white hills. The goat is ONE 12 x 12 m canvas card (`drawGoat`: faces, burnt, bones = wooden frame only, fold, holes = pecked) facing +z at the origin; `fire(out, t, lvl)` lays 5 soft flame cards + a smoke card over it. Camera at z ≈ 22 fits the whole goat in 9:16; the eye is at (4.1, 8.5, 0). Also drawCar (1960s sedan, crash), drawGinger, drawBow/drawArrow, drawHeli, drawCam, drawFence, drawLaptop (LIVE), drawDaw (jackdaw, shades/straw), drawStorm, drawBars, drawRibbon, drawClock, drawSpray in that story.js; Santa = rig red jacket + cap + `XL.beard`.
 - Render resumes fine after the session kills background jobs: restart the same `until … segments` loop (use `setsid`), finished segments are kept.
 - Project Pigeon sets: new rooms `war` (x 1400, 1940s briefing room: table at the origin top y 0.78, z ±0.5, chairs behind at z −1.25..−0.85, map + chalk boards) and `stage` (x 1600: stage boards top y 0.5 from z −5 to +0.5, red curtain z −4.9, lectern x +1.35..+1.85 z −1.2..−0.8 top y 1.6, footlights). Lab = the existing `office` room (bench top y 0.92, front edge z −0.3). Flying shots need no set: an empty spot at [2400, 2000, 0] with a screen-filling painted sky card (`drawSky` via screenCard at d 6–9) behind the cards. Pigeon (`drawPigeon`: side view, peck, goggles/cap, sign, olive, fat; `drawPigeonFront`), glide bomb (`drawBomb`, glass nose with the pilot), the three-cockpit cut-away (`drawCockpits`, 768x1024, bays at card y +0.48 / 0 / −0.51 for h 1.6), target screen/photo, grain, stamp, medal, envelope are all in that story.js. A horizontal bomb is too wide for 9:16: rotate it ~±1 rad (diving / climbing) so it fits.

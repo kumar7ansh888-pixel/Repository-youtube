@@ -29,6 +29,7 @@ const server = http.createServer((req, res) => {
     // render every frame in resumable segments of `a` frames: out/seg_00000.mp4 ... (existing ones are skipped)
     const L = +a, crf = e || '16';
     fs.mkdirSync(out, { recursive: true });
+    await grab(0); await grab(1);   // warm-up: the first grab of a session can come out with a stale camera framing
     for (let s0 = +(process.env.SEG_FROM || 0); s0 < Math.min(total, +(process.env.SEG_TO || total)); s0 += L) {
       const name = path.join(out, `seg_${String(s0).padStart(5, '0')}.mp4`);
       if (fs.existsSync(name)) continue;

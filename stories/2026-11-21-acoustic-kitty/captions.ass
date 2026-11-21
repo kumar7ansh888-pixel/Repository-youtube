@@ -1,0 +1,65 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Bangers,200,&H00FFFFFF,&H00FFFFFF,&H00101010,&H96000000,0,0,0,0,100,100,3,0,1,12,8,8,40,40,190,1
+Style: Cap,Poppins,112,&H0000D4FF,&H00FFFFFF,&H00111111,&H64000000,1,0,0,0,100,100,0,0,1,8,5,2,60,60,470,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:02.55,Hook,,0,0,0,,{\fscx60\fscy60\t(0,180,\fscx100\fscy100)}{\c&H3AE8FF&}THE CIA BUILT\N{\c&H3A48F0&\fs224}A SPY CAT?!
+Dialogue: 0,0:00:00.31,0:00:01.55,Cap,,0,0,0,,{\k2}{\k25}The {\k25}CIA {\k50}turned {\k23}a
+Dialogue: 0,0:00:01.55,0:00:01.79,Cap,,0,0,0,,{\k2}{\k23}cat…
+Dialogue: 0,0:00:01.79,0:00:03.12,Cap,,0,0,0,,{\k2}{\k50}into {\k25}a {\k56}spy.
+Dialogue: 0,0:00:03.12,0:00:04.04,Cap,,0,0,0,,{\k2}{\k24}This {\k24}is {\k42}real.
+Dialogue: 0,0:00:04.04,0:00:05.08,Cap,,0,0,0,,{\k2}{\k102}Declassified.
+Dialogue: 0,0:00:05.08,0:00:05.60,Cap,,0,0,0,,{\k2}{\k26}Step {\k24}one:
+Dialogue: 0,0:00:05.60,0:00:06.66,Cap,,0,0,0,,{\k2}{\k103}surgery.
+Dialogue: 0,0:00:06.66,0:00:07.60,Cap,,0,0,0,,{\k2}{\k24}A {\k69}microphone…
+Dialogue: 0,0:00:07.60,0:00:08.89,Cap,,0,0,0,,{\k2}{\k47}inside {\k24}its {\k56}ear.
+Dialogue: 0,0:00:08.89,0:00:10.15,Cap,,0,0,0,,{\k2}{\k21}A {\k42}radio {\k61}transmitter…
+Dialogue: 0,0:00:10.15,0:00:10.99,Cap,,0,0,0,,{\k2}{\k21}at {\k21}the {\k21}base {\k19}of
+Dialogue: 0,0:00:10.99,0:00:11.82,Cap,,0,0,0,,{\k2}{\k21}its {\k60}skull.
+Dialogue: 0,0:00:11.82,0:00:12.86,Cap,,0,0,0,,{\k2}{\k17}The {\k85}antenna?
+Dialogue: 0,0:00:12.86,0:00:13.99,Cap,,0,0,0,,{\k2}{\k45}Woven {\k23}through {\k23}its {\k21}fur…
+Dialogue: 0,0:00:13.99,0:00:15.38,Cap,,0,0,0,,{\k2}{\k23}down {\k22}to {\k23}the {\k70}tail.
+Dialogue: 0,0:00:15.38,0:00:15.96,Cap,,0,0,0,,{\k2}{\k20}The {\k37}mission:
+Dialogue: 0,0:00:15.96,0:00:17.13,Cap,,0,0,0,,{\k2}{\k19}stroll {\k19}up {\k20}to {\k56}enemy
+Dialogue: 0,0:00:17.13,0:00:17.52,Cap,,0,0,0,,{\k2}{\k37}agents…
+Dialogue: 0,0:00:17.52,0:00:18.36,Cap,,0,0,0,,{\k2}{\k20}and {\k62}listen.
+Dialogue: 0,0:00:18.36,0:00:19.61,Cap,,0,0,0,,{\k2}{\k25}Who {\k50}suspects {\k25}a {\k23}cat?
+Dialogue: 0,0:00:19.61,0:00:20.37,Cap,,0,0,0,,{\k2}{\k25}One {\k48}problem.
+Dialogue: 0,0:00:20.37,0:00:21.43,Cap,,0,0,0,,{\k2}{\k25}It's {\k25}a {\k54}cat.
+Dialogue: 0,0:00:21.43,0:00:22.27,Cap,,0,0,0,,{\k2}{\k21}It {\k21}got {\k40}bored.
+Dialogue: 0,0:00:22.27,0:00:23.87,Cap,,0,0,0,,{\k2}{\k21}It {\k21}got {\k115}hungry.
+Dialogue: 0,0:00:24.16,0:00:25.35,Cap,,0,0,0,,{\k2}{\k18}It {\k54}wandered {\k45}off.
+Dialogue: 0,0:00:25.35,0:00:26.70,Cap,,0,0,0,,{\k2}{\k17}So {\k17}they {\k67}operated {\k32}again…
+Dialogue: 0,0:00:26.70,0:00:27.91,Cap,,0,0,0,,{\k2}{\k17}to {\k17}fix {\k17}the {\k69}hunger.
+Dialogue: 0,0:00:27.91,0:00:28.95,Cap,,0,0,0,,{\k2}{\k24}Then {\k77}training.
+Dialogue: 0,0:00:28.95,0:00:30.15,Cap,,0,0,0,,{\k2}{\k22}Five {\k22}years {\k23}of {\k51}it.
+Dialogue: 0,0:00:30.15,0:00:30.86,Cap,,0,0,0,,{\k2}{\k69}Finally,
+Dialogue: 0,0:00:30.86,0:00:31.98,Cap,,0,0,0,,{\k2}{\k24}the {\k24}big {\k63}test.
+Dialogue: 0,0:00:31.98,0:00:33.25,Cap,,0,0,0,,{\k2}{\k51}Agents {\k25}park {\k25}a {\k23}van
+Dialogue: 0,0:00:33.25,0:00:34.01,Cap,,0,0,0,,{\k2}{\k25}full {\k25}of {\k23}dials…
+Dialogue: 0,0:00:34.01,0:00:35.03,Cap,,0,0,0,,{\k2}{\k25}near {\k25}men {\k25}on {\k23}a
+Dialogue: 0,0:00:35.03,0:00:35.72,Cap,,0,0,0,,{\k2}{\k25}park {\k41}bench.
+Dialogue: 0,0:00:35.72,0:00:36.97,Cap,,0,0,0,,{\k2}{\k19}They {\k38}open {\k19}the {\k48}door.
+Dialogue: 0,0:00:36.97,0:00:38.10,Cap,,0,0,0,,{\k2}{\k28}The {\k28}cat {\k28}hops {\k26}out…
+Dialogue: 0,0:00:38.10,0:00:38.39,Cap,,0,0,0,,{\k2}{\k26}Wait,
+Dialogue: 0,0:00:38.39,0:00:39.57,Cap,,0,0,0,,{\k2}{\k28}it {\k28}gets {\k60}worse.
+Dialogue: 0,0:00:39.57,0:00:40.74,Cap,,0,0,0,,{\k2}{\k17}It {\k33}never {\k33}even {\k31}reached
+Dialogue: 0,0:00:40.74,0:00:41.38,Cap,,0,0,0,,{\k2}{\k17}the {\k45}bench.
+Dialogue: 0,0:00:41.38,0:00:42.45,Cap,,0,0,0,,{\k2}{\k20}The {\k41}total {\k44}bill?
+Dialogue: 0,0:00:42.45,0:00:45.14,Cap,,0,0,0,,{\k2}{\k77}Reportedly {\k39}twenty {\k39}million {\k112}dollars.
+Dialogue: 0,0:00:45.40,0:00:46.76,Cap,,0,0,0,,{\k2}{\k23}The {\k45}final {\k45}memo {\k21}said
+Dialogue: 0,0:00:46.76,0:00:47.67,Cap,,0,0,0,,{\k2}{\k23}spy {\k23}cats {\k23}were {\k21}not
+Dialogue: 0,0:00:47.67,0:00:48.75,Cap,,0,0,0,,{\k2}{\k106}practical.
+Dialogue: 0,0:00:48.75,0:00:50.30,Cap,,0,0,0,,{\k2}{\k16}But {\k16}their {\k16}big {\k104}discovery?
+Dialogue: 0,0:00:50.30,0:00:51.46,Cap,,0,0,0,,{\k2}{\k23}Cats {\k23}can {\k23}be {\k45}trained…
+Dialogue: 0,0:00:51.46,0:00:53.25,Cap,,0,0,0,,{\k2}{\k23}to {\k23}walk {\k23}short {\k107}distances.
+Dialogue: 0,0:00:53.25,0:00:55.51,Cap,,0,0,0,,{\k2}{\k17}A {\k52}remarkable {\k52}scientific {\k102}achievement.
+Dialogue: 0,0:00:55.51,0:00:56.44,Cap,,0,0,0,,{\k2}{\k23}All {\k23}that {\k45}money…
+Dialogue: 0,0:00:56.44,0:00:57.88,Cap,,0,0,0,,{\k2}{\k23}all {\k120}because

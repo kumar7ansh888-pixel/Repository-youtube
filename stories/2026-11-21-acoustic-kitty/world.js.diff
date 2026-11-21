@@ -1,0 +1,77 @@
+--- world.js	2026-11-21 10:38:27.120660311 +0530
++++ /home/claude/work/2026-11-21-acoustic-kitty/render/src/world.js	2026-11-21 10:48:26.436987356 +0530
+@@ -29,9 +29,10 @@
+ export const RACE = [-1800, 0, 5600];     // 1904: the St. Louis Olympic marathon (dirt road along x at z 0, finish arch + grandstand at x -40, apple orchard x +40..+70)
+ export const PIG = [-5600, 0, 5600];       // 1859: San Juan Island, the Pig War (Cutlar's farm at the origin, the strait to +z from z = +40)
+ export const BEACH = [-4800, 0, 1400];    // 1970: Florence, Oregon, the exploding whale (whale at the origin along x, sea to -z from z -8, dunes z 14..32 with a flat crest y 2.7, parking lot behind z 36..60)
++export const PARK = [-11000, 0, 18000];   // 1960s Washington park (Acoustic Kitty): lawn y 0.10, gravel path along x (z -1.6..1.6), park bench at the origin facing +z (seat y 0.55, z -2.9..-2.4), street along x z 8..16 with sidewalk z 6..8, city blocks at z 26+ and z -46
+ export const OCEAN = [8000, 0, 0];        // sea starts at x = 8000; New York skyline at x = 12500
+ const RY = 2000;
+-export const ROOM = { office: [0, RY, 0], bank: [200, RY, 0], living: [400, RY, 0], interro: [600, RY, 0], showroom: [800, RY, 0], oval: [1000, RY, 0], motel: [1200, RY, 0] };
++export const ROOM = { office: [0, RY, 0], bank: [200, RY, 0], living: [400, RY, 0], interro: [600, RY, 0], showroom: [800, RY, 0], oval: [1000, RY, 0], motel: [1200, RY, 0], war: [1400, RY, 0], stage: [1600, RY, 0] };  // war/stage: Project Pigeon (1940s war-office briefing room, the Ig Nobel stage)
+ 
+ // ---------------- night preset (moonlight) ----------------
+ LIGHTS.night = {
+@@ -670,6 +671,37 @@
+       for (const [hx, hz, sx, sy, sz] of [[-700, -260, 260, 70, 140], [820, -320, 300, 90, 160], [-1300, -120, 220, 60, 200]]) { const m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); m.scale(sx, sy, sz); m.translate(wx + hx, -2, wz + hz); b.add(m, L("bwHead", "#6f7a6a")); }
+       for (let i = 0; i < 7; i++) { const m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); m.scale(320 + (i % 2) * 140, 60 + (i % 3) * 25, 140); m.translate(wx - 1200 + i * 400, -2, wz + 520 + (i % 2) * 120); b.add(m, L("bwHill" + (i % 2), i % 2 ? "#3f6a50" : "#4a7658")); }
+     }
++
++    // ---- PARK (Acoustic Kitty, x -11000 z 18000, beyond the global grass): a 1960s Washington park by a street. Lawn y 0.10 (no polygon offset),
++    //      gravel path along x (z -1.6..1.6, y 0.105), a park bench at the origin facing +z (seat top y 0.55, z -2.9..-2.4), lamp posts, round trees,
++    //      sidewalk z 6..8 (y 0.13) + street z 8..16 (y 0.11) along x, brick/stone city blocks across the street (z 26..40) and behind the park (z -60).
++    {
++      const [px, , pz] = PARK, L = (k, c) => lam(k, () => ({ color: c }));
++      b.add(quadUp(px - 1500, px + 1500, pz - 1500, pz + 1500, 0.10, 60), lam("pkGrass", () => ({ map: GT.fieldTex("pkGrass", "#7fae4a") })));
++      b.add(quadUp(px - 80, px + 80, pz - 1.6, pz + 1.6, 0.105, 20), lam("pkPath", () => ({ map: GT.fieldTex("pkPath", "#d8c49a") })));
++      b.add(boxGeo(px - 200, 0, pz + 6, px + 200, 0.13, pz + 8, 8), L("pkWalk", "#c4c0b8"));
++      b.add(quadUp(px - 200, px + 200, pz + 8, pz + 16, 0.11, 20), lam("pkRoad", () => ({ map: GT.fieldTex("pkRoad", "#4a4a52") })));
++      for (let x = -200; x < 200; x += 6) b.add(boxGeo(px + x, 0.11, pz + 11.9, px + x + 3, 0.116, pz + 12.1, 1), L("pkDash", "#f0e0a0"));
++      b.add(boxGeo(px - 200, 0, pz + 16, px + 200, 0.13, pz + 19, 8), L("pkWalk", "#c4c0b8"));
++      // the bench (slats + cast-iron ends) at the origin, facing +z
++      const slat = L("pkSlat", "#8a5a32"), iron = L("pkIron", "#2a2a30");
++      for (let k = 0; k < 3; k++) b.add(boxGeo(px - 1.1, 0.48, pz - 2.9 + k * 0.17, px + 1.1, 0.55, pz - 2.9 + k * 0.17 + 0.14, 1), slat);
++      for (let k = 0; k < 3; k++) b.add(boxGeo(px - 1.1, 0.68 + k * 0.17, pz - 2.98, px + 1.1, 0.8 + k * 0.17, pz - 2.92, 1), slat);
++      for (const sx of [-1.0, 1.0]) { b.add(boxGeo(px + sx - 0.04, 0.1, pz - 2.95, px + sx + 0.04, 1.2, pz - 2.88, 1), iron); b.add(boxGeo(px + sx - 0.04, 0.1, pz - 2.5, px + sx + 0.04, 0.55, pz - 2.43, 1), iron); }
++      // lamp posts + a trash can
++      const lampG = lam("pkLamp", () => ({ color: "#fff0c0", emissive: "#ffd070", emissiveIntensity: 0.8 }));
++      for (let x = -40; x <= 40; x += 10) { b.add(cyl(0.07, 0.09, 3.6, 6, px + x + 4.5, 1.9, pz - 2.2), iron); const l = new THREE.SphereGeometry(0.25, 8, 6); l.translate(px + x + 4.5, 3.8, pz - 2.2); b.add(l, lampG); }
++      b.add(cyl(0.28, 0.25, 0.8, 10, px + 1.7, 0.5, pz - 2.6), L("pkCan", "#3a5a3a"));
++      // round trees behind the bench and along the street
++      const tree = (x, z, s) => { b.add(cyl(0.25 * s, 0.4 * s, 4 * s, 7, px + x, 2 * s, pz + z), L("pkBark", "#5a4232")); for (let k = 0; k < 4; k++) { const c = new THREE.IcosahedronGeometry(2.0 * s, 1); c.translate(px + x + Math.cos(k * 1.7) * 1.3 * s, (4.8 + (k % 2) * 0.9) * s, pz + z + Math.sin(k * 1.7) * 1.3 * s); b.add(c, L("pkLeaf" + (k % 2), k % 2 ? "#5a9a3a" : "#78b04a")); } };
++      for (let k = 0; k < 14; k++) tree(-62 + k * 9 + (k % 3) * 2, -10 - (k % 3) * 6, 1 + (k % 3) * 0.2);
++      for (let k = 0; k < 12; k++) tree(-66 + k * 12, 4.6, 0.8);
++      // city blocks across the street and far behind the park
++      const wallC = ["#a8583a", "#d8c8a8", "#8a4a3a", "#c8b898", "#b86a4a", "#9a9a8a"], win = L("pkWin", "#5a6a7a");
++      let k = 0; for (let x = -120; x < 120; x += 14 + (k % 3) * 2) { const h = 12 + (k % 4) * 4, w = 12 + (k % 2) * 2; b.add(boxGeo(px + x, 0, pz + 26, px + x + w, h, pz + 40, 4), L("pkB" + (k % 6), wallC[k % 6]));
++        for (let fy = 2; fy < h - 1.5; fy += 3) for (let fx = 1; fx < w - 1; fx += 2.2) b.add(boxGeo(px + x + fx, fy, pz + 25.95, px + x + fx + 1.1, fy + 1.6, pz + 26, 1), win); k++; }
++      for (let x = -300; x < 300; x += 20) b.add(boxGeo(px + x, 0, pz - 75, px + x + 18, 14 + hh(x, 51) * 16, pz - 60, 4), L("pkBF" + ((x / 20) & 1), (x / 20) & 1 ? "#b8a890" : "#9a8a7a"));
++    }
+     b.build(R, true, true);
+     // New York skyline far across the ocean (flat painted card)
+     const sk = new THREE.Mesh(new THREE.PlaneGeometry(3200, 800), new THREE.MeshBasicMaterial({ map: PT.skylineTex(), transparent: true, fog: true, depthWrite: false }));
+@@ -802,6 +834,24 @@
+       const g = new THREE.CircleGeometry(1.6, 32); g.rotateX(-Math.PI / 2); g.translate(x, y + 0.01, z + 0.4); b.add(g, lam("seal", () => ({ color: "#c9b27a" })));
+       for (const fx of [-3.6, 3.6]) b.add(cyl(0.025, 0.025, 2.6, 6, x + fx, y + 1.3, z - 3.1), lam("brass", () => ({ color: "#c9a24a" })));
+     });
++    // ---- Project Pigeon. war: a 1940s war-office briefing room: olive walls, a long table at the origin (top y 0.78, z -0.5..+0.5),
++    //      a map board and a chalk board on the back wall, a desk lamp. stage: a theatre stage: red curtains on the back wall, a raised
++    //      wooden stage floor (top y 0.5, z -4..+0.5), a lectern at x +1.6, glowing footlights along z +0.5.
++    room("war", 12, 9, 4, lam("warWall", () => ({ color: "#7a8060" })), lam("warFloor", () => ({ color: "#5a4a3a" })), (b, x, y, z) => {
++      table(b, x, y, z, 3.6, 1.0, 0.78, lam("warTable", () => ({ color: "#6a4a2e" })));
++      b.add(boxGeo(x - 3.2, y + 1.0, z - 4.48, x - 0.4, y + 2.8, z - 4.42, 1), lam("mapBoard", () => ({ color: "#c8d8b0" })));
++      b.add(boxGeo(x + 0.4, y + 1.0, z - 4.48, x + 3.2, y + 2.8, z - 4.42, 1), lam("chalk", () => ({ color: "#2a3a2e" })));
++      for (const fx of [-3.8, 3.8]) b.add(cyl(0.025, 0.025, 2.6, 6, x + fx, y + 1.3, z - 4.0), lam("brass", () => ({ color: "#c9a24a" })));
++      b.add(cyl(0.16, 0.08, 0.16, 12, x + 1.4, y + 2.6, z - 0.2), lam("lampShadeW", () => ({ color: "#3a4a30", emissive: "#2a2a10" })));
++      for (const cx of [-1.2, 0, 1.2]) { b.add(boxGeo(x + cx - 0.22, y, z - 1.25, x + cx + 0.22, y + 0.45, z - 0.85, 1), dark); b.add(boxGeo(x + cx - 0.22, y + 0.45, z - 1.3, x + cx + 0.22, y + 1.05, z - 1.22, 1), dark); }
++    });
++    room("stage", 14, 10, 5, lam("stageWall", () => ({ color: "#3a1a24" })), lam("stageFloor", () => ({ color: "#2a2228" })), (b, x, y, z) => {
++      b.add(boxGeo(x - 7, y, z - 5, x + 7, y + 0.5, z + 0.5, 1), lam("stageBoards", () => ({ color: "#a8784a" })));
++      const red = lam("curtain", () => ({ color: "#b0242e" })), red2 = lam("curtain2", () => ({ color: "#8a1a24" }));
++      for (let k = 0; k < 28; k++) b.add(boxGeo(x - 7 + k * 0.5, y + 0.5, z - 4.9 + (k % 2) * 0.12, x - 6.5 + k * 0.5, y + 4.8, z - 4.7 + (k % 2) * 0.12, 1), k % 2 ? red : red2);
++      b.add(boxGeo(x + 1.35, y + 0.5, z - 1.2, x + 1.85, y + 1.6, z - 0.8, 1), lam("lectern", () => ({ color: "#5a3a22" })));
++      for (let k = 0; k < 14; k++) b.add(boxGeo(x - 6.5 + k * 1.0, y + 0.5, z + 0.35, x - 6.2 + k * 1.0, y + 0.6, z + 0.48, 1), lam("footlight", () => ({ color: "#fff2c0", emissive: "#ffd070", emissiveIntensity: 1.4 })));
++    });
+     // a 1940s Phoenix motel room at night: knotty-pine walls, bed along the left wall, nightstand lamp, window with the neon outside, Mike's box
+     room("motel", 7, 6, 3, lam("pineWall", () => ({ map: PT.panelTex(2) })), lam("motelCarpet", () => ({ color: "#6a4a3a" })), (b, x, y, z) => {
+       const bedW = lam("bedWood", () => ({ color: "#5a3a26" })), sheet = lam("sheet", () => ({ color: "#efe8da" })), quilt = lam("quilt", () => ({ map: GT.canvasTex("quilt", "#3f7f7a") }));
