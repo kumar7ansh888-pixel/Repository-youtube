@@ -1,0 +1,67 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Bangers,200,&H00FFFFFF,&H00FFFFFF,&H00101010,&H96000000,0,0,0,0,100,100,3,0,1,12,8,8,40,40,190,1
+Style: Cap,Poppins,112,&H0000D4FF,&H00FFFFFF,&H00111111,&H64000000,1,0,0,0,100,100,0,0,1,8,5,2,60,60,470,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:02.55,Hook,,0,0,0,,{\fscx60\fscy60\t(0,180,\fscx100\fscy100)}{\c&H3AE8FF&}LAWN CHAIR TO\N{\c&H3A48F0&\fs224}16,000 FEET?!
+Dialogue: 0,0:00:00.36,0:00:01.47,Cap,,0,0,0,,{\k2}{\k28}A {\k28}man {\k28}flew {\k26}a
+Dialogue: 0,0:00:01.47,0:00:02.03,Cap,,0,0,0,,{\k2}{\k28}lawn {\k26}chair…
+Dialogue: 0,0:00:02.03,0:00:03.46,Cap,,0,0,0,,{\k2}{\k56}into {\k28}the {\k58}sky.
+Dialogue: 0,0:00:03.46,0:00:04.53,Cap,,0,0,0,,{\k2}{\k25}Not {\k25}a {\k54}plane.
+Dialogue: 0,0:00:04.53,0:00:05.65,Cap,,0,0,0,,{\k2}{\k27}A {\k27}lawn {\k56}chair.
+Dialogue: 0,0:00:05.65,0:00:06.59,Cap,,0,0,0,,{\k2}{\k19}He {\k37}dreamed {\k19}of {\k17}being
+Dialogue: 0,0:00:06.59,0:00:07.49,Cap,,0,0,0,,{\k2}{\k19}a {\k70}pilot.
+Dialogue: 0,0:00:07.49,0:00:09.28,Cap,,0,0,0,,{\k2}{\k27}Bad {\k54}eyesight {\k27}said {\k69}no.
+Dialogue: 0,0:00:09.28,0:00:10.12,Cap,,0,0,0,,{\k2}{\k21}So {\k21}he {\k21}bought {\k19}a
+Dialogue: 0,0:00:10.12,0:00:11.18,Cap,,0,0,0,,{\k2}{\k21}pile {\k21}of {\k21}giant {\k40}weather
+Dialogue: 0,0:00:11.18,0:00:11.60,Cap,,0,0,0,,{\k2}{\k40}balloons…
+Dialogue: 0,0:00:11.60,0:00:12.66,Cap,,0,0,0,,{\k2}{\k21}and {\k42}filled {\k21}them {\k19}with
+Dialogue: 0,0:00:12.66,0:00:13.33,Cap,,0,0,0,,{\k2}{\k65}helium.
+Dialogue: 0,0:00:13.33,0:00:14.74,Cap,,0,0,0,,{\k2}{\k24}He {\k47}packed {\k68}sandwiches.
+Dialogue: 0,0:00:14.74,0:00:15.21,Cap,,0,0,0,,{\k2}{\k23}And {\k21}beer.
+Dialogue: 0,0:00:15.21,0:00:16.15,Cap,,0,0,0,,{\k2}{\k24}And {\k23}the {\k45}brakes?
+Dialogue: 0,0:00:16.15,0:00:17.08,Cap,,0,0,0,,{\k2}{\k23}A {\k47}pellet {\k21}gun…
+Dialogue: 0,0:00:17.08,0:00:18.69,Cap,,0,0,0,,{\k2}{\k23}to {\k23}pop {\k23}the {\k88}balloons.
+Dialogue: 0,0:00:18.69,0:00:19.55,Cap,,0,0,0,,{\k2}{\k29}The {\k55}plan:
+Dialogue: 0,0:00:19.55,0:00:20.66,Cap,,0,0,0,,{\k2}{\k19}float {\k37}gently {\k37}over {\k17}the
+Dialogue: 0,0:00:20.66,0:00:21.62,Cap,,0,0,0,,{\k2}{\k93}neighborhood.
+Dialogue: 0,0:00:21.62,0:00:23.55,Cap,,0,0,0,,{\k2}{\k24}Then {\k24}the {\k24}rope {\k120}snapped.
+Dialogue: 0,0:00:23.80,0:00:24.79,Cap,,0,0,0,,{\k2}{\k25}He {\k25}shot {\k25}up {\k23}like
+Dialogue: 0,0:00:24.79,0:00:25.29,Cap,,0,0,0,,{\k2}{\k25}a {\k23}cork…
+Dialogue: 0,0:00:25.29,0:00:26.92,Cap,,0,0,0,,{\k2}{\k50}sixteen {\k50}thousand {\k61}feet.
+Dialogue: 0,0:00:26.92,0:00:28.65,Cap,,0,0,0,,{\k2}{\k20}Two {\k61}airliners {\k41}spotted {\k49}him.
+Dialogue: 0,0:00:28.65,0:00:29.20,Cap,,0,0,0,,{\k2}{\k28}A {\k26}guy…
+Dialogue: 0,0:00:29.20,0:00:30.62,Cap,,0,0,0,,{\k2}{\k28}in {\k28}a {\k28}lawn {\k57}chair.
+Dialogue: 0,0:00:30.62,0:00:31.89,Cap,,0,0,0,,{\k2}{\k21}So {\k21}he {\k42}started {\k40}shooting
+Dialogue: 0,0:00:31.89,0:00:32.48,Cap,,0,0,0,,{\k2}{\k57}balloons.
+Dialogue: 0,0:00:32.48,0:00:32.77,Cap,,0,0,0,,{\k2}{\k27}Pop.
+Dialogue: 0,0:00:32.77,0:00:33.07,Cap,,0,0,0,,{\k2}{\k27}Pop.
+Dialogue: 0,0:00:33.07,0:00:33.36,Cap,,0,0,0,,{\k2}{\k27}Pop.
+Dialogue: 0,0:00:33.36,0:00:35.41,Cap,,0,0,0,,{\k2}{\k29}He {\k29}was {\k88}finally {\k57}coming
+Dialogue: 0,0:00:35.41,0:00:35.71,Cap,,0,0,0,,{\k2}{\k27}down!
+Dialogue: 0,0:00:35.71,0:00:36.00,Cap,,0,0,0,,{\k2}{\k27}Then…
+Dialogue: 0,0:00:36.00,0:00:36.57,Cap,,0,0,0,,{\k2}{\k55}oops.
+Dialogue: 0,0:00:36.57,0:00:37.88,Cap,,0,0,0,,{\k2}{\k18}He {\k35}dropped {\k18}the {\k59}gun.
+Dialogue: 0,0:00:37.88,0:00:38.13,Cap,,0,0,0,,{\k2}{\k23}Wait,
+Dialogue: 0,0:00:38.13,0:00:38.87,Cap,,0,0,0,,{\k2}{\k25}it {\k25}gets {\k23}worse.
+Dialogue: 0,0:00:38.87,0:00:39.87,Cap,,0,0,0,,{\k2}{\k25}He {\k50}drifted {\k23}down…
+Dialogue: 0,0:00:39.87,0:00:41.90,Cap,,0,0,0,,{\k2}{\k25}straight {\k50}into {\k50}power {\k78}lines.
+Dialogue: 0,0:00:41.90,0:00:43.36,Cap,,0,0,0,,{\k2}{\k21}A {\k21}whole {\k62}neighborhood {\k40}blacked
+Dialogue: 0,0:00:43.36,0:00:43.56,Cap,,0,0,0,,{\k2}{\k19}out.
+Dialogue: 0,0:00:43.56,0:00:45.02,Cap,,0,0,0,,{\k2}{\k41}Police {\k21}were {\k82}waiting.
+Dialogue: 0,0:00:45.02,0:00:46.37,Cap,,0,0,0,,{\k2}{\k30}The {\k103}fine?
+Dialogue: 0,0:00:46.66,0:00:48.25,Cap,,0,0,0,,{\k2}{\k45}Fifteen {\k45}hundred {\k67}dollars.
+Dialogue: 0,0:00:48.25,0:00:49.23,Cap,,0,0,0,,{\k2}{\k18}Why {\k18}do {\k61}it?
+Dialogue: 0,0:00:49.23,0:00:50.10,Cap,,0,0,0,,{\k2}{\k22}He {\k22}said {\k22}a {\k20}man
+Dialogue: 0,0:00:50.10,0:00:51.36,Cap,,0,0,0,,{\k2}{\k22}can't {\k22}just {\k22}sit {\k59}around.
+Dialogue: 0,0:00:51.36,0:00:52.50,Cap,,0,0,0,,{\k2}{\k46}Today {\k23}that {\k23}chair {\k21}is
+Dialogue: 0,0:00:52.50,0:00:54.07,Cap,,0,0,0,,{\k2}{\k23}in {\k23}the {\k110}Smithsonian.
+Dialogue: 0,0:00:54.07,0:00:55.07,Cap,,0,0,0,,{\k2}{\k25}And {\k25}that's {\k25}how {\k23}a
+Dialogue: 0,0:00:55.07,0:00:56.07,Cap,,0,0,0,,{\k2}{\k98}man

@@ -1,0 +1,902 @@
+[
+{
+"word": "A",
+"raw": "A",
+"start": 0.405,
+"end": 0.684
+},
+{
+"word": "man",
+"raw": "man",
+"start": 0.684,
+"end": 0.962
+},
+{
+"word": "flew",
+"raw": "flew",
+"start": 0.962,
+"end": 1.241
+},
+{
+"word": "a",
+"raw": "a",
+"start": 1.241,
+"end": 1.519
+},
+{
+"word": "lawn",
+"raw": "lawn",
+"start": 1.519,
+"end": 1.798
+},
+{
+"word": "chair",
+"raw": "chair\u2026",
+"start": 1.798,
+"end": 2.076
+},
+{
+"word": "into",
+"raw": "into",
+"start": 2.076,
+"end": 2.633
+},
+{
+"word": "the",
+"raw": "the",
+"start": 2.633,
+"end": 2.912
+},
+{
+"word": "sky",
+"raw": "sky.",
+"start": 2.912,
+"end": 3.19
+},
+{
+"word": "Not",
+"raw": "Not",
+"start": 3.513,
+"end": 3.768
+},
+{
+"word": "a",
+"raw": "a",
+"start": 3.768,
+"end": 4.023
+},
+{
+"word": "plane",
+"raw": "plane.",
+"start": 4.023,
+"end": 4.279
+},
+{
+"word": "A",
+"raw": "A",
+"start": 4.58,
+"end": 4.852
+},
+{
+"word": "lawn",
+"raw": "lawn",
+"start": 4.852,
+"end": 5.123
+},
+{
+"word": "chair",
+"raw": "chair.",
+"start": 5.123,
+"end": 5.395
+},
+{
+"word": "He",
+"raw": "He",
+"start": 5.704,
+"end": 5.891
+},
+{
+"word": "dreamed",
+"raw": "dreamed",
+"start": 5.891,
+"end": 6.263
+},
+{
+"word": "of",
+"raw": "of",
+"start": 6.263,
+"end": 6.45
+},
+{
+"word": "being",
+"raw": "being",
+"start": 6.45,
+"end": 6.636
+},
+{
+"word": "a",
+"raw": "a",
+"start": 6.636,
+"end": 6.823
+},
+{
+"word": "pilot",
+"raw": "pilot.",
+"start": 6.823,
+"end": 7.196
+},
+{
+"word": "Bad",
+"raw": "Bad",
+"start": 7.541,
+"end": 7.811
+},
+{
+"word": "eyesight",
+"raw": "eyesight",
+"start": 7.811,
+"end": 8.349
+},
+{
+"word": "said",
+"raw": "said",
+"start": 8.349,
+"end": 8.618
+},
+{
+"word": "no",
+"raw": "no.",
+"start": 8.618,
+"end": 8.887
+},
+{
+"word": "So",
+"raw": "So",
+"start": 9.329,
+"end": 9.54
+},
+{
+"word": "he",
+"raw": "he",
+"start": 9.54,
+"end": 9.751
+},
+{
+"word": "bought",
+"raw": "bought",
+"start": 9.751,
+"end": 9.963
+},
+{
+"word": "a",
+"raw": "a",
+"start": 9.963,
+"end": 10.174
+},
+{
+"word": "pile",
+"raw": "pile",
+"start": 10.174,
+"end": 10.386
+},
+{
+"word": "of",
+"raw": "of",
+"start": 10.386,
+"end": 10.597
+},
+{
+"word": "giant",
+"raw": "giant",
+"start": 10.597,
+"end": 10.808
+},
+{
+"word": "weather",
+"raw": "weather",
+"start": 10.808,
+"end": 11.231
+},
+{
+"word": "balloons",
+"raw": "balloons\u2026",
+"start": 11.231,
+"end": 11.654
+},
+{
+"word": "and",
+"raw": "and",
+"start": 11.654,
+"end": 11.865
+},
+{
+"word": "filled",
+"raw": "filled",
+"start": 11.865,
+"end": 12.288
+},
+{
+"word": "them",
+"raw": "them",
+"start": 12.288,
+"end": 12.5
+},
+{
+"word": "with",
+"raw": "with",
+"start": 12.5,
+"end": 12.711
+},
+{
+"word": "helium",
+"raw": "helium.",
+"start": 12.711,
+"end": 13.134
+},
+{
+"word": "He",
+"raw": "He",
+"start": 13.382,
+"end": 13.617
+},
+{
+"word": "packed",
+"raw": "packed",
+"start": 13.617,
+"end": 14.086
+},
+{
+"word": "sandwiches",
+"raw": "sandwiches.",
+"start": 14.086,
+"end": 14.789
+},
+{
+"word": "And",
+"raw": "And",
+"start": 14.789,
+"end": 15.024
+},
+{
+"word": "beer",
+"raw": "beer.",
+"start": 15.024,
+"end": 15.258
+},
+{
+"word": "And",
+"raw": "And",
+"start": 15.258,
+"end": 15.493
+},
+{
+"word": "the",
+"raw": "the",
+"start": 15.493,
+"end": 15.727
+},
+{
+"word": "brakes",
+"raw": "brakes?",
+"start": 15.727,
+"end": 16.196
+},
+{
+"word": "A",
+"raw": "A",
+"start": 16.196,
+"end": 16.431
+},
+{
+"word": "pellet",
+"raw": "pellet",
+"start": 16.431,
+"end": 16.9
+},
+{
+"word": "gun",
+"raw": "gun\u2026",
+"start": 16.9,
+"end": 17.134
+},
+{
+"word": "to",
+"raw": "to",
+"start": 17.134,
+"end": 17.369
+},
+{
+"word": "pop",
+"raw": "pop",
+"start": 17.369,
+"end": 17.603
+},
+{
+"word": "the",
+"raw": "the",
+"start": 17.603,
+"end": 17.838
+},
+{
+"word": "balloons",
+"raw": "balloons.",
+"start": 17.838,
+"end": 18.307
+},
+{
+"word": "The",
+"raw": "The",
+"start": 18.737,
+"end": 19.024
+},
+{
+"word": "plan",
+"raw": "plan:",
+"start": 19.024,
+"end": 19.312
+},
+{
+"word": "float",
+"raw": "float",
+"start": 19.597,
+"end": 19.784
+},
+{
+"word": "gently",
+"raw": "gently",
+"start": 19.784,
+"end": 20.156
+},
+{
+"word": "over",
+"raw": "over",
+"start": 20.156,
+"end": 20.529
+},
+{
+"word": "the",
+"raw": "the",
+"start": 20.529,
+"end": 20.715
+},
+{
+"word": "neighborhood",
+"raw": "neighborhood.",
+"start": 20.715,
+"end": 21.274
+},
+{
+"word": "Then",
+"raw": "Then",
+"start": 21.667,
+"end": 21.904
+},
+{
+"word": "the",
+"raw": "the",
+"start": 21.904,
+"end": 22.14
+},
+{
+"word": "rope",
+"raw": "rope",
+"start": 22.14,
+"end": 22.377
+},
+{
+"word": "snapped",
+"raw": "snapped.",
+"start": 22.377,
+"end": 22.85
+},
+{
+"word": "He",
+"raw": "He",
+"start": 23.847,
+"end": 24.097
+},
+{
+"word": "shot",
+"raw": "shot",
+"start": 24.097,
+"end": 24.346
+},
+{
+"word": "up",
+"raw": "up",
+"start": 24.346,
+"end": 24.595
+},
+{
+"word": "like",
+"raw": "like",
+"start": 24.595,
+"end": 24.845
+},
+{
+"word": "a",
+"raw": "a",
+"start": 24.845,
+"end": 25.094
+},
+{
+"word": "cork",
+"raw": "cork\u2026",
+"start": 25.094,
+"end": 25.344
+},
+{
+"word": "sixteen",
+"raw": "sixteen",
+"start": 25.344,
+"end": 25.843
+},
+{
+"word": "thousand",
+"raw": "thousand",
+"start": 25.843,
+"end": 26.341
+},
+{
+"word": "feet",
+"raw": "feet.",
+"start": 26.341,
+"end": 26.591
+},
+{
+"word": "Two",
+"raw": "Two",
+"start": 26.971,
+"end": 27.175
+},
+{
+"word": "airliners",
+"raw": "airliners",
+"start": 27.175,
+"end": 27.786
+},
+{
+"word": "spotted",
+"raw": "spotted",
+"start": 27.786,
+"end": 28.194
+},
+{
+"word": "him",
+"raw": "him.",
+"start": 28.194,
+"end": 28.398
+},
+{
+"word": "A",
+"raw": "A",
+"start": 28.699,
+"end": 28.977
+},
+{
+"word": "guy",
+"raw": "guy\u2026",
+"start": 28.977,
+"end": 29.254
+},
+{
+"word": "in",
+"raw": "in",
+"start": 29.254,
+"end": 29.532
+},
+{
+"word": "a",
+"raw": "a",
+"start": 29.532,
+"end": 29.81
+},
+{
+"word": "lawn",
+"raw": "lawn",
+"start": 29.81,
+"end": 30.088
+},
+{
+"word": "chair",
+"raw": "chair.",
+"start": 30.088,
+"end": 30.366
+},
+{
+"word": "So",
+"raw": "So",
+"start": 30.674,
+"end": 30.884
+},
+{
+"word": "he",
+"raw": "he",
+"start": 30.884,
+"end": 31.095
+},
+{
+"word": "started",
+"raw": "started",
+"start": 31.095,
+"end": 31.516
+},
+{
+"word": "shooting",
+"raw": "shooting",
+"start": 31.516,
+"end": 31.937
+},
+{
+"word": "balloons",
+"raw": "balloons.",
+"start": 31.937,
+"end": 32.358
+},
+{
+"word": "Pop",
+"raw": "Pop.",
+"start": 32.529,
+"end": 32.822
+},
+{
+"word": "Pop",
+"raw": "Pop.",
+"start": 32.822,
+"end": 33.116
+},
+{
+"word": "Pop",
+"raw": "Pop.",
+"start": 33.116,
+"end": 33.409
+},
+{
+"word": "He",
+"raw": "He",
+"start": 33.409,
+"end": 33.702
+},
+{
+"word": "was",
+"raw": "was",
+"start": 33.702,
+"end": 33.996
+},
+{
+"word": "finally",
+"raw": "finally",
+"start": 33.996,
+"end": 34.876
+},
+{
+"word": "coming",
+"raw": "coming",
+"start": 34.876,
+"end": 35.462
+},
+{
+"word": "down",
+"raw": "down!",
+"start": 35.462,
+"end": 35.756
+},
+{
+"word": "Then",
+"raw": "Then\u2026",
+"start": 35.756,
+"end": 36.049
+},
+{
+"word": "oops",
+"raw": "oops.",
+"start": 36.049,
+"end": 36.343
+},
+{
+"word": "He",
+"raw": "He",
+"start": 36.621,
+"end": 36.798
+},
+{
+"word": "dropped",
+"raw": "dropped",
+"start": 36.798,
+"end": 37.151
+},
+{
+"word": "the",
+"raw": "the",
+"start": 37.151,
+"end": 37.327
+},
+{
+"word": "gun",
+"raw": "gun.",
+"start": 37.327,
+"end": 37.504
+},
+{
+"word": "Wait",
+"raw": "Wait,",
+"start": 37.933,
+"end": 38.181
+},
+{
+"word": "it",
+"raw": "it",
+"start": 38.181,
+"end": 38.428
+},
+{
+"word": "gets",
+"raw": "gets",
+"start": 38.428,
+"end": 38.676
+},
+{
+"word": "worse",
+"raw": "worse.",
+"start": 38.676,
+"end": 38.924
+},
+{
+"word": "He",
+"raw": "He",
+"start": 38.924,
+"end": 39.172
+},
+{
+"word": "drifted",
+"raw": "drifted",
+"start": 39.172,
+"end": 39.668
+},
+{
+"word": "down",
+"raw": "down\u2026",
+"start": 39.668,
+"end": 39.916
+},
+{
+"word": "straight",
+"raw": "straight",
+"start": 39.916,
+"end": 40.164
+},
+{
+"word": "into",
+"raw": "into",
+"start": 40.164,
+"end": 40.66
+},
+{
+"word": "power",
+"raw": "power",
+"start": 40.66,
+"end": 41.156
+},
+{
+"word": "lines",
+"raw": "lines.",
+"start": 41.156,
+"end": 41.652
+},
+{
+"word": "A",
+"raw": "A",
+"start": 41.953,
+"end": 42.161
+},
+{
+"word": "whole",
+"raw": "whole",
+"start": 42.161,
+"end": 42.368
+},
+{
+"word": "neighborhood",
+"raw": "neighborhood",
+"start": 42.368,
+"end": 42.99
+},
+{
+"word": "blacked",
+"raw": "blacked",
+"start": 42.99,
+"end": 43.405
+},
+{
+"word": "out",
+"raw": "out.",
+"start": 43.405,
+"end": 43.612
+},
+{
+"word": "Police",
+"raw": "Police",
+"start": 43.612,
+"end": 44.027
+},
+{
+"word": "were",
+"raw": "were",
+"start": 44.027,
+"end": 44.234
+},
+{
+"word": "waiting",
+"raw": "waiting.",
+"start": 44.234,
+"end": 44.649
+},
+{
+"word": "The",
+"raw": "The",
+"start": 45.072,
+"end": 45.372
+},
+{
+"word": "fine",
+"raw": "fine?",
+"start": 45.372,
+"end": 45.671
+},
+{
+"word": "Fifteen",
+"raw": "Fifteen",
+"start": 46.706,
+"end": 47.156
+},
+{
+"word": "hundred",
+"raw": "hundred",
+"start": 47.156,
+"end": 47.606
+},
+{
+"word": "dollars",
+"raw": "dollars.",
+"start": 47.606,
+"end": 48.056
+},
+{
+"word": "Why",
+"raw": "Why",
+"start": 48.3,
+"end": 48.475
+},
+{
+"word": "do",
+"raw": "do",
+"start": 48.475,
+"end": 48.651
+},
+{
+"word": "it",
+"raw": "it?",
+"start": 48.651,
+"end": 48.826
+},
+{
+"word": "He",
+"raw": "He",
+"start": 49.276,
+"end": 49.493
+},
+{
+"word": "said",
+"raw": "said",
+"start": 49.493,
+"end": 49.711
+},
+{
+"word": "a",
+"raw": "a",
+"start": 49.711,
+"end": 49.929
+},
+{
+"word": "man",
+"raw": "man",
+"start": 49.929,
+"end": 50.147
+},
+{
+"word": "can't",
+"raw": "can't",
+"start": 50.147,
+"end": 50.365
+},
+{
+"word": "just",
+"raw": "just",
+"start": 50.365,
+"end": 50.582
+},
+{
+"word": "sit",
+"raw": "sit",
+"start": 50.582,
+"end": 50.8
+},
+{
+"word": "around",
+"raw": "around.",
+"start": 50.8,
+"end": 51.236
+},
+{
+"word": "Today",
+"raw": "Today",
+"start": 51.405,
+"end": 51.862
+},
+{
+"word": "that",
+"raw": "that",
+"start": 51.862,
+"end": 52.09
+},
+{
+"word": "chair",
+"raw": "chair",
+"start": 52.09,
+"end": 52.319
+},
+{
+"word": "is",
+"raw": "is",
+"start": 52.319,
+"end": 52.547
+},
+{
+"word": "in",
+"raw": "in",
+"start": 52.547,
+"end": 52.776
+},
+{
+"word": "the",
+"raw": "the",
+"start": 52.776,
+"end": 53.004
+},
+{
+"word": "Smithsonian",
+"raw": "Smithsonian.",
+"start": 53.004,
+"end": 53.689
+},
+{
+"word": "And",
+"raw": "And",
+"start": 54.12,
+"end": 54.369
+},
+{
+"word": "that's",
+"raw": "that's",
+"start": 54.369,
+"end": 54.618
+},
+{
+"word": "how",
+"raw": "how",
+"start": 54.618,
+"end": 54.868
+},
+{
+"word": "a",
+"raw": "a",
+"start": 54.868,
+"end": 55.117
+},
+{
+"word": "man",
+"raw": "man",
+"start": 55.117,
+"end": 55.367
+}
+]
