@@ -1,0 +1,66 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Bangers,200,&H00FFFFFF,&H00FFFFFF,&H00101010,&H96000000,0,0,0,0,100,100,3,0,1,12,8,8,40,40,190,1
+Style: Cap,Poppins,112,&H0000D4FF,&H00FFFFFF,&H00111111,&H64000000,1,0,0,0,100,100,0,0,1,8,5,2,60,60,470,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:02.55,Hook,,0,0,0,,{\fscx60\fscy60\t(0,180,\fscx100\fscy100)}{\c&H3AE8FF&}HE MAILED\N{\c&H3A48F0&\fs224}HIMSELF?!
+Dialogue: 0,0:00:00.32,0:00:01.65,Cap,,0,0,0,,{\k2}{\k22}This {\k22}man {\k44}mailed {\k42}himself
+Dialogue: 0,0:00:01.65,0:00:02.87,Cap,,0,0,0,,{\k2}{\k45}across {\k22}the {\k52}world.
+Dialogue: 0,0:00:02.87,0:00:03.63,Cap,,0,0,0,,{\k2}{\k18}No {\k57}ticket.
+Dialogue: 0,0:00:03.63,0:00:04.36,Cap,,0,0,0,,{\k2}{\k26}No {\k45}seat.
+Dialogue: 0,0:00:04.36,0:00:05.89,Cap,,0,0,0,,{\k2}{\k24}Just {\k24}a {\k47}wooden {\k56}box.
+Dialogue: 0,0:00:05.89,0:00:07.34,Cap,,0,0,0,,{\k2}{\k21}He's {\k21}a {\k62}javelin {\k39}champion,
+Dialogue: 0,0:00:07.34,0:00:08.17,Cap,,0,0,0,,{\k2}{\k21}stuck {\k21}in {\k39}London…
+Dialogue: 0,0:00:08.17,0:00:09.62,Cap,,0,0,0,,{\k2}{\k21}and {\k62}totally {\k60}broke.
+Dialogue: 0,0:00:09.62,0:00:10.73,Cap,,0,0,0,,{\k2}{\k27}A {\k27}flight {\k56}home?
+Dialogue: 0,0:00:10.73,0:00:12.23,Cap,,0,0,0,,{\k2}{\k22}Way {\k22}too {\k103}expensive.
+Dialogue: 0,0:00:12.23,0:00:13.20,Cap,,0,0,0,,{\k2}{\k19}But {\k19}his {\k19}little {\k37}daughter's
+Dialogue: 0,0:00:13.20,0:00:14.56,Cap,,0,0,0,,{\k2}{\k39}birthday {\k19}is {\k76}coming.
+Dialogue: 0,0:00:14.56,0:00:15.68,Cap,,0,0,0,,{\k2}{\k22}So {\k22}his {\k45}buddy {\k20}builds
+Dialogue: 0,0:00:15.68,0:00:16.13,Cap,,0,0,0,,{\k2}{\k22}a {\k20}crate…
+Dialogue: 0,0:00:16.13,0:00:17.48,Cap,,0,0,0,,{\k2}{\k22}the {\k45}biggest {\k22}size {\k43}planes
+Dialogue: 0,0:00:17.48,0:00:18.28,Cap,,0,0,0,,{\k2}{\k78}allow.
+Dialogue: 0,0:00:18.28,0:00:19.57,Cap,,0,0,0,,{\k2}{\k44}Tiny {\k84}problem?
+Dialogue: 0,0:00:19.57,0:00:20.63,Cap,,0,0,0,,{\k2}{\k21}The {\k21}box {\k21}is {\k40}shorter
+Dialogue: 0,0:00:20.63,0:00:22.02,Cap,,0,0,0,,{\k2}{\k21}than {\k21}he {\k94}is.
+Dialogue: 0,0:00:22.30,0:00:23.41,Cap,,0,0,0,,{\k2}{\k22}He {\k44}squeezes {\k22}in {\k20}with
+Dialogue: 0,0:00:23.41,0:00:24.07,Cap,,0,0,0,,{\k2}{\k44}canned {\k20}food,
+Dialogue: 0,0:00:24.07,0:00:24.52,Cap,,0,0,0,,{\k2}{\k42}water…
+Dialogue: 0,0:00:24.52,0:00:26.06,Cap,,0,0,0,,{\k2}{\k22}and {\k44}empty {\k86}bottles.
+Dialogue: 0,0:00:26.06,0:00:27.41,Cap,,0,0,0,,{\k2}{\k22}Why {\k44}empty {\k67}bottles?
+Dialogue: 0,0:00:27.41,0:00:28.26,Cap,,0,0,0,,{\k2}{\k30}…Don't {\k53}ask.
+Dialogue: 0,0:00:28.26,0:00:29.00,Cap,,0,0,0,,{\k2}{\k27}Day {\k45}one:
+Dialogue: 0,0:00:29.00,0:00:29.62,Cap,,0,0,0,,{\k2}{\k31}thick {\k29}fog.
+Dialogue: 0,0:00:29.62,0:00:31.17,Cap,,0,0,0,,{\k2}{\k31}The {\k31}plane {\k31}doesn't {\k60}even
+Dialogue: 0,0:00:31.17,0:00:31.79,Cap,,0,0,0,,{\k2}{\k31}take {\k29}off.
+Dialogue: 0,0:00:31.79,0:00:33.30,Cap,,0,0,0,,{\k2}{\k31}He {\k31}just {\k31}sits {\k56}there.
+Dialogue: 0,0:00:33.30,0:00:34.78,Cap,,0,0,0,,{\k2}{\k40}In {\k40}the {\k65}box.
+Dialogue: 0,0:00:34.78,0:00:35.67,Cap,,0,0,0,,{\k2}{\k18}For {\k18}a {\k18}whole {\k34}extra
+Dialogue: 0,0:00:35.67,0:00:36.19,Cap,,0,0,0,,{\k2}{\k50}day.
+Dialogue: 0,0:00:36.19,0:00:36.39,Cap,,0,0,0,,{\k2}{\k18}Wait,
+Dialogue: 0,0:00:36.39,0:00:37.34,Cap,,0,0,0,,{\k2}{\k20}it {\k20}gets {\k54}worse.
+Dialogue: 0,0:00:37.34,0:00:38.35,Cap,,0,0,0,,{\k2}{\k26}Then {\k73}Paris.
+Dialogue: 0,0:00:38.35,0:00:38.86,Cap,,0,0,0,,{\k2}{\k17}Then {\k32}Bombay…
+Dialogue: 0,0:00:38.86,0:00:39.71,Cap,,0,0,0,,{\k2}{\k17}where {\k34}workers {\k17}leave {\k15}him
+Dialogue: 0,0:00:39.71,0:00:40.58,Cap,,0,0,0,,{\k2}{\k34}upside {\k50}down.
+Dialogue: 0,0:00:40.58,0:00:42.03,Cap,,0,0,0,,{\k2}{\k23}In {\k23}the {\k46}blazing {\k51}sun.
+Dialogue: 0,0:00:42.03,0:00:43.13,Cap,,0,0,0,,{\k2}{\k37}For {\k71}hours.
+Dialogue: 0,0:00:43.13,0:00:44.01,Cap,,0,0,0,,{\k2}{\k44}Sixty-three {\k15}hours {\k27}later…
+Dialogue: 0,0:00:44.01,0:00:45.34,Cap,,0,0,0,,{\k2}{\k15}he {\k15}lands {\k15}in {\k88}Perth.
+Dialogue: 0,0:00:45.61,0:00:47.12,Cap,,0,0,0,,{\k2}{\k28}He {\k28}crawls {\k28}out {\k65}of
+Dialogue: 0,0:00:47.12,0:00:48.23,Cap,,0,0,0,,{\k2}{\k28}the {\k56}cargo {\k26}shed…
+Dialogue: 0,0:00:48.23,0:00:49.07,Cap,,0,0,0,,{\k2}{\k28}sneaks {\k54}away…
+Dialogue: 0,0:00:49.07,0:00:51.25,Cap,,0,0,0,,{\k2}{\k68}and {\k73}hitchhikes {\k74}home.
+Dialogue: 0,0:00:51.25,0:00:52.24,Cap,,0,0,0,,{\k2}{\k20}His {\k40}buddy {\k20}tells {\k18}the
+Dialogue: 0,0:00:52.24,0:00:52.84,Cap,,0,0,0,,{\k2}{\k58}newspapers…
+Dialogue: 0,0:00:52.84,0:00:54.03,Cap,,0,0,0,,{\k2}{\k20}and {\k20}he's {\k20}a {\k58}national
+Dialogue: 0,0:00:54.03,0:00:54.84,Cap,,0,0,0,,{\k2}{\k79}hero.
+Dialogue: 0,0:00:54.84,0:00:56.10,Cap,,0,0,0,,{\k2}{\k39}Cheapest {\k19}trip {\k66}ever.
+Dialogue: 0,0:00:56.10,0:00:57.52,Cap,,0,0,0,,{\k2}{\k34}Just {\k107}ask…
