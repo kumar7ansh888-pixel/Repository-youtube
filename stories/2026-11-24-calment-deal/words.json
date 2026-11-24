@@ -1,0 +1,896 @@
+[
+{
+"word": "He",
+"raw": "He",
+"start": 0.344,
+"end": 0.556
+},
+{
+"word": "bet",
+"raw": "bet",
+"start": 0.556,
+"end": 0.768
+},
+{
+"word": "an",
+"raw": "an",
+"start": 0.768,
+"end": 0.98
+},
+{
+"word": "old",
+"raw": "old",
+"start": 0.98,
+"end": 1.192
+},
+{
+"word": "lady",
+"raw": "lady",
+"start": 1.192,
+"end": 1.616
+},
+{
+"word": "would",
+"raw": "would",
+"start": 1.616,
+"end": 1.828
+},
+{
+"word": "die",
+"raw": "die",
+"start": 1.828,
+"end": 2.04
+},
+{
+"word": "soon",
+"raw": "soon.",
+"start": 2.04,
+"end": 2.252
+},
+{
+"word": "Big",
+"raw": "Big",
+"start": 2.676,
+"end": 2.918
+},
+{
+"word": "mistake",
+"raw": "mistake.",
+"start": 2.918,
+"end": 3.404
+},
+{
+"word": "Huge",
+"raw": "Huge.",
+"start": 3.77,
+"end": 4.077
+},
+{
+"word": "She's",
+"raw": "She's",
+"start": 4.077,
+"end": 4.383
+},
+{
+"word": "ninety",
+"raw": "ninety.",
+"start": 4.383,
+"end": 5.303
+},
+{
+"word": "He's",
+"raw": "He's",
+"start": 5.693,
+"end": 5.935
+},
+{
+"word": "a",
+"raw": "a",
+"start": 5.935,
+"end": 6.176
+},
+{
+"word": "lawyer",
+"raw": "lawyer,",
+"start": 6.176,
+"end": 6.658
+},
+{
+"word": "half",
+"raw": "half",
+"start": 6.658,
+"end": 6.9
+},
+{
+"word": "her",
+"raw": "her",
+"start": 6.9,
+"end": 7.141
+},
+{
+"word": "age",
+"raw": "age.",
+"start": 7.141,
+"end": 7.382
+},
+{
+"word": "The",
+"raw": "The",
+"start": 7.566,
+"end": 7.816
+},
+{
+"word": "deal",
+"raw": "deal?",
+"start": 7.816,
+"end": 8.065
+},
+{
+"word": "He",
+"raw": "He",
+"start": 8.507,
+"end": 8.72
+},
+{
+"word": "pays",
+"raw": "pays",
+"start": 8.72,
+"end": 8.934
+},
+{
+"word": "her",
+"raw": "her",
+"start": 8.934,
+"end": 9.148
+},
+{
+"word": "every",
+"raw": "every",
+"start": 9.148,
+"end": 9.79
+},
+{
+"word": "single",
+"raw": "single",
+"start": 9.79,
+"end": 10.003
+},
+{
+"word": "month",
+"raw": "month\u2026",
+"start": 10.003,
+"end": 10.217
+},
+{
+"word": "and",
+"raw": "and",
+"start": 10.217,
+"end": 10.431
+},
+{
+"word": "when",
+"raw": "when",
+"start": 10.431,
+"end": 10.645
+},
+{
+"word": "she",
+"raw": "she",
+"start": 10.645,
+"end": 10.859
+},
+{
+"word": "dies",
+"raw": "dies,",
+"start": 10.859,
+"end": 11.073
+},
+{
+"word": "her",
+"raw": "her",
+"start": 11.073,
+"end": 11.287
+},
+{
+"word": "apartment",
+"raw": "apartment",
+"start": 11.287,
+"end": 11.928
+},
+{
+"word": "is",
+"raw": "is",
+"start": 11.928,
+"end": 12.142
+},
+{
+"word": "his",
+"raw": "his.",
+"start": 12.142,
+"end": 12.356
+},
+{
+"word": "Easy",
+"raw": "Easy",
+"start": 12.805,
+"end": 13.262
+},
+{
+"word": "money",
+"raw": "money,",
+"start": 13.262,
+"end": 13.72
+},
+{
+"word": "right",
+"raw": "right?",
+"start": 14.155,
+"end": 14.402
+},
+{
+"word": "A",
+"raw": "A",
+"start": 14.402,
+"end": 14.648
+},
+{
+"word": "few",
+"raw": "few",
+"start": 14.648,
+"end": 14.895
+},
+{
+"word": "years",
+"raw": "years,",
+"start": 14.895,
+"end": 15.142
+},
+{
+"word": "tops",
+"raw": "tops.",
+"start": 15.142,
+"end": 15.388
+},
+{
+"word": "Years",
+"raw": "Years",
+"start": 15.628,
+"end": 15.869
+},
+{
+"word": "pass",
+"raw": "pass.",
+"start": 15.869,
+"end": 16.111
+},
+{
+"word": "She's",
+"raw": "She's",
+"start": 16.111,
+"end": 16.352
+},
+{
+"word": "still",
+"raw": "still",
+"start": 16.352,
+"end": 16.593
+},
+{
+"word": "here",
+"raw": "here.",
+"start": 16.593,
+"end": 16.835
+},
+{
+"word": "More",
+"raw": "More",
+"start": 16.835,
+"end": 17.076
+},
+{
+"word": "years",
+"raw": "years.",
+"start": 17.076,
+"end": 17.317
+},
+{
+"word": "She's",
+"raw": "She's",
+"start": 17.659,
+"end": 17.948
+},
+{
+"word": "riding",
+"raw": "riding",
+"start": 17.948,
+"end": 18.526
+},
+{
+"word": "her",
+"raw": "her",
+"start": 18.526,
+"end": 18.815
+},
+{
+"word": "bicycle",
+"raw": "bicycle\u2026",
+"start": 18.815,
+"end": 19.393
+},
+{
+"word": "at",
+"raw": "at",
+"start": 19.393,
+"end": 19.682
+},
+{
+"word": "a",
+"raw": "a",
+"start": 19.682,
+"end": 19.971
+},
+{
+"word": "hundred",
+"raw": "hundred.",
+"start": 19.971,
+"end": 20.549
+},
+{
+"word": "She",
+"raw": "She",
+"start": 20.853,
+"end": 21.108
+},
+{
+"word": "smokes",
+"raw": "smokes.",
+"start": 21.108,
+"end": 21.618
+},
+{
+"word": "Some",
+"raw": "Some",
+"start": 22.59,
+"end": 22.799
+},
+{
+"word": "weeks",
+"raw": "weeks,",
+"start": 22.799,
+"end": 23.008
+},
+{
+"word": "she",
+"raw": "she",
+"start": 23.008,
+"end": 23.218
+},
+{
+"word": "eats",
+"raw": "eats",
+"start": 23.218,
+"end": 23.427
+},
+{
+"word": "a",
+"raw": "a",
+"start": 23.427,
+"end": 23.636
+},
+{
+"word": "kilo",
+"raw": "kilo",
+"start": 23.636,
+"end": 24.054
+},
+{
+"word": "of",
+"raw": "of",
+"start": 24.054,
+"end": 24.264
+},
+{
+"word": "chocolate",
+"raw": "chocolate.",
+"start": 24.264,
+"end": 24.891
+},
+{
+"word": "Every",
+"raw": "Every",
+"start": 25.323,
+"end": 25.95
+},
+{
+"word": "month",
+"raw": "month,",
+"start": 25.95,
+"end": 26.159
+},
+{
+"word": "he",
+"raw": "he",
+"start": 26.159,
+"end": 26.368
+},
+{
+"word": "pays",
+"raw": "pays.",
+"start": 26.368,
+"end": 26.577
+},
+{
+"word": "Every",
+"raw": "Every",
+"start": 26.921,
+"end": 27.633
+},
+{
+"word": "month",
+"raw": "month,",
+"start": 27.633,
+"end": 27.871
+},
+{
+"word": "she's",
+"raw": "she's",
+"start": 27.871,
+"end": 28.109
+},
+{
+"word": "fine",
+"raw": "fine.",
+"start": 28.109,
+"end": 28.346
+},
+{
+"word": "Decades",
+"raw": "Decades",
+"start": 28.764,
+"end": 29.448
+},
+{
+"word": "later",
+"raw": "later\u2026",
+"start": 29.448,
+"end": 29.904
+},
+{
+"word": "he's",
+"raw": "he's",
+"start": 29.904,
+"end": 30.132
+},
+{
+"word": "still",
+"raw": "still",
+"start": 30.132,
+"end": 30.36
+},
+{
+"word": "paying",
+"raw": "paying.",
+"start": 30.36,
+"end": 30.588
+},
+{
+"word": "He",
+"raw": "He",
+"start": 30.588,
+"end": 30.816
+},
+{
+"word": "gets",
+"raw": "gets",
+"start": 30.816,
+"end": 31.044
+},
+{
+"word": "old",
+"raw": "old\u2026",
+"start": 31.044,
+"end": 31.272
+},
+{
+"word": "she",
+"raw": "she",
+"start": 31.272,
+"end": 31.501
+},
+{
+"word": "just",
+"raw": "just",
+"start": 31.501,
+"end": 31.729
+},
+{
+"word": "gets",
+"raw": "gets",
+"start": 31.729,
+"end": 31.957
+},
+{
+"word": "older",
+"raw": "older.",
+"start": 31.957,
+"end": 32.413
+},
+{
+"word": "Wait",
+"raw": "Wait,",
+"start": 32.86,
+"end": 33.164
+},
+{
+"word": "it",
+"raw": "it",
+"start": 33.164,
+"end": 33.468
+},
+{
+"word": "gets",
+"raw": "gets",
+"start": 33.468,
+"end": 33.772
+},
+{
+"word": "worse",
+"raw": "worse.",
+"start": 33.772,
+"end": 34.077
+},
+{
+"word": "The",
+"raw": "The",
+"start": 34.504,
+"end": 34.789
+},
+{
+"word": "lawyer",
+"raw": "lawyer\u2026",
+"start": 34.789,
+"end": 35.36
+},
+{
+"word": "dies",
+"raw": "dies",
+"start": 35.36,
+"end": 35.645
+},
+{
+"word": "first",
+"raw": "first.",
+"start": 35.645,
+"end": 35.93
+},
+{
+"word": "His",
+"raw": "His",
+"start": 36.274,
+"end": 36.482
+},
+{
+"word": "family",
+"raw": "family?",
+"start": 36.482,
+"end": 37.107
+},
+{
+"word": "They",
+"raw": "They",
+"start": 37.107,
+"end": 37.316
+},
+{
+"word": "have",
+"raw": "have",
+"start": 37.316,
+"end": 37.524
+},
+{
+"word": "to",
+"raw": "to",
+"start": 37.524,
+"end": 37.732
+},
+{
+"word": "keep",
+"raw": "keep",
+"start": 37.732,
+"end": 37.941
+},
+{
+"word": "paying",
+"raw": "paying.",
+"start": 37.941,
+"end": 38.149
+},
+{
+"word": "And",
+"raw": "And",
+"start": 38.435,
+"end": 38.675
+},
+{
+"word": "she",
+"raw": "she",
+"start": 38.675,
+"end": 38.916
+},
+{
+"word": "just",
+"raw": "just",
+"start": 38.916,
+"end": 39.157
+},
+{
+"word": "keeps",
+"raw": "keeps",
+"start": 39.157,
+"end": 39.398
+},
+{
+"word": "cashing",
+"raw": "cashing",
+"start": 39.398,
+"end": 39.879
+},
+{
+"word": "the",
+"raw": "the",
+"start": 39.879,
+"end": 40.12
+},
+{
+"word": "checks",
+"raw": "checks.",
+"start": 40.12,
+"end": 40.361
+},
+{
+"word": "She",
+"raw": "She",
+"start": 40.7,
+"end": 40.879
+},
+{
+"word": "becomes",
+"raw": "becomes",
+"start": 40.879,
+"end": 41.413
+},
+{
+"word": "the",
+"raw": "the",
+"start": 41.413,
+"end": 41.591
+},
+{
+"word": "oldest",
+"raw": "oldest",
+"start": 41.591,
+"end": 41.947
+},
+{
+"word": "person",
+"raw": "person",
+"start": 41.947,
+"end": 42.303
+},
+{
+"word": "who",
+"raw": "who",
+"start": 42.303,
+"end": 42.481
+},
+{
+"word": "ever",
+"raw": "ever",
+"start": 42.481,
+"end": 42.837
+},
+{
+"word": "lived",
+"raw": "lived.",
+"start": 42.837,
+"end": 43.194
+},
+{
+"word": "In",
+"raw": "In",
+"start": 44.232,
+"end": 44.425
+},
+{
+"word": "the",
+"raw": "the",
+"start": 44.425,
+"end": 44.618
+},
+{
+"word": "end",
+"raw": "end,",
+"start": 44.618,
+"end": 44.81
+},
+{
+"word": "they",
+"raw": "they",
+"start": 44.984,
+"end": 45.207
+},
+{
+"word": "paid",
+"raw": "paid",
+"start": 45.207,
+"end": 45.43
+},
+{
+"word": "more",
+"raw": "more",
+"start": 45.43,
+"end": 45.653
+},
+{
+"word": "than",
+"raw": "than",
+"start": 45.653,
+"end": 45.876
+},
+{
+"word": "double",
+"raw": "double",
+"start": 45.876,
+"end": 46.099
+},
+{
+"word": "what",
+"raw": "what",
+"start": 46.099,
+"end": 46.322
+},
+{
+"word": "the",
+"raw": "the",
+"start": 46.322,
+"end": 46.545
+},
+{
+"word": "apartment",
+"raw": "apartment",
+"start": 46.545,
+"end": 47.214
+},
+{
+"word": "was",
+"raw": "was",
+"start": 47.214,
+"end": 47.437
+},
+{
+"word": "worth",
+"raw": "worth.",
+"start": 47.437,
+"end": 47.66
+},
+{
+"word": "He",
+"raw": "He",
+"start": 47.66,
+"end": 47.883
+},
+{
+"word": "never",
+"raw": "never",
+"start": 47.883,
+"end": 48.329
+},
+{
+"word": "even",
+"raw": "even",
+"start": 48.329,
+"end": 48.775
+},
+{
+"word": "got",
+"raw": "got",
+"start": 48.775,
+"end": 48.998
+},
+{
+"word": "the",
+"raw": "the",
+"start": 48.998,
+"end": 49.221
+},
+{
+"word": "keys",
+"raw": "keys.",
+"start": 49.221,
+"end": 49.444
+},
+{
+"word": "Her",
+"raw": "Her",
+"start": 49.881,
+"end": 50.094
+},
+{
+"word": "verdict",
+"raw": "verdict?",
+"start": 50.094,
+"end": 50.521
+},
+{
+"word": "In",
+"raw": "\"In",
+"start": 50.819,
+"end": 51.053
+},
+{
+"word": "life",
+"raw": "life,",
+"start": 51.053,
+"end": 51.286
+},
+{
+"word": "one",
+"raw": "one",
+"start": 51.286,
+"end": 51.519
+},
+{
+"word": "sometimes",
+"raw": "sometimes",
+"start": 51.519,
+"end": 52.453
+},
+{
+"word": "makes",
+"raw": "makes",
+"start": 52.453,
+"end": 52.92
+},
+{
+"word": "bad",
+"raw": "bad",
+"start": 52.92,
+"end": 53.153
+},
+{
+"word": "deals",
+"raw": "deals.\"",
+"start": 53.153,
+"end": 53.386
+},
+{
+"word": "He",
+"raw": "He",
+"start": 53.653,
+"end": 53.844
+},
+{
+"word": "sure",
+"raw": "sure",
+"start": 53.844,
+"end": 54.078
+},
+{
+"word": "did",
+"raw": "did.",
+"start": 54.078,
+"end": 54.311
+},
+{
+"word": "He",
+"raw": "He",
+"start": 54.606,
+"end": 54.782
+},
+{
+"word": "bet",
+"raw": "bet\u2026",
+"start": 54.782,
+"end": 54.958
+}
+]

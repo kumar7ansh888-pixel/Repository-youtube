@@ -1,0 +1,69 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Bangers,200,&H00FFFFFF,&H00FFFFFF,&H00101010,&H96000000,0,0,0,0,100,100,3,0,1,12,8,8,40,40,190,1
+Style: Cap,Poppins,112,&H0000D4FF,&H00FFFFFF,&H00111111,&H64000000,1,0,0,0,100,100,0,0,1,8,5,2,60,60,470,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:02.55,Hook,,0,0,0,,{\fscx60\fscy60\t(0,180,\fscx100\fscy100)}{\c&H3AE8FF&}HE BET SHE'D\N{\c&H3A48F0&\fs224}DIE SOON…
+Dialogue: 0,0:00:00.29,0:00:01.14,Cap,,0,0,0,,{\k2}{\k21}He {\k21}bet {\k21}an {\k19}old
+Dialogue: 0,0:00:01.14,0:00:02.63,Cap,,0,0,0,,{\k2}{\k42}lady {\k21}would {\k21}die {\k62}soon.
+Dialogue: 0,0:00:02.63,0:00:03.72,Cap,,0,0,0,,{\k2}{\k24}Big {\k83}mistake.
+Dialogue: 0,0:00:03.72,0:00:04.03,Cap,,0,0,0,,{\k2}{\k29}Huge.
+Dialogue: 0,0:00:04.03,0:00:05.64,Cap,,0,0,0,,{\k2}{\k31}She's {\k129}ninety.
+Dialogue: 0,0:00:05.64,0:00:06.61,Cap,,0,0,0,,{\k2}{\k24}He's {\k24}a {\k46}lawyer,
+Dialogue: 0,0:00:06.61,0:00:07.52,Cap,,0,0,0,,{\k2}{\k24}half {\k24}her {\k41}age.
+Dialogue: 0,0:00:07.52,0:00:08.46,Cap,,0,0,0,,{\k2}{\k25}The {\k67}deal?
+Dialogue: 0,0:00:08.46,0:00:09.74,Cap,,0,0,0,,{\k2}{\k21}He {\k21}pays {\k21}her {\k62}every
+Dialogue: 0,0:00:09.74,0:00:10.17,Cap,,0,0,0,,{\k2}{\k21}single {\k19}month…
+Dialogue: 0,0:00:10.17,0:00:11.02,Cap,,0,0,0,,{\k2}{\k21}and {\k21}when {\k21}she {\k19}dies,
+Dialogue: 0,0:00:11.02,0:00:12.75,Cap,,0,0,0,,{\k2}{\k21}her {\k64}apartment {\k21}is {\k64}his.
+Dialogue: 0,0:00:12.75,0:00:14.10,Cap,,0,0,0,,{\k2}{\k46}Easy {\k87}money,
+Dialogue: 0,0:00:14.10,0:00:14.35,Cap,,0,0,0,,{\k2}{\k23}right?
+Dialogue: 0,0:00:14.35,0:00:15.09,Cap,,0,0,0,,{\k2}{\k25}A {\k25}few {\k23}years,
+Dialogue: 0,0:00:15.09,0:00:15.58,Cap,,0,0,0,,{\k2}{\k47}tops.
+Dialogue: 0,0:00:15.58,0:00:16.06,Cap,,0,0,0,,{\k2}{\k24}Years {\k22}pass.
+Dialogue: 0,0:00:16.06,0:00:16.79,Cap,,0,0,0,,{\k2}{\k24}She's {\k24}still {\k22}here.
+Dialogue: 0,0:00:16.79,0:00:17.61,Cap,,0,0,0,,{\k2}{\k24}More {\k56}years.
+Dialogue: 0,0:00:17.61,0:00:19.34,Cap,,0,0,0,,{\k2}{\k29}She's {\k58}riding {\k29}her {\k56}bicycle…
+Dialogue: 0,0:00:19.34,0:00:20.80,Cap,,0,0,0,,{\k2}{\k29}at {\k29}a {\k86}hundred.
+Dialogue: 0,0:00:20.80,0:00:22.32,Cap,,0,0,0,,{\k2}{\k25}She {\k124}smokes.
+Dialogue: 0,0:00:22.54,0:00:22.96,Cap,,0,0,0,,{\k2}{\k21}Some {\k19}weeks,
+Dialogue: 0,0:00:22.96,0:00:24.00,Cap,,0,0,0,,{\k2}{\k21}she {\k21}eats {\k21}a {\k40}kilo
+Dialogue: 0,0:00:24.00,0:00:25.27,Cap,,0,0,0,,{\k2}{\k21}of {\k104}chocolate.
+Dialogue: 0,0:00:25.27,0:00:26.11,Cap,,0,0,0,,{\k2}{\k63}Every {\k19}month,
+Dialogue: 0,0:00:26.11,0:00:26.87,Cap,,0,0,0,,{\k2}{\k21}he {\k53}pays.
+Dialogue: 0,0:00:26.87,0:00:27.82,Cap,,0,0,0,,{\k2}{\k71}Every {\k22}month,
+Dialogue: 0,0:00:27.82,0:00:28.71,Cap,,0,0,0,,{\k2}{\k24}she's {\k63}fine.
+Dialogue: 0,0:00:28.71,0:00:29.85,Cap,,0,0,0,,{\k2}{\k68}Decades {\k44}later…
+Dialogue: 0,0:00:29.85,0:00:30.54,Cap,,0,0,0,,{\k2}{\k23}he's {\k23}still {\k21}paying.
+Dialogue: 0,0:00:30.54,0:00:31.22,Cap,,0,0,0,,{\k2}{\k23}He {\k23}gets {\k21}old…
+Dialogue: 0,0:00:31.22,0:00:32.81,Cap,,0,0,0,,{\k2}{\k23}she {\k23}just {\k23}gets {\k88}older.
+Dialogue: 0,0:00:32.81,0:00:33.11,Cap,,0,0,0,,{\k2}{\k28}Wait,
+Dialogue: 0,0:00:33.11,0:00:34.45,Cap,,0,0,0,,{\k2}{\k30}it {\k30}gets {\k71}worse.
+Dialogue: 0,0:00:34.45,0:00:35.31,Cap,,0,0,0,,{\k2}{\k29}The {\k55}lawyer…
+Dialogue: 0,0:00:35.31,0:00:36.22,Cap,,0,0,0,,{\k2}{\k29}dies {\k61}first.
+Dialogue: 0,0:00:36.22,0:00:37.06,Cap,,0,0,0,,{\k2}{\k21}His {\k61}family?
+Dialogue: 0,0:00:37.06,0:00:37.89,Cap,,0,0,0,,{\k2}{\k21}They {\k21}have {\k21}to {\k19}keep
+Dialogue: 0,0:00:37.89,0:00:38.39,Cap,,0,0,0,,{\k2}{\k47}paying.
+Dialogue: 0,0:00:38.39,0:00:39.35,Cap,,0,0,0,,{\k2}{\k24}And {\k24}she {\k24}just {\k22}keeps
+Dialogue: 0,0:00:39.35,0:00:40.65,Cap,,0,0,0,,{\k2}{\k48}cashing {\k24}the {\k56}checks.
+Dialogue: 0,0:00:40.65,0:00:41.90,Cap,,0,0,0,,{\k2}{\k18}She {\k53}becomes {\k18}the {\k34}oldest
+Dialogue: 0,0:00:41.90,0:00:43.89,Cap,,0,0,0,,{\k2}{\k36}person {\k18}who {\k36}ever {\k109}lived.
+Dialogue: 0,0:00:44.18,0:00:44.93,Cap,,0,0,0,,{\k2}{\k19}In {\k19}the {\k35}end,
+Dialogue: 0,0:00:44.93,0:00:45.83,Cap,,0,0,0,,{\k2}{\k22}they {\k22}paid {\k22}more {\k20}than
+Dialogue: 0,0:00:45.83,0:00:47.16,Cap,,0,0,0,,{\k2}{\k22}double {\k22}what {\k22}the {\k65}apartment
+Dialogue: 0,0:00:47.16,0:00:47.61,Cap,,0,0,0,,{\k2}{\k22}was {\k20}worth.
+Dialogue: 0,0:00:47.61,0:00:48.95,Cap,,0,0,0,,{\k2}{\k22}He {\k45}never {\k45}even {\k20}got
+Dialogue: 0,0:00:48.95,0:00:49.83,Cap,,0,0,0,,{\k2}{\k22}the {\k64}keys.
+Dialogue: 0,0:00:49.83,0:00:50.77,Cap,,0,0,0,,{\k2}{\k21}Her {\k71}verdict?
+Dialogue: 0,0:00:50.77,0:00:51.24,Cap,,0,0,0,,{\k2}{\k23}In {\k21}life,
+Dialogue: 0,0:00:51.24,0:00:53.10,Cap,,0,0,0,,{\k2}{\k23}one {\k93}sometimes {\k47}makes {\k21}bad
+Dialogue: 0,0:00:53.10,0:00:53.60,Cap,,0,0,0,,{\k2}{\k48}deals.
+Dialogue: 0,0:00:53.60,0:00:54.56,Cap,,0,0,0,,{\k2}{\k19}He {\k23}sure {\k51}did.
+Dialogue: 0,0:00:54.56,0:00:55.66,Cap,,0,0,0,,{\k2}{\k18}He {\k91}bet…
