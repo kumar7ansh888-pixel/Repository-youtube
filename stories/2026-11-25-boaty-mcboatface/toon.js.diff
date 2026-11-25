@@ -1,0 +1,11 @@
+--- engine/render/lib/toon.js	2026-11-23 10:38:42.248373572 +0530
++++ /home/claude/work/2026-11-23-mailed-himself/render/lib/toon.js	2026-11-23 10:49:34.208645479 +0530
+@@ -690,7 +690,7 @@
+     const R0 = [300 + 47 * u, torsoBot + 0.12 * HH], R1 = [300 + 64 * u, crown - 0.32 * HH];
+     const rifle = !!o.rifle && (mode === "march" || mode === "stand" || mode === "stroll");
+     const arms = [];
+-    if (mode === "sit")
++    if (mode === "sit" && !opts.arms)
+         for (const side of [-1, 1])
+             arms.push({ pts: [sh(side), [tcx + side * (1.1 * T.a + 6 * u), sh(side)[1] + 0.4 * HH], [tcx + side * (1.2 * T.a + 10 * u), torsoBot + 0.04 * HH]], front: false });
+     else if (mode === "fall")

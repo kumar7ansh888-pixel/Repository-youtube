@@ -1,0 +1,64 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Bangers,200,&H00FFFFFF,&H00FFFFFF,&H00101010,&H96000000,0,0,0,0,100,100,3,0,1,12,8,8,40,40,190,1
+Style: Cap,Poppins,112,&H0000D4FF,&H00FFFFFF,&H00111111,&H64000000,1,0,0,0,100,100,0,0,1,8,5,2,60,60,470,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:02.55,Hook,,0,0,0,,{\fscx60\fscy60\t(0,180,\fscx100\fscy100)}{\c&H3AE8FF&}THE INTERNET\N{\c&H3A48F0&\fs224}NAMED A SHIP
+Dialogue: 0,0:00:00.32,0:00:01.42,Cap,,0,0,0,,{\k2}{\k18}They {\k18}let {\k18}the {\k53}internet
+Dialogue: 0,0:00:01.42,0:00:02.31,Cap,,0,0,0,,{\k2}{\k18}name {\k18}a {\k50}ship.
+Dialogue: 0,0:00:02.31,0:00:03.48,Cap,,0,0,0,,{\k2}{\k25}Big {\k90}mistake.
+Dialogue: 0,0:00:03.48,0:00:05.13,Cap,,0,0,0,,{\k2}{\k24}A {\k47}brand-new {\k47}polar {\k45}research
+Dialogue: 0,0:00:05.13,0:00:05.67,Cap,,0,0,0,,{\k2}{\k52}ship…
+Dialogue: 0,0:00:05.67,0:00:07.46,Cap,,0,0,0,,{\k2}{\k24}two {\k47}hundred {\k47}million {\k59}pounds.
+Dialogue: 0,0:00:07.46,0:00:08.55,Cap,,0,0,0,,{\k2}{\k22}The {\k44}scientists {\k22}ask {\k20}the
+Dialogue: 0,0:00:08.55,0:00:10.10,Cap,,0,0,0,,{\k2}{\k44}public {\k22}for {\k22}a {\k65}name.
+Dialogue: 0,0:00:10.10,0:00:11.80,Cap,,0,0,0,,{\k2}{\k21}A {\k42}radio {\k64}presenter {\k40}suggests
+Dialogue: 0,0:00:11.80,0:00:12.01,Cap,,0,0,0,,{\k2}{\k19}one…
+Dialogue: 0,0:00:12.01,0:00:12.99,Cap,,0,0,0,,{\k2}{\k21}as {\k21}a {\k53}joke.
+Dialogue: 0,0:00:12.99,0:00:14.51,Cap,,0,0,0,,{\k2}{\k55}Boaty {\k95}McBoatface.
+Dialogue: 0,0:00:14.51,0:00:16.00,Cap,,0,0,0,,{\k2}{\k21}The {\k64}internet {\k43}loses {\k19}its
+Dialogue: 0,0:00:16.00,0:00:16.58,Cap,,0,0,0,,{\k2}{\k55}mind.
+Dialogue: 0,0:00:16.58,0:00:17.70,Cap,,0,0,0,,{\k2}{\k37}Boaty {\k19}gets {\k37}over {\k17}a
+Dialogue: 0,0:00:17.70,0:00:19.19,Cap,,0,0,0,,{\k2}{\k37}hundred {\k19}and {\k56}twenty-four {\k35}thousand
+Dialogue: 0,0:00:19.19,0:00:19.81,Cap,,0,0,0,,{\k2}{\k60}votes.
+Dialogue: 0,0:00:19.81,0:00:20.96,Cap,,0,0,0,,{\k2}{\k53}Second {\k60}place?
+Dialogue: 0,0:00:20.96,0:00:22.69,Cap,,0,0,0,,{\k2}{\k25}Not {\k50}even {\k96}close.
+Dialogue: 0,0:00:23.00,0:00:24.14,Cap,,0,0,0,,{\k2}{\k40}Other {\k71}entries?
+Dialogue: 0,0:00:24.14,0:00:25.69,Cap,,0,0,0,,{\k2}{\k24}It's {\k48}Bloody {\k24}Cold {\k58}Here.
+Dialogue: 0,0:00:25.69,0:00:26.62,Cap,,0,0,0,,{\k2}{\k23}I {\k23}Like {\k23}Big {\k21}Boats
+Dialogue: 0,0:00:26.62,0:00:28.08,Cap,,0,0,0,,{\k2}{\k23}and {\k23}I {\k47}Cannot {\k51}Lie.
+Dialogue: 0,0:00:28.08,0:00:28.70,Cap,,0,0,0,,{\k2}{\k21}The {\k21}joke {\k19}guy?
+Dialogue: 0,0:00:28.70,0:00:30.34,Cap,,0,0,0,,{\k2}{\k21}He {\k141}apologizes.
+Dialogue: 0,0:00:30.34,0:00:31.58,Cap,,0,0,0,,{\k2}{\k21}Then {\k21}the {\k21}science {\k60}minister
+Dialogue: 0,0:00:31.58,0:00:32.41,Cap,,0,0,0,,{\k2}{\k21}steps {\k60}in.
+Dialogue: 0,0:00:32.41,0:00:33.49,Cap,,0,0,0,,{\k2}{\k18}He {\k18}wants {\k54}something {\k16}more…
+Dialogue: 0,0:00:33.49,0:00:34.28,Cap,,0,0,0,,{\k2}{\k77}suitable.
+Dialogue: 0,0:00:34.28,0:00:35.03,Cap,,0,0,0,,{\k2}{\k19}So {\k19}the {\k19}ship {\k17}gets
+Dialogue: 0,0:00:35.03,0:00:36.33,Cap,,0,0,0,,{\k2}{\k37}named {\k37}after {\k19}Sir {\k35}David
+Dialogue: 0,0:00:36.33,0:00:37.47,Cap,,0,0,0,,{\k2}{\k111}Attenborough.
+Dialogue: 0,0:00:37.47,0:00:38.66,Cap,,0,0,0,,{\k2}{\k40}Boaty {\k20}is {\k58}sunk.
+Dialogue: 0,0:00:38.66,0:00:38.88,Cap,,0,0,0,,{\k2}{\k20}Wait,
+Dialogue: 0,0:00:38.88,0:00:40.17,Cap,,0,0,0,,{\k2}{\k22}it {\k22}gets {\k83}weirder.
+Dialogue: 0,0:00:40.17,0:00:41.17,Cap,,0,0,0,,{\k2}{\k40}Boaty {\k40}comes {\k18}back…
+Dialogue: 0,0:00:41.17,0:00:42.17,Cap,,0,0,0,,{\k2}{\k20}as {\k20}a {\k20}little {\k38}yellow
+Dialogue: 0,0:00:42.17,0:00:43.90,Cap,,0,0,0,,{\k2}{\k40}robot {\k131}submarine.
+Dialogue: 0,0:00:44.16,0:00:45.44,Cap,,0,0,0,,{\k2}{\k21}And {\k43}Boaty {\k43}dives {\k20}deep
+Dialogue: 0,0:00:45.44,0:00:46.73,Cap,,0,0,0,,{\k2}{\k43}into {\k22}the {\k43}freezing {\k20}sea
+Dialogue: 0,0:00:46.73,0:00:48.20,Cap,,0,0,0,,{\k2}{\k21}near {\k124}Antarctica…
+Dialogue: 0,0:00:48.20,0:00:48.92,Cap,,0,0,0,,{\k2}{\k18}and {\k18}helps {\k18}make {\k16}a
+Dialogue: 0,0:00:48.92,0:00:50.67,Cap,,0,0,0,,{\k2}{\k18}real {\k36}climate {\k120}discovery.
+Dialogue: 0,0:00:50.67,0:00:52.01,Cap,,0,0,0,,{\k2}{\k22}Then {\k45}Sweden {\k45}copies {\k20}the
+Dialogue: 0,0:00:52.01,0:00:52.67,Cap,,0,0,0,,{\k2}{\k64}joke.
+Dialogue: 0,0:00:52.67,0:00:53.75,Cap,,0,0,0,,{\k2}{\k27}Their {\k27}new {\k51}train?
+Dialogue: 0,0:00:53.75,0:00:55.31,Cap,,0,0,0,,{\k2}{\k60}Trainy {\k95}McTrainface.
+Dialogue: 0,0:00:55.31,0:00:56.32,Cap,,0,0,0,,{\k2}{\k40}Lesson {\k60}learned?
+Dialogue: 0,0:00:56.32,0:00:57.00,Cap,,0,0,0,,{\k2}{\k65}Nope.
+Dialogue: 0,0:00:57.00,0:00:58.10,Cap,,0,0,0,,{\k2}{\k44}Because {\k22}once {\k42}again…
+Dialogue: 0,0:00:58.10,0:00:59.27,Cap,,0,0,0,,{\k2}{\k22}they {\k93}let

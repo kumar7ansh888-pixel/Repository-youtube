@@ -1,0 +1,872 @@
+[
+{
+"word": "They",
+"raw": "They",
+"start": 0.374,
+"end": 0.538
+},
+{
+"word": "let",
+"raw": "let",
+"start": 0.558,
+"end": 0.721
+},
+{
+"word": "the",
+"raw": "the",
+"start": 0.741,
+"end": 0.904
+},
+{
+"word": "internet",
+"raw": "internet",
+"start": 0.924,
+"end": 1.453
+},
+{
+"word": "name",
+"raw": "name",
+"start": 1.473,
+"end": 1.636
+},
+{
+"word": "a",
+"raw": "a",
+"start": 1.656,
+"end": 1.82
+},
+{
+"word": "ship",
+"raw": "ship.",
+"start": 1.84,
+"end": 2.003
+},
+{
+"word": "Big",
+"raw": "Big",
+"start": 2.364,
+"end": 2.594
+},
+{
+"word": "mistake",
+"raw": "mistake.",
+"start": 2.614,
+"end": 3.094
+},
+{
+"word": "A",
+"raw": "A",
+"start": 3.53,
+"end": 3.746
+},
+{
+"word": "brand-new",
+"raw": "brand-new",
+"start": 3.766,
+"end": 4.219
+},
+{
+"word": "polar",
+"raw": "polar",
+"start": 4.239,
+"end": 4.692
+},
+{
+"word": "research",
+"raw": "research",
+"start": 4.712,
+"end": 5.164
+},
+{
+"word": "ship",
+"raw": "ship…",
+"start": 5.184,
+"end": 5.401
+},
+{
+"word": "two",
+"raw": "two",
+"start": 5.724,
+"end": 5.94
+},
+{
+"word": "hundred",
+"raw": "hundred",
+"start": 5.96,
+"end": 6.411
+},
+{
+"word": "million",
+"raw": "million",
+"start": 6.431,
+"end": 6.882
+},
+{
+"word": "pounds",
+"raw": "pounds.",
+"start": 6.902,
+"end": 7.118
+},
+{
+"word": "The",
+"raw": "The",
+"start": 7.512,
+"end": 7.71
+},
+{
+"word": "scientists",
+"raw": "scientists",
+"start": 7.73,
+"end": 8.147
+},
+{
+"word": "ask",
+"raw": "ask",
+"start": 8.167,
+"end": 8.366
+},
+{
+"word": "the",
+"raw": "the",
+"start": 8.386,
+"end": 8.584
+},
+{
+"word": "public",
+"raw": "public",
+"start": 8.604,
+"end": 9.021
+},
+{
+"word": "for",
+"raw": "for",
+"start": 9.041,
+"end": 9.239
+},
+{
+"word": "a",
+"raw": "a",
+"start": 9.259,
+"end": 9.458
+},
+{
+"word": "name",
+"raw": "name.",
+"start": 9.478,
+"end": 9.676
+},
+{
+"word": "A",
+"raw": "A",
+"start": 10.153,
+"end": 10.345
+},
+{
+"word": "radio",
+"raw": "radio",
+"start": 10.365,
+"end": 10.77
+},
+{
+"word": "presenter",
+"raw": "presenter",
+"start": 10.79,
+"end": 11.407
+},
+{
+"word": "suggests",
+"raw": "suggests",
+"start": 11.427,
+"end": 11.832
+},
+{
+"word": "one",
+"raw": "one…",
+"start": 11.851,
+"end": 12.044
+},
+{
+"word": "as",
+"raw": "as",
+"start": 12.064,
+"end": 12.256
+},
+{
+"word": "a",
+"raw": "a",
+"start": 12.276,
+"end": 12.468
+},
+{
+"word": "joke",
+"raw": "joke.",
+"start": 12.488,
+"end": 12.681
+},
+{
+"word": "Boaty",
+"raw": "Boaty",
+"start": 13.042,
+"end": 13.574
+},
+{
+"word": "McBoatface",
+"raw": "McBoatface.",
+"start": 13.594,
+"end": 14.126
+},
+{
+"word": "The",
+"raw": "The",
+"start": 14.56,
+"end": 14.753
+},
+{
+"word": "internet",
+"raw": "internet",
+"start": 14.773,
+"end": 15.394
+},
+{
+"word": "loses",
+"raw": "loses",
+"start": 15.414,
+"end": 15.821
+},
+{
+"word": "its",
+"raw": "its",
+"start": 15.841,
+"end": 16.034
+},
+{
+"word": "mind",
+"raw": "mind.",
+"start": 16.054,
+"end": 16.248
+},
+{
+"word": "Boaty",
+"raw": "Boaty",
+"start": 16.626,
+"end": 16.98
+},
+{
+"word": "gets",
+"raw": "gets",
+"start": 17.0,
+"end": 17.167
+},
+{
+"word": "over",
+"raw": "over",
+"start": 17.187,
+"end": 17.541
+},
+{
+"word": "a",
+"raw": "a",
+"start": 17.561,
+"end": 17.728
+},
+{
+"word": "hundred",
+"raw": "hundred",
+"start": 17.748,
+"end": 18.102
+},
+{
+"word": "and",
+"raw": "and",
+"start": 18.122,
+"end": 18.289
+},
+{
+"word": "twenty-four",
+"raw": "twenty-four",
+"start": 18.309,
+"end": 18.85
+},
+{
+"word": "thousand",
+"raw": "thousand",
+"start": 18.87,
+"end": 19.224
+},
+{
+"word": "votes",
+"raw": "votes.",
+"start": 19.244,
+"end": 19.598
+},
+{
+"word": "Second",
+"raw": "Second",
+"start": 19.861,
+"end": 20.37
+},
+{
+"word": "place",
+"raw": "place?",
+"start": 20.39,
+"end": 20.635
+},
+{
+"word": "Not",
+"raw": "Not",
+"start": 21.013,
+"end": 21.241
+},
+{
+"word": "even",
+"raw": "even",
+"start": 21.261,
+"end": 21.738
+},
+{
+"word": "close",
+"raw": "close.",
+"start": 21.758,
+"end": 21.986
+},
+{
+"word": "Other",
+"raw": "Other",
+"start": 23.055,
+"end": 23.439
+},
+{
+"word": "entries",
+"raw": "entries?",
+"start": 23.459,
+"end": 23.843
+},
+{
+"word": "It's",
+"raw": "\"It's",
+"start": 24.187,
+"end": 24.404
+},
+{
+"word": "Bloody",
+"raw": "Bloody",
+"start": 24.424,
+"end": 24.879
+},
+{
+"word": "Cold",
+"raw": "Cold",
+"start": 24.899,
+"end": 25.116
+},
+{
+"word": "Here",
+"raw": "Here.\"",
+"start": 25.136,
+"end": 25.354
+},
+{
+"word": "I",
+"raw": "\"I",
+"start": 25.737,
+"end": 25.95
+},
+{
+"word": "Like",
+"raw": "Like",
+"start": 25.97,
+"end": 26.184
+},
+{
+"word": "Big",
+"raw": "Big",
+"start": 26.204,
+"end": 26.417
+},
+{
+"word": "Boats",
+"raw": "Boats",
+"start": 26.437,
+"end": 26.65
+},
+{
+"word": "and",
+"raw": "and",
+"start": 26.67,
+"end": 26.884
+},
+{
+"word": "I",
+"raw": "I",
+"start": 26.904,
+"end": 27.117
+},
+{
+"word": "Cannot",
+"raw": "Cannot",
+"start": 27.137,
+"end": 27.584
+},
+{
+"word": "Lie",
+"raw": "Lie.\"",
+"start": 27.604,
+"end": 27.818
+},
+{
+"word": "The",
+"raw": "The",
+"start": 28.132,
+"end": 28.318
+},
+{
+"word": "joke",
+"raw": "joke",
+"start": 28.338,
+"end": 28.525
+},
+{
+"word": "guy",
+"raw": "guy?",
+"start": 28.545,
+"end": 28.731
+},
+{
+"word": "He",
+"raw": "He",
+"start": 28.751,
+"end": 28.938
+},
+{
+"word": "apologizes",
+"raw": "apologizes.",
+"start": 28.958,
+"end": 29.97
+},
+{
+"word": "Then",
+"raw": "Then",
+"start": 30.387,
+"end": 30.574
+},
+{
+"word": "the",
+"raw": "the",
+"start": 30.594,
+"end": 30.781
+},
+{
+"word": "science",
+"raw": "science",
+"start": 30.801,
+"end": 30.988
+},
+{
+"word": "minister",
+"raw": "minister",
+"start": 31.008,
+"end": 31.609
+},
+{
+"word": "steps",
+"raw": "steps",
+"start": 31.629,
+"end": 31.816
+},
+{
+"word": "in",
+"raw": "in.",
+"start": 31.836,
+"end": 32.023
+},
+{
+"word": "He",
+"raw": "He",
+"start": 32.458,
+"end": 32.618
+},
+{
+"word": "wants",
+"raw": "wants",
+"start": 32.638,
+"end": 32.799
+},
+{
+"word": "something",
+"raw": "something",
+"start": 32.819,
+"end": 33.341
+},
+{
+"word": "more",
+"raw": "more…",
+"start": 33.361,
+"end": 33.522
+},
+{
+"word": "suitable",
+"raw": "suitable.",
+"start": 33.542,
+"end": 33.883
+},
+{
+"word": "So",
+"raw": "So",
+"start": 34.33,
+"end": 34.497
+},
+{
+"word": "the",
+"raw": "the",
+"start": 34.517,
+"end": 34.684
+},
+{
+"word": "ship",
+"raw": "ship",
+"start": 34.704,
+"end": 34.87
+},
+{
+"word": "gets",
+"raw": "gets",
+"start": 34.89,
+"end": 35.057
+},
+{
+"word": "named",
+"raw": "named",
+"start": 35.077,
+"end": 35.431
+},
+{
+"word": "after",
+"raw": "after",
+"start": 35.451,
+"end": 35.804
+},
+{
+"word": "Sir",
+"raw": "Sir",
+"start": 35.824,
+"end": 35.991
+},
+{
+"word": "David",
+"raw": "David",
+"start": 36.011,
+"end": 36.364
+},
+{
+"word": "Attenborough",
+"raw": "Attenborough.",
+"start": 36.384,
+"end": 37.111
+},
+{
+"word": "Boaty",
+"raw": "Boaty",
+"start": 37.516,
+"end": 37.893
+},
+{
+"word": "is",
+"raw": "is",
+"start": 37.913,
+"end": 38.092
+},
+{
+"word": "sunk",
+"raw": "sunk.",
+"start": 38.112,
+"end": 38.291
+},
+{
+"word": "Wait",
+"raw": "Wait,",
+"start": 38.713,
+"end": 38.912
+},
+{
+"word": "it",
+"raw": "it",
+"start": 38.932,
+"end": 39.131
+},
+{
+"word": "gets",
+"raw": "gets",
+"start": 39.151,
+"end": 39.35
+},
+{
+"word": "weirder",
+"raw": "weirder.",
+"start": 39.37,
+"end": 39.788
+},
+{
+"word": "Boaty",
+"raw": "Boaty",
+"start": 40.221,
+"end": 40.6
+},
+{
+"word": "comes",
+"raw": "comes",
+"start": 40.62,
+"end": 40.999
+},
+{
+"word": "back",
+"raw": "back…",
+"start": 41.019,
+"end": 41.199
+},
+{
+"word": "as",
+"raw": "as",
+"start": 41.219,
+"end": 41.399
+},
+{
+"word": "a",
+"raw": "a",
+"start": 41.419,
+"end": 41.598
+},
+{
+"word": "little",
+"raw": "little",
+"start": 41.618,
+"end": 41.798
+},
+{
+"word": "yellow",
+"raw": "yellow",
+"start": 41.818,
+"end": 42.198
+},
+{
+"word": "robot",
+"raw": "robot",
+"start": 42.218,
+"end": 42.597
+},
+{
+"word": "submarine",
+"raw": "submarine.",
+"start": 42.617,
+"end": 43.196
+},
+{
+"word": "And",
+"raw": "And",
+"start": 44.207,
+"end": 44.401
+},
+{
+"word": "Boaty",
+"raw": "Boaty",
+"start": 44.421,
+"end": 44.83
+},
+{
+"word": "dives",
+"raw": "dives",
+"start": 44.85,
+"end": 45.258
+},
+{
+"word": "deep",
+"raw": "deep",
+"start": 45.278,
+"end": 45.473
+},
+{
+"word": "into",
+"raw": "into",
+"start": 45.493,
+"end": 45.901
+},
+{
+"word": "the",
+"raw": "the",
+"start": 45.921,
+"end": 46.116
+},
+{
+"word": "freezing",
+"raw": "freezing",
+"start": 46.136,
+"end": 46.544
+},
+{
+"word": "sea",
+"raw": "sea",
+"start": 46.564,
+"end": 46.759
+},
+{
+"word": "near",
+"raw": "near",
+"start": 46.779,
+"end": 46.973
+},
+{
+"word": "Antarctica",
+"raw": "Antarctica…",
+"start": 46.993,
+"end": 47.83
+},
+{
+"word": "and",
+"raw": "and",
+"start": 48.253,
+"end": 48.411
+},
+{
+"word": "helps",
+"raw": "helps",
+"start": 48.431,
+"end": 48.589
+},
+{
+"word": "make",
+"raw": "make",
+"start": 48.609,
+"end": 48.768
+},
+{
+"word": "a",
+"raw": "a",
+"start": 48.788,
+"end": 48.946
+},
+{
+"word": "real",
+"raw": "real",
+"start": 48.966,
+"end": 49.124
+},
+{
+"word": "climate",
+"raw": "climate",
+"start": 49.144,
+"end": 49.481
+},
+{
+"word": "discovery",
+"raw": "discovery.",
+"start": 49.501,
+"end": 50.194
+},
+{
+"word": "Then",
+"raw": "Then",
+"start": 50.723,
+"end": 50.925
+},
+{
+"word": "Sweden",
+"raw": "Sweden",
+"start": 50.945,
+"end": 51.37
+},
+{
+"word": "copies",
+"raw": "copies",
+"start": 51.39,
+"end": 51.815
+},
+{
+"word": "the",
+"raw": "the",
+"start": 51.835,
+"end": 52.038
+},
+{
+"word": "joke",
+"raw": "joke.",
+"start": 52.058,
+"end": 52.26
+},
+{
+"word": "Their",
+"raw": "Their",
+"start": 52.718,
+"end": 52.972
+},
+{
+"word": "new",
+"raw": "new",
+"start": 52.992,
+"end": 53.245
+},
+{
+"word": "train",
+"raw": "train?",
+"start": 53.265,
+"end": 53.518
+},
+{
+"word": "Trainy",
+"raw": "Trainy",
+"start": 53.799,
+"end": 54.375
+},
+{
+"word": "McTrainface",
+"raw": "McTrainface.",
+"start": 54.395,
+"end": 54.972
+},
+{
+"word": "Lesson",
+"raw": "Lesson",
+"start": 55.36,
+"end": 55.737
+},
+{
+"word": "learned",
+"raw": "learned?",
+"start": 55.757,
+"end": 56.134
+},
+{
+"word": "Nope",
+"raw": "Nope.",
+"start": 56.374,
+"end": 56.647
+},
+{
+"word": "Because",
+"raw": "Because",
+"start": 57.047,
+"end": 57.467
+},
+{
+"word": "once",
+"raw": "once",
+"start": 57.487,
+"end": 57.687
+},
+{
+"word": "again",
+"raw": "again…",
+"start": 57.707,
+"end": 58.127
+},
+{
+"word": "they",
+"raw": "they",
+"start": 58.147,
+"end": 58.347
+},
+{
+"word": "let",
+"raw": "let",
+"start": 58.367,
+"end": 58.567
+}
+]

@@ -1,0 +1,4 @@
+221c221
+<         const so = { phase: qp(pl.phase ?? 0), expr: pl.expr ?? "neutral", mode: pl.mode === "stand" ? "stand" : "march", blink: lid, stomp: 1, stride: pl.stride ?? 0.8, light, seed };
+---
+>         const so = { phase: qp(pl.phase ?? 0), expr: pl.expr ?? "neutral", mode: pl.mode === "stand" ? "stand" : pl.mode === "swing" ? "swing" : "march", pose: Math.round((pl.pose ?? 0) * 8) / 8, blink: lid, stomp: 1, stride: pl.stride ?? 0.8, light, seed };
