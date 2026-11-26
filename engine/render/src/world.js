@@ -29,6 +29,7 @@ export const NAP = [-3500, 0, 3000];        // 1807: Berthier's estate outside P
 export const RACE = [-1800, 0, 5600];     // 1904: the St. Louis Olympic marathon (dirt road along x at z 0, finish arch + grandstand at x -40, apple orchard x +40..+70)
 export const PIG = [-5600, 0, 5600];       // 1859: San Juan Island, the Pig War (Cutlar's farm at the origin, the strait to +z from z = +40)
 export const BEACH = [-4800, 0, 1400];    // 1970: Florence, Oregon, the exploding whale (whale at the origin along x, sea to -z from z -8, dunes z 14..32 with a flat crest y 2.7, parking lot behind z 36..60)
+export const SUNOL = [-11000, 0, 27000];   // 1981 Sunol, California (Bosco the dog mayor): Main Street along x (road z 6..14), boardwalks z 3..6 / 14..17 (y 0.17), western false-front rows z -10..3 and z 17..30, plaza x -6..6 with a wooden stage (top y 0.9, z -7..-2), 3D hydrant x 9 z 5.4, big oak x -72 z -2
 export const OCEAN = [8000, 0, 0];        // sea starts at x = 8000; New York skyline at x = 12500
 const RY = 2000;
 export const ROOM = { office: [0, RY, 0], bank: [200, RY, 0], living: [400, RY, 0], interro: [600, RY, 0], showroom: [800, RY, 0], oval: [1000, RY, 0], motel: [1200, RY, 0] };
@@ -669,6 +670,50 @@ export class World {
       // rocky headlands far off in the sea, and a long forested hill line behind
       for (const [hx, hz, sx, sy, sz] of [[-700, -260, 260, 70, 140], [820, -320, 300, 90, 160], [-1300, -120, 220, 60, 200]]) { const m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); m.scale(sx, sy, sz); m.translate(wx + hx, -2, wz + hz); b.add(m, L("bwHead", "#6f7a6a")); }
       for (let i = 0; i < 7; i++) { const m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); m.scale(320 + (i % 2) * 140, 60 + (i % 3) * 25, 140); m.translate(wx - 1200 + i * 400, -2, wz + 520 + (i % 2) * 120); b.add(m, L("bwHill" + (i % 2), i % 2 ? "#3f6a50" : "#4a7658")); }
+    }
+
+    // ---- SUNOL (Bosco the dog mayor, x -11000 z 27000, beyond the global grass): a tiny 1980s California hill town. Dry golden grass y 0.10,
+    //      Main Street along x (asphalt z 6..14 y 0.14), wooden boardwalks z 3..6 and z 14..17 (y 0.17), western false-front shops facing the street
+    //      (north row z -10..3, south row z 17..30), a plaza x -6..6 z -10..3 with a wooden stage (top y 0.9, z -7..-2) and a red backdrop at z -7.3,
+    //      a red 3D hydrant at x 9 z 5.4, a plinth at x 13 z 4.6 (top y 1.0), telephone poles, oaks, golden hills.
+    {
+      const [sx, , sz] = SUNOL, L = (k, c) => lam(k, () => ({ color: c }));
+      b.add(quadUp(sx - 1500, sx + 1500, sz - 1500, sz + 1500, 0.10, 60), lam("snGrass", () => ({ map: GT.fieldTex("snGrass", "#c9b46a") })));
+      b.add(quadUp(sx - 300, sx + 300, sz + 6, sz + 14, 0.14, 30), lam("snRoad", () => ({ map: GT.fieldTex("snRoad", "#5c5856") })));
+      for (let x = -300; x < 300; x += 6) b.add(boxGeo(sx + x, 0.14, sz + 9.9, sx + x + 3, 0.147, sz + 10.1, 1), L("snDash", "#f0d860"));
+      const board = lam("snBoard", () => ({ map: GT.fieldTex("snBoard", "#a07a50") }));
+      b.add(boxGeo(sx - 66, 0, sz + 3, sx + 66, 0.17, sz + 6, 12), board); b.add(boxGeo(sx - 66, 0, sz + 14, sx + 66, 0.17, sz + 17, 12), board);
+      b.add(quadUp(sx - 6, sx + 6, sz - 10, sz + 3, 0.13, 6), lam("snPlaza", () => ({ map: GT.fieldTex("snPlaza", "#c8b89a") })));
+      const wallC = ["#d8a860", "#b85a3a", "#7aa0b8", "#e8d8b0", "#8a5a7a", "#6a9a6a", "#c8783a", "#a8b8c8"], trim = L("snTrim", "#f4ecd8"), win = L("snWin", "#3a5a78"), door = L("snDoor", "#5a3a22"), awn = [L("snAwnR", "#c8303a"), L("snAwnG", "#3a7a4a"), L("snAwnB", "#2a4a8a")], post = L("snPost", "#6a4a2a");
+      const shop = (x0, x1, k, north) => { const h = 4.6 + (k % 3) * 0.6, z0 = north ? -10 : 17, z1 = north ? 3 : 30, fz = north ? 3 : 17, d = north ? 1 : -1;
+        b.add(boxGeo(sx + x0, 0, sz + z0, sx + x1, h, sz + z1, 4), L("snWall" + (k % 8), wallC[k % 8]));
+        b.add(boxGeo(sx + x0, h, sz + fz - (north ? 0.25 : 0), sx + x1, h + 1.6, sz + fz + (north ? 0 : 0.25), 2), L("snWall" + (k % 8), wallC[k % 8]));
+        b.add(boxGeo(sx + x0, h + 1.6, sz + fz - 0.35, sx + x1, h + 1.8, sz + fz + 0.35, 2), trim);
+        const w = x1 - x0, dx = sx + x0 + w * 0.5; b.add(boxGeo(dx - 0.6, 0.17, sz + fz - 0.02 * d, dx + 0.6, 2.4, sz + fz + 0.04 * d, 1), door);
+        for (const wx of [x0 + 0.8, x1 - 0.8 - Math.min(2.6, w * 0.3)]) b.add(boxGeo(sx + wx, 0.8, sz + fz - 0.02 * d, sx + wx + Math.min(2.6, w * 0.3), 2.5, sz + fz + 0.05 * d, 1), win);
+        for (let fx = x0 + 1; fx < x1 - 1; fx += 2.4) b.add(boxGeo(sx + fx, 3.0, sz + fz - 0.02 * d, sx + fx + 1.2, 4.0, sz + fz + 0.05 * d, 1), win);
+        b.add(boxGeo(sx + x0 + 0.2, 2.75, sz + fz, sx + x1 - 0.2, 2.85, sz + fz + 2.6 * d, 2), awn[k % 3]);
+        for (const px of [x0 + 0.3, x1 - 0.3]) b.add(boxGeo(sx + px - 0.07, 0.17, sz + fz + 2.5 * d - 0.07, sx + px + 0.07, 2.8, sz + fz + 2.5 * d + 0.07, 1), post); };
+      let k = 0; for (const [a, c] of [[-60, -46], [-45, -33], [-32, -21], [-20, -8], [8, 18], [20, 31], [33, 45], [47, 60]]) shop(a, c, k++, true);
+      for (let x = -60; x < 60; x += 11) shop(x, x + 10.4, k++, false);
+      // plaza: wooden stage + backdrop + steps + bunting poles
+      b.add(boxGeo(sx - 4, 0, sz - 7, sx + 4, 0.9, sz - 2, 2), lam("snStage", () => ({ color: "#9a6a3e" })));
+      b.add(boxGeo(sx - 4.2, 0.88, sz - 7.1, sx + 4.2, 0.95, sz - 1.9, 2), L("snStageTop", "#b8844e"));
+      b.add(boxGeo(sx - 4.3, 0.9, sz - 7.6, sx + 4.3, 4.6, sz - 7.3, 2), L("snBack", "#8a2a3a"));
+      for (let i = 0; i < 3; i++) b.add(boxGeo(sx - 1, 0, sz - 2 + i * 0.3, sx + 1, 0.9 - (i + 1) * 0.28, sz - 1.7 + i * 0.3, 1), L("snStep", "#8a5a32"));
+      for (const px of [-4.4, 4.4]) b.add(cyl(0.08, 0.1, 5, 6, sx + px, 2.5, sz - 1.9), post);
+      // 3D hydrant + statue plinth
+      const red = L("snHyd", "#d8303a"); b.add(cyl(0.16, 0.18, 0.7, 10, sx + 9, 0.52, sz + 5.4), red); { const c = new THREE.SphereGeometry(0.17, 10, 6, 0, Math.PI * 2, 0, Math.PI / 2); c.translate(sx + 9, 0.87, sz + 5.4); b.add(c, red); }
+      b.add(cyl(0.06, 0.06, 0.55, 6, sx + 9, 0.62, sz + 5.4, 0, Math.PI / 2), red);
+      b.add(boxGeo(sx + 12.3, 0.17, sz + 3.9, sx + 13.7, 1.0, sz + 5.3, 1), L("snPlinth", "#d8d4cc")); b.add(boxGeo(sx + 12.2, 0.95, sz + 3.8, sx + 13.8, 1.05, sz + 5.4, 1), L("snPlinthT", "#b8b4ac"));
+      // telephone poles along the south boardwalk
+      for (let x = -60; x <= 60; x += 18) { b.add(cyl(0.12, 0.15, 8, 6, sx + x, 4, sz + 16.6), post); b.add(boxGeo(sx + x - 1.2, 7.2, sz + 16.5, sx + x + 1.2, 7.35, sz + 16.7, 1), post); }
+      // oaks: one big oak west of town (the cat tree), more scattered on the grass
+      const oak = (x, z, s) => { b.add(cyl(0.35 * s, 0.55 * s, 3.4 * s, 7, sx + x, 1.7 * s, sz + z), L("snBark", "#5a4232"));
+        for (let q = 0; q < 6; q++) { const c = new THREE.IcosahedronGeometry(2.2 * s, 1); c.scale(1.3, 0.8, 1.3); c.translate(sx + x + Math.cos(q * 1.9) * 2.2 * s, (4.2 + (q % 3) * 0.8) * s, sz + z + Math.sin(q * 1.9) * 1.6 * s); b.add(c, L("snLeaf" + (q % 2), q % 2 ? "#5a7a3a" : "#6a8a42")); } };
+      oak(-72, -2, 1.1); for (let i = 0; i < 40; i++) oak(-200 + hh(i, 61) * 400, (hh(i, 62) < 0.5 ? -40 - hh(i, 63) * 120 : 50 + hh(i, 63) * 120), 0.8 + hh(i, 64) * 0.6);
+      // golden hills all around
+      for (let i = 0; i < 12; i++) { const m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); const a = (i / 12) * Math.PI * 2; m.scale(340 + (i % 3) * 90, 80 + (i % 4) * 30, 260); m.translate(sx + Math.cos(a) * 700, -2, sz + Math.sin(a) * 700); b.add(m, L("snHill" + (i % 3), ["#c8a860", "#b89a58", "#a8925a"][i % 3])); }
     }
     b.build(R, true, true);
     // New York skyline far across the ocean (flat painted card)

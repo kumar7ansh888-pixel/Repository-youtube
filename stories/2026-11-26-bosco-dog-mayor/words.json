@@ -1,0 +1,866 @@
+[
+{
+"word": "A",
+"raw": "A",
+"start": 0.388,
+"end": 0.596
+},
+{
+"word": "dog",
+"raw": "dog",
+"start": 0.596,
+"end": 0.803
+},
+{
+"word": "won",
+"raw": "won",
+"start": 0.803,
+"end": 1.011
+},
+{
+"word": "an",
+"raw": "an",
+"start": 1.011,
+"end": 1.219
+},
+{
+"word": "election",
+"raw": "election\u2026",
+"start": 1.219,
+"end": 1.842
+},
+{
+"word": "against",
+"raw": "against",
+"start": 1.842,
+"end": 2.257
+},
+{
+"word": "two",
+"raw": "two",
+"start": 2.257,
+"end": 2.465
+},
+{
+"word": "humans",
+"raw": "humans.",
+"start": 2.465,
+"end": 2.88
+},
+{
+"word": "His",
+"raw": "His",
+"start": 3.288,
+"end": 3.586
+},
+{
+"word": "name",
+"raw": "name?",
+"start": 3.586,
+"end": 3.884
+},
+{
+"word": "Bosco",
+"raw": "Bosco.",
+"start": 4.192,
+"end": 4.835
+},
+{
+"word": "Half",
+"raw": "Half",
+"start": 5.089,
+"end": 5.301
+},
+{
+"word": "Labrador",
+"raw": "Labrador,",
+"start": 5.301,
+"end": 5.939
+},
+{
+"word": "half",
+"raw": "half",
+"start": 5.939,
+"end": 6.151
+},
+{
+"word": "Rottweiler",
+"raw": "Rottweiler\u2026",
+"start": 6.151,
+"end": 6.789
+},
+{
+"word": "full",
+"raw": "full",
+"start": 6.789,
+"end": 7.001
+},
+{
+"word": "politician",
+"raw": "politician.",
+"start": 7.001,
+"end": 7.851
+},
+{
+"word": "His",
+"raw": "His",
+"start": 8.114,
+"end": 8.33
+},
+{
+"word": "town",
+"raw": "town",
+"start": 8.33,
+"end": 8.546
+},
+{
+"word": "wanted",
+"raw": "wanted",
+"start": 8.546,
+"end": 8.977
+},
+{
+"word": "an",
+"raw": "an",
+"start": 8.977,
+"end": 9.192
+},
+{
+"word": "honorary",
+"raw": "honorary",
+"start": 9.192,
+"end": 10.055
+},
+{
+"word": "mayor",
+"raw": "mayor.",
+"start": 10.055,
+"end": 10.271
+},
+{
+"word": "Someone",
+"raw": "Someone",
+"start": 10.651,
+"end": 11.065
+},
+{
+"word": "nominated",
+"raw": "nominated",
+"start": 11.065,
+"end": 11.894
+},
+{
+"word": "Bosco",
+"raw": "Bosco\u2026",
+"start": 11.894,
+"end": 12.308
+},
+{
+"word": "as",
+"raw": "as",
+"start": 12.308,
+"end": 12.515
+},
+{
+"word": "a",
+"raw": "a",
+"start": 12.515,
+"end": 12.722
+},
+{
+"word": "joke",
+"raw": "joke.",
+"start": 12.722,
+"end": 12.929
+},
+{
+"word": "Big",
+"raw": "Big",
+"start": 13.295,
+"end": 13.547
+},
+{
+"word": "mistake",
+"raw": "mistake.",
+"start": 13.547,
+"end": 14.051
+},
+{
+"word": "For",
+"raw": "For",
+"start": 14.341,
+"end": 14.534
+},
+{
+"word": "the",
+"raw": "the",
+"start": 14.534,
+"end": 14.727
+},
+{
+"word": "humans",
+"raw": "humans.",
+"start": 14.727,
+"end": 15.114
+},
+{
+"word": "His",
+"raw": "His",
+"start": 15.513,
+"end": 15.776
+},
+{
+"word": "campaign",
+"raw": "campaign",
+"start": 15.776,
+"end": 16.303
+},
+{
+"word": "promise",
+"raw": "promise?",
+"start": 16.303,
+"end": 16.83
+},
+{
+"word": "A",
+"raw": "A",
+"start": 17.154,
+"end": 17.354
+},
+{
+"word": "bone",
+"raw": "bone",
+"start": 17.354,
+"end": 17.554
+},
+{
+"word": "in",
+"raw": "in",
+"start": 17.554,
+"end": 17.753
+},
+{
+"word": "every",
+"raw": "every",
+"start": 17.753,
+"end": 18.352
+},
+{
+"word": "dish",
+"raw": "dish\u2026",
+"start": 18.352,
+"end": 18.551
+},
+{
+"word": "a",
+"raw": "a",
+"start": 18.551,
+"end": 18.751
+},
+{
+"word": "cat",
+"raw": "cat",
+"start": 18.751,
+"end": 18.95
+},
+{
+"word": "in",
+"raw": "in",
+"start": 18.95,
+"end": 19.15
+},
+{
+"word": "every",
+"raw": "every",
+"start": 19.15,
+"end": 19.748
+},
+{
+"word": "tree",
+"raw": "tree\u2026",
+"start": 19.748,
+"end": 19.948
+},
+{
+"word": "and",
+"raw": "and",
+"start": 19.948,
+"end": 20.147
+},
+{
+"word": "a",
+"raw": "a",
+"start": 20.147,
+"end": 20.347
+},
+{
+"word": "fire",
+"raw": "fire",
+"start": 20.347,
+"end": 20.546
+},
+{
+"word": "hydrant",
+"raw": "hydrant",
+"start": 20.546,
+"end": 20.945
+},
+{
+"word": "on",
+"raw": "on",
+"start": 20.945,
+"end": 21.145
+},
+{
+"word": "every",
+"raw": "every",
+"start": 21.145,
+"end": 21.743
+},
+{
+"word": "corner",
+"raw": "corner.",
+"start": 21.743,
+"end": 22.142
+},
+{
+"word": "The",
+"raw": "The",
+"start": 22.609,
+"end": 22.831
+},
+{
+"word": "humans",
+"raw": "humans",
+"start": 22.831,
+"end": 23.276
+},
+{
+"word": "had",
+"raw": "had",
+"start": 23.276,
+"end": 23.498
+},
+{
+"word": "speeches",
+"raw": "speeches.",
+"start": 23.498,
+"end": 23.943
+},
+{
+"word": "Bosco",
+"raw": "Bosco",
+"start": 25.002,
+"end": 25.515
+},
+{
+"word": "had",
+"raw": "had",
+"start": 25.515,
+"end": 25.771
+},
+{
+"word": "a",
+"raw": "a",
+"start": 25.771,
+"end": 26.028
+},
+{
+"word": "tail",
+"raw": "tail.",
+"start": 26.028,
+"end": 26.284
+},
+{
+"word": "Bosco",
+"raw": "Bosco",
+"start": 26.627,
+"end": 27.298
+},
+{
+"word": "wins",
+"raw": "wins.",
+"start": 27.298,
+"end": 27.634
+},
+{
+"word": "The",
+"raw": "The",
+"start": 27.982,
+"end": 28.206
+},
+{
+"word": "humans",
+"raw": "humans",
+"start": 28.206,
+"end": 28.653
+},
+{
+"word": "lose",
+"raw": "lose\u2026",
+"start": 28.653,
+"end": 28.877
+},
+{
+"word": "to",
+"raw": "to",
+"start": 28.877,
+"end": 29.101
+},
+{
+"word": "a",
+"raw": "a",
+"start": 29.101,
+"end": 29.325
+},
+{
+"word": "dog",
+"raw": "dog.",
+"start": 29.325,
+"end": 29.549
+},
+{
+"word": "Mayor",
+"raw": "Mayor",
+"start": 29.956,
+"end": 30.212
+},
+{
+"word": "Bosco",
+"raw": "Bosco",
+"start": 30.212,
+"end": 30.724
+},
+{
+"word": "gets",
+"raw": "gets",
+"start": 30.724,
+"end": 30.981
+},
+{
+"word": "straight",
+"raw": "straight",
+"start": 30.981,
+"end": 31.237
+},
+{
+"word": "to",
+"raw": "to",
+"start": 31.237,
+"end": 31.493
+},
+{
+"word": "work",
+"raw": "work.",
+"start": 31.493,
+"end": 31.749
+},
+{
+"word": "Patrolling",
+"raw": "Patrolling",
+"start": 32.129,
+"end": 32.781
+},
+{
+"word": "Main",
+"raw": "Main",
+"start": 32.781,
+"end": 32.999
+},
+{
+"word": "Street",
+"raw": "Street.",
+"start": 32.999,
+"end": 33.216
+},
+{
+"word": "Greeting",
+"raw": "Greeting",
+"start": 33.48,
+"end": 33.919
+},
+{
+"word": "voters",
+"raw": "voters.",
+"start": 33.919,
+"end": 34.358
+},
+{
+"word": "Hanging",
+"raw": "Hanging",
+"start": 34.559,
+"end": 34.903
+},
+{
+"word": "out",
+"raw": "out",
+"start": 34.903,
+"end": 35.075
+},
+{
+"word": "in",
+"raw": "in",
+"start": 35.075,
+"end": 35.247
+},
+{
+"word": "front",
+"raw": "front",
+"start": 35.247,
+"end": 35.419
+},
+{
+"word": "of",
+"raw": "of",
+"start": 35.419,
+"end": 35.591
+},
+{
+"word": "the",
+"raw": "the",
+"start": 35.591,
+"end": 35.762
+},
+{
+"word": "bar",
+"raw": "bar.",
+"start": 35.762,
+"end": 35.934
+},
+{
+"word": "Bribes",
+"raw": "Bribes?",
+"start": 36.261,
+"end": 36.796
+},
+{
+"word": "Only",
+"raw": "Only",
+"start": 36.796,
+"end": 37.331
+},
+{
+"word": "belly",
+"raw": "belly",
+"start": 37.331,
+"end": 37.866
+},
+{
+"word": "rubs",
+"raw": "rubs.",
+"start": 37.866,
+"end": 38.134
+},
+{
+"word": "Wait",
+"raw": "Wait,",
+"start": 38.486,
+"end": 38.697
+},
+{
+"word": "it",
+"raw": "it",
+"start": 38.697,
+"end": 38.907
+},
+{
+"word": "gets",
+"raw": "gets",
+"start": 38.907,
+"end": 39.117
+},
+{
+"word": "weirder",
+"raw": "weirder.",
+"start": 39.117,
+"end": 39.537
+},
+{
+"word": "China's",
+"raw": "China's",
+"start": 39.938,
+"end": 40.293
+},
+{
+"word": "official",
+"raw": "official",
+"start": 40.293,
+"end": 40.826
+},
+{
+"word": "newspaper",
+"raw": "newspaper",
+"start": 40.826,
+"end": 41.359
+},
+{
+"word": "finds",
+"raw": "finds",
+"start": 41.359,
+"end": 41.537
+},
+{
+"word": "out",
+"raw": "out\u2026",
+"start": 41.537,
+"end": 41.715
+},
+{
+"word": "and",
+"raw": "and",
+"start": 41.715,
+"end": 41.892
+},
+{
+"word": "writes",
+"raw": "writes",
+"start": 41.892,
+"end": 42.248
+},
+{
+"word": "an",
+"raw": "an",
+"start": 42.248,
+"end": 42.425
+},
+{
+"word": "editorial",
+"raw": "editorial",
+"start": 42.425,
+"end": 43.136
+},
+{
+"word": "about",
+"raw": "about",
+"start": 43.136,
+"end": 43.491
+},
+{
+"word": "him",
+"raw": "him.",
+"start": 43.491,
+"end": 43.669
+},
+{
+"word": "Proof",
+"raw": "Proof,",
+"start": 44.674,
+"end": 44.873
+},
+{
+"word": "it",
+"raw": "it",
+"start": 44.873,
+"end": 45.073
+},
+{
+"word": "says",
+"raw": "says,",
+"start": 45.073,
+"end": 45.273
+},
+{
+"word": "that",
+"raw": "that",
+"start": 45.273,
+"end": 45.472
+},
+{
+"word": "American",
+"raw": "American",
+"start": 45.472,
+"end": 46.27
+},
+{
+"word": "democracy",
+"raw": "democracy",
+"start": 46.27,
+"end": 47.069
+},
+{
+"word": "has",
+"raw": "has",
+"start": 47.069,
+"end": 47.268
+},
+{
+"word": "gone",
+"raw": "gone",
+"start": 47.268,
+"end": 47.468
+},
+{
+"word": "to",
+"raw": "to",
+"start": 47.468,
+"end": 47.667
+},
+{
+"word": "the",
+"raw": "the",
+"start": 47.667,
+"end": 47.867
+},
+{
+"word": "dogs",
+"raw": "dogs.",
+"start": 47.867,
+"end": 48.066
+},
+{
+"word": "Bosco",
+"raw": "Bosco?",
+"start": 48.456,
+"end": 49.079
+},
+{
+"word": "Totally",
+"raw": "Totally",
+"start": 49.395,
+"end": 49.944
+},
+{
+"word": "unfazed",
+"raw": "unfazed.",
+"start": 49.944,
+"end": 50.493
+},
+{
+"word": "He",
+"raw": "He",
+"start": 50.85,
+"end": 51.105
+},
+{
+"word": "stays",
+"raw": "stays",
+"start": 51.105,
+"end": 51.36
+},
+{
+"word": "mayor",
+"raw": "mayor",
+"start": 51.36,
+"end": 51.616
+},
+{
+"word": "for",
+"raw": "for",
+"start": 51.616,
+"end": 51.871
+},
+{
+"word": "thirteen",
+"raw": "thirteen",
+"start": 51.871,
+"end": 52.382
+},
+{
+"word": "years",
+"raw": "years\u2026",
+"start": 52.382,
+"end": 52.637
+},
+{
+"word": "until",
+"raw": "until",
+"start": 52.637,
+"end": 53.148
+},
+{
+"word": "the",
+"raw": "the",
+"start": 53.148,
+"end": 53.403
+},
+{
+"word": "day",
+"raw": "day",
+"start": 53.403,
+"end": 53.658
+},
+{
+"word": "he",
+"raw": "he",
+"start": 53.658,
+"end": 53.913
+},
+{
+"word": "dies",
+"raw": "dies.",
+"start": 53.913,
+"end": 54.169
+},
+{
+"word": "Today",
+"raw": "Today,",
+"start": 54.621,
+"end": 55.128
+},
+{
+"word": "he",
+"raw": "he",
+"start": 55.128,
+"end": 55.381
+},
+{
+"word": "has",
+"raw": "has",
+"start": 55.381,
+"end": 55.634
+},
+{
+"word": "his",
+"raw": "his",
+"start": 55.634,
+"end": 55.888
+},
+{
+"word": "own",
+"raw": "own",
+"start": 55.888,
+"end": 56.141
+},
+{
+"word": "bronze",
+"raw": "bronze",
+"start": 56.141,
+"end": 56.394
+},
+{
+"word": "statue",
+"raw": "statue.",
+"start": 56.394,
+"end": 56.901
+},
+{
+"word": "Because",
+"raw": "Because",
+"start": 57.312,
+"end": 57.734
+},
+{
+"word": "once",
+"raw": "once",
+"start": 57.734,
+"end": 57.944
+},
+{
+"word": "upon",
+"raw": "upon",
+"start": 57.944,
+"end": 58.365
+},
+{
+"word": "a",
+"raw": "a",
+"start": 58.365,
+"end": 58.576
+},
+{
+"word": "time",
+"raw": "time\u2026",
+"start": 58.576,
+"end": 58.786
+}
+]

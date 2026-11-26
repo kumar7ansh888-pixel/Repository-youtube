@@ -118,6 +118,23 @@ python3 $P/tools/snapwords.py $P/voice/voice.wav $P/voice/words.json
 
 ## 5. Animate: `render/src/story.js` (+ new sets in `render/src/world.js`)
 
+### 3D visuals (owner, 2026-11-26: "look at how much better its visuals are")
+
+The owner compared our Shorts with a popular cartoon Short (a bridge race in a 3D desert canyon, ~2 s per shot). Its cut rate is
+NOT faster than ours (~2.0 s vs our 1.6 s): the difference is depth and camera movement. From 2026-11-27 every video follows this:
+
+- **Real 3D sets** for every main location: build them in `world.js` (boxes, cylinders, cones, icosahedron foliage, hills; see SUNOL,
+  PARK, GOAT, HIPPO, BEACH), with daylight (`light: "day"`, sunEl ~50) and shadows. The flat painted-wall "rooms" (11-23 to 11-26) are only
+  for a short stylized stinger (drama rays) or an insert (newspaper, typewriter close-up), never for the main locations.
+- **Signs and shop names** are canvas cards stuck flat on the 3D buildings (`normal: [0, 0, 1]`), not painted walls.
+- **Moving camera in every shot**: drone fly-overs/descents, tracking alongside a walking character (camera x moves with the character),
+  ground-level macro, low hero angles, top-down (a `flat: true` card on the ground), orbits (`a` swinging around a point), crane up/down.
+  Look along the street at an angle (30–45°) so the street recedes; never square-on to a building front from 3 m (reads as a flat wall).
+- **Something moves inside every shot** (walking, falling props, confetti, flashes, papers flying, wagging, crowd bouncing).
+- **Billboard cards**: character/prop/caption cards use `bb: true` in the `at().fx` helper (normal turned toward the camera each frame), so
+  orbits and angled cameras never see a card edge-on (see `stories/2026-11-26-bosco-dog-mayor/story.js`).
+- Contact sheet check: no shot may be just a character standing in front of a flat wall; every shot shows depth (foreground + background).
+
 - Copy the structure of the Mike `story.js`: `shot({ at: S("phrase"), light, cam: push(...), stage(t, out) {...} })`,
   one shot per beat, a cut every ~1.5–2 s, about 30–34 shots, something moving in every shot. Phrase lookups match the first occurrence after `a`: use
   two-word phrases when a word repeats ("His name", not "His").
@@ -132,7 +149,7 @@ python3 $P/tools/snapwords.py $P/voice/voice.wav $P/voice/words.json
 - Hook title space: keep the top ~30 % of the first 2.5 s clear; captions sit at ~70 % from the top.
 - New sets go in a NEW area of `world.js`, at least 2 km from everything else. Used areas: Paris x −600..600 z −700..400
   (river z 230–330 across x ±6000), TRAIN x 1500–6000 z 0..1600, FARM/DESERT/TOUR/FEST x 1300–8000 z −6000..−300,
-  OCEAN x ≥ 8000, NAP x −3900..−3100 z 2600..3300, PIG (San Juan Island) x −6200..−5000 z 5100..8600 (strait + hills to z ≈ 8000), RACE (1904 marathon road) x −2300..−1300 z 5200..5900 (dry field quad x ±500 z −400..+300 around [−1800, 5600], hills to z ≈ 4700), BEACH (Oregon exploding whale) sand x −6300..−3300 z 1390..1700, sea plane to −z (z ≈ −1600..1392), pines z 1472..1502, hills z ≈ 1920–2040, indoor rooms at y 2000 (x 0–1200 in engine world.js; story diffs added aqua/press/fiesta at 1400–1800 on 11-17 and war/stage at 1400/1600 on 11-19, not merged: next free x 2000), flying shots at the empty spot [2400, 2000, 0] with a painted sky card. HIPPO (Colombia river) x −12500..−9500 around x −11000 z 0 (beyond the global grass, which ends at x −8000). Free: x −6000..−1500, z 3500..4500 is now tight (NAP, BEACH, RACE); prefer x ≤ −7000 or z ≥ 9000.
+  OCEAN x ≥ 8000, NAP x −3900..−3100 z 2600..3300, PIG (San Juan Island) x −6200..−5000 z 5100..8600 (strait + hills to z ≈ 8000), RACE (1904 marathon road) x −2300..−1300 z 5200..5900 (dry field quad x ±500 z −400..+300 around [−1800, 5600], hills to z ≈ 4700), BEACH (Oregon exploding whale) sand x −6300..−3300 z 1390..1700, sea plane to −z (z ≈ −1600..1392), pines z 1472..1502, hills z ≈ 1920–2040, indoor rooms at y 2000 (x 0–1200 in engine world.js; story diffs added aqua/press/fiesta at 1400–1800 on 11-17 and war/stage at 1400/1600 on 11-19, not merged: next free x 2000), flying shots at the empty spot [2400, 2000, 0] with a painted sky card. SUNOL (Bosco, 2026-11-26) x -11000 z 27000 (Main Street town, in engine world.js). HIPPO (Colombia river) x −12500..−9500 around x −11000 z 0 (beyond the global grass, which ends at x −8000). Free: x −6000..−1500, z 3500..4500 is now tight (NAP, BEACH, RACE); prefer x ≤ −7000 or z ≥ 9000.
   Keep big scenery (mountains) far from every set.
 - Low cameras over a set's own ground quad: do not give it a negative polygonOffsetFactor (the near ground slips past the
   near plane and the global green grass shows through, looks like flicker). Use factor 0 and lift the set ground to
