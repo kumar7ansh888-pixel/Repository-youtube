@@ -30,6 +30,7 @@ export const RACE = [-1800, 0, 5600];     // 1904: the St. Louis Olympic maratho
 export const PIG = [-5600, 0, 5600];       // 1859: San Juan Island, the Pig War (Cutlar's farm at the origin, the strait to +z from z = +40)
 export const BEACH = [-4800, 0, 1400];    // 1970: Florence, Oregon, the exploding whale (whale at the origin along x, sea to -z from z -8, dunes z 14..32 with a flat crest y 2.7, parking lot behind z 36..60)
 export const SUNOL = [-11000, 0, 27000];   // 1981 Sunol, California (Bosco the dog mayor): Main Street along x (road z 6..14), boardwalks z 3..6 / 14..17 (y 0.17), western false-front rows z -10..3 and z 17..30, plaza x -6..6 with a wooden stage (top y 0.9, z -7..-2), 3D hydrant x 9 z 5.4, big oak x -72 z -2
+export const SYRUP = [-11000, 0, 36000];   // 2011-12 Quebec, the great maple syrup heist: reserve warehouse x -20..20 z -40..0 (doorway x -4..4), barrel blocks inside, yard + road z 30..36, sugar shack x -70 z -14
 export const OCEAN = [8000, 0, 0];        // sea starts at x = 8000; New York skyline at x = 12500
 const RY = 2000;
 export const ROOM = { office: [0, RY, 0], bank: [200, RY, 0], living: [400, RY, 0], interro: [600, RY, 0], showroom: [800, RY, 0], oval: [1000, RY, 0], motel: [1200, RY, 0] };
@@ -714,6 +715,83 @@ export class World {
       oak(-72, -2, 1.1); for (let i = 0; i < 40; i++) oak(-200 + hh(i, 61) * 400, (hh(i, 62) < 0.5 ? -40 - hh(i, 63) * 120 : 50 + hh(i, 63) * 120), 0.8 + hh(i, 64) * 0.6);
       // golden hills all around
       for (let i = 0; i < 12; i++) { const m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); const a = (i / 12) * Math.PI * 2; m.scale(340 + (i % 3) * 90, 80 + (i % 4) * 30, 260); m.translate(sx + Math.cos(a) * 700, -2, sz + Math.sin(a) * 700); b.add(m, L("snHill" + (i % 3), ["#c8a860", "#b89a58", "#a8925a"][i % 3])); }
+    }
+    // ---- SYRUP (the great maple syrup heist, x -11000 z 36000, beyond the global grass): Quebec countryside in early autumn. Grass y 0.10,
+    //      asphalt yard x -40..40 z -40..40 (y 0.14), the reserve warehouse x -20..20 z -40..0 (walls 8 m, open doorway x -4..4 up to 5.2 m in the
+    //      front wall z 0), barrel blocks inside (white drums, 3 levels, top y ~3.0): x [-16,-10] [-8,-3] [3,8] [10,16] x z [-36,-23] [-19,-6],
+    //      a parked semi truck x 14..25 z 14..17, a road along x at z 30..36 to the east with a border post at x 200, a sugar shack at x -70 z -14
+    //      (picnic table x -70 z -6, top y 0.76), red/orange/yellow maples all around, autumn hills.
+    {
+      const [sx, , sz] = SYRUP, L = (k, c) => lam(k, () => ({ color: c })), b2 = new Batch();
+      b.add(quadUp(sx - 1500, sx + 1500, sz - 1500, sz + 1500, 0.10, 60), lam("syGrass", () => ({ map: GT.fieldTex("syGrass", "#9aa452") })));
+      b.add(quadUp(sx - 40, sx + 40, sz - 40, sz + 30, 0.14, 20), lam("syYard", () => ({ map: GT.fieldTex("syYard", "#7a7874") })));
+      b.add(quadUp(sx - 40, sx + 700, sz + 30, sz + 36, 0.14, 40), lam("syRoad", () => ({ map: GT.fieldTex("syRoad", "#5a5856") })));
+      for (let x = -36; x < 700; x += 6) b.add(boxGeo(sx + x, 0.14, sz + 32.9, sx + x + 3, 0.147, sz + 33.1, 1), L("syDash", "#f0d860"));
+      for (let x = -36; x <= 36; x += 4) b.add(boxGeo(sx + x - 0.07, 0.14, sz + 4, sx + x + 0.07, 0.146, sz + 12, 1), L("syLine", "#e8e8e0"));
+      // the warehouse shell: walls + roof cast no shadows, so the sun lights the barrels inside
+      const wall = L("syWall", "#b4c2ce"), rib = L("syRib", "#7a8a98"), trim = L("syTrim", "#e4e2da"), roofM = L("syRoof", "#5e6872");
+      b2.add(boxGeo(sx - 20.3, 0, sz - 40.3, sx + 20.3, 8, sz - 40, 4), wall);
+      b2.add(boxGeo(sx - 20.3, 0, sz - 40, sx - 20, 8, sz, 4), wall); b2.add(boxGeo(sx + 20, 0, sz - 40, sx + 20.3, 8, sz, 4), wall);
+      b2.add(boxGeo(sx - 20.3, 0, sz - 0.3, sx - 4, 8, sz, 4), wall); b2.add(boxGeo(sx + 4, 0, sz - 0.3, sx + 20.3, 8, sz, 4), wall); b2.add(boxGeo(sx - 4, 5.2, sz - 0.3, sx + 4, 8, sz, 2), wall);
+      for (let x = -20; x <= 20; x += 1.2) if (Math.abs(x) > 4.3) b2.add(boxGeo(sx + x - 0.08, 0.14, sz, sx + x + 0.08, 8, sz + 0.06, 1), rib);
+      for (let z = -40; z <= 0; z += 1.2) for (const s of [-1, 1]) b2.add(boxGeo(sx + s * 20.3 - (s > 0 ? 0 : 0.06), 0.14, sz + z - 0.08, sx + s * 20.3 + (s > 0 ? 0.06 : 0), 8, sz + z + 0.08, 1), rib);
+      b2.add(boxGeo(sx - 20.6, 8, sz - 40.6, sx + 20.6, 8.35, sz + 0.6, 4), roofM); b2.add(boxGeo(sx - 20.7, 7.6, sz + 0.0, sx + 20.7, 8.1, sz + 0.7, 2), trim);
+      b2.add(boxGeo(sx - 4.4, 0.14, sz - 0.1, sx - 4.0, 5.5, sz + 0.25, 1), trim); b2.add(boxGeo(sx + 4.0, 0.14, sz - 0.1, sx + 4.4, 5.5, sz + 0.25, 1), trim); b2.add(boxGeo(sx - 4.4, 5.2, sz - 0.1, sx + 4.4, 5.5, sz + 0.25, 1), trim);
+      b2.add(boxGeo(sx - 4.1, 5.5, sz + 0.05, sx + 4.1, 5.62, sz + 2.2, 1), trim);    // door canopy
+      for (let i = 0; i < 6; i++) b2.add(boxGeo(sx - 18 + i * 6.6, 7.0, sz - 40.05, sx - 15 + i * 6.6, 7.6, sz - 39.9, 1), L("syHigh", "#c8dce8"));
+      // barrel blocks: perimeter drums on levels 1-2, a full top level, pallets between levels
+      const drum = L("syDrum", "#eceef0"), drumR = L("syDrumR", "#c4c8cc"), pal = L("syPallet", "#a07a4a"), core = L("syCore", "#9a9ea4"), R0 = 0.29, P = 0.62, LV = 0.98;
+      for (const [x0, x1] of [[-16, -10], [-8, -3], [3, 8], [10, 16]]) for (const [z0, z1] of [[-36, -23], [-19, -6]]) {
+        const nx = Math.floor((x1 - x0) / P), nz = Math.floor((z1 - z0) / P);
+        b.add(boxGeo(sx + x0 + 0.25, 0.14, sz + z0 + 0.25, sx + x0 + nx * P - 0.25, 0.14 + 2 * LV, sz + z0 + nz * P - 0.25, 1), core);
+        for (let lv = 0; lv < 3; lv++) { const y0 = 0.14 + lv * LV;
+          b.add(boxGeo(sx + x0, y0, sz + z0, sx + x0 + nx * P, y0 + 0.12, sz + z0 + nz * P, 1), pal);
+          for (let i = 0; i < nx; i++) for (let j = 0; j < nz; j++) { if (lv < 2 && i > 0 && j > 0 && i < nx - 1 && j < nz - 1) continue;
+            const x = sx + x0 + (i + 0.5) * P, z = sz + z0 + (j + 0.5) * P; b.add(cyl(R0, R0, 0.84, 10, x, y0 + 0.12 + 0.42, z), drum); b.add(cyl(R0 + 0.012, R0 + 0.012, 0.05, 10, x, y0 + 0.12 + 0.3, z), drumR); b.add(cyl(R0 + 0.012, R0 + 0.012, 0.05, 10, x, y0 + 0.12 + 0.6, z), drumR); } } }
+      // a parked semi truck in the yard (cab at +x)
+      const cabM = L("syCab", "#c8302a"), boxM = L("syBox", "#f2f0ea"), tyre = L("syTyre", "#222226"), glass = L("syGlass", "#3a5468");
+      b.add(boxGeo(sx + 14, 1.1, sz + 14, sx + 22, 4.0, sz + 16.6, 2), boxM); b.add(boxGeo(sx + 22.2, 1.0, sz + 14.1, sx + 25, 3.4, sz + 16.5, 1), cabM);
+      b.add(boxGeo(sx + 24.4, 2.3, sz + 14.05, sx + 25.02, 3.2, sz + 16.55, 1), glass); b.add(boxGeo(sx + 14, 0.6, sz + 14.2, sx + 25, 1.1, sz + 16.4, 1), L("syChas", "#3a3a40"));
+      for (const x of [15, 16.2, 20.5, 24]) for (const z of [14.05, 16.55]) b.add(cyl(0.5, 0.5, 0.3, 12, sx + x, 0.64, sz + z, Math.PI / 2), tyre);
+      // flagpole, yard lamps, a low fence along the yard edge
+      const pole = L("syPole", "#c8ccd0"); b.add(cyl(0.07, 0.09, 9, 6, sx - 26, 4.6, sz + 6), pole);
+      for (const [x, z] of [[-30, 20], [30, 22], [-30, -10], [30, -10]]) { b.add(cyl(0.08, 0.1, 6, 6, sx + x, 3.1, sz + z), pole); b.add(boxGeo(sx + x - 0.4, 6.0, sz + z - 0.2, sx + x + 0.4, 6.2, sz + z + 0.2, 1), pole); }
+      const post = L("syPost", "#8a6a48"); for (let z = -40; z <= 28; z += 2.5) for (const x of [-40, 40]) b.add(boxGeo(sx + x - 0.06, 0, sz + z - 0.06, sx + x + 0.06, 1.0, sz + z + 0.06, 1), post);
+      for (const x of [-40, 40]) b.add(boxGeo(sx + x - 0.04, 0.7, sz - 40, sx + x + 0.04, 0.8, sz + 28, 20), post);
+      // border post on the road: a booth + a striped boom
+      b.add(boxGeo(sx + 196, 0.14, sz + 37, sx + 199, 2.8, sz + 39.5, 1), L("syBooth", "#e8e4d8")); b.add(boxGeo(sx + 195.8, 2.8, sz + 36.8, sx + 199.2, 3.1, sz + 39.7, 1), L("syBoothR", "#c8302a"));
+      b.add(boxGeo(sx + 196.2, 1.2, sz + 36.95, sx + 198.8, 2.2, sz + 37.0, 1), glass); b.add(boxGeo(sx + 197.4, 0.14, sz + 36.6, sx + 197.7, 1.2, sz + 36.9, 1), L("syBoothP", "#3a3a40"));
+      // sugar shack in a clearing west of the warehouse: plank cabin, pitched roof, chimney, a woodpile, a picnic table in front
+      const shackX = sx - 70, shackZ = sz - 14, plank = L("syShack", "#8a5a36"), sroof = L("sySRoof", "#4a3a34");
+      b.add(quadUp(shackX - 12, shackX + 12, shackZ - 8, shackZ + 14, 0.12, 6), lam("syDirt", () => ({ map: GT.fieldTex("syDirt", "#9a7a54") })));
+      b.add(boxGeo(shackX - 4, 0, shackZ - 3, shackX + 4, 3.0, shackZ + 3, 2), plank);
+      { const r = new THREE.CylinderGeometry(3.8, 3.8, 8.6, 3); r.rotateZ(Math.PI / 2); r.rotateX(-Math.PI / 2); r.scale(1, 0.48, 1.0); r.translate(shackX, 3.0 + 3.8 * 0.24, shackZ); b.add(r, sroof); }
+      b.add(boxGeo(shackX + 1.5, 3.2, shackZ - 0.8, shackX + 2.3, 5.6, shackZ, 1), L("syChim", "#7a3a2a"));
+      b.add(boxGeo(shackX - 0.7, 0, shackZ + 2.98, shackX + 0.7, 2.2, shackZ + 3.06, 1), L("syShDoor", "#4a2a18"));
+      for (const wx of [-3, 1.6]) b.add(boxGeo(shackX + wx, 1.0, shackZ + 2.98, shackX + wx + 1.3, 2.0, shackZ + 3.06, 1), L("syShWin", "#f0d890"));
+      for (let i = 0; i < 12; i++) b.add(cyl(0.16, 0.16, 1.2, 7, shackX - 6.5 + (i % 4) * 0.33, 0.28 + Math.floor(i / 4) * 0.3, shackZ + 1, Math.PI / 2), L("syLog", "#a87a4a"));
+      const tbl = L("syTbl", "#b08050"); b.add(boxGeo(shackX - 1.5, 0.7, shackZ + 7.3, shackX + 1.5, 0.76, shackZ + 8.5, 1), tbl);
+      for (const dx of [-1.3, 1.3]) for (const dz of [7.4, 8.4]) b.add(boxGeo(shackX + dx - 0.05, 0, shackZ + dz - 0.05, shackX + dx + 0.05, 0.7, shackZ + dz + 0.05, 1), tbl);
+      for (const dz of [6.7, 9.1]) b.add(boxGeo(shackX - 1.5, 0.4, shackZ + dz - 0.18, shackX + 1.5, 0.45, shackZ + dz + 0.18, 1), tbl);
+      // a small jail cell east of the yard (front side open: the bars are a card in the story): floor y 0.12, walls 3.4 m, a bench at the back
+      { const cx = sx + 60, cz = sz - 14, cw = L("syCell", "#9aa0a8"), cf = L("syCellF", "#6a6e74");
+        b.add(quadUp(cx - 3, cx + 3, cz - 3, cz + 3, 0.12, 2), cf);
+        b2.add(boxGeo(cx - 3.3, 0, cz - 3.3, cx + 3.3, 3.4, cz - 3, 2), cw); b2.add(boxGeo(cx - 3.3, 0, cz - 3, cx - 3, 3.4, cz + 3, 2), cw); b2.add(boxGeo(cx + 3, 0, cz - 3, cx + 3.3, 3.4, cz + 3, 2), cw);
+        b2.add(boxGeo(cx - 3.4, 3.4, cz - 3.4, cx + 3.4, 3.6, cz + 3.4, 2), L("syCellR", "#5a5e64")); b2.add(boxGeo(cx - 3.4, 2.9, cz + 2.9, cx + 3.4, 3.4, cz + 3.3, 1), cw);
+        for (let i = 0; i < 9; i++) b2.add(boxGeo(cx - 3.0, 0.4 + i * 0.34, cz - 3.0, cx + 3.0, 0.42 + i * 0.34, cz - 2.97, 1), L("syCellL", "#868c94"));
+        b.add(boxGeo(cx - 2.6, 0.12, cz - 2.95, cx + 0.6, 0.5, cz - 2.3, 1), L("syBench", "#7a6a5a")); b2.add(boxGeo(cx + 1.0, 2.0, cz - 3.0, cx + 2.0, 2.6, cz - 2.96, 1), L("syCellW", "#c8e0f0")); }
+      // maples: red / orange / yellow / green crowns, sap buckets on the trunks near the shack
+      const leaf = ["#c8302a", "#e0702a", "#e8b030", "#b83a28", "#d88a2a", "#7a9a3a"].map((c, i) => L("syLeaf" + i, c)), bark = L("syBark", "#5a4232"), buck = L("syBuck", "#b8bcc2");
+      const maple = (x, z, s, k, bucket) => { b.add(cyl(0.22 * s, 0.34 * s, 3.2 * s, 7, x, 1.6 * s, z), bark);
+        for (let q = 0; q < 5; q++) { const c = new THREE.IcosahedronGeometry(1.7 * s, 1); c.scale(1.2, 0.9, 1.2); c.translate(x + Math.cos(q * 1.9 + k) * 1.5 * s, (3.9 + (q % 3) * 0.75) * s, z + Math.sin(q * 1.9 + k) * 1.3 * s); b.add(c, leaf[(k + q) % 6]); }
+        if (bucket) b.add(cyl(0.13, 0.1, 0.28, 8, x, 1.15, z + 0.36 * s), buck); };
+      const clear = (x, z) => (x > -44 && x < 44 && z > -44 && z < 40) || (z > 26 && z < 42) || (Math.abs(x + 70) < 13 && z > -24 && z < 2) || (x > 46 && x < 74 && z > -28 && z < 2);
+      let n = 0; for (let i = 0; n < 340 && i < 3000; i++) { const x = -260 + hh(i, 71) * 520, z = -240 + hh(i, 72) * 480; if (clear(x, z)) continue; n++;
+        maple(sx + x, sz + z, 0.85 + hh(i, 73) * 0.6, Math.floor(hh(i, 74) * 6), Math.abs(x + 70) < 26 && z > -30 && z < 10); }
+      for (const [x, z] of [[-82, -6], [-58, -6], [-84, -18], [-60, 2]]) maple(sx + x, sz + z, 1.1, Math.floor(hh(x, 3) * 6), true);
+      // autumn hills
+      for (let i = 0; i < 12; i++) { const m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); const a = (i / 12) * Math.PI * 2; m.scale(360 + (i % 3) * 90, 90 + (i % 4) * 30, 260); m.translate(sx + Math.cos(a) * 750, -2, sz + Math.sin(a) * 750); b.add(m, L("syHill" + (i % 3), ["#b86a3a", "#a8803a", "#7a8a40"][i % 3])); }
+      b2.build(R, false, true);
     }
     b.build(R, true, true);
     // New York skyline far across the ocean (flat painted card)

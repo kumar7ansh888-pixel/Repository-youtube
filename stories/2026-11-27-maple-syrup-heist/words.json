@@ -1,0 +1,860 @@
+[
+{
+"word": "A",
+"raw": "A",
+"start": 0.389,
+"end": 0.642
+},
+{
+"word": "gang",
+"raw": "gang",
+"start": 0.642,
+"end": 0.895
+},
+{
+"word": "stole",
+"raw": "stole",
+"start": 0.895,
+"end": 1.147
+},
+{
+"word": "eighteen",
+"raw": "eighteen",
+"start": 1.147,
+"end": 1.653
+},
+{
+"word": "million",
+"raw": "million",
+"start": 1.653,
+"end": 2.159
+},
+{
+"word": "dollars",
+"raw": "dollars…",
+"start": 2.159,
+"end": 2.665
+},
+{
+"word": "of",
+"raw": "of",
+"start": 2.665,
+"end": 2.918
+},
+{
+"word": "maple",
+"raw": "maple",
+"start": 2.918,
+"end": 3.171
+},
+{
+"word": "syrup",
+"raw": "syrup.",
+"start": 3.171,
+"end": 3.676
+},
+{
+"word": "Yes",
+"raw": "Yes.",
+"start": 4.042,
+"end": 4.34
+},
+{
+"word": "Syrup",
+"raw": "Syrup.",
+"start": 4.34,
+"end": 4.935
+},
+{
+"word": "Canada",
+"raw": "Canada",
+"start": 5.13,
+"end": 5.708
+},
+{
+"word": "keeps",
+"raw": "keeps",
+"start": 5.708,
+"end": 5.901
+},
+{
+"word": "a",
+"raw": "a",
+"start": 5.901,
+"end": 6.094
+},
+{
+"word": "strategic",
+"raw": "strategic",
+"start": 6.094,
+"end": 6.672
+},
+{
+"word": "syrup",
+"raw": "syrup",
+"start": 6.672,
+"end": 7.058
+},
+{
+"word": "reserve",
+"raw": "reserve.",
+"start": 7.058,
+"end": 7.443
+},
+{
+"word": "Like",
+"raw": "Like",
+"start": 7.763,
+"end": 8.044
+},
+{
+"word": "gold",
+"raw": "gold…",
+"start": 8.044,
+"end": 8.325
+},
+{
+"word": "but",
+"raw": "but",
+"start": 8.325,
+"end": 8.606
+},
+{
+"word": "sticky",
+"raw": "sticky.",
+"start": 8.606,
+"end": 9.168
+},
+{
+"word": "Thousands",
+"raw": "Thousands",
+"start": 9.575,
+"end": 10.044
+},
+{
+"word": "of",
+"raw": "of",
+"start": 10.044,
+"end": 10.279
+},
+{
+"word": "barrels",
+"raw": "barrels,",
+"start": 10.279,
+"end": 10.748
+},
+{
+"word": "stacked",
+"raw": "stacked",
+"start": 10.748,
+"end": 11.218
+},
+{
+"word": "in",
+"raw": "in",
+"start": 11.218,
+"end": 11.453
+},
+{
+"word": "one",
+"raw": "one",
+"start": 11.453,
+"end": 11.687
+},
+{
+"word": "giant",
+"raw": "giant",
+"start": 11.687,
+"end": 11.922
+},
+{
+"word": "warehouse",
+"raw": "warehouse.",
+"start": 11.922,
+"end": 12.627
+},
+{
+"word": "Run",
+"raw": "Run",
+"start": 13.012,
+"end": 13.235
+},
+{
+"word": "by",
+"raw": "by",
+"start": 13.235,
+"end": 13.457
+},
+{
+"word": "an",
+"raw": "an",
+"start": 13.457,
+"end": 13.68
+},
+{
+"word": "actual",
+"raw": "actual",
+"start": 13.68,
+"end": 14.125
+},
+{
+"word": "syrup",
+"raw": "syrup",
+"start": 14.125,
+"end": 14.57
+},
+{
+"word": "cartel",
+"raw": "cartel.",
+"start": 14.57,
+"end": 15.015
+},
+{
+"word": "Really",
+"raw": "Really.",
+"start": 15.364,
+"end": 15.727
+},
+{
+"word": "The",
+"raw": "The",
+"start": 16.188,
+"end": 16.466
+},
+{
+"word": "plan",
+"raw": "plan?",
+"start": 16.466,
+"end": 16.744
+},
+{
+"word": "Truck",
+"raw": "Truck",
+"start": 16.994,
+"end": 17.221
+},
+{
+"word": "the",
+"raw": "the",
+"start": 17.221,
+"end": 17.447
+},
+{
+"word": "barrels",
+"raw": "barrels",
+"start": 17.447,
+"end": 17.9
+},
+{
+"word": "out",
+"raw": "out.",
+"start": 17.9,
+"end": 18.127
+},
+{
+"word": "Suck",
+"raw": "Suck",
+"start": 18.127,
+"end": 18.353
+},
+{
+"word": "out",
+"raw": "out",
+"start": 18.353,
+"end": 18.58
+},
+{
+"word": "the",
+"raw": "the",
+"start": 18.58,
+"end": 18.806
+},
+{
+"word": "syrup",
+"raw": "syrup.",
+"start": 18.806,
+"end": 19.26
+},
+{
+"word": "Fill",
+"raw": "Fill",
+"start": 19.26,
+"end": 19.486
+},
+{
+"word": "them",
+"raw": "them",
+"start": 19.486,
+"end": 19.713
+},
+{
+"word": "back",
+"raw": "back",
+"start": 19.713,
+"end": 19.939
+},
+{
+"word": "up",
+"raw": "up…",
+"start": 19.939,
+"end": 20.166
+},
+{
+"word": "with",
+"raw": "with",
+"start": 20.166,
+"end": 20.392
+},
+{
+"word": "water",
+"raw": "water.",
+"start": 20.392,
+"end": 20.845
+},
+{
+"word": "Roll",
+"raw": "Roll",
+"start": 21.043,
+"end": 21.289
+},
+{
+"word": "them",
+"raw": "them",
+"start": 21.289,
+"end": 21.535
+},
+{
+"word": "back",
+"raw": "back",
+"start": 21.535,
+"end": 21.78
+},
+{
+"word": "in",
+"raw": "in.",
+"start": 21.78,
+"end": 22.026
+},
+{
+"word": "Who",
+"raw": "Who",
+"start": 22.421,
+"end": 22.634
+},
+{
+"word": "checks",
+"raw": "checks",
+"start": 22.634,
+"end": 22.846
+},
+{
+"word": "a",
+"raw": "a",
+"start": 22.846,
+"end": 23.059
+},
+{
+"word": "barrel",
+"raw": "barrel,",
+"start": 23.059,
+"end": 23.485
+},
+{
+"word": "right",
+"raw": "right?",
+"start": 23.485,
+"end": 23.698
+},
+{
+"word": "They",
+"raw": "They",
+"start": 24.782,
+"end": 25.022
+},
+{
+"word": "do",
+"raw": "do",
+"start": 25.022,
+"end": 25.262
+},
+{
+"word": "this",
+"raw": "this",
+"start": 25.262,
+"end": 25.503
+},
+{
+"word": "for",
+"raw": "for",
+"start": 25.503,
+"end": 25.743
+},
+{
+"word": "months",
+"raw": "months.",
+"start": 25.743,
+"end": 25.983
+},
+{
+"word": "Barrel",
+"raw": "Barrel",
+"start": 26.248,
+"end": 26.606
+},
+{
+"word": "after",
+"raw": "after",
+"start": 26.606,
+"end": 26.964
+},
+{
+"word": "barrel",
+"raw": "barrel",
+"start": 26.964,
+"end": 27.322
+},
+{
+"word": "after",
+"raw": "after",
+"start": 27.322,
+"end": 27.68
+},
+{
+"word": "barrel",
+"raw": "barrel.",
+"start": 27.68,
+"end": 28.038
+},
+{
+"word": "Then",
+"raw": "Then",
+"start": 28.461,
+"end": 28.66
+},
+{
+"word": "they",
+"raw": "they",
+"start": 28.66,
+"end": 28.86
+},
+{
+"word": "sell",
+"raw": "sell",
+"start": 28.86,
+"end": 29.06
+},
+{
+"word": "the",
+"raw": "the",
+"start": 29.06,
+"end": 29.259
+},
+{
+"word": "syrup",
+"raw": "syrup,",
+"start": 29.259,
+"end": 29.658
+},
+{
+"word": "bit",
+"raw": "bit",
+"start": 29.658,
+"end": 29.858
+},
+{
+"word": "by",
+"raw": "by",
+"start": 29.858,
+"end": 30.058
+},
+{
+"word": "bit",
+"raw": "bit…",
+"start": 30.058,
+"end": 30.257
+},
+{
+"word": "across",
+"raw": "across",
+"start": 30.257,
+"end": 30.656
+},
+{
+"word": "the",
+"raw": "the",
+"start": 30.656,
+"end": 30.856
+},
+{
+"word": "border",
+"raw": "border.",
+"start": 30.856,
+"end": 31.255
+},
+{
+"word": "But",
+"raw": "But",
+"start": 31.466,
+"end": 31.704
+},
+{
+"word": "wait",
+"raw": "wait…",
+"start": 31.704,
+"end": 31.941
+},
+{
+"word": "it",
+"raw": "it",
+"start": 31.941,
+"end": 32.178
+},
+{
+"word": "gets",
+"raw": "gets",
+"start": 32.178,
+"end": 32.416
+},
+{
+"word": "stickier",
+"raw": "stickier.",
+"start": 32.416,
+"end": 32.891
+},
+{
+"word": "One",
+"raw": "One",
+"start": 33.255,
+"end": 33.487
+},
+{
+"word": "day",
+"raw": "day,",
+"start": 33.487,
+"end": 33.719
+},
+{
+"word": "an",
+"raw": "an",
+"start": 33.719,
+"end": 33.951
+},
+{
+"word": "inspector",
+"raw": "inspector",
+"start": 33.951,
+"end": 34.646
+},
+{
+"word": "climbs",
+"raw": "climbs",
+"start": 34.646,
+"end": 34.878
+},
+{
+"word": "the",
+"raw": "the",
+"start": 34.878,
+"end": 35.11
+},
+{
+"word": "stack",
+"raw": "stack…",
+"start": 35.11,
+"end": 35.342
+},
+{
+"word": "and",
+"raw": "and",
+"start": 35.342,
+"end": 35.574
+},
+{
+"word": "a",
+"raw": "a",
+"start": 35.574,
+"end": 35.806
+},
+{
+"word": "barrel",
+"raw": "barrel",
+"start": 35.806,
+"end": 36.269
+},
+{
+"word": "wobbles",
+"raw": "wobbles.",
+"start": 36.269,
+"end": 36.733
+},
+{
+"word": "It's",
+"raw": "It's",
+"start": 37.028,
+"end": 37.246
+},
+{
+"word": "empty",
+"raw": "empty.",
+"start": 37.246,
+"end": 37.68
+},
+{
+"word": "He",
+"raw": "He",
+"start": 38.015,
+"end": 38.254
+},
+{
+"word": "nearly",
+"raw": "nearly",
+"start": 38.254,
+"end": 38.734
+},
+{
+"word": "falls",
+"raw": "falls",
+"start": 38.734,
+"end": 38.973
+},
+{
+"word": "off",
+"raw": "off.",
+"start": 38.973,
+"end": 39.213
+},
+{
+"word": "Then",
+"raw": "Then",
+"start": 39.49,
+"end": 39.642
+},
+{
+"word": "another",
+"raw": "another",
+"start": 39.642,
+"end": 40.098
+},
+{
+"word": "one",
+"raw": "one.",
+"start": 40.098,
+"end": 40.249
+},
+{
+"word": "And",
+"raw": "And",
+"start": 40.449,
+"end": 40.577
+},
+{
+"word": "another",
+"raw": "another.",
+"start": 40.577,
+"end": 40.959
+},
+{
+"word": "Thousands",
+"raw": "Thousands",
+"start": 41.345,
+"end": 41.871
+},
+{
+"word": "of",
+"raw": "of",
+"start": 41.871,
+"end": 42.134
+},
+{
+"word": "tonnes",
+"raw": "tonnes…",
+"start": 42.134,
+"end": 42.661
+},
+{
+"word": "gone",
+"raw": "gone.",
+"start": 42.661,
+"end": 42.924
+},
+{
+"word": "The",
+"raw": "The",
+"start": 43.185,
+"end": 43.401
+},
+{
+"word": "police",
+"raw": "police",
+"start": 43.401,
+"end": 43.834
+},
+{
+"word": "arrest",
+"raw": "arrest",
+"start": 43.834,
+"end": 44.266
+},
+{
+"word": "the",
+"raw": "the",
+"start": 44.266,
+"end": 44.483
+},
+{
+"word": "gang",
+"raw": "gang.",
+"start": 44.483,
+"end": 44.699
+},
+{
+"word": "The",
+"raw": "The",
+"start": 45.12,
+"end": 45.305
+},
+{
+"word": "ringleader",
+"raw": "ringleader",
+"start": 45.325,
+"end": 45.92
+},
+{
+"word": "gets",
+"raw": "gets",
+"start": 45.94,
+"end": 46.125
+},
+{
+"word": "eight",
+"raw": "eight",
+"start": 46.145,
+"end": 46.33
+},
+{
+"word": "years",
+"raw": "years",
+"start": 46.35,
+"end": 46.535
+},
+{
+"word": "in",
+"raw": "in",
+"start": 46.555,
+"end": 46.74
+},
+{
+"word": "prison",
+"raw": "prison…",
+"start": 46.76,
+"end": 47.15
+},
+{
+"word": "and",
+"raw": "and",
+"start": 48.25,
+"end": 48.437
+},
+{
+"word": "a",
+"raw": "a",
+"start": 48.457,
+"end": 48.643
+},
+{
+"word": "fine",
+"raw": "fine",
+"start": 48.663,
+"end": 48.85
+},
+{
+"word": "of",
+"raw": "of",
+"start": 48.87,
+"end": 49.057
+},
+{
+"word": "millions",
+"raw": "millions.",
+"start": 49.077,
+"end": 49.47
+},
+{
+"word": "Still",
+"raw": "Still,",
+"start": 49.86,
+"end": 50.084
+},
+{
+"word": "somewhere",
+"raw": "somewhere",
+"start": 50.104,
+"end": 50.816
+},
+{
+"word": "out",
+"raw": "out",
+"start": 50.836,
+"end": 51.059
+},
+{
+"word": "there",
+"raw": "there…",
+"start": 51.079,
+"end": 51.303
+},
+{
+"word": "someone",
+"raw": "someone",
+"start": 51.323,
+"end": 51.791
+},
+{
+"word": "ate",
+"raw": "ate",
+"start": 51.811,
+"end": 52.035
+},
+{
+"word": "some",
+"raw": "some",
+"start": 52.055,
+"end": 52.279
+},
+{
+"word": "very",
+"raw": "very",
+"start": 52.299,
+"end": 52.767
+},
+{
+"word": "expensive",
+"raw": "expensive",
+"start": 52.787,
+"end": 53.498
+},
+{
+"word": "pancakes",
+"raw": "pancakes.",
+"start": 53.518,
+"end": 54.23
+},
+{
+"word": "Because",
+"raw": "Because",
+"start": 54.598,
+"end": 55.073
+},
+{
+"word": "one",
+"raw": "one",
+"start": 55.073,
+"end": 55.311
+},
+{
+"word": "day",
+"raw": "day…",
+"start": 55.311,
+"end": 55.548
+}
+]

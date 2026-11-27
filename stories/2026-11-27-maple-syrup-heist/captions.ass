@@ -1,0 +1,67 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Bangers,200,&H00FFFFFF,&H00FFFFFF,&H00101010,&H96000000,0,0,0,0,100,100,3,0,1,12,8,8,40,40,190,1
+Style: Cap,Poppins,112,&H0000D4FF,&H00FFFFFF,&H00111111,&H64000000,1,0,0,0,100,100,0,0,1,8,5,2,60,60,470,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:02.55,Hook,,0,0,0,,{\fscx60\fscy60\t(0,180,\fscx100\fscy100)}{\c&H3AE8FF&}$18 MILLION\N{\c&H3A48F0&\fs224}OF SYRUP?!
+Dialogue: 0,0:00:00.34,0:00:01.60,Cap,,0,0,0,,{\k2}{\k25}A {\k25}gang {\k25}stole {\k49}eighteen
+Dialogue: 0,0:00:01.60,0:00:02.62,Cap,,0,0,0,,{\k2}{\k51}million {\k49}dollars…
+Dialogue: 0,0:00:02.62,0:00:03.99,Cap,,0,0,0,,{\k2}{\k25}of {\k25}maple {\k85}syrup.
+Dialogue: 0,0:00:03.99,0:00:04.29,Cap,,0,0,0,,{\k2}{\k28}Yes.
+Dialogue: 0,0:00:04.29,0:00:05.08,Cap,,0,0,0,,{\k2}{\k77}Syrup.
+Dialogue: 0,0:00:05.08,0:00:06.62,Cap,,0,0,0,,{\k2}{\k58}Canada {\k19}keeps {\k19}a {\k56}strategic
+Dialogue: 0,0:00:06.62,0:00:07.71,Cap,,0,0,0,,{\k2}{\k39}syrup {\k69}reserve.
+Dialogue: 0,0:00:07.71,0:00:08.27,Cap,,0,0,0,,{\k2}{\k28}Like {\k26}gold…
+Dialogue: 0,0:00:08.27,0:00:09.52,Cap,,0,0,0,,{\k2}{\k28}but {\k95}sticky.
+Dialogue: 0,0:00:09.52,0:00:10.70,Cap,,0,0,0,,{\k2}{\k47}Thousands {\k23}of {\k45}barrels,
+Dialogue: 0,0:00:10.70,0:00:11.87,Cap,,0,0,0,,{\k2}{\k47}stacked {\k23}in {\k23}one {\k21}giant
+Dialogue: 0,0:00:11.87,0:00:12.96,Cap,,0,0,0,,{\k2}{\k107}warehouse.
+Dialogue: 0,0:00:12.96,0:00:14.07,Cap,,0,0,0,,{\k2}{\k22}Run {\k22}by {\k22}an {\k42}actual
+Dialogue: 0,0:00:14.07,0:00:15.31,Cap,,0,0,0,,{\k2}{\k45}syrup {\k77}cartel.
+Dialogue: 0,0:00:15.31,0:00:16.14,Cap,,0,0,0,,{\k2}{\k80}Really.
+Dialogue: 0,0:00:16.14,0:00:16.94,Cap,,0,0,0,,{\k2}{\k28}The {\k51}plan?
+Dialogue: 0,0:00:16.94,0:00:18.08,Cap,,0,0,0,,{\k2}{\k23}Truck {\k23}the {\k45}barrels {\k21}out.
+Dialogue: 0,0:00:18.08,0:00:19.21,Cap,,0,0,0,,{\k2}{\k23}Suck {\k23}out {\k23}the {\k43}syrup.
+Dialogue: 0,0:00:19.21,0:00:20.12,Cap,,0,0,0,,{\k2}{\k23}Fill {\k23}them {\k23}back {\k21}up…
+Dialogue: 0,0:00:20.12,0:00:20.99,Cap,,0,0,0,,{\k2}{\k23}with {\k63}water.
+Dialogue: 0,0:00:20.99,0:00:22.37,Cap,,0,0,0,,{\k2}{\k25}Roll {\k25}them {\k25}back {\k62}in.
+Dialogue: 0,0:00:22.37,0:00:23.43,Cap,,0,0,0,,{\k2}{\k21}Who {\k21}checks {\k21}a {\k41}barrel,
+Dialogue: 0,0:00:23.43,0:00:24.40,Cap,,0,0,0,,{\k2}{\k94}right?
+Dialogue: 0,0:00:24.73,0:00:25.69,Cap,,0,0,0,,{\k2}{\k24}They {\k24}do {\k24}this {\k22}for
+Dialogue: 0,0:00:25.69,0:00:26.20,Cap,,0,0,0,,{\k2}{\k49}months.
+Dialogue: 0,0:00:26.20,0:00:27.63,Cap,,0,0,0,,{\k2}{\k36}Barrel {\k36}after {\k36}barrel {\k34}after
+Dialogue: 0,0:00:27.63,0:00:28.41,Cap,,0,0,0,,{\k2}{\k76}barrel.
+Dialogue: 0,0:00:28.41,0:00:29.21,Cap,,0,0,0,,{\k2}{\k20}Then {\k20}they {\k20}sell {\k18}the
+Dialogue: 0,0:00:29.21,0:00:29.61,Cap,,0,0,0,,{\k2}{\k38}syrup,
+Dialogue: 0,0:00:29.61,0:00:30.21,Cap,,0,0,0,,{\k2}{\k20}bit {\k20}by {\k18}bit…
+Dialogue: 0,0:00:30.21,0:00:31.42,Cap,,0,0,0,,{\k2}{\k40}across {\k20}the {\k59}border.
+Dialogue: 0,0:00:31.42,0:00:31.89,Cap,,0,0,0,,{\k2}{\k24}But {\k22}wait…
+Dialogue: 0,0:00:31.89,0:00:33.21,Cap,,0,0,0,,{\k2}{\k24}it {\k24}gets {\k82}stickier.
+Dialogue: 0,0:00:33.21,0:00:33.67,Cap,,0,0,0,,{\k2}{\k23}One {\k21}day,
+Dialogue: 0,0:00:33.67,0:00:35.06,Cap,,0,0,0,,{\k2}{\k23}an {\k70}inspector {\k23}climbs {\k21}the
+Dialogue: 0,0:00:35.06,0:00:35.29,Cap,,0,0,0,,{\k2}{\k21}stack…
+Dialogue: 0,0:00:35.29,0:00:36.98,Cap,,0,0,0,,{\k2}{\k23}and {\k23}a {\k46}barrel {\k74}wobbles.
+Dialogue: 0,0:00:36.98,0:00:37.97,Cap,,0,0,0,,{\k2}{\k22}It's {\k75}empty.
+Dialogue: 0,0:00:37.97,0:00:39.44,Cap,,0,0,0,,{\k2}{\k24}He {\k48}nearly {\k24}falls {\k50}off.
+Dialogue: 0,0:00:39.44,0:00:40.40,Cap,,0,0,0,,{\k2}{\k15}Then {\k46}another {\k33}one.
+Dialogue: 0,0:00:40.40,0:00:41.30,Cap,,0,0,0,,{\k2}{\k13}And {\k75}another.
+Dialogue: 0,0:00:41.30,0:00:42.61,Cap,,0,0,0,,{\k2}{\k53}Thousands {\k26}of {\k51}tonnes…
+Dialogue: 0,0:00:42.61,0:00:43.14,Cap,,0,0,0,,{\k2}{\k50}gone.
+Dialogue: 0,0:00:43.14,0:00:44.43,Cap,,0,0,0,,{\k2}{\k22}The {\k43}police {\k43}arrest {\k20}the
+Dialogue: 0,0:00:44.43,0:00:45.07,Cap,,0,0,0,,{\k2}{\k62}gang.
+Dialogue: 0,0:00:45.07,0:00:46.30,Cap,,0,0,0,,{\k2}{\k21}The {\k61}ringleader {\k21}gets {\k19}eight
+Dialogue: 0,0:00:46.30,0:00:47.85,Cap,,0,0,0,,{\k2}{\k20}years {\k20}in {\k112}prison…
+Dialogue: 0,0:00:48.20,0:00:49.03,Cap,,0,0,0,,{\k2}{\k21}and {\k21}a {\k21}fine {\k19}of
+Dialogue: 0,0:00:49.03,0:00:49.81,Cap,,0,0,0,,{\k2}{\k76}millions.
+Dialogue: 0,0:00:49.81,0:00:50.05,Cap,,0,0,0,,{\k2}{\k22}Still,
+Dialogue: 0,0:00:50.05,0:00:51.27,Cap,,0,0,0,,{\k2}{\k73}somewhere {\k24}out {\k22}there…
+Dialogue: 0,0:00:51.27,0:00:52.74,Cap,,0,0,0,,{\k2}{\k49}someone {\k24}ate {\k24}some {\k47}very
+Dialogue: 0,0:00:52.74,0:00:54.55,Cap,,0,0,0,,{\k2}{\k73}expensive {\k106}pancakes.
+Dialogue: 0,0:00:54.55,0:00:56.25,Cap,,0,0,0,,{\k2}{\k48}Because {\k24}one {\k97}day…
