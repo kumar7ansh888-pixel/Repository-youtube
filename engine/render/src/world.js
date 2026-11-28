@@ -31,6 +31,7 @@ export const PIG = [-5600, 0, 5600];       // 1859: San Juan Island, the Pig War
 export const BEACH = [-4800, 0, 1400];    // 1970: Florence, Oregon, the exploding whale (whale at the origin along x, sea to -z from z -8, dunes z 14..32 with a flat crest y 2.7, parking lot behind z 36..60)
 export const SUNOL = [-11000, 0, 27000];   // 1981 Sunol, California (Bosco the dog mayor): Main Street along x (road z 6..14), boardwalks z 3..6 / 14..17 (y 0.17), western false-front rows z -10..3 and z 17..30, plaza x -6..6 with a wooden stage (top y 0.9, z -7..-2), 3D hydrant x 9 z 5.4, big oak x -72 z -2
 export const SYRUP = [-11000, 0, 36000];   // 2011-12 Quebec, the great maple syrup heist: reserve warehouse x -20..20 z -40..0 (doorway x -4..4), barrel blocks inside, yard + road z 30..36, sugar shack x -70 z -14
+export const ZOO = [-11000, 0, 45000];   // 2026 Edinburgh Zoo, Sir Nils Olav (the penguin general): parade path along x (z 2..9, y 0.14), Penguins Rock enclosure behind a low wall z -0.4..0 (gap x -2..2), pool x -14..10 z -18..-6, statue plinth x 7 z 1.2 (top y 1.0), dais x -16..-10 z 9.5..13 (top y 0.45), gate arch at x 40, sandstone houses z -44..-34
 export const OCEAN = [8000, 0, 0];        // sea starts at x = 8000; New York skyline at x = 12500
 const RY = 2000;
 export const ROOM = { office: [0, RY, 0], bank: [200, RY, 0], living: [400, RY, 0], interro: [600, RY, 0], showroom: [800, RY, 0], oval: [1000, RY, 0], motel: [1200, RY, 0] };
@@ -791,6 +792,61 @@ export class World {
       for (const [x, z] of [[-82, -6], [-58, -6], [-84, -18], [-60, 2]]) maple(sx + x, sz + z, 1.1, Math.floor(hh(x, 3) * 6), true);
       // autumn hills
       for (let i = 0; i < 12; i++) { const m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); const a = (i / 12) * Math.PI * 2; m.scale(360 + (i % 3) * 90, 90 + (i % 4) * 30, 260); m.translate(sx + Math.cos(a) * 750, -2, sz + Math.sin(a) * 750); b.add(m, L("syHill" + (i % 3), ["#b86a3a", "#a8803a", "#7a8a40"][i % 3])); }
+      b2.build(R, false, true);
+    }
+
+    // ---- ZOO (Sir Nils Olav, x -11000 z 45000, beyond the global grass): a Scottish zoo on a green hill. Grass y 0.10, paved parade path along x
+    //      (z 2..9, y 0.14), a red carpet x -16..-10 on the path, the Penguins Rock enclosure behind a low stone wall (z -0.4..0, gap x -2..2):
+    //      grey rock floor y 0.12, pool x -14..10 z -18..-6 (water y 0.13 in a rim), boulders; a statue plinth x 7 z 1.2 (top y 1.0), a wooden dais
+    //      x -16..-10 z 9.5..13 (top y 0.45) with a desk (top y 1.2 at x -14 z 12.4), flagpoles x +-18 z 10.6, a stone gate arch over the path at x 40,
+    //      sandstone houses with slate roofs z -44..-34, lamp posts along z 9.6, oaks + pines, green hills.
+    {
+      const [sx, , sz] = ZOO, L = (k, c) => lam(k, () => ({ color: c })), b2 = new Batch();
+      b.add(quadUp(sx - 1500, sx + 1500, sz - 1500, sz + 1500, 0.10, 60), lam("zoGrass", () => ({ map: GT.fieldTex("zoGrass", "#6fa04a") })));
+      b.add(quadUp(sx - 80, sx + 80, sz + 2, sz + 9, 0.14, 30), lam("zoPath", () => ({ map: GT.fieldTex("zoPath", "#b8ada0") })));
+      for (let x = -80; x < 80; x += 1.6) b.add(boxGeo(sx + x, 0.14, sz + 2, sx + x + 0.05, 0.146, sz + 9, 1), L("zoSlab", "#9a9088"));
+      b.add(boxGeo(sx - 16, 0.14, sz + 2, sx - 10, 0.152, sz + 9.5, 1), L("zoCarpet", "#b8202e"));
+      // enclosure floor, low wall with a gap, pool with a rim, boulders
+      b.add(quadUp(sx - 24, sx + 24, sz - 26, sz - 0.4, 0.12, 10), lam("zoRock", () => ({ map: GT.fieldTex("zoRock", "#a8a49a") })));
+      const stone = lam("zoStone", () => ({ map: GT.fieldTex("zoStone", "#8a8478") })), cap = L("zoCap", "#c8c2b4");
+      for (const [x0, x1] of [[-24, -2], [2, 24]]) { b.add(boxGeo(sx + x0, 0, sz - 0.4, sx + x1, 0.85, sz, 4), stone); b.add(boxGeo(sx + x0 - 0.05, 0.85, sz - 0.48, sx + x1 + 0.05, 0.95, sz + 0.08, 4), cap); }
+      for (const s of [-1, 1]) { b.add(boxGeo(sx + s * 24 - 0.2, 0, sz - 26, sx + s * 24 + 0.2, 0.85, sz - 0.4, 4), stone); }
+      b.add(boxGeo(sx - 24, 0, sz - 26.4, sx + 24, 2.2, sz - 26, 4), stone);
+      b.add(boxGeo(sx - 14.4, 0.12, sz - 18.4, sx + 10.4, 0.3, sz - 17.9, 2), cap); b.add(boxGeo(sx - 14.4, 0.12, sz - 6.1, sx + 10.4, 0.3, sz - 5.6, 2), cap);
+      b.add(boxGeo(sx - 14.4, 0.12, sz - 18, sx - 13.9, 0.3, sz - 6, 2), cap); b.add(boxGeo(sx + 9.9, 0.12, sz - 18, sx + 10.4, 0.3, sz - 6, 2), cap);
+      b.add(quadUp(sx - 13.9, sx + 9.9, sz - 17.9, sz - 6.1, 0.2, 4), lam("zoWater", () => ({ color: "#3a8ac8" })));
+      for (let i = 0; i < 9; i++) b.add(quadUp(sx - 13 + i * 2.6, sx - 12 + i * 2.6, sz - 16 + (i % 3) * 3, sz - 15.8 + (i % 3) * 3, 0.205, 1), L("zoRip", "#8ac8f0"));
+      const rockM = [L("zoBoul0", "#9a968c"), L("zoBoul1", "#b0aca0"), L("zoBoul2", "#86827a")];
+      const boul = (x, z, r, k) => { const c = new THREE.IcosahedronGeometry(r, 1); c.scale(1.3, 0.7, 1.1); c.translate(sx + x, 0.12 + r * 0.3, sz + z); b.add(c, rockM[k % 3]); };
+      for (const [x, z, r] of [[-20, -4, 1.6], [-18, -22, 2.4], [-8, -22, 1.8], [2, -23, 2.6], [14, -20, 2.2], [19, -10, 2.0], [16, -3, 1.3], [-21, -12, 1.8], [13, -8, 1.0], [-4, -3, 0.8], [6, -3.2, 0.9], [20, -22, 2.8], [-12, -3.4, 1.0]]) boul(x, z, r, Math.round(x + z));
+      { const c = new THREE.IcosahedronGeometry(2.6, 1); c.scale(1.5, 0.55, 1.2); c.translate(sx - 2, 0.3, sz - 12); b.add(c, rockM[1]); }
+      // statue plinth, wooden dais + desk, flagpoles, lamp posts, benches
+      b.add(boxGeo(sx + 6.5, 0.14, sz + 0.7, sx + 7.5, 1.0, sz + 1.7, 1), L("zoPlinth", "#6a6a6e")); b.add(boxGeo(sx + 6.4, 0.95, sz + 0.6, sx + 7.6, 1.02, sz + 1.8, 1), L("zoPlinthT", "#4a4a50"));
+      const wood = L("zoWood", "#8a6038"); b.add(boxGeo(sx - 16, 0, sz + 9.5, sx - 10, 0.45, sz + 13, 2), wood); b.add(boxGeo(sx - 16.1, 0.43, sz + 9.4, sx - 9.9, 0.47, sz + 13.1, 2), L("zoWoodT", "#a87a48"));
+      b.add(boxGeo(sx - 14.6, 1.12, sz + 12.0, sx - 13.4, 1.2, sz + 12.8, 1), L("zoDesk", "#6a4228")); for (const dx of [-14.5, -13.5]) for (const dz of [12.1, 12.7]) b.add(boxGeo(sx + dx - 0.04, 0.45, sz + dz - 0.04, sx + dx + 0.04, 1.12, sz + dz + 0.04, 1), L("zoDesk", "#6a4228"));
+      const pole = L("zoPole", "#d8dce0"); for (const x of [-18, 18]) b.add(cyl(0.06, 0.08, 8, 6, sx + x, 4.1, sz + 10.6), pole);
+      const iron = L("zoIron", "#2a2c30"); for (let x = -76; x <= 76; x += 8) { b.add(cyl(0.06, 0.08, 3.6, 6, sx + x, 1.9, sz + 9.6), iron); { const c = new THREE.SphereGeometry(0.22, 8, 6); c.translate(sx + x, 3.8, sz + 9.6); b.add(c, L("zoLamp", "#f4ecd0")); } }
+      for (const x of [-30, 22, 54]) { b.add(boxGeo(sx + x - 1, 0.45, sz + 10.0, sx + x + 1, 0.52, sz + 10.5, 1), wood); b.add(boxGeo(sx + x - 1, 0.5, sz + 10.45, sx + x + 1, 0.95, sz + 10.55, 1), wood); for (const dx of [-0.9, 0.9]) b.add(boxGeo(sx + x + dx - 0.04, 0.14, sz + 10.05, sx + x + dx + 0.04, 0.45, sz + 10.45, 1), iron); }
+      // stone gate arch over the path at x 40
+      const sand = L("zoSand", "#c8a878"), sandD = L("zoSandD", "#a8885a");
+      for (const z of [1.2, 9.8]) b2.add(boxGeo(sx + 39.2, 0, sz + z - 0.8, sx + 40.8, 5.4, sz + z + 0.8, 2), sand);
+      b2.add(boxGeo(sx + 39.0, 5.4, sz + 0.2, sx + 41.0, 6.4, sz + 10.8, 2), sandD);
+      // sandstone houses with slate roofs behind the enclosure, and a hedge
+      const slate = L("zoSlate", "#4a5058"), winM = L("zoWin", "#3a4a5a"), trimM = L("zoTrim", "#efe8da");
+      for (let i = 0; i < 6; i++) { const x0 = -54 + i * 18, x1 = x0 + 16, h = 7 + (i % 3) * 1.4, z0 = -46, z1 = -34;
+        b.add(boxGeo(sx + x0, 0, sz + z0, sx + x1, h, sz + z1, 3), L("zoHouse" + (i % 3), ["#c8a878", "#b89870", "#d4b488"][i % 3]));
+        const r = new THREE.CylinderGeometry(6.6, 6.6, x1 - x0 + 0.6, 3); r.rotateZ(Math.PI / 2); r.scale(1, 0.5, 1); r.translate(sx + (x0 + x1) / 2, h + 1.6, sz + (z0 + z1) / 2); b.add(r, slate);
+        for (let w = x0 + 1.4; w < x1 - 1.4; w += 3.2) for (const y of [1.4, 4.2]) { if (y > h - 2) continue; b.add(boxGeo(sx + w, y, sz + z1, sx + w + 1.4, y + 1.8, sz + z1 + 0.06, 1), winM); b.add(boxGeo(sx + w - 0.1, y - 0.12, sz + z1, sx + w + 1.5, y, sz + z1 + 0.12, 1), trimM); }
+        b.add(boxGeo(sx + x0 + 6.5, h - 0.2, sz + z0 + 4, sx + x0 + 7.5, h + 3.2, sz + z0 + 5, 1), L("zoChim", "#9a7a5a")); }
+      for (let x = -60; x < 60; x += 2.2) { const c = new THREE.IcosahedronGeometry(1.2, 1); c.scale(1, 0.8, 0.8); c.translate(sx + x, 0.9, sz - 29); b.add(c, L("zoHedge" + (Math.round(x) % 2 ? 1 : 0), Math.round(x) % 2 ? "#3a6a32" : "#467a38")); }
+      // trees: oaks and pines outside the clearing
+      const bark = L("zoBark", "#5a4232"), leafM = ["#4a7a36", "#5a8a3a", "#3a6a34"].map((c, i) => L("zoLeaf" + i, c)), pine = [L("zoPine0", "#2f5a3a"), L("zoPine1", "#3a6a44")];
+      const oak = (x, z, s, k) => { b.add(cyl(0.25 * s, 0.4 * s, 3.2 * s, 7, x, 1.6 * s, z), bark); for (let q = 0; q < 5; q++) { const c = new THREE.IcosahedronGeometry(1.8 * s, 1); c.scale(1.2, 0.9, 1.2); c.translate(x + Math.cos(q * 1.9 + k) * 1.6 * s, (4.0 + (q % 3) * 0.7) * s, z + Math.sin(q * 1.9 + k) * 1.4 * s); b.add(c, leafM[(k + q) % 3]); } };
+      const fir = (x, z, s) => { b.add(cyl(0.2 * s, 0.3 * s, 2.4 * s, 6, x, 1.2 * s, z), bark); for (let q = 0; q < 3; q++) { const c = new THREE.ConeGeometry((2.4 - q * 0.6) * s, 3.2 * s, 7); c.translate(x, (3.0 + q * 1.8) * s, z); b.add(c, pine[q % 2]); } };
+      const clear = (x, z) => (x > -62 && x < 62 && z > -50 && z < 22) || (Math.abs(z - 5.5) < 8 && Math.abs(x) < 90);
+      let n = 0; for (let i = 0; n < 320 && i < 3000; i++) { const x = -260 + hh(i, 81) * 520, z = -240 + hh(i, 82) * 480; if (clear(x, z)) continue; n++; if (hh(i, 83) < 0.6) oak(sx + x, sz + z, 0.85 + hh(i, 84) * 0.6, Math.floor(hh(i, 85) * 3)); else fir(sx + x, sz + z, 0.9 + hh(i, 86) * 0.5); }
+      for (const [x, z] of [[-58, 16], [-44, 18], [30, 17], [46, 19], [-60, -20], [58, -18], [60, 0]]) oak(sx + x, sz + z, 1.1, Math.abs(x) % 3);
+      for (let i = 0; i < 12; i++) { const m = new THREE.SphereGeometry(1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2); const a = (i / 12) * Math.PI * 2; m.scale(360 + (i % 3) * 90, 90 + (i % 4) * 35, 260); m.translate(sx + Math.cos(a) * 760, -2, sz + Math.sin(a) * 760); b.add(m, L("zoHill" + (i % 3), ["#4a7a44", "#5a8a4a", "#6a8a56"][i % 3])); }
       b2.build(R, false, true);
     }
     b.build(R, true, true);

@@ -1,0 +1,11 @@
+--- /home/claude/yt/engine/render/src/cast.js	2026-11-26 10:39:06.780675434 +0530
++++ src/cast.js	2026-11-26 10:42:46.875935473 +0530
+@@ -218,7 +218,7 @@
+       const lid = pl.noBlink ? 0 : lidAt(f, pl.i ?? 0);
+       let key, draw;
+       if (side) {
+-        const so = { phase: qp(pl.phase ?? 0), expr: pl.expr ?? "neutral", mode: pl.mode === "stand" ? "stand" : "march", blink: lid, stomp: 1, stride: pl.stride ?? 0.8, light, seed };
++        const so = { phase: qp(pl.phase ?? 0), expr: pl.expr ?? "neutral", mode: pl.mode === "stand" ? "stand" : pl.mode === "swing" ? "swing" : "march", pose: Math.round((pl.pose ?? 0) * 8) / 8, blink: lid, stomp: 1, stride: pl.stride ?? 0.8, light, seed };
+         key = `S|${fkey(o)}|${fkey(so)}|${pl.sideKey ?? ""}`; draw = (p) => { bodySide(p, o, so); if (pl.extraSide) pl.extraSide(p); };
+       } else {
+         const fo = { phase: qp(pl.phase ?? 0), expr: pl.expr ?? "neutral", mode: pl.mode ?? "stroll", look: pl.look ?? 0, blink: lid, lift: pl.lift ?? 60, prop: pl.prop ?? null, tilt: pl.tilt ?? 0,

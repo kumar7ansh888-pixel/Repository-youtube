@@ -1,0 +1,890 @@
+[
+{
+"word": "This",
+"raw": "This",
+"start": 0.371,
+"end": 0.612
+},
+{
+"word": "penguin",
+"raw": "penguin",
+"start": 0.612,
+"end": 1.095
+},
+{
+"word": "outranks",
+"raw": "outranks",
+"start": 1.095,
+"end": 1.578
+},
+{
+"word": "almost",
+"raw": "almost",
+"start": 1.578,
+"end": 2.061
+},
+{
+"word": "an",
+"raw": "an",
+"start": 2.061,
+"end": 2.302
+},
+{
+"word": "entire",
+"raw": "entire",
+"start": 2.302,
+"end": 2.785
+},
+{
+"word": "army",
+"raw": "army.",
+"start": 2.785,
+"end": 3.268
+},
+{
+"word": "He's",
+"raw": "He's",
+"start": 3.661,
+"end": 3.841
+},
+{
+"word": "a",
+"raw": "a",
+"start": 3.841,
+"end": 4.021
+},
+{
+"word": "general",
+"raw": "general.",
+"start": 4.021,
+"end": 4.561
+},
+{
+"word": "A",
+"raw": "A",
+"start": 4.83,
+"end": 5.071
+},
+{
+"word": "real",
+"raw": "real",
+"start": 5.071,
+"end": 5.313
+},
+{
+"word": "one",
+"raw": "one.",
+"start": 5.313,
+"end": 5.554
+},
+{
+"word": "With",
+"raw": "With",
+"start": 5.752,
+"end": 5.933
+},
+{
+"word": "a",
+"raw": "a",
+"start": 5.933,
+"end": 6.113
+},
+{
+"word": "knighthood",
+"raw": "knighthood.",
+"start": 6.113,
+"end": 6.474
+},
+{
+"word": "It",
+"raw": "It",
+"start": 6.826,
+"end": 7.081
+},
+{
+"word": "starts",
+"raw": "starts",
+"start": 7.081,
+"end": 7.336
+},
+{
+"word": "when",
+"raw": "when",
+"start": 7.336,
+"end": 7.591
+},
+{
+"word": "Norway's",
+"raw": "Norway's",
+"start": 7.591,
+"end": 8.102
+},
+{
+"word": "royal",
+"raw": "royal",
+"start": 8.102,
+"end": 8.357
+},
+{
+"word": "guard",
+"raw": "guard",
+"start": 8.357,
+"end": 8.612
+},
+{
+"word": "visits",
+"raw": "visits",
+"start": 8.612,
+"end": 9.122
+},
+{
+"word": "a",
+"raw": "a",
+"start": 9.122,
+"end": 9.378
+},
+{
+"word": "Scottish",
+"raw": "Scottish",
+"start": 9.378,
+"end": 9.888
+},
+{
+"word": "zoo",
+"raw": "zoo.",
+"start": 9.888,
+"end": 10.143
+},
+{
+"word": "The",
+"raw": "The",
+"start": 10.371,
+"end": 10.583
+},
+{
+"word": "soldiers",
+"raw": "soldiers",
+"start": 10.583,
+"end": 11.008
+},
+{
+"word": "fall",
+"raw": "fall",
+"start": 11.008,
+"end": 11.22
+},
+{
+"word": "in",
+"raw": "in",
+"start": 11.22,
+"end": 11.433
+},
+{
+"word": "love",
+"raw": "love\u2026",
+"start": 11.433,
+"end": 11.645
+},
+{
+"word": "with",
+"raw": "with",
+"start": 11.645,
+"end": 11.857
+},
+{
+"word": "a",
+"raw": "a",
+"start": 11.857,
+"end": 12.069
+},
+{
+"word": "penguin",
+"raw": "penguin.",
+"start": 12.069,
+"end": 12.494
+},
+{
+"word": "So",
+"raw": "So",
+"start": 12.494,
+"end": 12.706
+},
+{
+"word": "they",
+"raw": "they",
+"start": 12.706,
+"end": 12.919
+},
+{
+"word": "adopt",
+"raw": "adopt",
+"start": 12.919,
+"end": 13.343
+},
+{
+"word": "him",
+"raw": "him.",
+"start": 13.343,
+"end": 13.556
+},
+{
+"word": "His",
+"raw": "His",
+"start": 14.018,
+"end": 14.333
+},
+{
+"word": "name",
+"raw": "name?",
+"start": 14.333,
+"end": 14.649
+},
+{
+"word": "Nils",
+"raw": "Nils",
+"start": 14.844,
+"end": 15.138
+},
+{
+"word": "Olav",
+"raw": "Olav.",
+"start": 15.138,
+"end": 15.726
+},
+{
+"word": "Rank",
+"raw": "Rank:",
+"start": 16.031,
+"end": 16.294
+},
+{
+"word": "lance",
+"raw": "lance",
+"start": 16.294,
+"end": 16.557
+},
+{
+"word": "corporal",
+"raw": "corporal.",
+"start": 16.557,
+"end": 17.346
+},
+{
+"word": "Every",
+"raw": "Every",
+"start": 17.62,
+"end": 18.215
+},
+{
+"word": "time",
+"raw": "time",
+"start": 18.215,
+"end": 18.414
+},
+{
+"word": "the",
+"raw": "the",
+"start": 18.414,
+"end": 18.612
+},
+{
+"word": "guard",
+"raw": "guard",
+"start": 18.612,
+"end": 18.81
+},
+{
+"word": "comes",
+"raw": "comes",
+"start": 18.81,
+"end": 19.207
+},
+{
+"word": "back",
+"raw": "back\u2026",
+"start": 19.207,
+"end": 19.405
+},
+{
+"word": "he",
+"raw": "he",
+"start": 19.405,
+"end": 19.604
+},
+{
+"word": "gets",
+"raw": "gets",
+"start": 19.604,
+"end": 19.802
+},
+{
+"word": "promoted",
+"raw": "promoted.",
+"start": 19.802,
+"end": 20.397
+},
+{
+"word": "Corporal",
+"raw": "Corporal.",
+"start": 20.782,
+"end": 21.245
+},
+{
+"word": "Sergeant",
+"raw": "Sergeant.",
+"start": 21.554,
+"end": 22.134
+},
+{
+"word": "Sergeant",
+"raw": "Sergeant",
+"start": 23.062,
+"end": 23.503
+},
+{
+"word": "major",
+"raw": "major.",
+"start": 23.503,
+"end": 23.945
+},
+{
+"word": "He",
+"raw": "He",
+"start": 24.237,
+"end": 24.518
+},
+{
+"word": "doesn't",
+"raw": "doesn't",
+"start": 24.518,
+"end": 24.8
+},
+{
+"word": "march",
+"raw": "march.",
+"start": 24.8,
+"end": 25.081
+},
+{
+"word": "He",
+"raw": "He",
+"start": 25.081,
+"end": 25.362
+},
+{
+"word": "waddles",
+"raw": "waddles.",
+"start": 25.362,
+"end": 25.925
+},
+{
+"word": "Then",
+"raw": "Then",
+"start": 26.261,
+"end": 26.461
+},
+{
+"word": "the",
+"raw": "the",
+"start": 26.461,
+"end": 26.662
+},
+{
+"word": "King",
+"raw": "King",
+"start": 26.662,
+"end": 26.862
+},
+{
+"word": "of",
+"raw": "of",
+"start": 26.862,
+"end": 27.063
+},
+{
+"word": "Norway",
+"raw": "Norway",
+"start": 27.063,
+"end": 27.464
+},
+{
+"word": "approves",
+"raw": "approves\u2026",
+"start": 27.464,
+"end": 28.065
+},
+{
+"word": "a",
+"raw": "a",
+"start": 28.065,
+"end": 28.266
+},
+{
+"word": "knighthood",
+"raw": "knighthood.",
+"start": 28.266,
+"end": 28.667
+},
+{
+"word": "In",
+"raw": "\"In",
+"start": 29.046,
+"end": 29.268
+},
+{
+"word": "every",
+"raw": "every",
+"start": 29.268,
+"end": 29.932
+},
+{
+"word": "way",
+"raw": "way",
+"start": 29.932,
+"end": 30.153
+},
+{
+"word": "qualified",
+"raw": "qualified,\"",
+"start": 30.153,
+"end": 30.818
+},
+{
+"word": "says",
+"raw": "says",
+"start": 30.818,
+"end": 31.039
+},
+{
+"word": "the",
+"raw": "the",
+"start": 31.039,
+"end": 31.26
+},
+{
+"word": "royal",
+"raw": "royal",
+"start": 31.26,
+"end": 31.482
+},
+{
+"word": "citation",
+"raw": "citation.",
+"start": 31.482,
+"end": 32.146
+},
+{
+"word": "Rows",
+"raw": "Rows",
+"start": 32.611,
+"end": 32.829
+},
+{
+"word": "of",
+"raw": "of",
+"start": 32.829,
+"end": 33.047
+},
+{
+"word": "soldiers",
+"raw": "soldiers",
+"start": 33.047,
+"end": 33.484
+},
+{
+"word": "stand",
+"raw": "stand",
+"start": 33.484,
+"end": 33.702
+},
+{
+"word": "at",
+"raw": "at",
+"start": 33.702,
+"end": 33.921
+},
+{
+"word": "attention",
+"raw": "attention\u2026",
+"start": 33.921,
+"end": 34.576
+},
+{
+"word": "while",
+"raw": "while",
+"start": 34.576,
+"end": 34.794
+},
+{
+"word": "a",
+"raw": "a",
+"start": 34.794,
+"end": 35.013
+},
+{
+"word": "penguin",
+"raw": "penguin",
+"start": 35.013,
+"end": 35.45
+},
+{
+"word": "inspects",
+"raw": "inspects",
+"start": 35.45,
+"end": 35.886
+},
+{
+"word": "them",
+"raw": "them.",
+"start": 35.886,
+"end": 36.105
+},
+{
+"word": "Brigadier",
+"raw": "Brigadier.",
+"start": 36.491,
+"end": 37.04
+},
+{
+"word": "Major",
+"raw": "Major",
+"start": 37.351,
+"end": 37.683
+},
+{
+"word": "general",
+"raw": "general.",
+"start": 37.683,
+"end": 38.181
+},
+{
+"word": "Now",
+"raw": "Now",
+"start": 38.583,
+"end": 38.8
+},
+{
+"word": "he",
+"raw": "he",
+"start": 38.8,
+"end": 39.017
+},
+{
+"word": "outranks",
+"raw": "outranks",
+"start": 39.017,
+"end": 39.45
+},
+{
+"word": "the",
+"raw": "the",
+"start": 39.45,
+"end": 39.667
+},
+{
+"word": "man",
+"raw": "man",
+"start": 39.667,
+"end": 39.884
+},
+{
+"word": "he",
+"raw": "he",
+"start": 39.884,
+"end": 40.101
+},
+{
+"word": "was",
+"raw": "was",
+"start": 40.101,
+"end": 40.318
+},
+{
+"word": "named",
+"raw": "named",
+"start": 40.318,
+"end": 40.752
+},
+{
+"word": "after",
+"raw": "after.",
+"start": 40.752,
+"end": 41.186
+},
+{
+"word": "But",
+"raw": "But",
+"start": 41.186,
+"end": 41.403
+},
+{
+"word": "wait",
+"raw": "wait\u2026",
+"start": 41.403,
+"end": 41.62
+},
+{
+"word": "it",
+"raw": "it",
+"start": 41.62,
+"end": 41.837
+},
+{
+"word": "gets",
+"raw": "gets",
+"start": 41.837,
+"end": 42.054
+},
+{
+"word": "weirder",
+"raw": "weirder.",
+"start": 42.054,
+"end": 42.487
+},
+{
+"word": "The",
+"raw": "The",
+"start": 42.929,
+"end": 43.186
+},
+{
+"word": "first",
+"raw": "first",
+"start": 43.186,
+"end": 43.443
+},
+{
+"word": "Nils",
+"raw": "Nils",
+"start": 43.443,
+"end": 43.7
+},
+{
+"word": "died",
+"raw": "died",
+"start": 43.7,
+"end": 43.957
+},
+{
+"word": "years",
+"raw": "years",
+"start": 43.957,
+"end": 44.214
+},
+{
+"word": "ago",
+"raw": "ago.",
+"start": 44.214,
+"end": 44.728
+},
+{
+"word": "A",
+"raw": "A",
+"start": 45.757,
+"end": 45.947
+},
+{
+"word": "lookalike",
+"raw": "lookalike",
+"start": 45.947,
+"end": 46.516
+},
+{
+"word": "took",
+"raw": "took",
+"start": 46.516,
+"end": 46.705
+},
+{
+"word": "his",
+"raw": "his",
+"start": 46.705,
+"end": 46.895
+},
+{
+"word": "place",
+"raw": "place\u2026",
+"start": 46.895,
+"end": 47.084
+},
+{
+"word": "and",
+"raw": "and",
+"start": 47.084,
+"end": 47.274
+},
+{
+"word": "kept",
+"raw": "kept",
+"start": 47.274,
+"end": 47.463
+},
+{
+"word": "getting",
+"raw": "getting",
+"start": 47.463,
+"end": 47.843
+},
+{
+"word": "promoted",
+"raw": "promoted.",
+"start": 47.843,
+"end": 48.411
+},
+{
+"word": "Today",
+"raw": "Today",
+"start": 48.87,
+"end": 49.41
+},
+{
+"word": "it's",
+"raw": "it's",
+"start": 49.41,
+"end": 49.679
+},
+{
+"word": "Nils",
+"raw": "Nils",
+"start": 49.679,
+"end": 49.949
+},
+{
+"word": "the",
+"raw": "the",
+"start": 49.949,
+"end": 50.219
+},
+{
+"word": "Third",
+"raw": "Third.",
+"start": 50.219,
+"end": 50.489
+},
+{
+"word": "He",
+"raw": "He",
+"start": 50.869,
+"end": 51.095
+},
+{
+"word": "even",
+"raw": "even",
+"start": 51.095,
+"end": 51.547
+},
+{
+"word": "has",
+"raw": "has",
+"start": 51.547,
+"end": 51.773
+},
+{
+"word": "a",
+"raw": "a",
+"start": 51.773,
+"end": 51.999
+},
+{
+"word": "bronze",
+"raw": "bronze",
+"start": 51.999,
+"end": 52.225
+},
+{
+"word": "statue",
+"raw": "statue.",
+"start": 52.225,
+"end": 52.677
+},
+{
+"word": "And",
+"raw": "And",
+"start": 53.031,
+"end": 53.221
+},
+{
+"word": "he",
+"raw": "he",
+"start": 53.221,
+"end": 53.412
+},
+{
+"word": "just",
+"raw": "just",
+"start": 53.412,
+"end": 53.603
+},
+{
+"word": "became",
+"raw": "became",
+"start": 53.603,
+"end": 53.985
+},
+{
+"word": "a",
+"raw": "a",
+"start": 53.985,
+"end": 54.175
+},
+{
+"word": "dad",
+"raw": "dad.",
+"start": 54.175,
+"end": 54.366
+},
+{
+"word": "So",
+"raw": "So",
+"start": 54.747,
+"end": 54.925
+},
+{
+"word": "somebody",
+"raw": "somebody\u2026",
+"start": 54.925,
+"end": 55.64
+},
+{
+"word": "start",
+"raw": "start",
+"start": 55.64,
+"end": 55.819
+},
+{
+"word": "the",
+"raw": "the",
+"start": 55.819,
+"end": 55.998
+},
+{
+"word": "paperwork",
+"raw": "paperwork.",
+"start": 55.998,
+"end": 56.534
+},
+{
+"word": "Because",
+"raw": "Because",
+"start": 56.942,
+"end": 57.38
+},
+{
+"word": "in",
+"raw": "in",
+"start": 57.38,
+"end": 57.6
+},
+{
+"word": "this",
+"raw": "this",
+"start": 57.6,
+"end": 57.819
+},
+{
+"word": "army",
+"raw": "army\u2026",
+"start": 57.819,
+"end": 58.258
+}
+]

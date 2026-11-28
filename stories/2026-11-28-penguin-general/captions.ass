@@ -1,0 +1,67 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Bangers,200,&H00FFFFFF,&H00FFFFFF,&H00101010,&H96000000,0,0,0,0,100,100,3,0,1,12,8,8,40,40,190,1
+Style: Cap,Poppins,112,&H0000D4FF,&H00FFFFFF,&H00111111,&H64000000,1,0,0,0,100,100,0,0,1,8,5,2,60,60,470,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:02.55,Hook,,0,0,0,,{\fscx60\fscy60\t(0,180,\fscx100\fscy100)}{\c&H3AE8FF&}THIS PENGUIN\N{\c&H3A48F0&\fs224}IS A GENERAL?!
+Dialogue: 0,0:00:00.32,0:00:02.01,Cap,,0,0,0,,{\k2}{\k24}This {\k48}penguin {\k48}outranks {\k46}almost
+Dialogue: 0,0:00:02.01,0:00:03.61,Cap,,0,0,0,,{\k2}{\k24}an {\k48}entire {\k86}army.
+Dialogue: 0,0:00:03.61,0:00:04.78,Cap,,0,0,0,,{\k2}{\k18}He's {\k18}a {\k79}general.
+Dialogue: 0,0:00:04.78,0:00:05.70,Cap,,0,0,0,,{\k2}{\k24}A {\k24}real {\k42}one.
+Dialogue: 0,0:00:05.70,0:00:06.78,Cap,,0,0,0,,{\k2}{\k18}With {\k18}a {\k69}knighthood.
+Dialogue: 0,0:00:06.78,0:00:08.05,Cap,,0,0,0,,{\k2}{\k26}It {\k25}starts {\k25}when {\k49}Norway's
+Dialogue: 0,0:00:08.05,0:00:09.33,Cap,,0,0,0,,{\k2}{\k25}royal {\k26}guard {\k51}visits {\k24}a
+Dialogue: 0,0:00:09.33,0:00:10.32,Cap,,0,0,0,,{\k2}{\k51}Scottish {\k46}zoo.
+Dialogue: 0,0:00:10.32,0:00:11.38,Cap,,0,0,0,,{\k2}{\k21}The {\k42}soldiers {\k21}fall {\k19}in
+Dialogue: 0,0:00:11.38,0:00:11.59,Cap,,0,0,0,,{\k2}{\k19}love…
+Dialogue: 0,0:00:11.59,0:00:12.44,Cap,,0,0,0,,{\k2}{\k21}with {\k21}a {\k40}penguin.
+Dialogue: 0,0:00:12.44,0:00:13.97,Cap,,0,0,0,,{\k2}{\k21}So {\k21}they {\k42}adopt {\k65}him.
+Dialogue: 0,0:00:13.97,0:00:14.79,Cap,,0,0,0,,{\k2}{\k31}His {\k49}name?
+Dialogue: 0,0:00:14.79,0:00:15.98,Cap,,0,0,0,,{\k2}{\k29}Nils {\k87}Olav.
+Dialogue: 0,0:00:15.98,0:00:16.24,Cap,,0,0,0,,{\k2}{\k24}Rank:
+Dialogue: 0,0:00:16.24,0:00:17.57,Cap,,0,0,0,,{\k2}{\k26}lance {\k104}corporal.
+Dialogue: 0,0:00:17.57,0:00:18.76,Cap,,0,0,0,,{\k2}{\k59}Every {\k20}time {\k20}the {\k18}guard
+Dialogue: 0,0:00:18.76,0:00:19.36,Cap,,0,0,0,,{\k2}{\k40}comes {\k18}back…
+Dialogue: 0,0:00:19.36,0:00:20.73,Cap,,0,0,0,,{\k2}{\k20}he {\k20}gets {\k96}promoted.
+Dialogue: 0,0:00:20.73,0:00:21.50,Cap,,0,0,0,,{\k2}{\k75}Corporal.
+Dialogue: 0,0:00:21.50,0:00:22.83,Cap,,0,0,0,,{\k2}{\k131}Sergeant.
+Dialogue: 0,0:00:23.01,0:00:24.19,Cap,,0,0,0,,{\k2}{\k44}Sergeant {\k71}major.
+Dialogue: 0,0:00:24.19,0:00:25.03,Cap,,0,0,0,,{\k2}{\k28}He {\k28}doesn't {\k26}march.
+Dialogue: 0,0:00:25.03,0:00:26.21,Cap,,0,0,0,,{\k2}{\k28}He {\k88}waddles.
+Dialogue: 0,0:00:26.21,0:00:27.01,Cap,,0,0,0,,{\k2}{\k20}Then {\k20}the {\k20}King {\k18}of
+Dialogue: 0,0:00:27.01,0:00:28.02,Cap,,0,0,0,,{\k2}{\k40}Norway {\k58}approves…
+Dialogue: 0,0:00:28.02,0:00:29.00,Cap,,0,0,0,,{\k2}{\k20}a {\k76}knighthood.
+Dialogue: 0,0:00:29.00,0:00:30.77,Cap,,0,0,0,,{\k2}{\k22}In {\k66}every {\k22}way {\k65}qualified,
+Dialogue: 0,0:00:30.77,0:00:32.56,Cap,,0,0,0,,{\k2}{\k22}says {\k22}the {\k22}royal {\k111}citation.
+Dialogue: 0,0:00:32.56,0:00:33.65,Cap,,0,0,0,,{\k2}{\k22}Rows {\k22}of {\k44}soldiers {\k20}stand
+Dialogue: 0,0:00:33.65,0:00:34.53,Cap,,0,0,0,,{\k2}{\k22}at {\k64}attention…
+Dialogue: 0,0:00:34.53,0:00:35.84,Cap,,0,0,0,,{\k2}{\k22}while {\k22}a {\k44}penguin {\k42}inspects
+Dialogue: 0,0:00:35.84,0:00:36.44,Cap,,0,0,0,,{\k2}{\k59}them.
+Dialogue: 0,0:00:36.44,0:00:37.30,Cap,,0,0,0,,{\k2}{\k84}Brigadier.
+Dialogue: 0,0:00:37.30,0:00:38.53,Cap,,0,0,0,,{\k2}{\k33}Major {\k88}general.
+Dialogue: 0,0:00:38.53,0:00:39.62,Cap,,0,0,0,,{\k2}{\k22}Now {\k22}he {\k43}outranks {\k20}the
+Dialogue: 0,0:00:39.62,0:00:40.70,Cap,,0,0,0,,{\k2}{\k22}man {\k22}he {\k22}was {\k41}named
+Dialogue: 0,0:00:40.70,0:00:41.14,Cap,,0,0,0,,{\k2}{\k41}after.
+Dialogue: 0,0:00:41.14,0:00:41.57,Cap,,0,0,0,,{\k2}{\k22}But {\k20}wait…
+Dialogue: 0,0:00:41.57,0:00:42.88,Cap,,0,0,0,,{\k2}{\k22}it {\k22}gets {\k86}weirder.
+Dialogue: 0,0:00:42.88,0:00:43.91,Cap,,0,0,0,,{\k2}{\k26}The {\k26}first {\k26}Nils {\k24}died
+Dialogue: 0,0:00:43.91,0:00:45.43,Cap,,0,0,0,,{\k2}{\k26}years {\k124}ago.
+Dialogue: 0,0:00:45.71,0:00:46.85,Cap,,0,0,0,,{\k2}{\k19}A {\k57}lookalike {\k19}took {\k17}his
+Dialogue: 0,0:00:46.85,0:00:47.03,Cap,,0,0,0,,{\k2}{\k17}place…
+Dialogue: 0,0:00:47.03,0:00:48.82,Cap,,0,0,0,,{\k2}{\k19}and {\k19}kept {\k38}getting {\k101}promoted.
+Dialogue: 0,0:00:48.82,0:00:50.17,Cap,,0,0,0,,{\k2}{\k54}Today {\k27}it's {\k27}Nils {\k25}the
+Dialogue: 0,0:00:50.17,0:00:50.82,Cap,,0,0,0,,{\k2}{\k63}Third.
+Dialogue: 0,0:00:50.82,0:00:51.95,Cap,,0,0,0,,{\k2}{\k23}He {\k45}even {\k23}has {\k21}a
+Dialogue: 0,0:00:51.95,0:00:52.98,Cap,,0,0,0,,{\k2}{\k23}bronze {\k79}statue.
+Dialogue: 0,0:00:52.98,0:00:53.94,Cap,,0,0,0,,{\k2}{\k19}And {\k19}he {\k19}just {\k36}became
+Dialogue: 0,0:00:53.94,0:00:54.70,Cap,,0,0,0,,{\k2}{\k19}a {\k55}dad.
+Dialogue: 0,0:00:54.70,0:00:55.59,Cap,,0,0,0,,{\k2}{\k18}So {\k70}somebody…
+Dialogue: 0,0:00:55.59,0:00:56.89,Cap,,0,0,0,,{\k2}{\k18}start {\k18}the {\k92}paperwork.
+Dialogue: 0,0:00:56.89,0:00:58.96,Cap,,0,0,0,,{\k2}{\k44}Because {\k22}in {\k22}this {\k117}army…
